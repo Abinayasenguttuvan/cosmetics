@@ -1,0 +1,2627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Beauty Care | Login</title>
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     COSMETIC LOGIN PAGE
+===================================================== -->
+
+<div class="coslogin-page">
+
+
+    <!-- ================================================
+         BACKGROUND VIDEO
+    ================================================= -->
+
+    <video
+        class="coslogin-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+
+        <source
+            src="./video2.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <!-- VIDEO OVERLAY -->
+
+    <div class="coslogin-video-overlay"></div>
+
+
+
+    <!-- ================================================
+         BACK TO HOME
+    ================================================= -->
+
+    <a
+        href="index.html"
+        class="coslogin-home-btn"
+    >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <span>
+            Back to Home
+        </span>
+
+    </a>
+
+
+
+    <!-- ================================================
+         MAIN LOGIN AREA
+    ================================================= -->
+
+    <main class="coslogin-main">
+
+
+        <section class="coslogin-card">
+
+
+            <!-- =========================================
+                 LEFT SIDE
+            ========================================== -->
+
+            <div class="coslogin-info">
+
+
+                <div class="coslogin-info-overlay"></div>
+
+
+                <div class="coslogin-info-content">
+
+
+                    <!-- LOGO -->
+
+                    <a
+                        href="index.html"
+                        class="coslogin-logo"
+                    >
+
+                        <img
+                            src="white.webp"
+                            alt="Beauty Care Logo"
+                        >
+
+                    </a>
+
+
+                    <div class="coslogin-beauty-icon">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                    </div>
+
+
+                    <h1>
+
+                        Welcome
+
+                        <span>
+                            Back!
+                        </span>
+
+                    </h1>
+
+
+                    <p>
+
+                        Continue your beauty journey with us.
+                        Sign in and discover a world of beauty,
+                        care and confidence.
+
+                    </p>
+
+
+
+                    <!-- FEATURES -->
+
+                    <div class="coslogin-feature-list">
+
+
+                        <div class="coslogin-feature">
+
+
+                            <div class="coslogin-feature-icon">
+
+                                <i class="fa-solid fa-heart"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h4>
+                                    Beauty & Care
+                                </h4>
+
+                                <p>
+                                    Everything you love in one place.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="coslogin-feature">
+
+
+                            <div class="coslogin-feature-icon">
+
+                                <i class="fa-solid fa-shield-heart"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h4>
+                                    Secure Access
+                                </h4>
+
+                                <p>
+                                    Your information is protected.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="coslogin-feature">
+
+
+                            <div class="coslogin-feature-icon">
+
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h4>
+                                    Personalized Experience
+                                </h4>
+
+                                <p>
+                                    Beauty made especially for you.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 RIGHT SIDE
+            ========================================== -->
+
+            <div class="coslogin-form-area">
+
+
+                <div class="coslogin-heading">
+
+
+                    <span class="coslogin-heading-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </span>
+
+
+                    <h2>
+                        Sign In
+                    </h2>
+
+
+                    <p>
+                        Enter your details to continue.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     LOGIN FORM
+                ====================================== -->
+
+                <form
+                    id="cosloginForm"
+                    class="coslogin-form"
+                    novalidate
+                >
+
+
+                    <!-- ROLE -->
+
+                    <div class="coslogin-field">
+
+
+                        <label>
+                            Select Role
+                        </label>
+
+
+                        <div class="coslogin-role-group">
+
+
+                            <!-- ADMIN -->
+
+                            <label class="coslogin-role-box">
+
+
+                                <input
+                                    type="radio"
+                                    name="cosloginRole"
+                                    value="admin"
+                                >
+
+
+                                <span class="coslogin-role-content">
+
+                                    <i class="fa-solid fa-user-shield"></i>
+
+                                    <span>
+                                        Admin
+                                    </span>
+
+                                </span>
+
+
+                            </label>
+
+
+
+                            <!-- CUSTOMER -->
+
+                            <label class="coslogin-role-box">
+
+
+                                <input
+                                    type="radio"
+                                    name="cosloginRole"
+                                    value="customer"
+                                >
+
+
+                                <span class="coslogin-role-content">
+
+                                    <i class="fa-solid fa-user"></i>
+
+                                    <span>
+                                        Customer
+                                    </span>
+
+                                </span>
+
+
+                            </label>
+
+
+                        </div>
+
+
+                        <small
+                            class="coslogin-error"
+                            id="cosloginRoleError"
+                        ></small>
+
+
+                    </div>
+
+
+
+                    <!-- NAME -->
+
+                    <div class="coslogin-field">
+
+
+                        <label for="cosloginName">
+
+                            Name
+
+                        </label>
+
+
+                        <div class="coslogin-input">
+
+
+                            <i class="fa-regular fa-user"></i>
+
+
+                            <input
+                                type="text"
+                                id="cosloginName"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                            >
+
+
+                        </div>
+
+
+                        <small
+                            class="coslogin-error"
+                            id="cosloginNameError"
+                        ></small>
+
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="coslogin-field">
+
+
+                        <label for="cosloginEmail">
+
+                            Mail ID
+
+                        </label>
+
+
+                        <div class="coslogin-input">
+
+
+                            <i class="fa-regular fa-envelope"></i>
+
+
+                            <input
+                                type="email"
+                                id="cosloginEmail"
+                                placeholder="Enter your mail ID"
+                                autocomplete="email"
+                            >
+
+
+                        </div>
+
+
+                        <small
+                            class="coslogin-error"
+                            id="cosloginEmailError"
+                        ></small>
+
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="coslogin-field">
+
+
+                        <label for="cosloginPassword">
+
+                            Password
+
+                        </label>
+
+
+                        <div class="coslogin-input">
+
+
+                            <i class="fa-solid fa-lock"></i>
+
+
+                            <input
+                                type="password"
+                                id="cosloginPassword"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                            >
+
+
+                            <button
+                                type="button"
+                                class="coslogin-password-toggle"
+                                id="cosloginPasswordToggle"
+                                aria-label="Show password"
+                            >
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                        <small
+                            class="coslogin-error"
+                            id="cosloginPasswordError"
+                        ></small>
+
+
+                    </div>
+
+
+
+                    <!-- REMEMBER / FORGOT -->
+
+                    <div class="coslogin-options">
+
+
+                        <label class="coslogin-remember">
+
+
+                            <input
+                                type="checkbox"
+                                id="cosloginRemember"
+                            >
+
+
+                            <span class="coslogin-checkmark"></span>
+
+
+                            <span>
+                                Remember me
+                            </span>
+
+
+                        </label>
+
+
+                        <a
+                            href="404.html"
+                            class="coslogin-forgot"
+                        >
+
+                            Forgot Password?
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- GENERAL ERROR -->
+
+                    <div
+                        class="coslogin-general-error"
+                        id="cosloginGeneralError"
+                    >
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                        <span>
+                            Please fill all details correctly.
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- SIGN IN -->
+
+                    <button
+                        type="submit"
+                        class="coslogin-submit"
+                        id="cosloginSubmitBtn"
+                    >
+
+
+                        <span>
+                            Sign In
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </button>
+
+
+
+                    <!-- SIGN UP -->
+
+                    <div class="coslogin-signup">
+
+
+                        <span>
+                            Don't have an account?
+                        </span>
+
+
+                        <a href="register.html">
+
+                            Sign Up
+
+                        </a>
+
+
+                    </div>
+
+
+                </form>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="coslogin-security">
+
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+
+                    <span>
+
+                        Your beauty journey is safe with us.
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+
+<style>
+    /* =========================================================
+   COSMETIC LOGIN
+   UNIQUE PREFIX: coslogin-
+========================================================= */
+
+:root {
+
+--coslogin-primary: #c77b73;
+--coslogin-primary-dark: #9d5c55;
+--coslogin-primary-light: #f7e5e1;
+
+--coslogin-dark: #3d2926;
+--coslogin-text: #765f5b;
+
+--coslogin-white: #ffffff;
+
+--coslogin-border: #ead5d0;
+
+}
+
+
+/* =========================================================
+RESET
+========================================================= */
+
+.coslogin-page *,
+.coslogin-page *::before,
+.coslogin-page *::after {
+
+box-sizing: border-box;
+
+}
+
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+
+body {
+
+margin: 0;
+
+font-family:
+    "Poppins",
+    sans-serif;
+
+}
+
+
+/* =========================================================
+MAIN PAGE
+========================================================= */
+
+.coslogin-page {
+
+position: relative;
+
+width: 100%;
+
+min-height: 100vh;
+
+min-height: 100svh;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 100px 30px 50px;
+
+overflow: hidden;
+
+background: #2f1e1b;
+
+}
+
+
+/* =========================================================
+BACKGROUND VIDEO
+========================================================= */
+
+.coslogin-video {
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+width: 100%;
+
+height: 100%;
+
+min-width: 100%;
+
+min-height: 100%;
+
+object-fit: cover;
+
+transform:
+    translate(-50%, -50%);
+
+z-index: 1;
+
+}
+
+
+/* =========================================================
+VIDEO OVERLAY
+========================================================= */
+
+.coslogin-video-overlay {
+
+position: absolute;
+
+inset: 0;
+
+z-index: 2;
+
+background:
+
+    linear-gradient(
+        135deg,
+        rgba(47, 30, 27, 0.78),
+        rgba(130, 77, 70, 0.58),
+        rgba(199, 123, 115, 0.38)
+    );
+
+}
+
+
+/* =========================================================
+BACK TO HOME
+========================================================= */
+
+.coslogin-home-btn {
+
+position: absolute;
+
+top: 25px;
+
+left: 30px;
+
+z-index: 100;
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 10px;
+
+padding: 12px 20px;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.40);
+
+border-radius: 50px;
+
+background:
+    rgba(255, 255, 255, 0.12);
+
+color: #ffffff;
+
+backdrop-filter:
+    blur(10px);
+
+font-size: 13px;
+
+font-weight: 600;
+
+text-decoration: none;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.coslogin-home-btn:hover {
+
+background:
+    var(--coslogin-primary);
+
+border-color:
+    var(--coslogin-primary);
+
+transform:
+    translateX(-4px);
+
+}
+
+
+/* =========================================================
+MAIN AREA
+========================================================= */
+
+.coslogin-main {
+
+position: relative;
+
+z-index: 10;
+
+width: 100%;
+
+max-width: 1120px;
+
+}
+
+
+/* =========================================================
+LOGIN CARD
+========================================================= */
+
+.coslogin-card {
+
+width: 100%;
+
+min-height: 680px;
+
+display: grid;
+
+grid-template-columns:
+    0.9fr 1.1fr;
+
+overflow: hidden;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.30);
+
+border-radius: 28px;
+
+background:
+    rgba(255, 255, 255, 0.92);
+
+box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.32);
+
+animation:
+    cosloginCardLoad
+    0.8s
+    ease
+    forwards;
+
+}
+
+
+/* =========================================================
+LEFT INFO
+========================================================= */
+
+.coslogin-info {
+
+position: relative;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 55px;
+
+overflow: hidden;
+
+background:
+
+    linear-gradient(
+        135deg,
+        var(--coslogin-primary-dark),
+        var(--coslogin-primary)
+    );
+
+}
+
+
+/* =========================================================
+LEFT OVERLAY
+========================================================= */
+
+.coslogin-info-overlay {
+
+position: absolute;
+
+inset: 0;
+
+background:
+
+    radial-gradient(
+        circle at top right,
+        rgba(255, 255, 255, 0.22),
+        transparent 40%
+    );
+
+}
+
+
+.coslogin-info-content {
+
+position: relative;
+
+z-index: 5;
+
+width: 100%;
+
+max-width: 390px;
+
+color: #ffffff;
+
+}
+
+
+/* =========================================================
+LOGO
+========================================================= */
+
+.coslogin-logo {
+
+display: inline-flex;
+
+margin-bottom: 28px;
+
+}
+
+
+.coslogin-logo img {
+
+width: auto;
+
+max-width: 160px;
+
+height: 60px;
+
+object-fit: contain;
+
+}
+
+
+/* =========================================================
+BEAUTY ICON
+========================================================= */
+
+.coslogin-beauty-icon {
+
+width: 68px;
+
+height: 68px;
+
+margin-bottom: 20px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.35);
+
+border-radius: 50%;
+
+background:
+    rgba(255, 255, 255, 0.14);
+
+font-size: 26px;
+
+backdrop-filter:
+    blur(8px);
+
+}
+
+
+/* =========================================================
+INFO TEXT
+========================================================= */
+
+.coslogin-info h1 {
+
+margin:
+    0 0 15px;
+
+font-size:
+    clamp(34px, 4vw, 48px);
+
+line-height: 1.15;
+
+}
+
+
+.coslogin-info h1 span {
+
+display: block;
+
+}
+
+
+.coslogin-info > .coslogin-info-content > p {
+
+margin:
+    0 0 32px;
+
+color:
+    rgba(255, 255, 255, 0.88);
+
+font-size: 14px;
+
+line-height: 1.8;
+
+}
+
+
+/* =========================================================
+FEATURES
+========================================================= */
+
+.coslogin-feature-list {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 18px;
+
+}
+
+
+.coslogin-feature {
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+}
+
+
+.coslogin-feature-icon {
+
+width: 45px;
+
+height: 45px;
+
+flex-shrink: 0;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 12px;
+
+background:
+    rgba(255, 255, 255, 0.14);
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.20);
+
+font-size: 17px;
+
+}
+
+
+.coslogin-feature h4 {
+
+margin:
+    0 0 3px;
+
+font-size: 13px;
+
+}
+
+
+.coslogin-feature p {
+
+margin: 0;
+
+color:
+    rgba(255, 255, 255, 0.78);
+
+font-size: 11px;
+
+}
+
+
+/* =========================================================
+FORM AREA
+========================================================= */
+
+.coslogin-form-area {
+
+padding: 48px 60px 35px;
+
+background:
+    rgba(255, 253, 252, 0.97);
+
+}
+
+
+/* =========================================================
+HEADING
+========================================================= */
+
+.coslogin-heading {
+
+margin-bottom: 25px;
+
+text-align: center;
+
+}
+
+
+.coslogin-heading-icon {
+
+width: 58px;
+
+height: 58px;
+
+margin:
+    0 auto 12px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background:
+    var(--coslogin-primary-light);
+
+color:
+    var(--coslogin-primary);
+
+font-size: 21px;
+
+}
+
+
+.coslogin-heading h2 {
+
+margin:
+    0 0 5px;
+
+color:
+    var(--coslogin-dark);
+
+font-size: 30px;
+
+}
+
+
+.coslogin-heading p {
+
+margin: 0;
+
+color:
+    var(--coslogin-text);
+
+font-size: 12px;
+
+}
+
+
+/* =========================================================
+FORM FIELD
+========================================================= */
+
+.coslogin-field {
+
+width: 100%;
+
+margin-bottom: 14px;
+
+}
+
+
+.coslogin-field > label {
+
+display: block;
+
+margin-bottom: 7px;
+
+color:
+    var(--coslogin-dark);
+
+font-size: 12px;
+
+font-weight: 600;
+
+}
+
+
+/* =========================================================
+ROLE BOX
+========================================================= */
+
+.coslogin-role-group {
+
+display: grid;
+
+grid-template-columns:
+    repeat(2, 1fr);
+
+gap: 12px;
+
+}
+
+
+.coslogin-role-box {
+
+position: relative;
+
+cursor: pointer;
+
+}
+
+
+.coslogin-role-box input {
+
+position: absolute;
+
+opacity: 0;
+
+pointer-events: none;
+
+}
+
+
+.coslogin-role-content {
+
+min-height: 54px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 10px;
+
+padding: 10px;
+
+border:
+    1px solid
+    var(--coslogin-border);
+
+border-radius: 12px;
+
+background: #ffffff;
+
+color:
+    var(--coslogin-text);
+
+font-size: 13px;
+
+font-weight: 600;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.coslogin-role-content i {
+
+color:
+    var(--coslogin-primary);
+
+}
+
+
+.coslogin-role-box input:checked
++ .coslogin-role-content {
+
+border-color:
+    var(--coslogin-primary);
+
+background:
+    var(--coslogin-primary-light);
+
+color:
+    var(--coslogin-primary-dark);
+
+box-shadow:
+    0 0 0 3px
+    rgba(199, 123, 115, 0.12);
+
+}
+
+
+/* =========================================================
+INPUT
+========================================================= */
+
+.coslogin-input {
+
+position: relative;
+
+width: 100%;
+
+}
+
+
+.coslogin-input > i {
+
+position: absolute;
+
+top: 50%;
+
+left: 15px;
+
+transform:
+    translateY(-50%);
+
+color:
+    var(--coslogin-primary);
+
+font-size: 14px;
+
+}
+
+
+.coslogin-input input {
+
+width: 100%;
+
+height: 50px;
+
+padding:
+    0 48px;
+
+border:
+    1px solid
+    var(--coslogin-border);
+
+border-radius: 12px;
+
+outline: none;
+
+background: #ffffff;
+
+color:
+    var(--coslogin-dark);
+
+font-size: 13px;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.coslogin-input input::placeholder {
+
+color: #b7a09b;
+
+}
+
+
+.coslogin-input input:focus {
+
+border-color:
+    var(--coslogin-primary);
+
+box-shadow:
+    0 0 0 4px
+    rgba(199, 123, 115, 0.12);
+
+}
+
+
+/* =========================================================
+PASSWORD BUTTON
+========================================================= */
+
+.coslogin-password-toggle {
+
+position: absolute;
+
+top: 50%;
+
+right: 10px;
+
+width: 36px;
+
+height: 36px;
+
+transform:
+    translateY(-50%);
+
+border: none;
+
+background: transparent;
+
+color: #9c837e;
+
+cursor: pointer;
+
+}
+
+
+/* =========================================================
+REMEMBER + FORGOT
+========================================================= */
+
+.coslogin-options {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 15px;
+
+margin:
+    16px 0;
+
+}
+
+
+.coslogin-remember {
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+color:
+    var(--coslogin-text);
+
+font-size: 11px;
+
+cursor: pointer;
+
+}
+
+
+.coslogin-remember input {
+
+position: absolute;
+
+opacity: 0;
+
+}
+
+
+.coslogin-checkmark {
+
+width: 17px;
+
+height: 17px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border:
+    1px solid
+    var(--coslogin-border);
+
+border-radius: 5px;
+
+}
+
+
+.coslogin-remember input:checked
++ .coslogin-checkmark {
+
+border-color:
+    var(--coslogin-primary);
+
+background:
+    var(--coslogin-primary);
+
+}
+
+
+.coslogin-remember input:checked
++ .coslogin-checkmark::after {
+
+content: "✓";
+
+color: #ffffff;
+
+font-size: 10px;
+
+}
+
+
+.coslogin-forgot {
+
+color:
+    var(--coslogin-primary-dark);
+
+font-size: 11px;
+
+font-weight: 600;
+
+text-decoration: none;
+
+}
+
+
+.coslogin-forgot:hover {
+
+color:
+    var(--coslogin-primary);
+
+}
+
+
+/* =========================================================
+ERRORS
+========================================================= */
+
+.coslogin-error {
+
+display: block;
+
+min-height: 15px;
+
+margin-top: 4px;
+
+color: #d64c4c;
+
+font-size: 10px;
+
+}
+
+
+.coslogin-general-error {
+
+display: none;
+
+align-items: center;
+
+gap: 8px;
+
+margin-bottom: 14px;
+
+padding: 10px 13px;
+
+border-radius: 9px;
+
+background: #fff0f0;
+
+color: #c43d3d;
+
+font-size: 11px;
+
+}
+
+
+.coslogin-general-error.coslogin-show-error {
+
+display: flex;
+
+}
+
+
+.coslogin-invalid {
+
+border-color:
+    #d64c4c !important;
+
+}
+
+
+/* =========================================================
+SIGN IN BUTTON
+========================================================= */
+
+.coslogin-submit {
+
+width: 100%;
+
+min-height: 52px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 10px;
+
+border: none;
+
+border-radius: 12px;
+
+background:
+
+    linear-gradient(
+        135deg,
+        var(--coslogin-primary),
+        var(--coslogin-primary-dark)
+    );
+
+color: #ffffff;
+
+font-size: 14px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+box-shadow:
+    0 12px 25px
+    rgba(199, 123, 115, 0.30);
+
+transition:
+    0.3s ease;
+
+}
+
+
+.coslogin-submit:hover {
+
+transform:
+    translateY(-3px);
+
+box-shadow:
+    0 18px 32px
+    rgba(199, 123, 115, 0.38);
+
+}
+
+
+.coslogin-submit:disabled {
+
+opacity: 0.75;
+
+cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+SIGNUP
+========================================================= */
+
+.coslogin-signup {
+
+margin-top: 18px;
+
+text-align: center;
+
+color:
+    var(--coslogin-text);
+
+font-size: 12px;
+
+}
+
+
+.coslogin-signup a {
+
+margin-left: 5px;
+
+color:
+    var(--coslogin-primary-dark);
+
+font-weight: 700;
+
+text-decoration: none;
+
+}
+
+
+/* =========================================================
+SECURITY
+========================================================= */
+
+.coslogin-security {
+
+margin-top: 20px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 8px;
+
+color: #a28a85;
+
+font-size: 10px;
+
+}
+
+
+.coslogin-security i {
+
+color:
+    var(--coslogin-primary);
+
+}
+
+
+/* =========================================================
+ANIMATION
+========================================================= */
+
+@keyframes cosloginCardLoad {
+
+from {
+
+    opacity: 0;
+
+    transform:
+        translateY(40px);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+}
+
+
+/* =========================================================
+LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+.coslogin-main {
+
+    max-width: 1000px;
+
+}
+
+
+.coslogin-info {
+
+    padding: 45px;
+
+}
+
+
+.coslogin-form-area {
+
+    padding:
+        45px;
+
+}
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.coslogin-page {
+
+    padding:
+        90px 20px 40px;
+
+}
+
+
+.coslogin-main {
+
+    max-width: 650px;
+
+}
+
+
+.coslogin-card {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.coslogin-info {
+
+    min-height: 350px;
+
+    padding:
+        40px;
+
+}
+
+
+.coslogin-feature-list {
+
+    display: none;
+
+}
+
+
+.coslogin-info-content {
+
+    text-align: center;
+
+}
+
+
+.coslogin-beauty-icon {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+.coslogin-form-area {
+
+    padding:
+        40px 35px;
+
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+.coslogin-page {
+
+    align-items: flex-start;
+
+    padding:
+        80px 12px 25px;
+
+}
+
+
+.coslogin-home-btn {
+
+    top: 15px;
+
+    left: 15px;
+
+    padding:
+        9px 14px;
+
+    font-size: 12px;
+
+}
+
+
+.coslogin-card {
+
+    border-radius: 20px;
+
+}
+
+
+.coslogin-info {
+
+    min-height: 280px;
+
+    padding:
+        35px 20px;
+
+}
+
+
+.coslogin-logo {
+
+    margin-bottom: 18px;
+
+}
+
+
+.coslogin-logo img {
+
+    max-width: 125px;
+
+    height: 50px;
+
+}
+
+
+.coslogin-beauty-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+}
+
+
+.coslogin-info h1 {
+
+    font-size: 32px;
+
+}
+
+
+.coslogin-info > .coslogin-info-content > p {
+
+    margin-bottom: 0;
+
+    font-size: 12px;
+
+}
+
+
+.coslogin-form-area {
+
+    padding:
+        30px 18px;
+
+}
+
+
+.coslogin-heading h2 {
+
+    font-size: 26px;
+
+}
+
+
+.coslogin-role-content {
+
+    min-height: 50px;
+
+    font-size: 12px;
+
+}
+
+
+.coslogin-options {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+.coslogin-page {
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+
+}
+
+
+.coslogin-form-area {
+
+    padding:
+        25px 14px;
+
+}
+
+
+.coslogin-role-group {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.coslogin-heading h2 {
+
+    font-size: 23px;
+
+}
+
+}
+</style>
+
+<script>
+    document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =============================================
+           ELEMENTS
+        ============================================= */
+
+        const form =
+            document.getElementById(
+                "cosloginForm"
+            );
+
+
+        const nameInput =
+            document.getElementById(
+                "cosloginName"
+            );
+
+
+        const emailInput =
+            document.getElementById(
+                "cosloginEmail"
+            );
+
+
+        const passwordInput =
+            document.getElementById(
+                "cosloginPassword"
+            );
+
+
+        const rememberCheckbox =
+            document.getElementById(
+                "cosloginRemember"
+            );
+
+
+        const passwordToggle =
+            document.getElementById(
+                "cosloginPasswordToggle"
+            );
+
+
+        const submitButton =
+            document.getElementById(
+                "cosloginSubmitBtn"
+            );
+
+
+        const roleInputs =
+            document.querySelectorAll(
+                'input[name="cosloginRole"]'
+            );
+
+
+        const nameError =
+            document.getElementById(
+                "cosloginNameError"
+            );
+
+
+        const emailError =
+            document.getElementById(
+                "cosloginEmailError"
+            );
+
+
+        const passwordError =
+            document.getElementById(
+                "cosloginPasswordError"
+            );
+
+
+        const roleError =
+            document.getElementById(
+                "cosloginRoleError"
+            );
+
+
+        const generalError =
+            document.getElementById(
+                "cosloginGeneralError"
+            );
+
+
+        /* =============================================
+           LOAD SAVED DATA
+        ============================================= */
+
+        const savedName =
+            localStorage.getItem(
+                "userName"
+            );
+
+
+        const savedEmail =
+            localStorage.getItem(
+                "userEmail"
+            );
+
+
+        const savedRole =
+            localStorage.getItem(
+                "userRole"
+            );
+
+
+        const savedRemember =
+            localStorage.getItem(
+                "cosloginRemember"
+            );
+
+
+        if (
+            savedRemember === "true"
+        ) {
+
+
+            if (savedName) {
+
+                nameInput.value =
+                    savedName;
+
+            }
+
+
+            if (savedEmail) {
+
+                emailInput.value =
+                    savedEmail;
+
+            }
+
+
+            if (savedRole) {
+
+                roleInputs.forEach(
+                    function (input) {
+
+                        if (
+                            input.value ===
+                            savedRole
+                        ) {
+
+                            input.checked = true;
+
+                        }
+
+                    }
+                );
+
+            }
+
+
+            rememberCheckbox.checked =
+                true;
+
+        }
+
+
+        /* =============================================
+           PASSWORD SHOW / HIDE
+        ============================================= */
+
+        passwordToggle.addEventListener(
+            "click",
+            function () {
+
+
+                const icon =
+                    passwordToggle.querySelector(
+                        "i"
+                    );
+
+
+                if (
+                    passwordInput.type ===
+                    "password"
+                ) {
+
+
+                    passwordInput.type =
+                        "text";
+
+
+                    icon.classList.remove(
+                        "fa-eye"
+                    );
+
+
+                    icon.classList.add(
+                        "fa-eye-slash"
+                    );
+
+
+                }
+
+                else {
+
+
+                    passwordInput.type =
+                        "password";
+
+
+                    icon.classList.remove(
+                        "fa-eye-slash"
+                    );
+
+
+                    icon.classList.add(
+                        "fa-eye"
+                    );
+
+
+                }
+
+
+            }
+        );
+
+
+        /* =============================================
+           EMAIL VALIDATION
+        ============================================= */
+
+        function isValidEmail(email) {
+
+            const pattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            return pattern.test(email);
+
+        }
+
+
+        /* =============================================
+           CLEAR ERRORS
+        ============================================= */
+
+        function clearErrors() {
+
+
+            nameError.textContent =
+                "";
+
+
+            emailError.textContent =
+                "";
+
+
+            passwordError.textContent =
+                "";
+
+
+            roleError.textContent =
+                "";
+
+
+            generalError.classList.remove(
+                "coslogin-show-error"
+            );
+
+
+            document
+                .querySelectorAll(
+                    ".coslogin-invalid"
+                )
+                .forEach(
+                    function (element) {
+
+                        element.classList.remove(
+                            "coslogin-invalid"
+                        );
+
+                    }
+                );
+
+
+        }
+
+
+        /* =============================================
+           FORM SUBMIT
+        ============================================= */
+
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+
+                event.preventDefault();
+
+
+                clearErrors();
+
+
+                let isValid =
+                    true;
+
+
+                const userName =
+                    nameInput.value.trim();
+
+
+                const userEmail =
+                    emailInput.value.trim();
+
+
+                const userPassword =
+                    passwordInput.value;
+
+
+                const selectedRole =
+                    document.querySelector(
+                        'input[name="cosloginRole"]:checked'
+                    );
+
+
+                /* =========================================
+                   ROLE
+                ========================================== */
+
+                if (
+                    !selectedRole
+                ) {
+
+
+                    roleError.textContent =
+                        "Please select your role.";
+
+
+                    isValid =
+                        false;
+
+
+                }
+
+
+                /* =========================================
+                   NAME
+                ========================================== */
+
+                if (
+                    userName.length < 2
+                ) {
+
+
+                    nameError.textContent =
+                        "Please enter your name.";
+
+
+                    nameInput.classList.add(
+                        "coslogin-invalid"
+                    );
+
+
+                    isValid =
+                        false;
+
+
+                }
+
+
+                /* =========================================
+                   EMAIL
+                ========================================== */
+
+                if (
+                    !isValidEmail(
+                        userEmail
+                    )
+                ) {
+
+
+                    emailError.textContent =
+                        "Please enter a valid email address.";
+
+
+                    emailInput.classList.add(
+                        "coslogin-invalid"
+                    );
+
+
+                    isValid =
+                        false;
+
+
+                }
+
+
+                /* =========================================
+                   PASSWORD
+                ========================================== */
+
+                if (
+                    userPassword.length < 6
+                ) {
+
+
+                    passwordError.textContent =
+                        "Password must contain at least 6 characters.";
+
+
+                    passwordInput.classList.add(
+                        "coslogin-invalid"
+                    );
+
+
+                    isValid =
+                        false;
+
+
+                }
+
+
+                /* =========================================
+                   INVALID
+                ========================================== */
+
+                if (
+                    !isValid
+                ) {
+
+
+                    generalError.classList.add(
+                        "coslogin-show-error"
+                    );
+
+
+                    return;
+
+
+                }
+
+
+                /* =========================================
+                   GET ROLE
+                ========================================== */
+
+                const userRole =
+                    selectedRole.value;
+
+
+                /* =========================================
+                   STORE IN LOCAL STORAGE
+                ========================================== */
+
+                localStorage.setItem(
+                    "userName",
+                    userName
+                );
+
+
+                localStorage.setItem(
+                    "userEmail",
+                    userEmail
+                );
+
+
+                localStorage.setItem(
+                    "userRole",
+                    userRole
+                );
+
+
+                localStorage.setItem(
+                    "isLoggedIn",
+                    "true"
+                );
+
+
+                /* =========================================
+                   REMEMBER ME
+                ========================================== */
+
+                if (
+                    rememberCheckbox.checked
+                ) {
+
+
+                    localStorage.setItem(
+                        "cosloginRemember",
+                        "true"
+                    );
+
+
+                }
+
+                else {
+
+
+                    localStorage.removeItem(
+                        "cosloginRemember"
+                    );
+
+
+                }
+
+
+                /* =========================================
+                   BUTTON LOADING
+                ========================================== */
+
+                submitButton.disabled =
+                    true;
+
+
+                submitButton.innerHTML =
+
+                    `
+                    <span>
+                        Signing In...
+                    </span>
+
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                    `;
+
+
+                /* =========================================
+                   REDIRECT BASED ON ROLE
+                ========================================== */
+
+                setTimeout(
+                    function () {
+
+
+                        if (
+                            userRole ===
+                            "admin"
+                        ) {
+
+
+                            window.location.href =
+                                "admin-dashboard.html";
+
+
+                        }
+
+                        else if (
+                            userRole ===
+                            "customer"
+                        ) {
+
+
+                            window.location.href =
+                                "customer-dashboard.html";
+
+
+                        }
+
+
+                    },
+                    1000
+                );
+
+
+            }
+        );
+
+
+    }
+);
+</script>
+
+</body>
+
+</html>
