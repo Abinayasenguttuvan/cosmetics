@@ -50,7 +50,7 @@
 
             <a
                 href="./customer-dashboard.html"
-                class="stkcos-menu-link stkcos-active"
+                class="stkcos-menu-link "
             >
 
                 <span class="stkcos-menu-icon">
@@ -71,7 +71,7 @@
 
             <a
                 href="./shop.html"
-                class="stkcos-menu-link"
+                class="stkcos-menu-link stkcos-active"
             >
 
                 <span class="stkcos-menu-icon">
@@ -342,646 +342,240 @@
 
             </section>
 
-
-          <!-- =========================================================
-     STACKLY BEAUTY - CUSTOMER DASHBOARD
-     SIDEBAR AND TOPBAR ARE NOT INCLUDED
+<!-- =========================================================
+     STACKLY BEAUTY - SHOP DASHBOARD
+     SIDEBAR + TOPBAR NOT INCLUDED
 ========================================================= -->
 
-<section class="stk-customer-dashboard">
+<section class="stk-shop-dashboard">
 
-    <!-- =========================
-         WELCOME HEADER
-    ========================== -->
+    <!-- SHOP HEADER -->
 
-    <div class="stk-customer-welcome">
+    <div class="stk-shop-header">
 
-        <div class="stk-customer-welcome-content">
+        <div class="stk-shop-header-content">
 
-            <span class="stk-customer-welcome-label">
+            <span class="stk-shop-label">
                 <i class="fa-solid fa-sparkles"></i>
-                BEAUTY MEMBER
+                BEAUTY COLLECTION
             </span>
 
             <h1>
-                Welcome Back, Abinaya! 👋
+                Discover Your Beauty Essentials
             </h1>
 
             <p>
-                Discover your favorite beauty products,
-                track your orders and enjoy exclusive offers.
+                Explore skincare, makeup, hair care, fragrances
+                and beauty essentials selected just for you.
             </p>
 
-            <div class="stk-customer-welcome-buttons">
-
-                <a
-                    href="products.html"
-                    class="stk-customer-equal-btn stk-customer-primary-btn"
-                >
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    Shop Now
-                </a>
-
-                <a
-                    href="orders.html"
-                    class="stk-customer-equal-btn stk-customer-outline-btn"
-                >
-                    <i class="fa-solid fa-box"></i>
-                    Orders
-                </a>
-
-            </div>
-
         </div>
 
-
-        <div class="stk-customer-welcome-image">
-
-            <img
-                src="./abi1.webp"
-                alt="Beauty Products"
-            >
-
+        <div class="stk-shop-header-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
         </div>
 
     </div>
 
 
-    <!-- =========================
-         SUMMARY CARDS
-    ========================== -->
+    <!-- SEARCH + FILTER -->
 
-    <div class="stk-customer-stat-grid">
+    
 
-        <!-- ORDERS -->
+    <!-- CATEGORIES -->
 
-        <div class="stk-customer-stat-card">
-
-            <div class="stk-customer-stat-icon pink">
-                <i class="fa-solid fa-box-open"></i>
-            </div>
-
-            <div class="stk-customer-stat-content">
-
-                <span>
-                    Total Orders
-                </span>
-
-                <strong>
-                    28
-                </strong>
-
-                <small>
-                    <i class="fa-solid fa-arrow-up"></i>
-                    12% this month
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <!-- WISHLIST -->
-
-        <div class="stk-customer-stat-card">
-
-            <div class="stk-customer-stat-icon purple">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <div class="stk-customer-stat-content">
-
-                <span>
-                    Wishlist
-                </span>
-
-                <strong>
-                    16
-                </strong>
-
-                <small>
-                    Saved products
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <!-- REWARDS -->
-
-        <div class="stk-customer-stat-card">
-
-            <div class="stk-customer-stat-icon orange">
-                <i class="fa-solid fa-gift"></i>
-            </div>
-
-            <div class="stk-customer-stat-content">
-
-                <span>
-                    Beauty Points
-                </span>
-
-                <strong>
-                    2,450
-                </strong>
-
-                <small>
-                    Available points
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <!-- SPENDING -->
-
-        <div class="stk-customer-stat-card">
-
-            <div class="stk-customer-stat-icon green">
-                <i class="fa-solid fa-wallet"></i>
-            </div>
-
-            <div class="stk-customer-stat-content">
-
-                <span>
-                    Total Spent
-                </span>
-
-                <strong>
-                    ₹1,865
-                </strong>
-
-                <small>
-                    This year
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         MIDDLE SECTION
-    ========================== -->
-
-    <div class="stk-customer-main-grid">
-
-
-        <!-- ORDER CHART -->
-
-        <div class="stk-customer-panel">
-
-            <div class="stk-customer-panel-header">
-
-                <div>
-
-                    <span>
-                        ORDER ACTIVITY
-                    </span>
-
-                    <h2>
-                        My Order Overview
-                    </h2>
-
-                </div>
-
-                <select
-                    id="stkCustomerChartFilter"
-                    class="stk-customer-select"
-                >
-
-                    <option>
-                        This Year
-                    </option>
-
-                    <option>
-                        This Month
-                    </option>
-
-                    <option>
-                        Last 6 Months
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div class="stk-customer-chart-wrapper">
-
-                <canvas
-                    id="stkCustomerOrderChart"
-                ></canvas>
-
-            </div>
-
-        </div>
-
-
-        <!-- PROFILE CARD -->
-
-        <div class="stk-customer-panel stk-customer-profile-panel">
-
-            <div class="stk-customer-panel-header">
-
-                <div>
-
-                    <span>
-                        MY PROFILE
-                    </span>
-
-                    <h2>
-                        Account Overview
-                    </h2>
-
-                </div>
-
-                <a
-                    href="404.html"
-                    class="stk-customer-small-link"
-                >
-                    Edit
-                </a>
-
-            </div>
-
-
-            <div class="stk-customer-profile-summary">
-
-                <div class="stk-customer-avatar">
-
-                    <img
-                        src="./image 3.webp"
-                        alt="Customer"
-                    >
-
-                </div>
-
-                <h3>
-                    Abinaya S
-                </h3>
-
-                <p>
-                    Premium Beauty Member
-                </p>
-
-                <span class="stk-customer-active-status">
-                    <i class="fa-solid fa-circle"></i>
-                    Active Member
-                </span>
-
-            </div>
-
-
-            <div class="stk-customer-profile-details">
-
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <span>
-                        admin@example.com
-                    </span>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-
-                    <span>
-                        +91 98765 43210
-                    </span>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <span>
-                        Chennai, Tamil Nadu
-                    </span>
-                </div>
-
-            </div>
-
-
-            <a
-                href="./404.html"
-                class="stk-customer-full-btn"
-            >
-                <i class="fa-solid fa-user"></i>
-                View Profile
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         RECENT ORDERS
-    ========================== -->
-
-    <div class="stk-customer-panel stk-customer-orders-panel">
-
-        <div class="stk-customer-panel-header">
-
-            <div>
-
-                <span>
-                    SHOPPING ACTIVITY
-                </span>
-
-                <h2>
-                    Recent Orders
-                </h2>
-
-            </div>
-
-            <a
-                href="./404.html"
-                class="stk-customer-small-link"
-            >
-                View All
-            </a>
-
-        </div>
-
-
-        <div class="stk-customer-table-wrapper">
-
-            <table class="stk-customer-orders-table">
-
-                <thead>
-
-                    <tr>
-
-                        <th>
-                            Order ID
-                        </th>
-
-                        <th>
-                            Product
-                        </th>
-
-                        <th>
-                            Date
-                        </th>
-
-                        <th>
-                            Amount
-                        </th>
-
-                        <th>
-                            Status
-                        </th>
-
-                        <th>
-                            Action
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-                    <tr>
-
-                        <td>
-                            #STK-1028
-                        </td>
-
-                        <td>
-
-                            <div class="stk-customer-product-cell">
-
-                                <img
-                                    src="./britenning cream.webp"
-                                    alt="Skincare"
-                                >
-
-                                <span>
-                                    Glow Skin Serum
-                                </span>
-
-                            </div>
-
-                        </td>
-
-                        <td>
-                            22 Aug 2026
-                        </td>
-
-                        <td>
-                            ₹1,899
-                        </td>
-
-                        <td>
-
-                            <span class="stk-customer-status delivered">
-                                Delivered
-                            </span>
-
-                        </td>
-
-                        <td>
-
-                            <a
-                                href="./404.html"
-                                class="stk-customer-table-btn"
-                            >
-                                View
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td>
-                            #STK-1027
-                        </td>
-
-                        <td>
-
-                            <div class="stk-customer-product-cell">
-
-                                <img
-                                    src="./abi3.webp"
-                                    alt="Lipstick"
-                                >
-
-                                <span>
-                                    Velvet Matte Lipstick
-                                </span>
-
-                            </div>
-
-                        </td>
-
-                        <td>
-                            18 Aug 2026
-                        </td>
-
-                        <td>
-                            ₹899
-                        </td>
-
-                        <td>
-
-                            <span class="stk-customer-status shipped">
-                                Shipped
-                            </span>
-
-                        </td>
-
-                        <td>
-
-                            <a
-                                href="./404.html"
-                                class="stk-customer-table-btn"
-                            >
-                                View
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td>
-                            #STK-1026
-                        </td>
-
-                        <td>
-
-                            <div class="stk-customer-product-cell">
-
-                                <img
-                                    src="./bathing salt.webp"
-                                    alt="Face Cream"
-                                >
-
-                                <span>
-                                    Hydrating Face Cream
-                                </span>
-
-                            </div>
-
-                        </td>
-
-                        <td>
-                            14 Aug 2026
-                        </td>
-
-                        <td>
-                            ₹1,299
-                        </td>
-
-                        <td>
-
-                            <span class="stk-customer-status processing">
-                                Processing
-                            </span>
-
-                        </td>
-
-                        <td>
-
-                            <a
-                                href="./404.html"
-                                class="stk-customer-table-btn"
-                            >
-                                View
-                            </a>
-
-                        </td>
-
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         RECOMMENDED PRODUCTS
-    ========================== -->
-
-    <div class="stk-customer-section-heading">
+    <div class="stk-shop-section-title">
 
         <div>
 
             <span>
-                JUST FOR YOU
+                SHOP BY CATEGORY
             </span>
 
             <h2>
-                Recommended Beauty Products
+                Explore Beauty Categories
             </h2>
 
         </div>
 
+    </div>
+
+
+    <div class="stk-shop-category-grid">
+
         <a
-            href="./404.html"
-            class="stk-customer-small-link"
+            href="404.html"
+            class="stk-shop-category-card"
         >
-            View All
+
+            <div class="stk-shop-category-icon pink">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <h3>
+                Skincare
+            </h3>
+
+            <span>
+                48 Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="404.html"
+            class="stk-shop-category-card"
+        >
+
+            <div class="stk-shop-category-icon purple">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+
+            <h3>
+                Makeup
+            </h3>
+
+            <span>
+                36 Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="404.html"
+            class="stk-shop-category-card"
+        >
+
+            <div class="stk-shop-category-icon orange">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <h3>
+                Hair Care
+            </h3>
+
+            <span>
+                24 Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="404.html"
+            class="stk-shop-category-card"
+        >
+
+            <div class="stk-shop-category-icon green">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+            </div>
+
+            <h3>
+                Fragrance
+            </h3>
+
+            <span>
+                18 Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="404.html"
+            class="stk-shop-category-card"
+        >
+
+            <div class="stk-shop-category-icon blue">
+                <i class="fa-solid fa-brush"></i>
+            </div>
+
+            <h3>
+                Beauty Tools
+            </h3>
+
+            <span>
+                20 Products
+            </span>
+
         </a>
 
     </div>
 
 
-    <div class="stk-customer-products-grid">
+    <!-- PRODUCT HEADER -->
+
+    <div class="stk-shop-products-heading">
+
+        <div>
+
+            <span>
+                OUR COLLECTION
+            </span>
+
+            <h2>
+                Beauty Products
+            </h2>
+
+        </div>
+
+        <div class="stk-shop-product-count">
+            Showing <strong>8</strong> Products
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="stk-shop-products-grid">
 
 
         <!-- PRODUCT 1 -->
 
-        <div class="stk-customer-product-card">
+        <article
+            class="stk-shop-product-card"
+            data-category="skincare"
+            data-name="Vitamin C Glow Serum"
+            data-price="1499"
+            data-rating="4.9"
+        >
 
-            <div class="stk-customer-product-image">
+            <div class="stk-shop-product-image">
 
-                <span class="stk-customer-product-badge">
+                <span class="stk-shop-badge">
                     BEST SELLER
                 </span>
 
                 <button
                     type="button"
-                    class="stk-customer-heart-btn"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
                 >
                     <i class="fa-regular fa-heart"></i>
                 </button>
 
                 <img
-                    src="./abi1.webp"
-                    alt="Glow Serum"
+                    src="./britenning cream.webp"
+                    alt="Vitamin C Glow Serum"
                 >
 
             </div>
 
 
-            <div class="stk-customer-product-info">
+            <div class="stk-shop-product-info">
 
                 <small>
                     SKINCARE
                 </small>
 
                 <h3>
-                    Glow Vitamin C Serum
+                    Vitamin C Glow Serum
                 </h3>
 
-                <div class="stk-customer-rating">
+                <div class="stk-shop-rating">
 
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -995,8 +589,7 @@
 
                 </div>
 
-
-                <div class="stk-customer-price">
+                <div class="stk-shop-price">
 
                     <strong>
                         ₹1,499
@@ -1008,46 +601,65 @@
 
                 </div>
 
+                <div class="stk-shop-product-buttons">
 
-                <button
-                    type="button"
-                    class="stk-customer-product-btn"
-                >
-                    <i class="fa-solid fa-cart-plus"></i>
-                    Add to Cart
-                </button>
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
 
 
         <!-- PRODUCT 2 -->
 
-        <div class="stk-customer-product-card">
+        <article
+            class="stk-shop-product-card"
+            data-category="makeup"
+            data-name="Velvet Matte Lipstick"
+            data-price="799"
+            data-rating="4.7"
+        >
 
-            <div class="stk-customer-product-image">
+            <div class="stk-shop-product-image">
 
-                <span class="stk-customer-product-badge">
+                <span class="stk-shop-badge">
                     20% OFF
                 </span>
 
                 <button
                     type="button"
-                    class="stk-customer-heart-btn"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
                 >
                     <i class="fa-regular fa-heart"></i>
                 </button>
 
                 <img
                     src="./abi3.webp"
-                    alt="Lipstick"
+                    alt="Velvet Matte Lipstick"
                 >
 
             </div>
 
 
-            <div class="stk-customer-product-info">
+            <div class="stk-shop-product-info">
 
                 <small>
                     MAKEUP
@@ -1057,7 +669,7 @@
                     Velvet Matte Lipstick
                 </h3>
 
-                <div class="stk-customer-rating">
+                <div class="stk-shop-rating">
 
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -1071,8 +683,7 @@
 
                 </div>
 
-
-                <div class="stk-customer-price">
+                <div class="stk-shop-price">
 
                     <strong>
                         ₹799
@@ -1084,47 +695,65 @@
 
                 </div>
 
+                <div class="stk-shop-product-buttons">
 
-                <button
-                    type="button"
-                    class="stk-customer-product-btn"
-                    onclick="window.location.href='404.html';"
-                >
-                    <i class="fa-solid fa-cart-plus"></i>
-                    Add to Cart
-                </button>
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
 
 
         <!-- PRODUCT 3 -->
 
-        <div class="stk-customer-product-card">
+        <article
+            class="stk-shop-product-card"
+            data-category="skincare"
+            data-name="Hydrating Face Cream"
+            data-price="1299"
+            data-rating="4.8"
+        >
 
-            <div class="stk-customer-product-image">
+            <div class="stk-shop-product-image">
 
-                <span class="stk-customer-product-badge">
+                <span class="stk-shop-badge">
                     NEW
                 </span>
 
                 <button
                     type="button"
-                    class="stk-customer-heart-btn"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
                 >
                     <i class="fa-regular fa-heart"></i>
                 </button>
 
                 <img
-                    src="./britenning cream.webp"
-                    alt="Face Cream"
+                    src="./abi.webp"
+                    alt="Hydrating Face Cream"
                 >
 
             </div>
 
 
-            <div class="stk-customer-product-info">
+            <div class="stk-shop-product-info">
 
                 <small>
                     SKINCARE
@@ -1134,7 +763,7 @@
                     Hydrating Face Cream
                 </h3>
 
-                <div class="stk-customer-rating">
+                <div class="stk-shop-rating">
 
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -1148,8 +777,7 @@
 
                 </div>
 
-
-                <div class="stk-customer-price">
+                <div class="stk-shop-price">
 
                     <strong>
                         ₹1,299
@@ -1161,47 +789,65 @@
 
                 </div>
 
+                <div class="stk-shop-product-buttons">
 
-                <button
-                    type="button"
-                    class="stk-customer-product-btn"
-                    onclick="window.location.href='404.html';"
-                >
-                    <i class="fa-solid fa-cart-plus"></i>
-                    Add to Cart
-                </button>
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
 
 
         <!-- PRODUCT 4 -->
 
-        <div class="stk-customer-product-card">
+        <article
+            class="stk-shop-product-card"
+            data-category="fragrance"
+            data-name="Rose Blossom Perfume"
+            data-price="1799"
+            data-rating="4.6"
+        >
 
-            <div class="stk-customer-product-image">
+            <div class="stk-shop-product-image">
 
-                <span class="stk-customer-product-badge">
+                <span class="stk-shop-badge">
                     POPULAR
                 </span>
 
                 <button
                     type="button"
-                    class="stk-customer-heart-btn"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
                 >
                     <i class="fa-regular fa-heart"></i>
                 </button>
 
                 <img
-                    src="./abi.webp"
-                    alt="Perfume"
+                    src="./abi1.webp"
+                    alt="Rose Blossom Perfume"
                 >
 
             </div>
 
 
-            <div class="stk-customer-product-info">
+            <div class="stk-shop-product-info">
 
                 <small>
                     FRAGRANCE
@@ -1211,7 +857,7 @@
                     Rose Blossom Perfume
                 </h3>
 
-                <div class="stk-customer-rating">
+                <div class="stk-shop-rating">
 
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -1225,8 +871,7 @@
 
                 </div>
 
-
-                <div class="stk-customer-price">
+                <div class="stk-shop-price">
 
                     <strong>
                         ₹1,799
@@ -1238,57 +883,441 @@
 
                 </div>
 
+                <div class="stk-shop-product-buttons">
 
-                <button
-                    type="button"
-                    class="stk-customer-product-btn"
-                    onclick="window.location.href='404.html';"
-                >
-                    <i class="fa-solid fa-cart-plus"></i>
-                    Add to Cart
-                </button>
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
 
             </div>
 
-        </div>
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+
+        <article
+            class="stk-shop-product-card"
+            data-category="haircare"
+            data-name="Nourishing Hair Serum"
+            data-price="999"
+            data-rating="4.7"
+        >
+
+            <div class="stk-shop-product-image">
+
+                <span class="stk-shop-badge">
+                    TRENDING
+                </span>
+
+                <button
+                    type="button"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
+                >
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="./abi2.webp"
+                    alt="Hair Serum"
+                >
+
+            </div>
+
+
+            <div class="stk-shop-product-info">
+
+                <small>
+                    HAIR CARE
+                </small>
+
+                <h3>
+                    Nourishing Hair Serum
+                </h3>
+
+                <div class="stk-shop-rating">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                    <span>
+                        4.7
+                    </span>
+
+                </div>
+
+                <div class="stk-shop-price">
+
+                    <strong>
+                        ₹999
+                    </strong>
+
+                    <del>
+                        ₹1,299
+                    </del>
+
+                </div>
+
+                <div class="stk-shop-product-buttons">
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+
+        <article
+            class="stk-shop-product-card"
+            data-category="tools"
+            data-name="Luxury Makeup Brush Set"
+            data-price="1499"
+            data-rating="4.9"
+        >
+
+            <div class="stk-shop-product-image">
+
+                <span class="stk-shop-badge">
+                    PREMIUM
+                </span>
+
+                <button
+                    type="button"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
+                >
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="./abi.webp"
+                    alt="Makeup Brush Set"
+                >
+
+            </div>
+
+
+            <div class="stk-shop-product-info">
+
+                <small>
+                    BEAUTY TOOLS
+                </small>
+
+                <h3>
+                    Luxury Makeup Brush Set
+                </h3>
+
+                <div class="stk-shop-rating">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        4.9
+                    </span>
+
+                </div>
+
+                <div class="stk-shop-price">
+
+                    <strong>
+                        ₹1,499
+                    </strong>
+
+                    <del>
+                        ₹1,899
+                    </del>
+
+                </div>
+
+                <div class="stk-shop-product-buttons">
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 7 -->
+
+        <article
+            class="stk-shop-product-card"
+            data-category="skincare"
+            data-name="Rose Water Face Mist"
+            data-price="599"
+            data-rating="4.5"
+        >
+
+            <div class="stk-shop-product-image">
+
+                <span class="stk-shop-badge">
+                    15% OFF
+                </span>
+
+                <button
+                    type="button"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
+                >
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="./moisturizer.webp"
+                    alt="Rose Face Mist"
+                >
+
+            </div>
+
+
+            <div class="stk-shop-product-info">
+
+                <small>
+                    SKINCARE
+                </small>
+
+                <h3>
+                    Rose Water Face Mist
+                </h3>
+
+                <div class="stk-shop-rating">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                    <span>
+                        4.5
+                    </span>
+
+                </div>
+
+                <div class="stk-shop-price">
+
+                    <strong>
+                        ₹599
+                    </strong>
+
+                    <del>
+                        ₹699
+                    </del>
+
+                </div>
+
+                <div class="stk-shop-product-buttons">
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 8 -->
+
+        <article
+            class="stk-shop-product-card"
+            data-category="makeup"
+            data-name="Natural Glow Foundation"
+            data-price="1199"
+            data-rating="4.8"
+        >
+
+            <div class="stk-shop-product-image">
+
+                <span class="stk-shop-badge">
+                    NEW
+                </span>
+
+                <button
+                    type="button"
+                    class="stk-shop-wishlist"
+                    aria-label="Add to wishlist"
+                >
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="./cost1.webp"
+                    alt="Natural Glow Foundation"
+                >
+
+            </div>
+
+
+            <div class="stk-shop-product-info">
+
+                <small>
+                    MAKEUP
+                </small>
+
+                <h3>
+                    Natural Glow Foundation
+                </h3>
+
+                <div class="stk-shop-rating">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>
+                        4.8
+                    </span>
+
+                </div>
+
+                <div class="stk-shop-price">
+
+                    <strong>
+                        ₹1,199
+                    </strong>
+
+                    <del>
+                        ₹1,499
+                    </del>
+
+                </div>
+
+                <div class="stk-shop-product-buttons">
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-cart-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stk-shop-equal-btn stk-shop-view-btn"
+                        onclick="window.location.href='404.html';"
+                    >
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
 
     </div>
 
 
-    <!-- =========================
-         OFFER BANNER
-    ========================== -->
+    <!-- OFFER -->
 
-    <div class="stk-customer-offer-banner">
+    <div class="stk-shop-offer">
 
-        <div class="stk-customer-offer-content">
+        <div class="stk-shop-offer-content">
 
             <span>
-                LIMITED TIME OFFER
+                EXCLUSIVE CUSTOMER OFFER
             </span>
 
             <h2>
-                Get 25% Off Your Next Beauty Purchase
+                Beauty Looks Better With a Little Saving
             </h2>
 
             <p>
-                Use your exclusive customer coupon and
-                refresh your beauty collection today.
+                Get up to 25% off on selected beauty essentials.
+                Shop your favorites before the offer ends.
             </p>
 
             <button
                 type="button"
-                class="stk-customer-equal-btn stk-customer-offer-btn"
+                class="stk-shop-offer-btn"
                 onclick="window.location.href='404.html';"
             >
                 <i class="fa-solid fa-ticket"></i>
-                Shop 
+                Explore
             </button>
 
         </div>
 
-
-        <div class="stk-customer-offer-icon">
+        <div class="stk-shop-offer-icon">
 
             <i class="fa-solid fa-gift"></i>
 
@@ -1296,333 +1325,214 @@
 
     </div>
 
-
 </section>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-const cartButtons = document.querySelectorAll(
-    ".stk-customer-product-btn"
-);
-
-cartButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        window.location.href = "404.html";
-
-    });
-
-});
-
-});
-</script>
 
 <style>
     /* =========================================================
-   STACKLY CUSTOMER DASHBOARD
-   UNIQUE CLASSES - NO SIDEBAR/TOPBAR CONFLICT
+   STACKLY BEAUTY SHOP DASHBOARD
+   UNIQUE PREFIX: stk-shop-
 ========================================================= */
 
-.stk-customer-dashboard {
+.stk-shop-dashboard {
     width: 100%;
     max-width: 1600px;
+
     margin: 0 auto;
     padding: 30px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+
     color: #292929;
 }
 
-.stk-customer-dashboard *,
-.stk-customer-dashboard *::before,
-.stk-customer-dashboard *::after {
+.stk-shop-dashboard *,
+.stk-shop-dashboard *::before,
+.stk-shop-dashboard *::after {
     box-sizing: border-box;
 }
 
 
 /* =========================================================
-   WELCOME
+   HEADER
 ========================================================= */
 
-.stk-customer-welcome {
+.stk-shop-header {
     width: 100%;
-    min-height: 250px;
+    min-height: 230px;
 
-    display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+    display: flex;
 
-    align-items: stretch;
+    align-items: center;
+    justify-content: space-between;
 
-    overflow: hidden;
+    gap: 30px;
+
+    padding: 35px;
 
     margin-bottom: 25px;
 
     border-radius: 18px;
 
+    overflow: hidden;
+
     background:
         linear-gradient(
             120deg,
             #fff0f5,
-            #fff8fa
+            #fff9fb
         );
 }
 
-.stk-customer-welcome-content {
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.stk-shop-header-content {
+    min-width: 0;
 }
 
-.stk-customer-welcome-label {
+.stk-shop-label {
     display: block;
 
     margin-bottom: 8px;
 
     color: #d85a82;
 
-    font-size: 16px;
+    font-size: 15px;
+
     font-weight: 800;
+
     letter-spacing: 1.5px;
 }
 
-.stk-customer-welcome-content h1 {
+.stk-shop-header h1 {
     margin: 0 0 10px;
 
-    font-size: 34px;
+    font-size: 35px;
+
     line-height: 1.2;
 }
 
-.stk-customer-welcome-content p {
-    max-width: 700px;
+.stk-shop-header p {
+    max-width: 800px;
 
-    margin: 0 0 20px;
+    margin: 0;
 
     color: #777;
 
     font-size: 20px;
+
     line-height: 1.5;
 }
 
-.stk-customer-welcome-buttons {
+.stk-shop-header-icon {
+    width: 130px;
+    height: 130px;
+
+    min-width: 130px;
+
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.stk-customer-equal-btn {
-    width: 150px;
-    min-width: 150px;
-
-    height: 48px;
-    min-height: 48px;
-
-    display: inline-flex;
 
     align-items: center;
     justify-content: center;
 
-    gap: 8px;
+    border-radius: 50%;
 
-    padding: 0 12px;
+    background: rgba(216,90,130,0.12);
+
+    color: #d85a82;
+
+    font-size: 55px;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.stk-shop-toolbar {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        220px
+        220px;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.stk-shop-search {
+    position: relative;
+
+    width: 100%;
+}
+
+.stk-shop-search i {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+.stk-shop-search input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px 0 45px;
+
+    border: 1px solid #dddddd;
 
     border-radius: 8px;
 
+    background: #ffffff;
+
+    outline: none;
+
     font-family: inherit;
+
     font-size: 17px;
-    font-weight: 700;
-
-    text-decoration: none;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
 }
 
-.stk-customer-primary-btn {
-    border: 1px solid #d85a82;
-
-    background: #d85a82;
-
-    color: #ffffff;
+.stk-shop-search input:focus {
+    border-color: #d85a82;
 }
 
-.stk-customer-primary-btn:hover {
-    background: #b9456b;
-
-    transform: translateY(-2px);
-}
-
-.stk-customer-outline-btn {
-    border: 1px solid #d85a82;
-
-    background: #ffffff;
-
-    color: #d85a82;
-}
-
-.stk-customer-outline-btn:hover {
-    background: #d85a82;
-
-    color: #ffffff;
-}
-
-.stk-customer-welcome-image {
-    min-height: 250px;
-}
-
-.stk-customer-welcome-image img {
+.stk-shop-filter select {
     width: 100%;
-    height: 100%;
+    height: 50px;
 
-    display: block;
+    padding: 0 12px;
 
-    object-fit: cover;
-}
+    border: 1px solid #dddddd;
 
-
-/* =========================================================
-   STAT CARDS
-========================================================= */
-
-.stk-customer-stat-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 18px;
-
-    margin-bottom: 25px;
-}
-
-.stk-customer-stat-card {
-    min-height: 125px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    padding: 18px;
-
-    border: 1px solid #eeeeee;
-
-    border-radius: 13px;
+    border-radius: 8px;
 
     background: #ffffff;
 
-    box-shadow:
-        0 7px 25px rgba(0, 0, 0, 0.045);
-}
+    outline: none;
 
-.stk-customer-stat-icon {
-    width: 55px;
-    height: 55px;
-
-    min-width: 55px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 12px;
-
-    font-size: 23px;
-}
-
-.stk-customer-stat-icon.pink {
-    background: #fdebf2;
-    color: #d85a82;
-}
-
-.stk-customer-stat-icon.purple {
-    background: #eeeafa;
-    color: #7957a6;
-}
-
-.stk-customer-stat-icon.orange {
-    background: #fff0dc;
-    color: #d38b31;
-}
-
-.stk-customer-stat-icon.green {
-    background: #e7f7ed;
-    color: #329360;
-}
-
-.stk-customer-stat-content {
-    min-width: 0;
-}
-
-.stk-customer-stat-content span {
-    display: block;
-
-    margin-bottom: 4px;
-
-    color: #888;
+    font-family: inherit;
 
     font-size: 16px;
-}
 
-.stk-customer-stat-content strong {
-    display: block;
-
-    margin-bottom: 4px;
-
-    font-size: 25px;
-}
-
-.stk-customer-stat-content small {
-    color: #35a069;
-
-    font-size: 14px;
+    cursor: pointer;
 }
 
 
 /* =========================================================
-   MAIN GRID
+   SECTION TITLES
 ========================================================= */
 
-.stk-customer-main-grid {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 1.5fr)
-        minmax(320px, 0.8fr);
-
-    gap: 20px;
-
-    margin-bottom: 25px;
-}
-
-
-/* =========================================================
-   PANEL
-========================================================= */
-
-.stk-customer-panel {
-    width: 100%;
-    min-width: 0;
-
-    padding: 22px;
-
-    border: 1px solid #eeeeee;
-
-    border-radius: 14px;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 7px 25px rgba(0, 0, 0, 0.045);
-}
-
-.stk-customer-panel-header {
+.stk-shop-section-title,
+.stk-shop-products-heading {
     display: flex;
 
     align-items: center;
@@ -1631,19 +1541,11 @@ cartButtons.forEach(function (button) {
 
     gap: 15px;
 
-    padding-bottom: 18px;
-
-    margin-bottom: 15px;
-
-    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 17px;
 }
 
-.stk-customer-panel-header > div {
-    min-width: 0;
-}
-
-.stk-customer-panel-header span,
-.stk-customer-section-heading span {
+.stk-shop-section-title span,
+.stk-shop-products-heading span {
     display: block;
 
     margin-bottom: 4px;
@@ -1657,348 +1559,130 @@ cartButtons.forEach(function (button) {
     letter-spacing: 1px;
 }
 
-.stk-customer-panel-header h2,
-.stk-customer-section-heading h2 {
+.stk-shop-section-title h2,
+.stk-shop-products-heading h2 {
     margin: 0;
 
-    font-size: 24px;
+    font-size: 25px;
 }
 
-.stk-customer-select {
-    width: 130px;
-    height: 40px;
+.stk-shop-product-count {
+    color: #777;
 
-    padding: 0 8px;
-
-    border: 1px solid #dddddd;
-
-    border-radius: 7px;
-
-    background: #ffffff;
-
-    font-family: inherit;
-
-    font-size: 15px;
-
-    outline: none;
-}
-
-.stk-customer-chart-wrapper {
-    width: 100%;
-    height: 280px;
-}
-
-.stk-customer-chart-wrapper canvas {
-    width: 100% !important;
-    height: 100% !important;
+    font-size: 16px;
 }
 
 
 /* =========================================================
-   PROFILE
+   CATEGORY CARDS
 ========================================================= */
 
-.stk-customer-small-link {
-    display: inline-flex;
+.stk-shop-category-grid {
+    display: grid;
 
-    align-items: center;
-    justify-content: center;
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
 
-    min-width: 80px;
+    gap: 15px;
 
-    height: 38px;
-
-    padding: 0 12px;
-
-    border-radius: 7px;
-
-    color: #d85a82;
-
-    font-size: 16px;
-    font-weight: 700;
-
-    text-decoration: none;
+    margin-bottom: 35px;
 }
 
-.stk-customer-small-link:hover {
-    background: #fff0f5;
-}
+.stk-shop-category-card {
+    min-height: 145px;
 
-.stk-customer-profile-summary {
     display: flex;
 
     flex-direction: column;
 
     align-items: center;
-
-    text-align: center;
-
-    padding: 5px 0 18px;
-}
-
-.stk-customer-avatar {
-    width: 82px;
-    height: 82px;
-
-    margin-bottom: 10px;
-}
-
-.stk-customer-avatar img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-}
-
-.stk-customer-profile-summary h3 {
-    margin: 0 0 4px;
-
-    font-size: 22px;
-}
-
-.stk-customer-profile-summary p {
-    margin: 0 0 7px;
-
-    color: #888;
-
-    font-size: 16px;
-}
-
-.stk-customer-active-status {
-    color: #35a069;
-
-    font-size: 14px;
-}
-
-.stk-customer-active-status i {
-    font-size: 8px;
-}
-
-.stk-customer-profile-details {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-
-    padding: 15px 0;
-
-    border-top: 1px solid #eeeeee;
-
-    border-bottom: 1px solid #eeeeee;
-}
-
-.stk-customer-profile-details div {
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    min-width: 0;
-}
-
-.stk-customer-profile-details i {
-    width: 28px;
-
-    color: #d85a82;
-
-    text-align: center;
-}
-
-.stk-customer-profile-details span {
-    overflow: hidden;
-
-    color: #777;
-
-    font-size: 15px;
-
-    text-overflow: ellipsis;
-
-    white-space: nowrap;
-}
-
-.stk-customer-full-btn {
-    width: 100%;
-
-    height: 44px;
-
-    display: flex;
-
-    align-items: center;
     justify-content: center;
 
-    gap: 8px;
+    padding: 18px;
 
-    margin-top: 15px;
+    border: 1px solid #eeeeee;
 
-    border-radius: 8px;
+    border-radius: 12px;
 
-    background: #d85a82;
+    background: #ffffff;
 
-    color: #ffffff;
-
-    font-size: 17px;
-    font-weight: 700;
+    text-align: center;
 
     text-decoration: none;
+
+    box-shadow:
+        0 6px 22px rgba(0,0,0,0.04);
 
     transition: 0.3s ease;
 }
 
-.stk-customer-full-btn:hover {
-    background: #b9456b;
+.stk-shop-category-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #f1c3d1;
 }
 
+.stk-shop-category-icon {
+    width: 55px;
+    height: 55px;
 
-/* =========================================================
-   ORDERS TABLE
-========================================================= */
+    margin-bottom: 10px;
 
-.stk-customer-orders-panel {
-    margin-bottom: 25px;
-}
-
-.stk-customer-table-wrapper {
-    width: 100%;
-
-    overflow-x: auto;
-}
-
-.stk-customer-orders-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    min-width: 850px;
-}
-
-.stk-customer-orders-table th {
-    padding: 12px;
-
-    background: #fff7f9;
-
-    color: #777;
-
-    font-size: 15px;
-
-    font-weight: 700;
-
-    text-align: left;
-}
-
-.stk-customer-orders-table td {
-    padding: 13px 12px;
-
-    border-bottom: 1px solid #eeeeee;
-
-    color: #555;
-
-    font-size: 15px;
-}
-
-.stk-customer-product-cell {
     display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    min-width: 190px;
-}
-
-.stk-customer-product-cell img {
-    width: 45px;
-    height: 45px;
-
-    object-fit: cover;
-
-    border-radius: 7px;
-}
-
-.stk-customer-product-cell span {
-    font-weight: 700;
-}
-
-.stk-customer-status {
-    min-width: 95px;
-
-    height: 30px;
-
-    display: inline-flex;
 
     align-items: center;
     justify-content: center;
 
-    padding: 0 8px;
+    border-radius: 50%;
 
-    border-radius: 20px;
-
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 22px;
 }
 
-.stk-customer-status.delivered {
-    background: #e7f7ed;
-    color: #329360;
+.stk-shop-category-icon.pink {
+    background: #fdebf2;
+    color: #d85a82;
 }
 
-.stk-customer-status.shipped {
-    background: #eaf2ff;
-    color: #4b82c7;
+.stk-shop-category-icon.purple {
+    background: #eeeafa;
+    color: #7957a6;
 }
 
-.stk-customer-status.processing {
+.stk-shop-category-icon.orange {
     background: #fff0dc;
     color: #d38b31;
 }
 
-.stk-customer-table-btn {
-    width: 65px;
-    height: 32px;
-
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #d85a82;
-
-    border-radius: 6px;
-
-    color: #d85a82;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    text-decoration: none;
+.stk-shop-category-icon.green {
+    background: #e7f7ed;
+    color: #329360;
 }
 
-.stk-customer-table-btn:hover {
-    background: #d85a82;
-    color: #ffffff;
+.stk-shop-category-icon.blue {
+    background: #eaf2ff;
+    color: #4b82c7;
+}
+
+.stk-shop-category-card h3 {
+    margin: 0 0 4px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+.stk-shop-category-card span {
+    color: #999;
+
+    font-size: 14px;
 }
 
 
 /* =========================================================
-   PRODUCT SECTION
+   PRODUCTS GRID
 ========================================================= */
 
-.stk-customer-section-heading {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 15px;
-
-    margin-bottom: 15px;
-}
-
-.stk-customer-products-grid {
+.stk-shop-products-grid {
     display: grid;
 
     grid-template-columns:
@@ -2006,10 +1690,10 @@ cartButtons.forEach(function (button) {
 
     gap: 18px;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.stk-customer-product-card {
+.stk-shop-product-card {
     min-width: 0;
 
     overflow: hidden;
@@ -2021,29 +1705,33 @@ cartButtons.forEach(function (button) {
     background: #ffffff;
 
     box-shadow:
-        0 7px 25px rgba(0, 0, 0, 0.045);
+        0 6px 22px rgba(0,0,0,0.045);
 
     transition: 0.3s ease;
 }
 
-.stk-customer-product-card:hover {
+.stk-shop-product-card:hover {
     transform: translateY(-5px);
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.09);
+        0 12px 30px rgba(0,0,0,0.09);
 }
 
-.stk-customer-product-image {
+
+/* PRODUCT IMAGE */
+
+.stk-shop-product-image {
     position: relative;
 
-    height: 220px;
+    width: 100%;
+    height: 230px;
 
     overflow: hidden;
 
     background: #fafafa;
 }
 
-.stk-customer-product-image img {
+.stk-shop-product-image img {
     width: 100%;
     height: 100%;
 
@@ -2054,12 +1742,12 @@ cartButtons.forEach(function (button) {
     transition: 0.4s ease;
 }
 
-.stk-customer-product-card:hover
-.stk-customer-product-image img {
+.stk-shop-product-card:hover
+.stk-shop-product-image img {
     transform: scale(1.05);
 }
 
-.stk-customer-product-badge {
+.stk-shop-badge {
     position: absolute;
 
     top: 10px;
@@ -2067,6 +1755,7 @@ cartButtons.forEach(function (button) {
 
     z-index: 2;
 
+    min-width: 75px;
     height: 27px;
 
     display: inline-flex;
@@ -2082,17 +1771,18 @@ cartButtons.forEach(function (button) {
 
     color: #ffffff;
 
-    font-size: 11px;
+    font-size: 10px;
+
     font-weight: 800;
 }
 
-.stk-customer-heart-btn {
+.stk-shop-wishlist {
     position: absolute;
-
-    z-index: 2;
 
     top: 10px;
     right: 10px;
+
+    z-index: 3;
 
     width: 38px;
     height: 38px;
@@ -2118,11 +1808,14 @@ cartButtons.forEach(function (button) {
         0 3px 12px rgba(0,0,0,0.1);
 }
 
-.stk-customer-product-info {
+
+/* PRODUCT CONTENT */
+
+.stk-shop-product-info {
     padding: 15px;
 }
 
-.stk-customer-product-info small {
+.stk-shop-product-info small {
     color: #d85a82;
 
     font-size: 12px;
@@ -2132,17 +1825,22 @@ cartButtons.forEach(function (button) {
     letter-spacing: 1px;
 }
 
-.stk-customer-product-info h3 {
+.stk-shop-product-info h3 {
     min-height: 48px;
 
     margin: 6px 0 8px;
+
+    color: #333;
 
     font-size: 19px;
 
     line-height: 1.3;
 }
 
-.stk-customer-rating {
+
+/* RATING */
+
+.stk-shop-rating {
     display: flex;
 
     align-items: center;
@@ -2156,7 +1854,7 @@ cartButtons.forEach(function (button) {
     font-size: 13px;
 }
 
-.stk-customer-rating span {
+.stk-shop-rating span {
     margin-left: 5px;
 
     color: #888;
@@ -2164,7 +1862,12 @@ cartButtons.forEach(function (button) {
     font-size: 13px;
 }
 
-.stk-customer-price {
+
+/* PRICE */
+
+.stk-shop-price {
+    min-height: 30px;
+
     display: flex;
 
     align-items: center;
@@ -2174,41 +1877,54 @@ cartButtons.forEach(function (button) {
     margin-bottom: 12px;
 }
 
-.stk-customer-price strong {
+.stk-shop-price strong {
     color: #333;
 
     font-size: 21px;
 }
 
-.stk-customer-price del {
+.stk-shop-price del {
     color: #aaa;
 
     font-size: 14px;
 }
 
-.stk-customer-product-btn {
+
+/* =========================================================
+   EQUAL BUTTONS
+========================================================= */
+
+.stk-shop-product-buttons {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        minmax(0, 0.7fr);
+
+    gap: 7px;
+}
+
+.stk-shop-equal-btn {
     width: 100%;
 
-    height: 42px;
+    height: 43px;
+    min-height: 43px;
 
-    display: flex;
+    display: inline-flex;
 
     align-items: center;
     justify-content: center;
 
-    gap: 7px;
+    gap: 6px;
 
-    border: 1px solid #d85a82;
+    padding: 0 8px;
 
     border-radius: 7px;
 
-    background: #d85a82;
-
-    color: #ffffff;
-
     font-family: inherit;
 
-    font-size: 15px;
+    font-size: 14px;
+
     font-weight: 700;
 
     cursor: pointer;
@@ -2216,8 +1932,30 @@ cartButtons.forEach(function (button) {
     transition: 0.3s ease;
 }
 
-.stk-customer-product-btn:hover {
+.stk-shop-cart-btn {
+    border: 1px solid #d85a82;
+
+    background: #d85a82;
+
+    color: #ffffff;
+}
+
+.stk-shop-cart-btn:hover {
     background: #b9456b;
+}
+
+.stk-shop-view-btn {
+    border: 1px solid #d85a82;
+
+    background: #ffffff;
+
+    color: #d85a82;
+}
+
+.stk-shop-view-btn:hover {
+    background: #d85a82;
+
+    color: #ffffff;
 }
 
 
@@ -2225,22 +1963,21 @@ cartButtons.forEach(function (button) {
    OFFER
 ========================================================= */
 
-.stk-customer-offer-banner {
+.stk-shop-offer {
     min-height: 190px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 25px;
 
     padding: 30px 35px;
 
-    overflow: hidden;
-
     border-radius: 15px;
+
+    overflow: hidden;
 
     background:
         linear-gradient(
@@ -2252,11 +1989,11 @@ cartButtons.forEach(function (button) {
     color: #ffffff;
 }
 
-.stk-customer-offer-content {
-    max-width: 800px;
+.stk-shop-offer-content {
+    max-width: 850px;
 }
 
-.stk-customer-offer-content > span {
+.stk-shop-offer-content span {
     font-size: 14px;
 
     font-weight: 800;
@@ -2264,41 +2001,59 @@ cartButtons.forEach(function (button) {
     letter-spacing: 1.5px;
 }
 
-.stk-customer-offer-content h2 {
+.stk-shop-offer-content h2 {
     margin: 7px 0;
 
     font-size: 28px;
 }
 
-.stk-customer-offer-content p {
+.stk-shop-offer-content p {
     margin: 0 0 15px;
 
     font-size: 17px;
 
     line-height: 1.5;
-
-    opacity: 0.9;
 }
 
-.stk-customer-offer-btn {
+.stk-shop-offer-btn {
+    width: 175px;
+    height: 45px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
     border: 1px solid #ffffff;
+
+    border-radius: 8px;
 
     background: #ffffff;
 
     color: #d85a82;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
 }
 
-.stk-customer-offer-btn:hover {
+.stk-shop-offer-btn:hover {
     background: transparent;
 
     color: #ffffff;
 }
 
-.stk-customer-offer-icon {
-    width: 120px;
-    height: 120px;
+.stk-shop-offer-icon {
+    width: 115px;
+    height: 115px;
 
-    min-width: 120px;
+    min-width: 115px;
 
     display: flex;
 
@@ -2309,7 +2064,7 @@ cartButtons.forEach(function (button) {
 
     background: rgba(255,255,255,0.15);
 
-    font-size: 55px;
+    font-size: 52px;
 }
 
 
@@ -2319,18 +2074,18 @@ cartButtons.forEach(function (button) {
 
 @media (max-width: 1200px) {
 
-    .stk-customer-dashboard {
+    .stk-shop-dashboard {
         padding: 25px;
     }
 
-    .stk-customer-stat-grid {
+    .stk-shop-category-grid {
         grid-template-columns:
-            repeat(2, minmax(0,1fr));
+            repeat(3, minmax(0, 1fr));
     }
 
-    .stk-customer-products-grid {
+    .stk-shop-products-grid {
         grid-template-columns:
-            repeat(3, minmax(0,1fr));
+            repeat(3, minmax(0, 1fr));
     }
 
 }
@@ -2342,25 +2097,30 @@ cartButtons.forEach(function (button) {
 
 @media (max-width: 900px) {
 
-    .stk-customer-dashboard {
+    .stk-shop-dashboard {
         padding: 20px;
     }
 
-    .stk-customer-welcome {
-        grid-template-columns: 1fr;
+    .stk-shop-header {
+        padding: 28px;
     }
 
-    .stk-customer-welcome-image {
-        height: 230px;
+    .stk-shop-toolbar {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .stk-customer-main-grid {
-        grid-template-columns: 1fr;
+    .stk-shop-search {
+        grid-column: 1 / -1;
     }
 
-    .stk-customer-products-grid {
+    .stk-shop-category-grid {
         grid-template-columns:
-            repeat(2, minmax(0,1fr));
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .stk-shop-products-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
 
 }
@@ -2372,161 +2132,161 @@ cartButtons.forEach(function (button) {
 
 @media (max-width: 600px) {
 
-    .stk-customer-dashboard {
+    .stk-shop-dashboard {
         padding: 14px;
 
         font-size: 20px;
     }
 
-    .stk-customer-welcome {
+    .stk-shop-header {
         min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 23px;
 
         border-radius: 13px;
     }
 
-    .stk-customer-welcome-content {
-        padding: 22px;
-    }
-
-    .stk-customer-welcome-content h1 {
+    .stk-shop-header h1 {
         font-size: 27px;
     }
 
-    .stk-customer-welcome-content p {
+    .stk-shop-header p {
         font-size: 20px;
     }
 
-    .stk-customer-welcome-buttons {
-        display: grid;
-
-        grid-template-columns:
-            repeat(2, minmax(0,1fr));
-    }
-
-    .stk-customer-equal-btn {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .stk-customer-welcome-image {
-        height: 190px;
-    }
-
-
-    /* STATS */
-
-    .stk-customer-stat-grid {
-        grid-template-columns:
-            repeat(2, minmax(0,1fr));
-
-        gap: 10px;
-    }
-
-    .stk-customer-stat-card {
-        min-height: 115px;
-
-        padding: 12px;
-
-        gap: 9px;
-    }
-
-    .stk-customer-stat-icon {
-        width: 45px;
-        height: 45px;
-
-        min-width: 45px;
-
-        font-size: 19px;
-    }
-
-    .stk-customer-stat-content strong {
-        font-size: 21px;
-    }
-
-    .stk-customer-stat-content span {
-        font-size: 14px;
-    }
-
-
-    /* PANELS */
-
-    .stk-customer-panel {
-        padding: 16px;
-    }
-
-    .stk-customer-panel-header h2,
-    .stk-customer-section-heading h2 {
-        font-size: 21px;
-    }
-
-    .stk-customer-panel-header {
-        align-items: flex-start;
-    }
-
-    .stk-customer-select {
-        width: 105px;
-
-        font-size: 13px;
-    }
-
-    .stk-customer-chart-wrapper {
-        height: 240px;
-    }
-
-
-    /* PRODUCTS */
-
-    .stk-customer-products-grid {
-        grid-template-columns:
-            repeat(2, minmax(0,1fr));
-
-        gap: 10px;
-    }
-
-    .stk-customer-product-image {
-        height: 170px;
-    }
-
-    .stk-customer-product-info {
-        padding: 11px;
-    }
-
-    .stk-customer-product-info h3 {
-        min-height: 43px;
-
-        font-size: 16px;
-    }
-
-    .stk-customer-price strong {
-        font-size: 18px;
-    }
-
-
-    /* OFFER */
-
-    .stk-customer-offer-banner {
-        min-height: auto;
-
-        padding: 22px;
-
-        align-items: flex-start;
-    }
-
-    .stk-customer-offer-content h2 {
-        font-size: 23px;
-    }
-
-    .stk-customer-offer-content p {
-        font-size: 16px;
-    }
-
-    .stk-customer-offer-icon {
+    .stk-shop-header-icon {
         width: 70px;
         height: 70px;
 
         min-width: 70px;
 
         font-size: 30px;
+    }
+
+
+    /* TOOLBAR */
+
+    .stk-shop-toolbar {
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+    .stk-shop-search {
+        grid-column: auto;
+    }
+
+    .stk-shop-search input,
+    .stk-shop-filter select {
+        height: 48px;
+    }
+
+
+    /* CATEGORY */
+
+    .stk-shop-category-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .stk-shop-category-card {
+        min-height: 130px;
+
+        padding: 12px;
+    }
+
+    .stk-shop-category-card h3 {
+        font-size: 17px;
+    }
+
+
+    /* PRODUCT */
+
+    .stk-shop-products-heading {
+        align-items: flex-start;
+    }
+
+    .stk-shop-products-heading h2 {
+        font-size: 22px;
+    }
+
+    .stk-shop-product-count {
+        font-size: 13px;
+    }
+
+    .stk-shop-products-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .stk-shop-product-image {
+        height: 175px;
+    }
+
+    .stk-shop-product-info {
+        padding: 11px;
+    }
+
+    .stk-shop-product-info h3 {
+        min-height: 43px;
+
+        font-size: 16px;
+    }
+
+    .stk-shop-price strong {
+        font-size: 18px;
+    }
+
+    .stk-shop-price del {
+        font-size: 12px;
+    }
+
+    .stk-shop-product-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .stk-shop-equal-btn {
+        height: 42px;
+
+        min-height: 42px;
+
+        font-size: 14px;
+    }
+
+
+    /* OFFER */
+
+    .stk-shop-offer {
+        min-height: auto;
+
+        padding: 23px;
+
+        align-items: flex-start;
+    }
+
+    .stk-shop-offer-content h2 {
+        font-size: 23px;
+    }
+
+    .stk-shop-offer-content p {
+        font-size: 16px;
+    }
+
+    .stk-shop-offer-icon {
+        width: 65px;
+        height: 65px;
+
+        min-width: 65px;
+
+        font-size: 28px;
     }
 
 }
@@ -2538,141 +2298,248 @@ cartButtons.forEach(function (button) {
 
 @media (max-width: 380px) {
 
-    .stk-customer-dashboard {
+    .stk-shop-dashboard {
         padding: 10px;
     }
 
-    .stk-customer-welcome-buttons {
+    .stk-shop-category-grid {
         grid-template-columns: 1fr;
     }
 
-    .stk-customer-stat-grid {
+    .stk-shop-products-grid {
         grid-template-columns: 1fr;
     }
 
-    .stk-customer-products-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stk-customer-product-image {
+    .stk-shop-product-image {
         height: 220px;
     }
 
-    .stk-customer-offer-icon {
+    .stk-shop-offer-icon {
         display: none;
     }
 
 }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function () {
+const searchInput =
+    document.getElementById("stkShopSearch");
 
-    const chartCanvas =
-        document.getElementById(
-            "stkCustomerOrderChart"
-        );
+const categorySelect =
+    document.getElementById("stkShopCategory");
 
-    if (!chartCanvas) {
-        return;
-    }
+const sortSelect =
+    document.getElementById("stkShopSort");
 
-
-    const ctx =
-        chartCanvas.getContext("2d");
+const products =
+    document.querySelectorAll(
+        ".stk-shop-product-card"
+    );
 
 
-    new Chart(ctx, {
+function filterProducts() {
 
-        type: "line",
+    const searchValue =
+        searchInput
+            ? searchInput.value
+                .toLowerCase()
+                .trim()
+            : "";
 
-        data: {
+    const categoryValue =
+        categorySelect
+            ? categorySelect.value
+            : "all";
 
-            labels: [
-                "Jan",
-                "Feb",
-                "Mar",
-                "Apr",
-                "May",
-                "Jun",
-                "Jul",
-                "Aug"
-            ],
 
-            datasets: [
+    products.forEach(function (product) {
 
-                {
-                    label: "Orders",
+        const productName =
+            product.dataset.name
+                .toLowerCase();
 
-                    data: [
-                        3,
-                        5,
-                        4,
-                        8,
-                        6,
-                        9,
-                        7,
-                        10
-                    ],
+        const productCategory =
+            product.dataset.category;
 
-                    borderWidth: 3,
 
-                    tension: 0.4,
+        const matchesSearch =
+            productName.includes(searchValue);
 
-                    fill: true
-                }
+        const matchesCategory =
+            categoryValue === "all" ||
+            productCategory === categoryValue;
 
-            ]
 
-        },
+        if (
+            matchesSearch &&
+            matchesCategory
+        ) {
 
-        options: {
+            product.style.display = "";
 
-            responsive: true,
+        } else {
 
-            maintainAspectRatio: false,
-
-            plugins: {
-
-                legend: {
-                    display: false
-                }
-
-            },
-
-            scales: {
-
-                y: {
-
-                    beginAtZero: true,
-
-                    ticks: {
-                        stepSize: 2
-                    }
-
-                },
-
-                x: {
-
-                    grid: {
-                        display: false
-                    }
-
-                }
-
-            }
+            product.style.display = "none";
 
         }
 
     });
 
+}
+
+
+if (searchInput) {
+
+    searchInput.addEventListener(
+        "input",
+        filterProducts
+    );
+
+}
+
+
+if (categorySelect) {
+
+    categorySelect.addEventListener(
+        "change",
+        filterProducts
+    );
+
+}
+
+
+/* SORT */
+
+if (sortSelect) {
+
+    sortSelect.addEventListener(
+        "change",
+        function () {
+
+            const productGrid =
+                document.querySelector(
+                    ".stk-shop-products-grid"
+                );
+
+            const productArray =
+                Array.from(products);
+
+
+            const sortValue =
+                sortSelect.value;
+
+
+            if (sortValue === "low") {
+
+                productArray.sort(function (a, b) {
+
+                    return (
+                        Number(a.dataset.price) -
+                        Number(b.dataset.price)
+                    );
+
+                });
+
+            }
+
+
+            if (sortValue === "high") {
+
+                productArray.sort(function (a, b) {
+
+                    return (
+                        Number(b.dataset.price) -
+                        Number(a.dataset.price)
+                    );
+
+                });
+
+            }
+
+
+            if (sortValue === "rating") {
+
+                productArray.sort(function (a, b) {
+
+                    return (
+                        Number(b.dataset.rating) -
+                        Number(a.dataset.rating)
+                    );
+
+                });
+
+            }
+
+
+            productArray.forEach(function (product) {
+
+                productGrid.appendChild(product);
+
+            });
+
+        }
+    );
+
+}
+
+
+/* WISHLIST */
+
+const wishlistButtons =
+    document.querySelectorAll(
+        ".stk-shop-wishlist"
+    );
+
+
+wishlistButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const icon =
+                button.querySelector("i");
+
+
+            if (
+                icon.classList.contains(
+                    "fa-regular"
+                )
+            ) {
+
+                icon.classList.remove(
+                    "fa-regular"
+                );
+
+                icon.classList.add(
+                    "fa-solid"
+                );
+
+            } else {
+
+                icon.classList.remove(
+                    "fa-solid"
+                );
+
+                icon.classList.add(
+                    "fa-regular"
+                );
+
+            }
+
+        }
+    );
+
 });
 
+});
 </script>
+        
+        
 
+    
 
         </main>
 
