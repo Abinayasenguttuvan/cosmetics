@@ -1,0 +1,3271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Beauty Care | Create Account</title>
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="signup.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIGNUP PAGE
+===================================================== -->
+
+<main class="stk-beauty-signup-page">
+
+
+    <!-- BACKGROUND OVERLAY -->
+
+    <div class="stk-beauty-signup-overlay"></div>
+
+
+    <!-- BACK TO HOME -->
+
+    <a
+        href="index.html"
+        class="stk-beauty-home-btn"
+    >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <span>
+            Back to Home
+        </span>
+
+    </a>
+
+
+
+    <!-- =================================================
+         MAIN SIGNUP CARD
+    ================================================= -->
+
+    <section class="stk-beauty-signup-card">
+
+
+        <!-- =============================================
+             LEFT SIDE
+        ============================================== -->
+
+        <div class="stk-beauty-signup-left">
+
+
+            <div class="stk-beauty-left-overlay"></div>
+
+
+            <!-- Decorative circles -->
+
+            <span class="stk-beauty-circle stk-beauty-circle-one"></span>
+
+            <span class="stk-beauty-circle stk-beauty-circle-two"></span>
+
+            <span class="stk-beauty-circle stk-beauty-circle-three"></span>
+
+
+            <!-- Left Content -->
+
+            <div class="stk-beauty-welcome">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="stk-beauty-logo-link"
+                >
+
+                    <img
+                        src="./white.webp"
+                        alt="Beauty Care Logo"
+                        class="stk-beauty-logo"
+                    >
+
+                </a>
+
+
+                <div class="stk-beauty-welcome-icon">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                </div>
+
+
+                <h1>
+                    Welcome Back!
+                </h1>
+
+
+                <p>
+                    Continue your beauty journey with us.
+                    Sign in to explore our products, services
+                    and personalized beauty experience.
+                </p>
+
+
+                <a
+                    href="login.html"
+                    class="stk-beauty-signin-btn"
+                >
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    <span>
+                        Sign In
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+            <!-- Bottom Content -->
+
+            <div class="stk-beauty-left-bottom">
+
+                <span>
+                    Your Beauty. Your Confidence.
+                </span>
+
+
+                <span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Trusted Beauty Care
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =============================================
+             RIGHT SIDE
+        ============================================== -->
+
+        <div class="stk-beauty-signup-right">
+
+
+            <!-- HEADING -->
+
+            <div class="stk-beauty-heading">
+
+
+                <span class="stk-beauty-heading-icon">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                </span>
+
+
+                <h2>
+                    Create Account
+                </h2>
+
+
+                <p>
+                    Join us and start your beautiful journey today.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 SOCIAL LOGIN
+            ========================================== -->
+
+            <div class="stk-beauty-social">
+
+
+                <button
+                    type="button"
+                    class="stk-beauty-social-btn"
+                    data-redirect="404.html"
+                    aria-label="Continue with Google"
+                >
+
+                    <i class="fa-brands fa-google"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="stk-beauty-social-btn"
+                    data-redirect="404.html"
+                    aria-label="Continue with Facebook"
+                >
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="stk-beauty-social-btn"
+                    data-redirect="404.html"
+                    aria-label="Continue with Apple"
+                >
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- DIVIDER -->
+
+            <div class="stk-beauty-divider">
+
+                <span></span>
+
+                <p>
+                    Or register with your email
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 SIGNUP FORM
+            ========================================== -->
+
+            <form
+                id="stkBeautySignupForm"
+                class="stk-beauty-signup-form"
+                novalidate
+            >
+
+
+                <!-- FULL NAME -->
+
+                <div class="stk-beauty-field">
+
+                    <label for="stkBeautyName">
+                        Full Name
+                    </label>
+
+
+                    <div class="stk-beauty-input-wrap">
+
+                        <i class="fa-regular fa-user"></i>
+
+
+                        <input
+                            type="text"
+                            id="stkBeautyName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                        >
+
+
+                    </div>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyNameError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="stk-beauty-field">
+
+                    <label for="stkBeautyEmail">
+                        Email Address
+                    </label>
+
+
+                    <div class="stk-beauty-input-wrap">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+
+                        <input
+                            type="email"
+                            id="stkBeautyEmail"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                        >
+
+
+                    </div>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyEmailError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="stk-beauty-field">
+
+                    <label for="stkBeautyPassword">
+                        Password
+                    </label>
+
+
+                    <div class="stk-beauty-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+
+                        <input
+                            type="password"
+                            id="stkBeautyPassword"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                        >
+
+
+                        <button
+                            type="button"
+                            class="stk-beauty-password-toggle"
+                            data-target="stkBeautyPassword"
+                        >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyPasswordError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="stk-beauty-field">
+
+                    <label for="stkBeautyConfirmPassword">
+                        Confirm Password
+                    </label>
+
+
+                    <div class="stk-beauty-input-wrap">
+
+                        <i class="fa-solid fa-shield-heart"></i>
+
+
+                        <input
+                            type="password"
+                            id="stkBeautyConfirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                        >
+
+
+                        <button
+                            type="button"
+                            class="stk-beauty-password-toggle"
+                            data-target="stkBeautyConfirmPassword"
+                        >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyConfirmPasswordError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     ROLE DROPDOWN
+                ====================================== -->
+
+                <div class="stk-beauty-field stk-beauty-role-field">
+
+
+                    <label>
+                        Select Role
+                    </label>
+
+
+                    <div
+                        class="stk-beauty-role-dropdown"
+                        id="stkBeautyRoleDropdown"
+                    >
+
+
+                        <!-- SELECTED BUTTON -->
+
+                        <button
+                            type="button"
+                            class="stk-beauty-role-button"
+                            id="stkBeautyRoleButton"
+                            aria-expanded="false"
+                        >
+
+
+                            <span class="stk-beauty-role-button-content">
+
+                                <i class="fa-solid fa-user-shield"></i>
+
+
+                                <span
+                                    class="stk-beauty-role-selected"
+                                    id="stkBeautyRoleSelected"
+                                >
+                                    Select your role
+                                </span>
+
+
+                            </span>
+
+
+                            <i
+                                class="fa-solid fa-chevron-down stk-beauty-role-arrow"
+                            ></i>
+
+
+                        </button>
+
+
+
+                        <!-- ROLE OPTIONS -->
+
+                        <div
+                            class="stk-beauty-role-options"
+                            id="stkBeautyRoleOptions"
+                        >
+
+
+                            <!-- ADMIN -->
+
+                            <button
+                                type="button"
+                                class="stk-beauty-role-option"
+                                data-value="admin"
+                            >
+
+                                <i class="fa-solid fa-user-shield"></i>
+
+                                <span>
+                                    Admin
+                                </span>
+
+                            </button>
+
+
+
+                            <!-- CUSTOMER -->
+
+                            <button
+                                type="button"
+                                class="stk-beauty-role-option"
+                                data-value="customer"
+                            >
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <span>
+                                    Customer
+                                </span>
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- HIDDEN ROLE VALUE -->
+
+                        <input
+                            type="hidden"
+                            id="stkBeautyRole"
+                            value=""
+                        >
+
+
+                    </div>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyRoleError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <div class="stk-beauty-terms">
+
+
+                    <label class="stk-beauty-checkbox">
+
+
+                        <input
+                            type="checkbox"
+                            id="stkBeautyTerms"
+                        >
+
+
+                        <span class="stk-beauty-checkmark"></span>
+
+
+                        <span class="stk-beauty-terms-text">
+
+                            I agree to the
+
+                            <a href="404.html">
+                                Terms & Conditions
+                            </a>
+
+                            and
+
+                            <a href="404.html">
+                                Privacy Policy
+                            </a>
+
+                        </span>
+
+
+                    </label>
+
+
+                    <small
+                        class="stk-beauty-error"
+                        id="stkBeautyTermsError"
+                    ></small>
+
+
+                </div>
+
+
+
+                <!-- GENERAL ERROR -->
+
+                <div
+                    class="stk-beauty-general-error"
+                    id="stkBeautyGeneralError"
+                >
+
+                    <i class="fa-solid fa-circle-exclamation"></i>
+
+                    <span>
+                        Please fill all details correctly.
+                    </span>
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="stk-beauty-submit"
+                >
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- LOGIN -->
+
+                <p class="stk-beauty-login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Sign In
+                    </a>
+
+                </p>
+
+
+            </form>
+
+
+
+            <!-- SECURITY -->
+
+            <div class="stk-beauty-security">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <span>
+                    Your information is safe and securely protected.
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     SUCCESS POPUP
+===================================================== -->
+
+<div
+    class="stk-beauty-popup-overlay"
+    id="stkBeautyPopup"
+>
+
+
+    <div class="stk-beauty-popup">
+
+
+        <div class="stk-beauty-popup-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <h3>
+            Account Created Successfully!
+        </h3>
+
+
+        <p>
+            Your beauty account has been created successfully.
+            Redirecting you to the login page...
+        </p>
+
+
+        <div class="stk-beauty-loader">
+
+            <span></span>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<style>
+    /* =========================================================
+   BEAUTY SIGNUP PAGE
+========================================================= */
+
+:root {
+
+--stk-primary: #c77b73;
+--stk-primary-dark: #a85f58;
+--stk-primary-light: #f8e7e3;
+
+--stk-dark: #3d2926;
+--stk-text: #765f5b;
+
+--stk-white: #ffffff;
+
+--stk-border: #ead5d0;
+
+}
+
+
+/* =========================================================
+RESET
+========================================================= */
+
+* {
+
+box-sizing: border-box;
+
+}
+
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+
+body {
+
+margin: 0;
+
+font-family:
+    "Poppins",
+    sans-serif;
+
+background: #f7e8e5;
+
+}
+
+
+button,
+input {
+
+font-family: inherit;
+
+}
+
+
+/* =========================================================
+MAIN PAGE
+========================================================= */
+
+.stk-beauty-signup-page {
+
+position: relative;
+
+width: 100%;
+
+min-height: 100vh;
+
+min-height: 100svh;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 100px 30px 50px;
+
+overflow: hidden;
+
+background-image:
+    url("./abi.webp");
+
+background-size: cover;
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+}
+
+
+/* =========================================================
+PAGE OVERLAY
+========================================================= */
+
+.stk-beauty-signup-overlay {
+
+position: absolute;
+
+inset: 0;
+
+background:
+    linear-gradient(
+        135deg,
+        rgba(48, 24, 20, 0.70),
+        rgba(112, 60, 53, 0.48),
+        rgba(199, 123, 115, 0.38)
+    );
+
+}
+
+
+/* =========================================================
+BACK TO HOME
+========================================================= */
+
+.stk-beauty-home-btn {
+
+position: absolute;
+
+top: 25px;
+
+left: 30px;
+
+z-index: 100;
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 10px;
+
+padding: 12px 20px;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.45);
+
+border-radius: 50px;
+
+background:
+    rgba(255, 255, 255, 0.12);
+
+backdrop-filter:
+    blur(12px);
+
+color: #ffffff;
+
+font-size: 14px;
+
+font-weight: 600;
+
+text-decoration: none;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-home-btn:hover {
+
+background: var(--stk-primary);
+
+border-color: var(--stk-primary);
+
+transform:
+    translateX(-4px);
+
+}
+
+
+/* =========================================================
+MAIN CARD
+========================================================= */
+
+.stk-beauty-signup-card {
+
+position: relative;
+
+z-index: 10;
+
+width: 100%;
+
+max-width: 1180px;
+
+min-height: 720px;
+
+display: grid;
+
+grid-template-columns:
+    0.9fr 1.1fr;
+
+overflow: visible;
+
+border-radius: 28px;
+
+background: #ffffff;
+
+box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.28);
+
+animation:
+    stkBeautyCardLoad
+    0.8s
+    ease
+    forwards;
+
+}
+
+
+/* =========================================================
+LEFT SIDE
+========================================================= */
+
+.stk-beauty-signup-left {
+
+position: relative;
+
+min-height: 720px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 50px;
+
+overflow: hidden;
+
+border-radius:
+    28px 0 0 28px;
+
+background-image:
+    url("./abi1.webp");
+
+background-size: cover;
+
+background-position: center;
+
+}
+
+
+.stk-beauty-left-overlay {
+
+position: absolute;
+
+inset: 0;
+
+background:
+    linear-gradient(
+        135deg,
+        rgba(91, 42, 35, 0.90),
+        rgba(199, 123, 115, 0.80)
+    );
+
+}
+
+
+/* =========================================================
+DECORATIVE CIRCLES
+========================================================= */
+
+.stk-beauty-circle {
+
+position: absolute;
+
+border-radius: 50%;
+
+background:
+    rgba(255, 255, 255, 0.10);
+
+pointer-events: none;
+
+}
+
+
+.stk-beauty-circle-one {
+
+width: 230px;
+
+height: 230px;
+
+top: -80px;
+
+right: -70px;
+
+}
+
+
+.stk-beauty-circle-two {
+
+width: 150px;
+
+height: 150px;
+
+bottom: 60px;
+
+left: -70px;
+
+}
+
+
+.stk-beauty-circle-three {
+
+width: 90px;
+
+height: 90px;
+
+bottom: 30px;
+
+right: 30px;
+
+}
+
+
+/* =========================================================
+LEFT CONTENT
+========================================================= */
+
+.stk-beauty-welcome {
+
+position: relative;
+
+z-index: 5;
+
+width: 100%;
+
+max-width: 400px;
+
+text-align: center;
+
+color: #ffffff;
+
+}
+
+
+.stk-beauty-logo-link {
+
+display: inline-flex;
+
+margin-bottom: 25px;
+
+}
+
+
+.stk-beauty-logo {
+
+max-width: 150px;
+
+height: 65px;
+
+object-fit: contain;
+
+}
+
+
+.stk-beauty-welcome-icon {
+
+width: 72px;
+
+height: 72px;
+
+margin:
+    0 auto 22px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.40);
+
+border-radius: 50%;
+
+background:
+    rgba(255, 255, 255, 0.14);
+
+font-size: 28px;
+
+backdrop-filter:
+    blur(10px);
+
+}
+
+
+.stk-beauty-welcome h1 {
+
+margin:
+    0 0 15px;
+
+font-size:
+    clamp(32px, 4vw, 48px);
+
+line-height: 1.2;
+
+}
+
+
+.stk-beauty-welcome p {
+
+margin:
+    0 auto 30px;
+
+max-width: 370px;
+
+color:
+    rgba(255, 255, 255, 0.90);
+
+font-size: 15px;
+
+line-height: 1.8;
+
+}
+
+
+/* =========================================================
+SIGN IN BUTTON
+========================================================= */
+
+.stk-beauty-signin-btn {
+
+display: inline-flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 10px;
+
+min-width: 170px;
+
+min-height: 52px;
+
+padding: 0 25px;
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.60);
+
+border-radius: 50px;
+
+background:
+    rgba(255, 255, 255, 0.15);
+
+color: #ffffff;
+
+font-size: 14px;
+
+font-weight: 600;
+
+text-decoration: none;
+
+backdrop-filter:
+    blur(8px);
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-signin-btn:hover {
+
+background: #ffffff;
+
+color: var(--stk-primary);
+
+transform:
+    translateY(-3px);
+
+}
+
+
+/* =========================================================
+LEFT BOTTOM
+========================================================= */
+
+.stk-beauty-left-bottom {
+
+position: absolute;
+
+left: 35px;
+
+right: 35px;
+
+bottom: 25px;
+
+z-index: 5;
+
+display: flex;
+
+justify-content: space-between;
+
+gap: 15px;
+
+color:
+    rgba(255, 255, 255, 0.80);
+
+font-size: 11px;
+
+}
+
+
+/* =========================================================
+RIGHT SIDE
+========================================================= */
+
+.stk-beauty-signup-right {
+
+position: relative;
+
+padding: 45px 55px 30px;
+
+background: #fffdfc;
+
+border-radius:
+    0 28px 28px 0;
+
+}
+
+
+/* =========================================================
+HEADING
+========================================================= */
+
+.stk-beauty-heading {
+
+margin-bottom: 20px;
+
+text-align: center;
+
+}
+
+
+.stk-beauty-heading-icon {
+
+width: 55px;
+
+height: 55px;
+
+margin:
+    0 auto 12px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background: var(--stk-primary-light);
+
+color: var(--stk-primary);
+
+font-size: 21px;
+
+}
+
+
+.stk-beauty-heading h2 {
+
+margin:
+    0 0 6px;
+
+color: var(--stk-dark);
+
+font-size: 30px;
+
+}
+
+
+.stk-beauty-heading p {
+
+margin: 0;
+
+color: var(--stk-text);
+
+font-size: 12px;
+
+}
+
+
+/* =========================================================
+SOCIAL BUTTONS
+========================================================= */
+
+.stk-beauty-social {
+
+display: flex;
+
+justify-content: center;
+
+gap: 12px;
+
+margin-bottom: 18px;
+
+}
+
+
+.stk-beauty-social-btn {
+
+width: 42px;
+
+height: 42px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border:
+    1px solid var(--stk-border);
+
+border-radius: 10px;
+
+background: #ffffff;
+
+color: var(--stk-dark);
+
+cursor: pointer;
+
+font-size: 16px;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-social-btn:hover {
+
+border-color: var(--stk-primary);
+
+background: var(--stk-primary-light);
+
+color: var(--stk-primary);
+
+transform:
+    translateY(-3px);
+
+}
+
+
+/* =========================================================
+DIVIDER
+========================================================= */
+
+.stk-beauty-divider {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+margin-bottom: 20px;
+
+}
+
+
+.stk-beauty-divider span {
+
+flex: 1;
+
+height: 1px;
+
+background: var(--stk-border);
+
+}
+
+
+.stk-beauty-divider p {
+
+margin: 0;
+
+color: #9a817c;
+
+font-size: 10px;
+
+white-space: nowrap;
+
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.stk-beauty-signup-form {
+
+width: 100%;
+
+}
+
+
+/* =========================================================
+FIELD
+========================================================= */
+
+.stk-beauty-field {
+
+position: relative;
+
+width: 100%;
+
+margin-bottom: 13px;
+
+}
+
+
+.stk-beauty-field label {
+
+display: block;
+
+margin-bottom: 6px;
+
+color: var(--stk-dark);
+
+font-size: 12px;
+
+font-weight: 600;
+
+}
+
+
+/* =========================================================
+INPUT
+========================================================= */
+
+.stk-beauty-input-wrap {
+
+position: relative;
+
+width: 100%;
+
+}
+
+
+.stk-beauty-input-wrap > i {
+
+position: absolute;
+
+top: 50%;
+
+left: 15px;
+
+transform:
+    translateY(-50%);
+
+color: var(--stk-primary);
+
+font-size: 14px;
+
+}
+
+
+.stk-beauty-input-wrap input {
+
+width: 100%;
+
+height: 48px;
+
+padding:
+    0 45px;
+
+border:
+    1px solid var(--stk-border);
+
+border-radius: 10px;
+
+outline: none;
+
+background: #ffffff;
+
+color: var(--stk-dark);
+
+font-size: 13px;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-input-wrap input:focus {
+
+border-color: var(--stk-primary);
+
+box-shadow:
+    0 0 0 4px
+    rgba(199, 123, 115, 0.12);
+
+}
+
+
+.stk-beauty-input-wrap input::placeholder {
+
+color: #b29b96;
+
+}
+
+
+/* =========================================================
+PASSWORD BUTTON
+========================================================= */
+
+.stk-beauty-password-toggle {
+
+position: absolute;
+
+top: 50%;
+
+right: 10px;
+
+width: 34px;
+
+height: 34px;
+
+transform:
+    translateY(-50%);
+
+border: none;
+
+background: transparent;
+
+color: #9c837e;
+
+cursor: pointer;
+
+}
+
+
+/* =========================================================
+ROLE DROPDOWN
+========================================================= */
+
+.stk-beauty-role-field {
+
+z-index: 1000;
+
+}
+
+
+.stk-beauty-role-dropdown {
+
+position: relative;
+
+width: 100%;
+
+}
+
+
+.stk-beauty-role-button {
+
+width: 100%;
+
+min-height: 48px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 15px;
+
+padding: 0 16px;
+
+border:
+    1px solid var(--stk-border);
+
+border-radius: 10px;
+
+background: #ffffff;
+
+color: var(--stk-dark);
+
+font-size: 13px;
+
+cursor: pointer;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-role-button:hover,
+.stk-beauty-role-button.stk-beauty-role-active {
+
+border-color: var(--stk-primary);
+
+box-shadow:
+    0 0 0 4px
+    rgba(199, 123, 115, 0.12);
+
+}
+
+
+.stk-beauty-role-button-content {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+}
+
+
+.stk-beauty-role-button-content > i {
+
+color: var(--stk-primary);
+
+}
+
+
+.stk-beauty-role-arrow {
+
+transition:
+    transform 0.3s ease;
+
+}
+
+
+.stk-beauty-role-button.stk-beauty-role-active
+.stk-beauty-role-arrow {
+
+transform:
+    rotate(180deg);
+
+}
+
+
+/* =========================================================
+ROLE OPTIONS
+========================================================= */
+
+.stk-beauty-role-options {
+
+position: absolute;
+
+top: calc(100% + 6px);
+
+left: 0;
+
+width: 100%;
+
+z-index: 99999;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 5px;
+
+padding: 7px;
+
+border:
+    1px solid var(--stk-border);
+
+border-radius: 10px;
+
+background: #ffffff;
+
+box-shadow:
+    0 15px 35px
+    rgba(61, 41, 38, 0.18);
+
+opacity: 0;
+
+visibility: hidden;
+
+transform:
+    translateY(-8px);
+
+pointer-events: none;
+
+transition:
+    0.25s ease;
+
+}
+
+
+.stk-beauty-role-dropdown.stk-beauty-role-open
+.stk-beauty-role-options {
+
+opacity: 1;
+
+visibility: visible;
+
+transform:
+    translateY(0);
+
+pointer-events: auto;
+
+}
+
+
+/* =========================================================
+ROLE OPTION
+========================================================= */
+
+.stk-beauty-role-option {
+
+width: 100%;
+
+min-height: 44px;
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+padding: 0 14px;
+
+border: none;
+
+border-radius: 8px;
+
+background: transparent;
+
+color: var(--stk-dark);
+
+font-size: 13px;
+
+font-weight: 500;
+
+text-align: left;
+
+cursor: pointer;
+
+transition:
+    0.25s ease;
+
+}
+
+
+.stk-beauty-role-option i {
+
+width: 20px;
+
+color: var(--stk-primary);
+
+text-align: center;
+
+}
+
+
+.stk-beauty-role-option:hover {
+
+background: var(--stk-primary-light);
+
+color: var(--stk-primary-dark);
+
+transform:
+    translateX(3px);
+
+}
+
+
+.stk-beauty-role-option.stk-beauty-role-selected-option {
+
+background: var(--stk-primary-light);
+
+color: var(--stk-primary-dark);
+
+}
+
+
+/* =========================================================
+TERMS
+========================================================= */
+
+.stk-beauty-terms {
+
+margin:
+    15px 0;
+
+}
+
+
+.stk-beauty-checkbox {
+
+display: flex;
+
+align-items: flex-start;
+
+gap: 9px;
+
+cursor: pointer;
+
+}
+
+
+.stk-beauty-checkbox input {
+
+position: absolute;
+
+opacity: 0;
+
+}
+
+
+.stk-beauty-checkmark {
+
+width: 18px;
+
+height: 18px;
+
+flex-shrink: 0;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border:
+    1px solid var(--stk-border);
+
+border-radius: 5px;
+
+}
+
+
+.stk-beauty-checkbox input:checked
++ .stk-beauty-checkmark {
+
+background: var(--stk-primary);
+
+border-color: var(--stk-primary);
+
+}
+
+
+.stk-beauty-checkbox input:checked
++ .stk-beauty-checkmark::after {
+
+content: "✓";
+
+color: #ffffff;
+
+font-size: 11px;
+
+}
+
+
+.stk-beauty-terms-text {
+
+color: var(--stk-text);
+
+font-size: 11px;
+
+line-height: 1.6;
+
+}
+
+
+.stk-beauty-terms-text a {
+
+color: var(--stk-primary-dark);
+
+font-weight: 600;
+
+text-decoration: none;
+
+}
+
+
+/* =========================================================
+ERROR
+========================================================= */
+
+.stk-beauty-error {
+
+display: block;
+
+min-height: 14px;
+
+margin-top: 4px;
+
+color: #d64747;
+
+font-size: 10px;
+
+}
+
+
+.stk-beauty-invalid {
+
+border-color:
+    #d64747 !important;
+
+}
+
+
+/* =========================================================
+GENERAL ERROR
+========================================================= */
+
+.stk-beauty-general-error {
+
+display: none;
+
+align-items: center;
+
+gap: 8px;
+
+margin-bottom: 13px;
+
+padding: 10px 13px;
+
+border-radius: 8px;
+
+background: #fff0f0;
+
+color: #c43d3d;
+
+font-size: 11px;
+
+}
+
+
+.stk-beauty-general-error.stk-beauty-show-error {
+
+display: flex;
+
+}
+
+
+/* =========================================================
+SUBMIT BUTTON
+========================================================= */
+
+.stk-beauty-submit {
+
+width: 100%;
+
+min-height: 50px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 10px;
+
+border: none;
+
+border-radius: 10px;
+
+background:
+    linear-gradient(
+        135deg,
+        var(--stk-primary),
+        var(--stk-primary-dark)
+    );
+
+color: #ffffff;
+
+font-size: 14px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+box-shadow:
+    0 10px 25px
+    rgba(199, 123, 115, 0.28);
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-submit:hover {
+
+transform:
+    translateY(-3px);
+
+box-shadow:
+    0 15px 30px
+    rgba(199, 123, 115, 0.38);
+
+}
+
+
+/* =========================================================
+LOGIN TEXT
+========================================================= */
+
+.stk-beauty-login-text {
+
+margin:
+    17px 0 0;
+
+text-align: center;
+
+color: var(--stk-text);
+
+font-size: 12px;
+
+}
+
+
+.stk-beauty-login-text a {
+
+color: var(--stk-primary-dark);
+
+font-weight: 700;
+
+text-decoration: none;
+
+}
+
+
+/* =========================================================
+SECURITY
+========================================================= */
+
+.stk-beauty-security {
+
+margin-top: 18px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+gap: 8px;
+
+color: #9b827d;
+
+font-size: 10px;
+
+}
+
+
+.stk-beauty-security i {
+
+color: var(--stk-primary);
+
+}
+
+
+/* =========================================================
+POPUP
+========================================================= */
+
+.stk-beauty-popup-overlay {
+
+position: fixed;
+
+inset: 0;
+
+z-index: 999999;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px;
+
+background:
+    rgba(30, 18, 16, 0.70);
+
+opacity: 0;
+
+visibility: hidden;
+
+pointer-events: none;
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-popup-overlay.stk-beauty-popup-show {
+
+opacity: 1;
+
+visibility: visible;
+
+pointer-events: auto;
+
+}
+
+
+.stk-beauty-popup {
+
+width: 100%;
+
+max-width: 400px;
+
+padding: 40px 30px;
+
+border-radius: 20px;
+
+background: #ffffff;
+
+text-align: center;
+
+transform:
+    scale(0.85);
+
+transition:
+    0.3s ease;
+
+}
+
+
+.stk-beauty-popup-overlay.stk-beauty-popup-show
+.stk-beauty-popup {
+
+transform:
+    scale(1);
+
+}
+
+
+.stk-beauty-popup-icon {
+
+width: 65px;
+
+height: 65px;
+
+margin:
+    0 auto 18px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background: var(--stk-primary);
+
+color: #ffffff;
+
+font-size: 25px;
+
+}
+
+
+.stk-beauty-popup h3 {
+
+margin:
+    0 0 10px;
+
+color: var(--stk-dark);
+
+font-size: 22px;
+
+}
+
+
+.stk-beauty-popup p {
+
+margin: 0;
+
+color: var(--stk-text);
+
+font-size: 13px;
+
+line-height: 1.7;
+
+}
+
+
+/* =========================================================
+LOADER
+========================================================= */
+
+.stk-beauty-loader {
+
+width: 100%;
+
+height: 4px;
+
+margin-top: 20px;
+
+overflow: hidden;
+
+border-radius: 20px;
+
+background: #f3e1dd;
+
+}
+
+
+.stk-beauty-loader span {
+
+display: block;
+
+width: 40%;
+
+height: 100%;
+
+border-radius: 20px;
+
+background: var(--stk-primary);
+
+animation:
+    stkBeautyLoader
+    1.5s
+    linear
+    infinite;
+
+}
+
+
+/* =========================================================
+ANIMATIONS
+========================================================= */
+
+@keyframes stkBeautyCardLoad {
+
+from {
+
+    opacity: 0;
+
+    transform:
+        translateY(40px);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+}
+
+
+@keyframes stkBeautyLoader {
+
+from {
+
+    transform:
+        translateX(-150%);
+
+}
+
+to {
+
+    transform:
+        translateX(300%);
+
+}
+
+}
+
+
+/* =========================================================
+LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+.stk-beauty-signup-page {
+
+    padding:
+        90px 25px 40px;
+
+}
+
+
+.stk-beauty-signup-card {
+
+    max-width: 1050px;
+
+}
+
+
+.stk-beauty-signup-right {
+
+    padding:
+        40px;
+
+}
+
+
+.stk-beauty-signup-left {
+
+    padding:
+        40px;
+
+}
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.stk-beauty-signup-page {
+
+    padding:
+        90px 20px 40px;
+
+}
+
+
+.stk-beauty-signup-card {
+
+    grid-template-columns: 1fr;
+
+    max-width: 620px;
+
+}
+
+
+.stk-beauty-signup-left {
+
+    min-height: 350px;
+
+    padding:
+        40px 30px;
+
+    border-radius:
+        25px 25px 0 0;
+
+}
+
+
+.stk-beauty-signup-right {
+
+    padding:
+        40px 35px;
+
+    border-radius:
+        0 0 25px 25px;
+
+}
+
+
+.stk-beauty-left-bottom {
+
+    display: none;
+
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+.stk-beauty-signup-page {
+
+    align-items: flex-start;
+
+    padding:
+        80px 12px 25px;
+
+}
+
+
+.stk-beauty-home-btn {
+
+    top: 15px;
+
+    left: 15px;
+
+    padding:
+        9px 14px;
+
+    font-size: 12px;
+
+}
+
+
+.stk-beauty-signup-card {
+
+    border-radius: 20px;
+
+}
+
+
+.stk-beauty-signup-left {
+
+    min-height: 300px;
+
+    padding:
+        35px 20px;
+
+    border-radius:
+        20px 20px 0 0;
+
+}
+
+
+.stk-beauty-logo {
+
+    max-width: 120px;
+
+    height: 55px;
+
+}
+
+
+.stk-beauty-welcome-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+}
+
+
+.stk-beauty-welcome h1 {
+
+    font-size: 30px;
+
+}
+
+
+.stk-beauty-welcome p {
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+.stk-beauty-signin-btn {
+
+    min-height: 46px;
+
+    min-width: 150px;
+
+    font-size: 12px;
+
+}
+
+
+.stk-beauty-signup-right {
+
+    padding:
+        30px 18px;
+
+    border-radius:
+        0 0 20px 20px;
+
+}
+
+
+.stk-beauty-heading h2 {
+
+    font-size: 26px;
+
+}
+
+
+.stk-beauty-heading p {
+
+    font-size: 11px;
+
+}
+
+
+.stk-beauty-role-button {
+
+    min-height: 48px;
+
+    font-size: 13px;
+
+}
+
+
+.stk-beauty-role-options {
+
+    position: absolute;
+
+    width: 100%;
+
+    z-index: 999999;
+
+}
+
+
+.stk-beauty-role-option {
+
+    min-height: 44px;
+
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+.stk-beauty-signup-page {
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+
+}
+
+
+.stk-beauty-signup-right {
+
+    padding:
+        25px 14px;
+
+}
+
+
+.stk-beauty-heading h2 {
+
+    font-size: 23px;
+
+}
+
+
+.stk-beauty-input-wrap input {
+
+    height: 46px;
+
+    font-size: 12px;
+
+}
+
+}
+</style>
+
+<script>
+    document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =============================================
+           GET ELEMENTS
+        ============================================= */
+
+        const form =
+            document.getElementById(
+                "stkBeautySignupForm"
+            );
+
+
+        const nameInput =
+            document.getElementById(
+                "stkBeautyName"
+            );
+
+
+        const emailInput =
+            document.getElementById(
+                "stkBeautyEmail"
+            );
+
+
+        const passwordInput =
+            document.getElementById(
+                "stkBeautyPassword"
+            );
+
+
+        const confirmPasswordInput =
+            document.getElementById(
+                "stkBeautyConfirmPassword"
+            );
+
+
+        const roleInput =
+            document.getElementById(
+                "stkBeautyRole"
+            );
+
+
+        const termsInput =
+            document.getElementById(
+                "stkBeautyTerms"
+            );
+
+
+        const roleDropdown =
+            document.getElementById(
+                "stkBeautyRoleDropdown"
+            );
+
+
+        const roleButton =
+            document.getElementById(
+                "stkBeautyRoleButton"
+            );
+
+
+        const roleSelected =
+            document.getElementById(
+                "stkBeautyRoleSelected"
+            );
+
+
+        const roleOptions =
+            document.querySelectorAll(
+                ".stk-beauty-role-option"
+            );
+
+
+        const popup =
+            document.getElementById(
+                "stkBeautyPopup"
+            );
+
+
+        const generalError =
+            document.getElementById(
+                "stkBeautyGeneralError"
+            );
+
+
+        /* =============================================
+           ERROR ELEMENTS
+        ============================================= */
+
+        const nameError =
+            document.getElementById(
+                "stkBeautyNameError"
+            );
+
+
+        const emailError =
+            document.getElementById(
+                "stkBeautyEmailError"
+            );
+
+
+        const passwordError =
+            document.getElementById(
+                "stkBeautyPasswordError"
+            );
+
+
+        const confirmPasswordError =
+            document.getElementById(
+                "stkBeautyConfirmPasswordError"
+            );
+
+
+        const roleError =
+            document.getElementById(
+                "stkBeautyRoleError"
+            );
+
+
+        const termsError =
+            document.getElementById(
+                "stkBeautyTermsError"
+            );
+
+
+        /* =============================================
+           ROLE DROPDOWN OPEN / CLOSE
+        ============================================= */
+
+        roleButton.addEventListener(
+            "click",
+            function () {
+
+                const isOpen =
+                    roleDropdown.classList.toggle(
+                        "stk-beauty-role-open"
+                    );
+
+
+                roleButton.classList.toggle(
+                    "stk-beauty-role-active",
+                    isOpen
+                );
+
+
+                roleButton.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           SELECT ROLE
+        ============================================= */
+
+        roleOptions.forEach(
+            function (option) {
+
+                option.addEventListener(
+                    "click",
+                    function () {
+
+
+                        const value =
+                            option.dataset.value;
+
+
+                        const text =
+                            option.querySelector(
+                                "span"
+                            ).textContent.trim();
+
+
+                        roleInput.value =
+                            value;
+
+
+                        roleSelected.textContent =
+                            text;
+
+
+                        roleOptions.forEach(
+                            function (item) {
+
+                                item.classList.remove(
+                                    "stk-beauty-role-selected-option"
+                                );
+
+                            }
+                        );
+
+
+                        option.classList.add(
+                            "stk-beauty-role-selected-option"
+                        );
+
+
+                        roleDropdown.classList.remove(
+                            "stk-beauty-role-open"
+                        );
+
+
+                        roleButton.classList.remove(
+                            "stk-beauty-role-active"
+                        );
+
+
+                        roleButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+
+                        roleError.textContent =
+                            "";
+
+
+                        roleButton.classList.remove(
+                            "stk-beauty-invalid"
+                        );
+
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           CLOSE DROPDOWN OUTSIDE
+        ============================================= */
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    !roleDropdown.contains(
+                        event.target
+                    )
+                ) {
+
+                    roleDropdown.classList.remove(
+                        "stk-beauty-role-open"
+                    );
+
+
+                    roleButton.classList.remove(
+                        "stk-beauty-role-active"
+                    );
+
+
+                    roleButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* =============================================
+           PASSWORD SHOW / HIDE
+        ============================================= */
+
+        const passwordButtons =
+            document.querySelectorAll(
+                ".stk-beauty-password-toggle"
+            );
+
+
+        passwordButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+
+                        const target =
+                            document.getElementById(
+                                button.dataset.target
+                            );
+
+
+                        const icon =
+                            button.querySelector("i");
+
+
+                        if (
+                            target.type === "password"
+                        ) {
+
+                            target.type = "text";
+
+                            icon.classList.remove(
+                                "fa-eye"
+                            );
+
+                            icon.classList.add(
+                                "fa-eye-slash"
+                            );
+
+                        } else {
+
+                            target.type =
+                                "password";
+
+
+                            icon.classList.remove(
+                                "fa-eye-slash"
+                            );
+
+                            icon.classList.add(
+                                "fa-eye"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           EMAIL VALIDATION
+        ============================================= */
+
+        function isValidEmail(email) {
+
+            const pattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            return pattern.test(email);
+
+        }
+
+
+        /* =============================================
+           CLEAR ERRORS
+        ============================================= */
+
+        function clearErrors() {
+
+            nameError.textContent = "";
+
+            emailError.textContent = "";
+
+            passwordError.textContent = "";
+
+            confirmPasswordError.textContent = "";
+
+            roleError.textContent = "";
+
+            termsError.textContent = "";
+
+
+            generalError.classList.remove(
+                "stk-beauty-show-error"
+            );
+
+
+            document
+                .querySelectorAll(
+                    ".stk-beauty-invalid"
+                )
+                .forEach(
+                    function (element) {
+
+                        element.classList.remove(
+                            "stk-beauty-invalid"
+                        );
+
+                    }
+                );
+
+        }
+
+
+        /* =============================================
+           FORM SUBMIT
+        ============================================= */
+
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                clearErrors();
+
+
+                let isValid = true;
+
+
+                /* NAME */
+
+                if (
+                    nameInput.value.trim().length < 2
+                ) {
+
+                    nameError.textContent =
+                        "Please enter your full name.";
+
+                    nameInput
+                        .closest(
+                            ".stk-beauty-input-wrap"
+                        )
+                        .querySelector("input")
+                        .classList.add(
+                            "stk-beauty-invalid"
+                        );
+
+
+                    isValid = false;
+
+                }
+
+
+                /* EMAIL */
+
+                if (
+                    !isValidEmail(
+                        emailInput.value.trim()
+                    )
+                ) {
+
+                    emailError.textContent =
+                        "Please enter a valid email address.";
+
+                    emailInput.classList.add(
+                        "stk-beauty-invalid"
+                    );
+
+
+                    isValid = false;
+
+                }
+
+
+                /* PASSWORD */
+
+                if (
+                    passwordInput.value.length < 6
+                ) {
+
+                    passwordError.textContent =
+                        "Password must contain at least 6 characters.";
+
+                    passwordInput.classList.add(
+                        "stk-beauty-invalid"
+                    );
+
+
+                    isValid = false;
+
+                }
+
+
+                /* CONFIRM PASSWORD */
+
+                if (
+                    confirmPasswordInput.value !==
+                    passwordInput.value ||
+
+                    confirmPasswordInput.value === ""
+                ) {
+
+                    confirmPasswordError.textContent =
+                        "Passwords do not match.";
+
+                    confirmPasswordInput.classList.add(
+                        "stk-beauty-invalid"
+                    );
+
+
+                    isValid = false;
+
+                }
+
+
+                /* ROLE */
+
+                if (
+                    roleInput.value === ""
+                ) {
+
+                    roleError.textContent =
+                        "Please select your role.";
+
+                    roleButton.classList.add(
+                        "stk-beauty-invalid"
+                    );
+
+
+                    isValid = false;
+
+                }
+
+
+                /* TERMS */
+
+                if (
+                    !termsInput.checked
+                ) {
+
+                    termsError.textContent =
+                        "Please accept the terms and conditions.";
+
+                    isValid = false;
+
+                }
+
+
+                /* INVALID */
+
+                if (!isValid) {
+
+                    generalError.classList.add(
+                        "stk-beauty-show-error"
+                    );
+
+                    return;
+
+                }
+
+
+                /* =====================================
+                   SAVE DETAILS
+                ====================================== */
+
+                localStorage.setItem(
+                    "userName",
+                    nameInput.value.trim()
+                );
+
+
+                localStorage.setItem(
+                    "userEmail",
+                    emailInput.value.trim()
+                );
+
+
+                localStorage.setItem(
+                    "userRole",
+                    roleInput.value
+                );
+
+
+                /* =====================================
+                   SHOW SUCCESS POPUP
+                ====================================== */
+
+                popup.classList.add(
+                    "stk-beauty-popup-show"
+                );
+
+
+                document.body.style.overflow =
+                    "hidden";
+
+
+                /* =====================================
+                   REDIRECT TO LOGIN
+                ====================================== */
+
+                setTimeout(
+                    function () {
+
+                        window.location.href =
+                            "login.html";
+
+                    },
+                    2200
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           SOCIAL BUTTON REDIRECT
+        ============================================= */
+
+        const socialButtons =
+            document.querySelectorAll(
+                "[data-redirect]"
+            );
+
+
+        socialButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        window.location.href =
+                            button.dataset.redirect;
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           ESC KEY
+        ============================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    roleDropdown.classList.remove(
+                        "stk-beauty-role-open"
+                    );
+
+
+                    roleButton.classList.remove(
+                        "stk-beauty-role-active"
+                    );
+
+                }
+
+            }
+        );
+
+
+    }
+);
+</script>
+</body>
+
+</html>
