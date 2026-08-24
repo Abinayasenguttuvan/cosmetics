@@ -1,0 +1,4636 @@
+<!-- =========================================
+     STACKLY DASHBOARD WRAPPER
+========================================= -->
+
+<div class="stkcos-dashboard">
+
+
+    <!-- =====================================
+         MOBILE OVERLAY
+    ====================================== -->
+
+    <div
+        class="stkcos-sidebar-overlay"
+        id="stkcosSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside
+        class="stkcos-sidebar"
+        id="stkcosSidebar"
+    >
+
+
+        <!-- LOGO -->
+
+        <div class="stkcos-sidebar-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="./white.webp"
+                    alt="Stackly Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- MENU -->
+
+        <nav class="stkcos-sidebar-menu">
+
+
+            <a
+                href="dashboard.html"
+                class="stkcos-menu-link "
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Dashboard
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="profile.html"
+                class="stkcos-menu-link stkcos-active"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    My Profile
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="orders.html"
+                class="stkcos-menu-link"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Orders
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="products.html"
+                class="stkcos-menu-link"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-pump-soap"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Beauty Products
+
+                </span>
+
+            </a>
+
+
+
+            
+
+        </nav>
+
+
+
+        <!-- LOGOUT -->
+
+        <div class="stkcos-sidebar-bottom">
+
+
+            <button
+                type="button"
+                class="stkcos-logout-btn"
+                id="stkcosLogoutBtn"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                </span>
+
+                <span>
+
+                    Logout
+
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+    <div class="stkcos-main-area">
+
+
+        <!-- =================================
+             TOP BAR
+        ================================== -->
+
+        <header class="stkcos-topbar">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="stkcos-topbar-left">
+
+
+                <!-- HAMBURGER -->
+
+                <button
+                    type="button"
+                    class="stkcos-hamburger"
+                    id="stkcosHamburger"
+                    aria-label="Open Menu"
+                >
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+
+
+                <div class="stkcos-page-title">
+
+                    <h2>
+                        Dashboard
+                    </h2>
+
+                    <p>
+                        Welcome back to your beauty space
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="stkcos-user-area">
+
+
+                <!-- USER ICON -->
+
+                <div class="stkcos-user-avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+
+
+                <!-- USER DETAILS -->
+
+                <div class="stkcos-user-details">
+
+
+                    <h4
+                        id="stkcosUserName"
+                    >
+
+                        User Name
+
+                    </h4>
+
+
+                    <span
+                        id="stkcosUserRole"
+                        class="stkcos-user-role"
+                    >
+
+                        Customer
+
+                    </span>
+
+
+                    <p
+                        id="stkcosUserEmail"
+                    >
+
+                        user@email.com
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+        <main class="stkcos-page-content">
+
+
+            <section class="stkcos-welcome-card">
+
+
+                <div class="stkcos-welcome-content">
+
+
+                    <span class="stkcos-welcome-tag">
+
+                        <i class="fa-solid fa-sparkles"></i>
+
+                        BEAUTY DASHBOARD
+
+                    </span>
+
+
+                    <h1>
+
+                        Welcome,
+
+                        <span
+                            id="stkcosWelcomeName"
+                        >
+                            User
+                        </span>
+
+                        ✨
+
+                    </h1>
+
+
+                    <p>
+
+                        Manage your beauty products,
+                        orders and profile from one place.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="stkcos-welcome-icon">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================================================
+     STACKLY COSMETICS ADMIN PROFILE DASHBOARD
+     CONTENT ONLY
+     NO SIDEBAR / NO TOPBAR
+========================================================= -->
+
+<section class="stk-cos-profile-page">
+
+    <!-- =====================================================
+         PROFILE HERO
+    ====================================================== -->
+
+    <div class="stk-cos-profile-hero">
+
+        <div class="stk-cos-profile-cover"></div>
+
+        <div class="stk-cos-profile-main">
+
+            <div class="stk-cos-profile-avatar-wrap">
+
+                <img
+                    src="https://i.pravatar.cc/300?img=47"
+                    alt="Admin Profile"
+                    class="stk-cos-profile-avatar"
+                >
+
+                <span class="stk-cos-profile-online"></span>
+
+            </div>
+
+
+            <div class="stk-cos-profile-heading">
+
+                <span class="stk-cos-profile-role">
+                    <i class="fa-solid fa-crown"></i>
+                    SUPER ADMIN
+                </span>
+
+                <h1>Abinaya S</h1>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    admin@stacklycosmetics.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Chennai, Tamil Nadu
+                </p>
+
+            </div>
+
+
+            <!-- <div class="stk-cos-profile-actions">
+                <a href="./404.html">
+
+                <button
+                    type="button"
+                    class="stk-cos-profile-btn stk-cos-profile-primary"
+                    id="stkCosEditProfileBtn"
+                >
+                    <i class="fa-solid fa-pen"></i>
+                    Edit 
+                </button>
+       
+                <button
+                    type="button"
+                    class="stk-cos-profile-btn stk-cos-profile-secondary"
+                    id="stkCosShareProfileBtn"
+                >
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share
+                </button>
+            </a>
+
+            </div>
+
+        </div> -->
+
+    </div>
+
+
+    <!-- =====================================================
+         PROFILE STATS
+    ====================================================== -->
+
+    <div class="stk-cos-profile-stats">
+
+        <div class="stk-cos-profile-stat">
+
+            <div class="stk-cos-profile-stat-icon pink">
+                <i class="fa-solid fa-box"></i>
+            </div>
+
+            <div>
+
+                <span>Total Products</span>
+
+                <strong>486</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stk-cos-profile-stat">
+
+            <div class="stk-cos-profile-stat-icon purple">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+            <div>
+
+                <span>Total Orders</span>
+
+                <strong>2,845</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stk-cos-profile-stat">
+
+            <div class="stk-cos-profile-stat-icon gold">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+
+                <span>Customers</span>
+
+                <strong>18,450</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stk-cos-profile-stat">
+
+            <div class="stk-cos-profile-stat-icon green">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+
+            <div>
+
+                <span>Total Revenue</span>
+
+                <strong>₹8.45L</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN PROFILE GRID
+    ====================================================== -->
+
+    <div class="stk-cos-profile-grid">
+
+
+        <!-- =================================================
+             LEFT COLUMN
+        ================================================== -->
+
+        <div class="stk-cos-profile-left">
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            PROFILE
+                        </span>
+
+                        <h2>Personal Information</h2>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="stk-cos-profile-icon-btn"
+                        title="Edit Personal Information"
+                    >
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="stk-cos-info-grid">
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Full Name
+                        </span>
+
+                        <strong>Abinaya S</strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-user-tie"></i>
+                            Role
+                        </span>
+
+                        <strong>Super Admin</strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email Address
+                        </span>
+
+                        <strong>
+                            admin@stacklycosmetics.com
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            Phone Number
+                        </span>
+
+                        <strong>
+                            +91 98765 43210
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            Date of Birth
+                        </span>
+
+                        <strong>
+                            15 August 1997
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-info-item">
+
+                        <span>
+                            <i class="fa-solid fa-venus"></i>
+                            Gender
+                        </span>
+
+                        <strong>
+                            Female
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            CONTACT
+                        </span>
+
+                        <h2>Contact Information</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stk-cos-contact-list">
+
+
+                    <div class="stk-cos-contact-item">
+
+                        <div class="stk-cos-contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Email</span>
+
+                            <strong>
+                                admin@stacklycosmetics.com
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stk-cos-contact-item">
+
+                        <div class="stk-cos-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Phone</span>
+
+                            <strong>
+                                +91 98765 43210
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stk-cos-contact-item">
+
+                        <div class="stk-cos-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Address</span>
+
+                            <strong>
+                                Chennai, Tamil Nadu, India
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- STORE INFORMATION -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            BUSINESS
+                        </span>
+
+                        <h2>Cosmetics Store Information</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stk-cos-store-info">
+
+
+                    <div class="stk-cos-store-row">
+
+                        <span>
+                            <i class="fa-solid fa-store"></i>
+                            Store Name
+                        </span>
+
+                        <strong>
+                            Stackly Cosmetics
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-store-row">
+
+                        <span>
+                            <i class="fa-solid fa-tag"></i>
+                            Business Category
+                        </span>
+
+                        <strong>
+                            Beauty & Cosmetics
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-store-row">
+
+                        <span>
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Joined Date
+                        </span>
+
+                        <strong>
+                            January 12, 2024
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stk-cos-store-row">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Account Status
+                        </span>
+
+                        <strong class="stk-cos-active">
+                            Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT COLUMN
+        ================================================== -->
+
+        <div class="stk-cos-profile-right">
+
+
+            <!-- ACCOUNT SECURITY -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            SECURITY
+                        </span>
+
+                        <h2>Account Security</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stk-cos-security-list">
+
+
+                    <div class="stk-cos-security-item">
+
+                        <div class="stk-cos-security-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                        <div class="stk-cos-security-content">
+
+                            <strong>Password</strong>
+
+                            <span>
+                                Last changed 30 days ago
+                            </span>
+
+                        </div>
+
+                        <button
+    type="button"
+    class="stk-cos-equal-btn"
+    onclick="window.location.href='404.html';"
+>
+    Change
+</button>
+
+                    </div>
+
+
+                    <div class="stk-cos-security-item">
+
+                        <div class="stk-cos-security-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div class="stk-cos-security-content">
+
+                            <strong>
+                                Two-Factor 
+                            </strong>
+
+                            <span>
+                                Extra account protection
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stk-cos-equal-btn"
+                            onclick="window.location.href='404.html';"
+                        >
+                            Enable
+                        </button>
+
+                    </div>
+
+
+                    <div class="stk-cos-security-item">
+
+                        <div class="stk-cos-security-icon">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+
+                        <div class="stk-cos-security-content">
+
+                            <strong>Login Sessions</strong>
+
+                            <span>
+                                2 active sessions
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stk-cos-equal-btn"
+                            onclick="window.location.href='404.html';"
+                        >
+                            Manage
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT ACTIVITY -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            ACTIVITY
+                        </span>
+
+                        <h2>Recent Activity</h2>
+
+                    </div>
+
+                    <a
+                        href="./404.html"
+                        class="stk-cos-equal-link"
+                    >
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="stk-cos-activity-list">
+
+
+                    <div class="stk-cos-activity-item">
+
+                        <div class="stk-cos-activity-icon pink">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Added new product
+                            </strong>
+
+                            <span>
+                                Vitamin C Glow Serum
+                            </span>
+
+                            <small>
+                                10 minutes ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stk-cos-activity-item">
+
+                        <div class="stk-cos-activity-icon purple">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Updated product
+                            </strong>
+
+                            <span>
+                                Matte Lipstick Collection
+                            </span>
+
+                            <small>
+                                1 hour ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stk-cos-activity-item">
+
+                        <div class="stk-cos-activity-icon gold">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Order processed
+                            </strong>
+
+                            <span>
+                                Order #COS-1045
+                            </span>
+
+                            <small>
+                                2 hours ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stk-cos-activity-item">
+
+                        <div class="stk-cos-activity-icon green">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                New customer registered
+                            </strong>
+
+                            <span>
+                                Priya Sharma
+                            </span>
+
+                            <small>
+                                3 hours ago
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL / LINKS -->
+
+            <div class="stk-cos-profile-card">
+
+                <div class="stk-cos-profile-card-heading">
+
+                    <div>
+
+                        <span class="stk-cos-profile-label">
+                            CONNECT
+                        </span>
+
+                        <h2>Social Profiles</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stk-cos-social-list">
+
+                    <a href="./404.html" class="stk-cos-social-btn">
+
+                        <span>
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+
+                        <strong>Instagram</strong>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="./404.html" class="stk-cos-social-btn">
+
+                        <span>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+
+                        <strong>Facebook</strong>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="./404.html" class="stk-cos-social-btn">
+
+                        <span>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </span>
+
+                        <strong>Twitter / X</strong>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDIT PROFILE MODAL
+========================================================= -->
+
+<div
+    class="stk-cos-profile-modal"
+    id="stkCosProfileModal"
+>
+
+    <div class="stk-cos-profile-modal-box">
+
+        <button
+            type="button"
+            class="stk-cos-profile-modal-close"
+            id="stkCosProfileModalClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="stk-cos-profile-modal-heading">
+
+            <span class="stk-cos-profile-label">
+                PROFILE SETTINGS
+            </span>
+
+            <h2>Edit Profile</h2>
+
+            <p>
+                Update your administrator profile details.
+            </p>
+
+        </div>
+
+
+        <form id="stkCosProfileForm">
+
+            <div class="stk-cos-form-grid">
+
+                <div class="stk-cos-form-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        value="Abinaya S"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="stk-cos-form-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        value="admin@stacklycosmetics.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="stk-cos-form-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        value="+91 98765 43210"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="stk-cos-form-group">
+
+                    <label>Role</label>
+
+                    <input
+                        type="text"
+                        value="Super Admin"
+                        readonly
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="stk-cos-modal-actions">
+
+                <button
+                    type="button"
+                    class="stk-cos-equal-btn"
+                    id="stkCosCancelProfile"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="stk-cos-equal-btn stk-cos-save-btn"
+                >
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- SUCCESS MESSAGE -->
+
+<div
+    class="stk-cos-profile-toast"
+    id="stkCosProfileToast"
+>
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span>
+        Profile updated successfully!
+    </span>
+</div>
+
+<style>
+    /* =========================================================
+   STACKLY COSMETICS PROFILE DASHBOARD
+   UNIQUE CLASSES - DOES NOT TARGET SIDEBAR/TOPBAR
+========================================================= */
+
+.stk-cos-profile-page {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    color: #222;
+
+    box-sizing: border-box;
+}
+
+.stk-cos-profile-page *,
+.stk-cos-profile-page *::before,
+.stk-cos-profile-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PROFILE HERO
+========================================================= */
+
+.stk-cos-profile-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* COVER */
+
+.stk-cos-profile-cover {
+    width: 100%;
+
+    height: 150px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #f8dce7,
+            #f6e8ef,
+            #eee1f6
+        );
+
+    position: relative;
+}
+
+.stk-cos-profile-cover::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: 5%;
+
+    top: -190px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.35);
+}
+
+.stk-cos-profile-cover::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: 30%;
+
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.28);
+}
+
+
+/* MAIN PROFILE */
+
+.stk-cos-profile-main {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 0 25px 25px;
+}
+
+
+/* AVATAR */
+
+.stk-cos-profile-avatar-wrap {
+    position: relative;
+
+    flex-shrink: 0;
+
+    margin-top: -55px;
+}
+
+.stk-cos-profile-avatar {
+    width: 125px;
+    height: 125px;
+
+    display: block;
+
+    object-fit: cover;
+
+    padding: 4px;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+}
+
+.stk-cos-profile-online {
+    position: absolute;
+
+    right: 8px;
+    bottom: 8px;
+
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid #fff;
+
+    border-radius: 50%;
+
+    background: #38b66e;
+}
+
+
+/* HEADING */
+
+.stk-cos-profile-heading {
+    flex: 1;
+
+    min-width: 0;
+
+    padding-top: 18px;
+}
+
+.stk-cos-profile-role {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 5px;
+
+    color: #d85a82;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.stk-cos-profile-heading h1 {
+    margin: 0 0 7px;
+
+    color: #222;
+
+    font-size: 30px;
+
+    line-height: 1.25;
+}
+
+.stk-cos-profile-heading p {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 0 15px 0 0;
+
+    color: #777;
+
+    font-size: 20px;
+}
+
+
+/* PROFILE ACTIONS */
+
+.stk-cos-profile-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   ALL PROFILE BUTTONS
+   EQUAL SHAPE / HEIGHT / WIDTH
+========================================================= */
+
+.stk-cos-profile-btn,
+.stk-cos-equal-btn,
+.stk-cos-equal-link {
+
+    width: 125px;
+    min-width: 125px;
+
+    height: 44px;
+    min-height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 10px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        0.3s ease;
+}
+
+
+/* PRIMARY */
+
+.stk-cos-profile-primary {
+    border: 1px solid #d85a82;
+
+    background: #d85a82;
+
+    color: #fff;
+}
+
+.stk-cos-profile-primary:hover {
+    background: #bd486d;
+
+    transform: translateY(-2px);
+}
+
+
+/* SECONDARY */
+
+.stk-cos-profile-secondary {
+    border: 1px solid #d85a82;
+
+    background: #fff;
+
+    color: #d85a82;
+}
+
+.stk-cos-profile-secondary:hover {
+    background: #d85a82;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PROFILE STATS
+========================================================= */
+
+.stk-cos-profile-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 17px;
+
+    margin-bottom: 22px;
+}
+
+.stk-cos-profile-stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+
+    min-height: 105px;
+
+    padding: 18px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.04);
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-profile-stat:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.07);
+}
+
+
+/* STAT ICON */
+
+.stk-cos-profile-stat-icon {
+    width: 52px;
+    height: 52px;
+
+    min-width: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 20px;
+}
+
+.stk-cos-profile-stat-icon.pink {
+    background: #fdebf2;
+    color: #d85a82;
+}
+
+.stk-cos-profile-stat-icon.purple {
+    background: #f1eafb;
+    color: #8b5bb7;
+}
+
+.stk-cos-profile-stat-icon.gold {
+    background: #fff5dc;
+    color: #c28b21;
+}
+
+.stk-cos-profile-stat-icon.green {
+    background: #e8f7ef;
+    color: #36a269;
+}
+
+.stk-cos-profile-stat div:last-child {
+    min-width: 0;
+}
+
+.stk-cos-profile-stat span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #888;
+
+    font-size: 19px;
+}
+
+.stk-cos-profile-stat strong {
+    display: block;
+
+    color: #222;
+
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.stk-cos-profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.45fr)
+        minmax(320px, 0.85fr);
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+.stk-cos-profile-left,
+.stk-cos-profile-right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.stk-cos-profile-card {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 23px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.045);
+}
+
+
+/* CARD HEADING */
+
+.stk-cos-profile-card-heading {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 21px;
+}
+
+.stk-cos-profile-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d85a82;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.stk-cos-profile-card-heading h2 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 23px;
+
+    line-height: 1.35;
+}
+
+
+/* SMALL ICON BUTTON */
+
+.stk-cos-profile-icon-btn {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #d85a82;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-profile-icon-btn:hover {
+    background: #d85a82;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.stk-cos-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+}
+
+.stk-cos-info-item {
+    min-width: 0;
+
+    padding: 15px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+
+    background: #fffafa;
+}
+
+.stk-cos-info-item span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 7px;
+
+    color: #888;
+
+    font-size: 18px;
+}
+
+.stk-cos-info-item span i {
+    color: #d85a82;
+}
+
+.stk-cos-info-item strong {
+    display: block;
+
+    overflow-wrap: anywhere;
+
+    color: #333;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.stk-cos-contact-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.stk-cos-contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 13px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+}
+
+.stk-cos-contact-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #fdebf2;
+
+    color: #d85a82;
+
+    font-size: 18px;
+}
+
+.stk-cos-contact-item div:last-child {
+    min-width: 0;
+}
+
+.stk-cos-contact-item span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #888;
+
+    font-size: 18px;
+}
+
+.stk-cos-contact-item strong {
+    display: block;
+
+    overflow-wrap: anywhere;
+
+    color: #333;
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   STORE INFORMATION
+========================================================= */
+
+.stk-cos-store-info {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.stk-cos-store-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.stk-cos-store-row:first-child {
+    padding-top: 0;
+}
+
+.stk-cos-store-row:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+.stk-cos-store-row span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #777;
+
+    font-size: 20px;
+}
+
+.stk-cos-store-row span i {
+    width: 20px;
+
+    color: #d85a82;
+
+    text-align: center;
+}
+
+.stk-cos-store-row strong {
+    color: #333;
+
+    font-size: 20px;
+
+    text-align: right;
+}
+
+.stk-cos-active {
+    color: #36a269 !important;
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.stk-cos-security-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.stk-cos-security-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 13px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+}
+
+.stk-cos-security-icon {
+    width: 44px;
+    height: 44px;
+
+    min-width: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #fdebf2;
+
+    color: #d85a82;
+
+    font-size: 18px;
+}
+
+.stk-cos-security-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.stk-cos-security-content strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #333;
+
+    font-size: 19px;
+}
+
+.stk-cos-security-content span {
+    display: block;
+
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   EQUAL SECURITY BUTTON
+========================================================= */
+
+.stk-cos-equal-btn {
+    flex-shrink: 0;
+
+    border: 1px solid #d85a82;
+
+    background: #fff;
+
+    color: #d85a82;
+}
+
+.stk-cos-equal-btn:hover {
+    background: #d85a82;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.stk-cos-save-btn {
+    background: #d85a82;
+
+    color: #fff;
+}
+
+.stk-cos-save-btn:hover {
+    background: #bd486d;
+}
+
+
+/* =========================================================
+   ACTIVITY
+========================================================= */
+
+.stk-cos-activity-list {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.stk-cos-activity-item {
+    display: flex;
+
+    gap: 11px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.stk-cos-activity-item:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.stk-cos-activity-icon {
+    width: 43px;
+    height: 43px;
+
+    min-width: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+}
+
+.stk-cos-activity-icon.pink {
+    background: #fdebf2;
+    color: #d85a82;
+}
+
+.stk-cos-activity-icon.purple {
+    background: #f1eafb;
+    color: #8b5bb7;
+}
+
+.stk-cos-activity-icon.gold {
+    background: #fff5dc;
+    color: #c28b21;
+}
+
+.stk-cos-activity-icon.green {
+    background: #e8f7ef;
+    color: #36a269;
+}
+
+.stk-cos-activity-item > div:last-child {
+    min-width: 0;
+}
+
+.stk-cos-activity-item strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #333;
+
+    font-size: 19px;
+}
+
+.stk-cos-activity-item span {
+    display: block;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+.stk-cos-activity-item small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #aaa;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   EQUAL VIEW ALL LINK
+========================================================= */
+
+.stk-cos-equal-link {
+    border: 1px solid #d85a82;
+
+    background: #fff;
+
+    color: #d85a82;
+}
+
+.stk-cos-equal-link:hover {
+    background: #d85a82;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.stk-cos-social-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.stk-cos-social-btn {
+    width: 100%;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 12px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 9px;
+
+    background: #fff;
+
+    color: #333;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-social-btn:hover {
+    border-color: #d85a82;
+
+    transform: translateX(3px);
+}
+
+.stk-cos-social-btn span {
+    width: 34px;
+    height: 34px;
+
+    min-width: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #fdebf2;
+
+    color: #d85a82;
+}
+
+.stk-cos-social-btn strong {
+    flex: 1;
+
+    font-size: 20px;
+}
+
+.stk-cos-social-btn > i {
+    color: #aaa;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.stk-cos-profile-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(0,0,0,0.65);
+}
+
+.stk-cos-profile-modal.active {
+    display: flex;
+}
+
+.stk-cos-profile-modal-box {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.2);
+}
+
+.stk-cos-profile-modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #777;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+.stk-cos-profile-modal-close:hover {
+    background: #d85a82;
+
+    color: #fff;
+}
+
+.stk-cos-profile-modal-heading {
+    margin-bottom: 25px;
+
+    padding-right: 45px;
+}
+
+.stk-cos-profile-modal-heading h2 {
+    margin: 0 0 6px;
+
+    font-size: 26px;
+}
+
+.stk-cos-profile-modal-heading p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 19px;
+}
+
+
+/* FORM */
+
+.stk-cos-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+}
+
+.stk-cos-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.stk-cos-form-group label {
+    color: #555;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+.stk-cos-form-group input {
+    width: 100%;
+
+    height: 47px;
+
+    padding: 0 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #333;
+
+    background: #fff;
+
+    font-family: inherit;
+
+    font-size: 19px;
+}
+
+.stk-cos-form-group input:focus {
+    border-color: #d85a82;
+
+    box-shadow:
+        0 0 0 3px rgba(216,90,130,0.1);
+}
+
+.stk-cos-modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.stk-cos-profile-toast {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 100000;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 350px;
+
+    max-width: calc(100% - 30px);
+
+    min-height: 55px;
+
+    padding: 12px 17px;
+
+    border-radius: 10px;
+
+    background: #222;
+
+    color: #fff;
+
+    font-size: 19px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.2);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-profile-toast.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.stk-cos-profile-toast i {
+    color: #51d58a;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+    .stk-cos-profile-page {
+        padding: 25px;
+    }
+
+    .stk-cos-profile-stats {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .stk-cos-profile-grid {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .stk-cos-profile-page {
+        padding: 20px;
+    }
+
+    .stk-cos-profile-main {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+
+        padding: 0 20px 20px;
+    }
+
+    .stk-cos-profile-heading {
+        padding-top: 15px;
+    }
+
+    .stk-cos-profile-actions {
+        width: 100%;
+
+        padding-top: 0;
+    }
+
+    .stk-cos-profile-btn {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stk-cos-profile-page {
+        width: 100%;
+
+        padding: 14px;
+
+        font-size: 20px;
+    }
+
+
+    /* HERO */
+
+    .stk-cos-profile-cover {
+        height: 115px;
+    }
+
+    .stk-cos-profile-main {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 0 15px 20px;
+    }
+
+    .stk-cos-profile-avatar-wrap {
+        margin-top: -55px;
+    }
+
+    .stk-cos-profile-avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .stk-cos-profile-heading {
+        width: 100%;
+
+        padding-top: 5px;
+    }
+
+    .stk-cos-profile-role {
+        font-size: 17px;
+    }
+
+    .stk-cos-profile-heading h1 {
+        font-size: 27px;
+    }
+
+    .stk-cos-profile-heading p {
+        display: flex;
+
+        justify-content: center;
+
+        margin: 5px 0;
+
+        font-size: 20px;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ACTIONS */
+
+    .stk-cos-profile-actions {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        padding-top: 5px;
+    }
+
+    .stk-cos-profile-btn {
+        width: 125px;
+        min-width: 125px;
+
+        height: 44px;
+
+        font-size: 20px;
+    }
+
+
+    /* STATS */
+
+    .stk-cos-profile-stats {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .stk-cos-profile-stat {
+        min-height: 95px;
+    }
+
+
+    /* MAIN */
+
+    .stk-cos-profile-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .stk-cos-profile-left,
+    .stk-cos-profile-right {
+        gap: 15px;
+    }
+
+
+    /* CARD */
+
+    .stk-cos-profile-card {
+        padding: 18px;
+    }
+
+
+    /* INFO */
+
+    .stk-cos-info-grid {
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+    }
+
+
+    /* STORE */
+
+    .stk-cos-store-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .stk-cos-store-row strong {
+        text-align: left;
+    }
+
+
+    /* SECURITY */
+
+    .stk-cos-security-item {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .stk-cos-security-content {
+        padding-top: 2px;
+    }
+
+    .stk-cos-security-item .stk-cos-equal-btn {
+        width: 125px;
+
+        margin-left: 55px;
+    }
+
+
+    /* MODAL */
+
+    .stk-cos-profile-modal {
+        padding: 12px;
+    }
+
+    .stk-cos-profile-modal-box {
+        padding: 22px 17px;
+    }
+
+    .stk-cos-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stk-cos-modal-actions {
+        justify-content: center;
+    }
+
+    .stk-cos-modal-actions .stk-cos-equal-btn {
+        width: 125px;
+    }
+
+
+    /* TOAST */
+
+    .stk-cos-profile-toast {
+        right: 15px;
+        bottom: 15px;
+
+        width: calc(100% - 30px);
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .stk-cos-profile-page {
+        padding: 10px;
+    }
+
+    .stk-cos-profile-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .stk-cos-profile-card {
+        padding: 15px;
+    }
+
+    .stk-cos-profile-actions {
+        flex-direction: column;
+    }
+
+    .stk-cos-profile-btn {
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .stk-cos-security-item .stk-cos-equal-btn {
+        margin-left: 55px;
+    }
+
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        const editBtn =
+            document.getElementById("stkCosEditProfileBtn");
+    
+        const modal =
+            document.getElementById("stkCosProfileModal");
+    
+        const closeBtn =
+            document.getElementById("stkCosProfileModalClose");
+    
+        const cancelBtn =
+            document.getElementById("stkCosCancelProfile");
+    
+        const form =
+            document.getElementById("stkCosProfileForm");
+    
+        const toast =
+            document.getElementById("stkCosProfileToast");
+    
+        const shareBtn =
+            document.getElementById("stkCosShareProfileBtn");
+    
+    
+        /* ==========================================
+           OPEN MODAL
+        ========================================== */
+    
+        if (editBtn && modal) {
+    
+            editBtn.addEventListener("click", function () {
+    
+                modal.classList.add("active");
+    
+                document.body.style.overflow = "hidden";
+    
+            });
+    
+        }
+    
+    
+        /* ==========================================
+           CLOSE MODAL
+        ========================================== */
+    
+        function closeProfileModal() {
+    
+            if (modal) {
+    
+                modal.classList.remove("active");
+    
+                document.body.style.overflow = "";
+    
+            }
+    
+        }
+    
+    
+        if (closeBtn) {
+    
+            closeBtn.addEventListener(
+                "click",
+                closeProfileModal
+            );
+    
+        }
+    
+    
+        if (cancelBtn) {
+    
+            cancelBtn.addEventListener(
+                "click",
+                closeProfileModal
+            );
+    
+        }
+    
+    
+        /* ==========================================
+           CLICK OUTSIDE MODAL
+        ========================================== */
+    
+        if (modal) {
+    
+            modal.addEventListener("click", function (event) {
+    
+                if (event.target === modal) {
+    
+                    closeProfileModal();
+    
+                }
+    
+            });
+    
+        }
+    
+    
+        /* ==========================================
+           SAVE PROFILE
+        ========================================== */
+    
+        if (form) {
+    
+            form.addEventListener("submit", function (event) {
+    
+                event.preventDefault();
+    
+                closeProfileModal();
+    
+                if (toast) {
+    
+                    toast.classList.add("active");
+    
+                    setTimeout(function () {
+    
+                        toast.classList.remove("active");
+    
+                    }, 3000);
+    
+                }
+    
+            });
+    
+        }
+    
+    
+        /* ==========================================
+           SHARE PROFILE
+        ========================================== */
+    
+        if (shareBtn) {
+    
+            shareBtn.addEventListener("click", function () {
+    
+                const shareData = {
+    
+                    title: "Stackly Cosmetics Admin",
+    
+                    text:
+                        "Stackly Cosmetics Administrator Profile"
+    
+                };
+    
+    
+                if (
+                    navigator.share &&
+                    typeof navigator.share === "function"
+                ) {
+    
+                    navigator.share(shareData)
+                        .catch(function () {});
+    
+                } else {
+    
+                    if (toast) {
+    
+                        toast.querySelector("span").textContent =
+                            "Profile link copied successfully!";
+    
+                        toast.classList.add("active");
+    
+                        setTimeout(function () {
+    
+                            toast.classList.remove("active");
+    
+                        }, 3000);
+    
+                    }
+    
+                }
+    
+            });
+    
+        }
+    
+    });
+    </script>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================
+     LOGOUT POPUP
+========================================= -->
+
+<div
+    class="stkcos-popup-overlay"
+    id="stkcosPopupOverlay"
+>
+
+
+    <div class="stkcos-logout-popup">
+
+
+        <div class="stkcos-popup-icon">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+        </div>
+
+
+        <h3>
+
+            Ready to Leave?
+
+        </h3>
+
+
+        <p>
+
+            Are you sure you want to logout
+            from your account?
+
+        </p>
+
+
+        <div class="stkcos-popup-buttons">
+
+
+            <button
+                type="button"
+                class="stkcos-cancel-btn"
+                id="stkcosCancelLogout"
+            >
+
+                Cancel
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="stkcos-confirm-btn"
+                id="stkcosConfirmLogout"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Yes, Logout
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+<style>
+    /* =========================================================
+   STACKLY COSMETIC DASHBOARD
+   UPDATED FONT SIZE: 22PX
+   UNIQUE PREFIX: stkcos-
+========================================================= */
+
+:root {
+    --stkcos-primary: #c77b73;
+    --stkcos-primary-dark: #9d5c55;
+    --stkcos-primary-light: #f7e5e1;
+
+    --stkcos-dark: #3d2926;
+    --stkcos-text: #765f5b;
+
+    --stkcos-white: #ffffff;
+    --stkcos-bg: #fff8f6;
+
+    --stkcos-border: #ead5d0;
+
+    /* MAIN FONT SIZE */
+    --stkcos-font-size: 18px;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.stkcos-dashboard *,
+.stkcos-popup-overlay * {
+    box-sizing: border-box;
+}
+
+.stkcos-dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--stkcos-bg);
+    font-size: 20px;
+}
+
+.stkcos-dashboard button,
+.stkcos-dashboard a,
+.stkcos-dashboard input,
+.stkcos-dashboard select,
+.stkcos-dashboard textarea {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.stkcos-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100vh;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+        180deg,
+        #3d2926,
+        #5a3732
+    );
+
+    z-index: 1000;
+
+    overflow-y: auto;
+
+    transition: transform 0.35s ease;
+
+    box-shadow:
+        5px 0 25px
+        rgba(61, 41, 38, 0.12);
+}
+
+
+/* =========================================================
+   SIDEBAR LOGO
+========================================================= */
+
+.stkcos-sidebar-logo {
+    width: 100%;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+.stkcos-sidebar-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stkcos-sidebar-logo img {
+    width: 180px;
+    max-width: 100%;
+    height: 65px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SIDEBAR MENU
+========================================================= */
+
+.stkcos-sidebar-menu {
+    width: 100%;
+
+    padding: 25px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.stkcos-menu-link {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 12px 18px;
+
+    border-radius: 14px;
+
+    color:
+        rgba(255, 255, 255, 0.75);
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        all 0.3s ease;
+}
+
+.stkcos-menu-link:hover {
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    transform:
+        translateX(5px);
+}
+
+.stkcos-menu-link.stkcos-active {
+    background:
+        linear-gradient(
+            135deg,
+            var(--stkcos-primary),
+            var(--stkcos-primary-dark)
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 20px
+        rgba(199, 123, 115, 0.22);
+}
+
+
+/* =========================================================
+   MENU ICON
+========================================================= */
+
+.stkcos-menu-icon {
+    width: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR BOTTOM
+========================================================= */
+
+.stkcos-sidebar-bottom {
+    margin-top: auto;
+
+    padding: 22px 18px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.stkcos-logout-btn {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 12px 18px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-logout-btn:hover {
+    background: #d95c5c;
+    border-color: #d95c5c;
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.stkcos-main-area {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-left: 300px;
+
+    transition:
+        padding 0.35s ease;
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.stkcos-topbar {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 18px 35px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border-bottom:
+        1px solid
+        var(--stkcos-border);
+
+    backdrop-filter:
+        blur(15px);
+
+    z-index: 500;
+}
+
+
+/* =========================================================
+   TOPBAR LEFT
+========================================================= */
+
+.stkcos-topbar-left {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.stkcos-hamburger {
+    width: 55px;
+    height: 55px;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border:
+        1px solid
+        var(--stkcos-border);
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+.stkcos-hamburger span {
+    width: 25px;
+    height: 3px;
+
+    display: block;
+
+    border-radius: 10px;
+
+    background:
+        var(--stkcos-dark);
+
+    transition:
+        0.3s ease;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.stkcos-page-title h2 {
+    margin: 0;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+.stkcos-page-title p {
+    margin: 5px 0 0;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   USER AREA
+========================================================= */
+
+.stkcos-user-area {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   USER AVATAR
+========================================================= */
+
+.stkcos-user-avatar {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--stkcos-primary-light),
+            #ffffff
+        );
+
+    color:
+        var(--stkcos-primary-dark);
+
+    border:
+        1px solid
+        var(--stkcos-border);
+
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   USER DETAILS
+========================================================= */
+
+.stkcos-user-details {
+    min-width: 0;
+}
+
+.stkcos-user-details h4 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.stkcos-user-role {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 4px 12px;
+
+    border-radius: 20px;
+
+    background:
+        var(--stkcos-primary-light);
+
+    color:
+        var(--stkcos-primary-dark);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-transform: capitalize;
+}
+
+.stkcos-user-details p {
+    max-width: 300px;
+
+    margin: 5px 0 0;
+
+    overflow: hidden;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.stkcos-page-content {
+    width: 100%;
+
+    padding: 40px;
+}
+
+
+/* =========================================================
+   WELCOME CARD
+========================================================= */
+
+.stkcos-welcome-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 45px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            var(--stkcos-primary-light)
+        );
+
+    border:
+        1px solid
+        var(--stkcos-border);
+}
+
+.stkcos-welcome-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stkcos-welcome-tag {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    color:
+        var(--stkcos-primary-dark);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.stkcos-welcome-card h1 {
+    margin:
+        0 0 15px;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size:
+        clamp(
+            32px,
+            4vw,
+            48px
+        );
+
+    line-height: 1.3;
+}
+
+.stkcos-welcome-card h1 span {
+    color:
+        var(--stkcos-primary);
+}
+
+.stkcos-welcome-card p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+.stkcos-welcome-icon {
+    width: 170px;
+    height: 170px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(199, 123, 115, 0.13);
+
+    color:
+        var(--stkcos-primary);
+
+    font-size: 75px;
+}
+
+
+/* =========================================================
+   MOBILE SIDEBAR OVERLAY
+========================================================= */
+
+.stkcos-sidebar-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 900;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    background:
+        rgba(0, 0, 0, 0.45);
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-sidebar-overlay.stkcos-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LOGOUT POPUP OVERLAY
+========================================================= */
+
+.stkcos-popup-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    background:
+        rgba(35, 22, 20, 0.62);
+
+    backdrop-filter:
+        blur(5px);
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-popup-overlay.stkcos-popup-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LOGOUT POPUP
+========================================================= */
+
+.stkcos-logout-popup {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 45px 35px 35px;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    transform:
+        translateY(30px)
+        scale(0.95);
+
+    transition:
+        0.3s ease;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+}
+
+.stkcos-popup-show
+.stkcos-logout-popup {
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   POPUP ICON
+========================================================= */
+
+.stkcos-popup-icon {
+    width: 90px;
+    height: 90px;
+
+    margin:
+        0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #fff0f0;
+
+    color:
+        #d95c5c;
+
+    font-size: 35px;
+}
+
+.stkcos-logout-popup h3 {
+    margin:
+        0 0 12px;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 30px;
+}
+
+.stkcos-logout-popup p {
+    margin:
+        0 0 30px;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   POPUP BUTTONS
+========================================================= */
+
+.stkcos-popup-buttons {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.stkcos-cancel-btn,
+.stkcos-confirm-btn {
+    min-height: 60px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-cancel-btn {
+    background:
+        #f4ecea;
+
+    color:
+        var(--stkcos-dark);
+}
+
+.stkcos-confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background:
+        #d95c5c;
+
+    color:
+        #ffffff;
+}
+
+.stkcos-cancel-btn:hover,
+.stkcos-confirm-btn:hover {
+    transform:
+        translateY(-2px);
+}
+
+.stkcos-confirm-btn:hover {
+    background:
+        #bd4141;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .stkcos-sidebar {
+        width: 270px;
+    }
+
+    .stkcos-main-area {
+        padding-left: 270px;
+    }
+
+    .stkcos-topbar {
+        padding:
+            18px 25px;
+    }
+
+    .stkcos-page-content {
+        padding: 30px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .stkcos-sidebar {
+        width: 300px;
+
+        transform:
+            translateX(-100%);
+    }
+
+    .stkcos-sidebar.stkcos-sidebar-open {
+        transform:
+            translateX(0);
+    }
+
+    .stkcos-main-area {
+        padding-left: 0;
+    }
+
+    .stkcos-hamburger {
+        display: flex;
+    }
+
+    .stkcos-topbar {
+        padding:
+            15px 20px;
+    }
+
+    .stkcos-page-content {
+        padding: 25px 20px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn,
+    .stkcos-page-title p,
+    .stkcos-user-details h4,
+    .stkcos-welcome-tag,
+    .stkcos-welcome-card p,
+    .stkcos-logout-popup p,
+    .stkcos-cancel-btn,
+    .stkcos-confirm-btn {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   FONT SIZE REMAINS 22PX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stkcos-topbar {
+        min-height: auto;
+
+        gap: 12px;
+
+        padding:
+            12px 14px;
+    }
+
+    .stkcos-topbar-left {
+        gap: 10px;
+    }
+
+    .stkcos-hamburger {
+        width: 52px;
+        height: 52px;
+
+        flex-shrink: 0;
+    }
+
+    .stkcos-page-title p {
+        display: none;
+    }
+
+    .stkcos-page-title h2 {
+        font-size: 20px;
+    }
+
+    .stkcos-user-area {
+        gap: 8px;
+
+        max-width: 65%;
+    }
+
+    .stkcos-user-avatar {
+        width: 52px;
+        height: 52px;
+
+        font-size: 20px;
+    }
+
+    .stkcos-user-details h4 {
+        font-size: 20px;
+    }
+
+    .stkcos-user-details p {
+        max-width: 180px;
+
+        font-size: 16px;
+    }
+
+    .stkcos-user-role {
+        font-size: 16px;
+    }
+
+    .stkcos-page-content {
+        padding:
+            20px 14px;
+    }
+
+    .stkcos-welcome-card {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px 22px;
+    }
+
+    .stkcos-welcome-card h1 {
+        font-size: 32px;
+    }
+
+    .stkcos-welcome-card p,
+    .stkcos-welcome-tag {
+        font-size: 20px;
+    }
+
+    .stkcos-welcome-icon {
+        width: 110px;
+        height: 110px;
+
+        align-self: center;
+
+        font-size: 50px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn {
+        font-size: 20px;
+
+        min-height: 65px;
+    }
+
+    .stkcos-logout-popup {
+        padding:
+            35px 22px 25px;
+    }
+
+    .stkcos-logout-popup h3 {
+        font-size: 28px;
+    }
+
+    .stkcos-logout-popup p,
+    .stkcos-cancel-btn,
+    .stkcos-confirm-btn {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .stkcos-page-title {
+        display: none;
+    }
+
+    .stkcos-topbar {
+        justify-content:
+            space-between;
+    }
+
+    .stkcos-user-area {
+        max-width: 75%;
+    }
+
+    .stkcos-user-details h4 {
+        max-width: 180px;
+
+        font-size: 20px;
+    }
+
+    .stkcos-user-details p {
+        max-width: 170px;
+
+        font-size: 14px;
+    }
+
+    .stkcos-user-role {
+        font-size: 15px;
+    }
+
+    .stkcos-popup-buttons {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stkcos-sidebar {
+        width: 290px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn {
+        font-size: 20px;
+    }
+}
+</style>
+
+<script>
+    document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =============================================
+           GET LOCAL STORAGE DATA
+        ============================================= */
+
+        const userName =
+            localStorage.getItem(
+                "userName"
+            );
+
+
+        const userEmail =
+            localStorage.getItem(
+                "userEmail"
+            );
+
+
+        const userRole =
+            localStorage.getItem(
+                "userRole"
+            );
+
+
+        const isLoggedIn =
+            localStorage.getItem(
+                "isLoggedIn"
+            );
+
+
+        /* =============================================
+           OPTIONAL LOGIN CHECK
+        ============================================= */
+
+        if (
+            !isLoggedIn
+        ) {
+
+            window.location.href =
+                "login.html";
+
+            return;
+
+        }
+
+
+        /* =============================================
+           DISPLAY USER DETAILS
+        ============================================= */
+
+        const nameElement =
+            document.getElementById(
+                "stkcosUserName"
+            );
+
+
+        const emailElement =
+            document.getElementById(
+                "stkcosUserEmail"
+            );
+
+
+        const roleElement =
+            document.getElementById(
+                "stkcosUserRole"
+            );
+
+
+        const welcomeNameElement =
+            document.getElementById(
+                "stkcosWelcomeName"
+            );
+
+
+        if (
+            userName &&
+            nameElement
+        ) {
+
+            nameElement.textContent =
+                userName;
+
+        }
+
+
+        if (
+            userName &&
+            welcomeNameElement
+        ) {
+
+            welcomeNameElement.textContent =
+                userName;
+
+        }
+
+
+        if (
+            userEmail &&
+            emailElement
+        ) {
+
+            emailElement.textContent =
+                userEmail;
+
+        }
+
+
+        if (
+            userRole &&
+            roleElement
+        ) {
+
+            roleElement.textContent =
+                userRole;
+
+        }
+
+
+        /* =============================================
+           SIDEBAR ELEMENTS
+        ============================================= */
+
+        const sidebar =
+            document.getElementById(
+                "stkcosSidebar"
+            );
+
+
+        const hamburger =
+            document.getElementById(
+                "stkcosHamburger"
+            );
+
+
+        const sidebarOverlay =
+            document.getElementById(
+                "stkcosSidebarOverlay"
+            );
+
+
+        /* =============================================
+           OPEN SIDEBAR
+        ============================================= */
+
+        function openSidebar() {
+
+            sidebar.classList.add(
+                "stkcos-sidebar-open"
+            );
+
+
+            sidebarOverlay.classList.add(
+                "stkcos-show"
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE SIDEBAR
+        ============================================= */
+
+        function closeSidebar() {
+
+            sidebar.classList.remove(
+                "stkcos-sidebar-open"
+            );
+
+
+            sidebarOverlay.classList.remove(
+                "stkcos-show"
+            );
+
+        }
+
+
+        /* =============================================
+           HAMBURGER CLICK
+        ============================================= */
+
+        if (
+            hamburger
+        ) {
+
+            hamburger.addEventListener(
+                "click",
+                function () {
+
+
+                    if (
+                        sidebar.classList.contains(
+                            "stkcos-sidebar-open"
+                        )
+                    ) {
+
+                        closeSidebar();
+
+                    }
+
+                    else {
+
+                        openSidebar();
+
+                    }
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           OVERLAY CLICK
+        ============================================= */
+
+        if (
+            sidebarOverlay
+        ) {
+
+            sidebarOverlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE MENU ON MOBILE
+        ============================================= */
+
+        const menuLinks =
+            document.querySelectorAll(
+                ".stkcos-menu-link"
+            );
+
+
+        menuLinks.forEach(
+            function (link) {
+
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+
+                        if (
+                            window.innerWidth <=
+                            900
+                        ) {
+
+                            closeSidebar();
+
+                        }
+
+
+                    }
+                );
+
+
+            }
+        );
+
+
+        /* =============================================
+           LOGOUT POPUP
+        ============================================= */
+
+        const logoutButton =
+            document.getElementById(
+                "stkcosLogoutBtn"
+            );
+
+
+        const popupOverlay =
+            document.getElementById(
+                "stkcosPopupOverlay"
+            );
+
+
+        const cancelLogout =
+            document.getElementById(
+                "stkcosCancelLogout"
+            );
+
+
+        const confirmLogout =
+            document.getElementById(
+                "stkcosConfirmLogout"
+            );
+
+
+        /* =============================================
+           OPEN LOGOUT POPUP
+        ============================================= */
+
+        function openLogoutPopup() {
+
+            popupOverlay.classList.add(
+                "stkcos-popup-show"
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE LOGOUT POPUP
+        ============================================= */
+
+        function closeLogoutPopup() {
+
+            popupOverlay.classList.remove(
+                "stkcos-popup-show"
+            );
+
+        }
+
+
+        /* =============================================
+           LOGOUT BUTTON
+        ============================================= */
+
+        if (
+            logoutButton
+        ) {
+
+            logoutButton.addEventListener(
+                "click",
+                openLogoutPopup
+            );
+
+        }
+
+
+        /* =============================================
+           CANCEL LOGOUT
+        ============================================= */
+
+        if (
+            cancelLogout
+        ) {
+
+            cancelLogout.addEventListener(
+                "click",
+                closeLogoutPopup
+            );
+
+        }
+
+
+        /* =============================================
+           CLICK OUTSIDE POPUP
+        ============================================= */
+
+        if (
+            popupOverlay
+        ) {
+
+            popupOverlay.addEventListener(
+                "click",
+                function (event) {
+
+
+                    if (
+                        event.target ===
+                        popupOverlay
+                    ) {
+
+                        closeLogoutPopup();
+
+                    }
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           CONFIRM LOGOUT
+        ============================================= */
+
+        if (
+            confirmLogout
+        ) {
+
+            confirmLogout.addEventListener(
+                "click",
+                function () {
+
+
+                    /* Remove login session */
+
+                    localStorage.removeItem(
+                        "userName"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userEmail"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userRole"
+                    );
+
+
+                    localStorage.removeItem(
+                        "isLoggedIn"
+                    );
+
+
+                    /* Redirect to Login */
+
+                    confirmLogout.innerHTML =
+
+                        `
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                        Logging out...
+                        `;
+
+
+                    setTimeout(
+                        function () {
+
+
+                            window.location.href =
+                                "login.html";
+
+
+                        },
+                        700
+                    );
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           ESC KEY
+        ============================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    closeSidebar();
+
+                    closeLogoutPopup();
+
+                }
+
+
+            }
+        );
+
+
+    }
+);
+</script>

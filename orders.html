@@ -1,0 +1,5235 @@
+<!-- =========================================
+     STACKLY DASHBOARD WRAPPER
+========================================= -->
+
+<div class="stkcos-dashboard">
+
+
+    <!-- =====================================
+         MOBILE OVERLAY
+    ====================================== -->
+
+    <div
+        class="stkcos-sidebar-overlay"
+        id="stkcosSidebarOverlay"
+    ></div>
+
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside
+        class="stkcos-sidebar"
+        id="stkcosSidebar"
+    >
+
+
+        <!-- LOGO -->
+
+        <div class="stkcos-sidebar-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="./white.webp"
+                    alt="Stackly Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- MENU -->
+
+        <nav class="stkcos-sidebar-menu">
+
+
+            <a
+                href="dashboard.html"
+                class="stkcos-menu-link "
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Dashboard
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="profile.html"
+                class="stkcos-menu-link"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    My Profile
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="orders.html"
+                class="stkcos-menu-link stkcos-active"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Orders
+
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="products.html" 
+                class="stkcos-menu-link"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-pump-soap"></i>
+
+                </span>
+
+                <span class="stkcos-menu-text">
+
+                    Beauty Products
+
+                </span>
+
+            </a>
+
+
+
+            
+
+        </nav>
+
+
+
+        <!-- LOGOUT -->
+
+        <div class="stkcos-sidebar-bottom">
+
+
+            <button
+                type="button"
+                class="stkcos-logout-btn"
+                id="stkcosLogoutBtn"
+            >
+
+                <span class="stkcos-menu-icon">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                </span>
+
+                <span>
+
+                    Logout
+
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+
+    <div class="stkcos-main-area">
+
+
+        <!-- =================================
+             TOP BAR
+        ================================== -->
+
+        <header class="stkcos-topbar">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="stkcos-topbar-left">
+
+
+                <!-- HAMBURGER -->
+
+                <button
+                    type="button"
+                    class="stkcos-hamburger"
+                    id="stkcosHamburger"
+                    aria-label="Open Menu"
+                >
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+
+
+                <div class="stkcos-page-title">
+
+                    <h2>
+                        Dashboard
+                    </h2>
+
+                    <p>
+                        Welcome back to your beauty space
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="stkcos-user-area">
+
+
+                <!-- USER ICON -->
+
+                <div class="stkcos-user-avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+
+
+                <!-- USER DETAILS -->
+
+                <div class="stkcos-user-details">
+
+
+                    <h4
+                        id="stkcosUserName"
+                    >
+
+                        User Name
+
+                    </h4>
+
+
+                    <span
+                        id="stkcosUserRole"
+                        class="stkcos-user-role"
+                    >
+
+                        Customer
+
+                    </span>
+
+
+                    <p
+                        id="stkcosUserEmail"
+                    >
+
+                        user@email.com
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================
+             PAGE CONTENT
+        ================================== -->
+
+        <main class="stkcos-page-content">
+
+
+            <section class="stkcos-welcome-card">
+
+
+                <div class="stkcos-welcome-content">
+
+
+                    <span class="stkcos-welcome-tag">
+
+                        <i class="fa-solid fa-sparkles"></i>
+
+                        BEAUTY DASHBOARD
+
+                    </span>
+
+
+                    <h1>
+
+                        Welcome,
+
+                        <span
+                            id="stkcosWelcomeName"
+                        >
+                            User
+                        </span>
+
+                        ✨
+
+                    </h1>
+
+
+                    <p>
+
+                        Manage your beauty products,
+                        orders and profile from one place.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="stkcos-welcome-icon">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================================================
+     STACKLY COSMETICS ADMIN ORDERS
+     CONTENT ONLY
+     SIDEBAR + TOPBAR NOT INCLUDED
+========================================================= -->
+
+<section class="stk-cos-orders-page">
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <div class="stk-cos-orders-header">
+
+        <div class="stk-cos-orders-title">
+
+            <span class="stk-cos-orders-label">
+                <i class="fa-solid fa-bag-shopping"></i>
+                ORDER MANAGEMENT
+            </span>
+
+            <h1>Orders</h1>
+
+            <p>
+                Manage and track all your cosmetics orders from one place.
+            </p>
+
+        </div>
+
+        <div class="stk-cos-orders-header-actions">
+
+            <button
+                type="button"
+                class="stk-cos-orders-btn stk-cos-orders-secondary"
+                onclick="window.location.href='404.html';"
+            >
+                <i class="fa-solid fa-file-export"></i>
+                Export
+            </button>
+
+            <button
+                type="button"
+                class="stk-cos-orders-btn stk-cos-orders-primary"
+                onclick="window.location.href='404.html';"
+            >
+                <i class="fa-solid fa-plus"></i>
+             Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ORDER STATISTICS
+    ====================================================== -->
+
+    <div class="stk-cos-orders-stats">
+
+        <!-- TOTAL ORDERS -->
+
+        <div class="stk-cos-orders-stat-card">
+
+            <div class="stk-cos-orders-stat-icon pink">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+            <div class="stk-cos-orders-stat-content">
+
+                <span>Total Orders</span>
+
+                <strong>2,845</strong>
+
+                <small>
+                    <i class="fa-solid fa-arrow-up"></i>
+                    12.5% this month
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- PENDING -->
+
+        <div class="stk-cos-orders-stat-card">
+
+            <div class="stk-cos-orders-stat-icon orange">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="stk-cos-orders-stat-content">
+
+                <span>Pending Orders</span>
+
+                <strong>184</strong>
+
+                <small>
+                    <i class="fa-solid fa-arrow-up"></i>
+                    5.8% this week
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- COMPLETED -->
+
+        <div class="stk-cos-orders-stat-card">
+
+            <div class="stk-cos-orders-stat-icon green">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div class="stk-cos-orders-stat-content">
+
+                <span>Completed</span>
+
+                <strong>2,412</strong>
+
+                <small>
+                    <i class="fa-solid fa-arrow-up"></i>
+                    18.2% this month
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- CANCELLED -->
+
+        <div class="stk-cos-orders-stat-card">
+
+            <div class="stk-cos-orders-stat-icon red">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div class="stk-cos-orders-stat-content">
+
+                <span>Cancelled</span>
+
+                <strong>249</strong>
+
+                <small class="negative">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    2.4% this month
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FILTER SECTION
+    ====================================================== -->
+
+    <div class="stk-cos-orders-filter-card">
+
+        <!-- <div class="stk-cos-orders-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="stkCosOrderSearch"
+                placeholder="Search order ID, customer or product..."
+            >
+
+        </div> -->
+
+
+        <!-- <div class="stk-cos-orders-filter-group">
+
+            <select id="stkCosOrderStatus">
+
+                <option value="all">
+                    All Status
+                </option>
+
+                <option value="pending">
+                    Pending
+                </option>
+
+                <option value="processing">
+                    Processing
+                </option>
+
+                <option value="shipped">
+                    Shipped
+                </option>
+
+                <option value="delivered">
+                    Delivered
+                </option>
+
+                <option value="cancelled">
+                    Cancelled
+                </option>
+
+            </select>
+
+        </div> -->
+
+
+        <!-- <div class="stk-cos-orders-filter-group">
+
+            <select id="stkCosOrderPayment">
+
+                <option value="all">
+                    All Payments
+                </option>
+
+                <option value="paid">
+                    Paid
+                </option>
+
+                <option value="pending">
+                    Pending
+                </option>
+
+                <option value="failed">
+                    Failed
+                </option>
+
+            </select>
+
+        </div> -->
+
+
+        <!-- <div class="stk-cos-orders-filter-group">
+
+            <select id="stkCosOrderDate">
+
+                <option value="all">
+                    All Dates
+                </option>
+
+                <option value="today">
+                    Today
+                </option>
+
+                <option value="week">
+                    This Week
+                </option>
+
+                <option value="month">
+                    This Month
+                </option>
+
+            </select>
+
+        </div> -->
+
+
+        <!-- <button
+            type="button"
+            class="stk-cos-orders-clear"
+            id="stkCosClearFilters"
+        >
+            <i class="fa-solid fa-rotate-left"></i>
+            Reset
+        </button> -->
+
+    </div>
+
+
+    <!-- =====================================================
+         ORDERS TABLE CARD
+    ====================================================== -->
+
+    <div class="stk-cos-orders-table-card">
+
+        <!-- TABLE HEADER -->
+
+        <div class="stk-cos-orders-table-header">
+
+            <div>
+
+                <span class="stk-cos-orders-label">
+                    RECENT ORDERS
+                </span>
+
+                <h2>All Orders</h2>
+
+            </div>
+
+            <span
+                class="stk-cos-orders-count"
+                id="stkCosOrderCount"
+            >
+                Showing 8 orders
+            </span>
+
+        </div>
+
+
+        <!-- DESKTOP TABLE -->
+
+        <div class="stk-cos-orders-table-wrapper">
+
+            <table class="stk-cos-orders-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Order
+                        </th>
+
+                        <th>
+                            Customer
+                        </th>
+
+                        <th>
+                            Product
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Payment
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Action
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="stkCosOrdersBody">
+
+
+                    <!-- ORDER 1 -->
+
+                    <tr
+                        data-status="delivered"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1045
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    PS
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Priya Sharma
+                                    </strong>
+
+                                    <span>
+                                        priya@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./natural essentials.webp"
+                                    alt="Beauty Products"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Glow Beauty Kit
+                                    </strong>
+
+                                    <span>
+                                        2 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            24 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹2,499
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status delivered">
+                                Delivered
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1045')"
+                                title="View Order"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 2 -->
+
+                    <tr
+                        data-status="processing"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1044
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    AS
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Anjali Singh
+                                    </strong>
+
+                                    <span>
+                                        anjali@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./abi3.webp"
+                                    alt="Cosmetics"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Matte Lipstick
+                                    </strong>
+
+                                    <span>
+                                        3 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            24 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹1,850
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status processing">
+                                Processing
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1044')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 3 -->
+
+                    <tr
+                        data-status="pending"
+                        data-payment="pending"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1043
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    RM
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Riya Menon
+                                    </strong>
+
+                                    <span>
+                                        riya@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./natural essentials.webp"
+                                    alt="Skincare"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Vitamin C Serum
+                                    </strong>
+
+                                    <span>
+                                        1 Item
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            23 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status pending">
+                                Pending
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1043')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 4 -->
+
+                    <tr
+                        data-status="shipped"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1042
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    NK
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Neha Kapoor
+                                    </strong>
+
+                                    <span>
+                                        neha@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./britenning cream.webp"
+                                    alt="Beauty Product"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Luxury Face Cream
+                                    </strong>
+
+                                    <span>
+                                        2 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            23 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹2,150
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status shipped">
+                                Shipped
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1042')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 5 -->
+
+                    <tr
+                        data-status="delivered"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1041
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    SD
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Sneha Das
+                                    </strong>
+
+                                    <span>
+                                        sneha@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./abi1.webp"
+                                    alt="Lipstick"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Premium Lipstick
+                                    </strong>
+
+                                    <span>
+                                        4 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            22 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹3,200
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status delivered">
+                                Delivered
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1041')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 6 -->
+
+                    <tr
+                        data-status="cancelled"
+                        data-payment="failed"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1040
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    MK
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Meena Kumar
+                                    </strong>
+
+                                    <span>
+                                        meena@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./moisturizer.webp"
+                                    alt="Cosmetic Products"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Makeup Essentials
+                                    </strong>
+
+                                    <span>
+                                        5 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            22 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹4,550
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment failed">
+                                Failed
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status cancelled">
+                                Cancelled
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1040')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 7 -->
+
+                    <tr
+                        data-status="processing"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1039
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    KS
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Kavya Shah
+                                    </strong>
+
+                                    <span>
+                                        kavya@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="./cos1.webp"
+                                    alt="Skincare Products"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Skin Care Combo
+                                    </strong>
+
+                                    <span>
+                                        3 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            21 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹2,799
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status processing">
+                                Processing
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1039')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ORDER 8 -->
+
+                    <tr
+                        data-status="shipped"
+                        data-payment="paid"
+                    >
+
+                        <td>
+
+                            <strong class="stk-cos-order-id">
+                                #COS-1038
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-customer">
+
+                                <div class="stk-cos-customer-avatar">
+                                    AR
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Anu Raj
+                                    </strong>
+
+                                    <span>
+                                        anu@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="stk-cos-product">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=100&q=80"
+                                    alt="Beauty Kit"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Complete Beauty Kit
+                                    </strong>
+
+                                    <span>
+                                        6 Items
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            21 Aug 2026
+                        </td>
+
+
+                        <td>
+
+                            <strong>
+                                ₹5,499
+                            </strong>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-payment paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="stk-cos-order-status shipped">
+                                Shipped
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="stk-cos-orders-action"
+                                onclick="stkCosViewOrder('COS-1038')"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- =================================================
+             MOBILE ORDER CARDS
+        ================================================== -->
+
+        <div
+            class="stk-cos-mobile-orders"
+            id="stkCosMobileOrders"
+        >
+
+            <!-- Mobile cards are generated by JS -->
+
+        </div>
+
+
+        <!-- =================================================
+             PAGINATION
+        ================================================== -->
+
+        <div class="stk-cos-orders-pagination">
+
+            <button
+                type="button"
+                class="stk-cos-pagination-btn"
+                id="stkCosPrevPage"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+
+            <button
+                type="button"
+                class="stk-cos-pagination-btn active"
+            >
+                1
+            </button>
+
+
+            <button
+                type="button"
+                class="stk-cos-pagination-btn"
+                onclick="window.location.href='404.html';"
+            >
+                2
+            </button>
+
+
+            <button
+                type="button"
+                class="stk-cos-pagination-btn"
+                onclick="window.location.href='404.html';"
+            >
+                3
+            </button>
+
+
+            <button
+                type="button"
+                class="stk-cos-pagination-btn"
+                id="stkCosNextPage"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ORDER DETAILS MODAL
+========================================================= -->
+
+<div
+    class="stk-cos-order-modal"
+    id="stkCosOrderModal"
+>
+
+    <div class="stk-cos-order-modal-box">
+
+        <button
+            type="button"
+            class="stk-cos-order-modal-close"
+            onclick="stkCosCloseOrder()"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="stk-cos-order-modal-header">
+
+            <span class="stk-cos-orders-label">
+                ORDER DETAILS
+            </span>
+
+            <h2 id="stkCosModalOrderId">
+                #COS-1045
+            </h2>
+
+            <p>
+                Complete order information
+            </p>
+
+        </div>
+
+
+        <div class="stk-cos-order-modal-grid">
+
+            <div class="stk-cos-order-modal-item">
+
+                <span>Customer</span>
+
+                <strong id="stkCosModalCustomer">
+                    Priya Sharma
+                </strong>
+
+            </div>
+
+
+            <div class="stk-cos-order-modal-item">
+
+                <span>Order Amount</span>
+
+                <strong id="stkCosModalAmount">
+                    ₹2,499
+                </strong>
+
+            </div>
+
+
+            <div class="stk-cos-order-modal-item">
+
+                <span>Payment</span>
+
+                <strong>
+                    Paid
+                </strong>
+
+            </div>
+
+
+            <div class="stk-cos-order-modal-item">
+
+                <span>Status</span>
+
+                <strong>
+                    Delivered
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stk-cos-order-modal-actions">
+
+            <button
+                type="button"
+                class="stk-cos-orders-btn stk-cos-orders-secondary"
+                onclick="stkCosCloseOrder()"
+            >
+                Close
+            </button>
+
+            <button
+                type="button"
+                class="stk-cos-orders-btn stk-cos-orders-primary"
+                onclick="window.location.href='404.html';"
+            >
+                Manage Order
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+    /* =========================================================
+   STACKLY COSMETICS ORDERS
+   UNIQUE CLASSES ONLY
+========================================================= */
+
+.stk-cos-orders-page {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    color: #222;
+}
+
+.stk-cos-orders-page *,
+.stk-cos-orders-page *::before,
+.stk-cos-orders-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.stk-cos-orders-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.stk-cos-orders-title {
+    min-width: 0;
+}
+
+.stk-cos-orders-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #d85a82;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.stk-cos-orders-title h1 {
+    margin: 0 0 5px;
+
+    font-size: 32px;
+
+    color: #222;
+}
+
+.stk-cos-orders-title p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* HEADER BUTTONS */
+
+.stk-cos-orders-header-actions {
+    display: flex;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ALL ORDER BUTTONS
+   EQUAL SIZE
+========================================================= */
+
+.stk-cos-orders-btn {
+    width: 125px;
+    min-width: 125px;
+
+    height: 45px;
+    min-height: 45px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 10px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-orders-primary {
+    border: 1px solid #d85a82;
+
+    background: #d85a82;
+
+    color: #fff;
+}
+
+.stk-cos-orders-primary:hover {
+    background: #bd486d;
+
+    transform: translateY(-2px);
+}
+
+.stk-cos-orders-secondary {
+    border: 1px solid #d85a82;
+
+    background: #fff;
+
+    color: #d85a82;
+}
+
+.stk-cos-orders-secondary:hover {
+    background: #d85a82;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stk-cos-orders-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 17px;
+
+    margin-bottom: 22px;
+}
+
+.stk-cos-orders-stat-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+
+    min-height: 110px;
+
+    padding: 18px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.045);
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-orders-stat-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.07);
+}
+
+
+/* STAT ICON */
+
+.stk-cos-orders-stat-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 21px;
+}
+
+.stk-cos-orders-stat-icon.pink {
+    background: #fdebf2;
+
+    color: #d85a82;
+}
+
+.stk-cos-orders-stat-icon.orange {
+    background: #fff1df;
+
+    color: #df8c28;
+}
+
+.stk-cos-orders-stat-icon.green {
+    background: #e7f7ed;
+
+    color: #36a269;
+}
+
+.stk-cos-orders-stat-icon.red {
+    background: #fdeaea;
+
+    color: #d85858;
+}
+
+
+/* STAT CONTENT */
+
+.stk-cos-orders-stat-content {
+    min-width: 0;
+}
+
+.stk-cos-orders-stat-content span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #888;
+
+    font-size: 18px;
+}
+
+.stk-cos-orders-stat-content strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #222;
+
+    font-size: 26px;
+}
+
+.stk-cos-orders-stat-content small {
+    display: block;
+
+    color: #36a269;
+
+    font-size: 16px;
+}
+
+.stk-cos-orders-stat-content small.negative {
+    color: #d85858;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.stk-cos-orders-filter-card {
+    display: grid;
+
+    grid-template-columns:
+        minmax(250px, 1.7fr)
+        repeat(3, minmax(150px, 0.7fr))
+        125px;
+
+    gap: 11px;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    padding: 17px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.04);
+}
+
+
+/* SEARCH */
+
+.stk-cos-orders-search {
+    position: relative;
+
+    width: 100%;
+}
+
+.stk-cos-orders-search i {
+    position: absolute;
+
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+.stk-cos-orders-search input {
+    width: 100%;
+
+    height: 47px;
+
+    padding:
+        0 14px 0 43px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 19px;
+
+    color: #333;
+}
+
+.stk-cos-orders-search input:focus {
+    border-color: #d85a82;
+
+    box-shadow:
+        0 0 0 3px rgba(216,90,130,0.1);
+}
+
+
+/* FILTER SELECT */
+
+.stk-cos-orders-filter-group {
+    width: 100%;
+}
+
+.stk-cos-orders-filter-group select {
+    width: 100%;
+
+    height: 47px;
+
+    padding: 0 11px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #444;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.stk-cos-orders-filter-group select:focus {
+    border-color: #d85a82;
+}
+
+
+/* RESET */
+
+.stk-cos-orders-clear {
+    width: 125px;
+    min-width: 125px;
+
+    height: 47px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #666;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-orders-clear:hover {
+    border-color: #d85a82;
+
+    color: #d85a82;
+}
+
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.stk-cos-orders-table-card {
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.045);
+}
+
+
+/* TABLE HEADER */
+
+.stk-cos-orders-table-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.stk-cos-orders-table-header h2 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 24px;
+}
+
+.stk-cos-orders-count {
+    color: #888;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.stk-cos-orders-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.stk-cos-orders-table {
+    width: 100%;
+
+    min-width: 1100px;
+
+    border-collapse: collapse;
+}
+
+.stk-cos-orders-table th {
+    padding: 15px 14px;
+
+    background: #fff8fa;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #777;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+.stk-cos-orders-table td {
+    padding: 15px 14px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #555;
+
+    font-size: 18px;
+
+    vertical-align: middle;
+}
+
+.stk-cos-orders-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.stk-cos-orders-table tbody tr:hover {
+    background: #fffafa;
+}
+
+.stk-cos-orders-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ORDER ID */
+
+.stk-cos-order-id {
+    color: #d85a82;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CUSTOMER
+========================================================= */
+
+.stk-cos-customer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 170px;
+}
+
+.stk-cos-customer-avatar {
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fdebf2;
+
+    color: #d85a82;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.stk-cos-customer strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+.stk-cos-customer span {
+    display: block;
+
+    color: #999;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PRODUCT
+========================================================= */
+
+.stk-cos-product {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 190px;
+}
+
+.stk-cos-product img {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    background: #f7f7f7;
+}
+
+.stk-cos-product strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+.stk-cos-product span {
+    color: #999;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PAYMENT STATUS
+========================================================= */
+
+.stk-cos-payment,
+.stk-cos-order-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 90px;
+
+    height: 32px;
+
+    padding: 0 10px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* PAYMENT */
+
+.stk-cos-payment.paid {
+    background: #e8f7ef;
+
+    color: #329360;
+}
+
+.stk-cos-payment.pending {
+    background: #fff3df;
+
+    color: #c98727;
+}
+
+.stk-cos-payment.failed {
+    background: #fdeaea;
+
+    color: #d85858;
+}
+
+
+/* ORDER STATUS */
+
+.stk-cos-order-status.delivered {
+    background: #e8f7ef;
+
+    color: #329360;
+}
+
+.stk-cos-order-status.processing {
+    background: #eee9fb;
+
+    color: #7957a6;
+}
+
+.stk-cos-order-status.pending {
+    background: #fff3df;
+
+    color: #c98727;
+}
+
+.stk-cos-order-status.shipped {
+    background: #e9f2ff;
+
+    color: #3974bb;
+}
+
+.stk-cos-order-status.cancelled {
+    background: #fdeaea;
+
+    color: #d85858;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+========================================================= */
+
+.stk-cos-orders-action {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ead6dd;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #d85a82;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-orders-action:hover {
+    background: #d85a82;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE ORDERS
+========================================================= */
+
+.stk-cos-mobile-orders {
+    display: none;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.stk-cos-orders-pagination {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 20px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.stk-cos-pagination-btn {
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #666;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.stk-cos-pagination-btn:hover,
+.stk-cos-pagination-btn.active {
+    border-color: #d85a82;
+
+    background: #d85a82;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   ORDER MODAL
+========================================================= */
+
+.stk-cos-order-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,0.65);
+}
+
+.stk-cos-order-modal.active {
+    display: flex;
+}
+
+.stk-cos-order-modal-box {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.25);
+}
+
+.stk-cos-order-modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #777;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+.stk-cos-order-modal-close:hover {
+    background: #d85a82;
+
+    color: #fff;
+}
+
+.stk-cos-order-modal-header {
+    margin-bottom: 22px;
+
+    padding-right: 50px;
+}
+
+.stk-cos-order-modal-header h2 {
+    margin: 0 0 5px;
+
+    font-size: 27px;
+}
+
+.stk-cos-order-modal-header p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 18px;
+}
+
+.stk-cos-order-modal-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.stk-cos-order-modal-item {
+    padding: 15px;
+
+    border: 1px solid #eee;
+
+    border-radius: 9px;
+
+    background: #fffafa;
+}
+
+.stk-cos-order-modal-item span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+.stk-cos-order-modal-item strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 20px;
+}
+
+.stk-cos-order-modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+    .stk-cos-orders-page {
+        padding: 25px;
+    }
+
+    .stk-cos-orders-stats {
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+    }
+
+    .stk-cos-orders-filter-card {
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+    }
+
+    .stk-cos-orders-search {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .stk-cos-orders-page {
+        padding: 20px;
+    }
+
+    .stk-cos-orders-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .stk-cos-orders-header-actions {
+        width: 100%;
+    }
+
+    .stk-cos-orders-header-actions
+    .stk-cos-orders-btn {
+        flex: 1;
+    }
+
+    .stk-cos-orders-filter-card {
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stk-cos-orders-page {
+        padding: 14px;
+
+        font-size: 20px;
+    }
+
+
+    /* HEADER */
+
+    .stk-cos-orders-title h1 {
+        font-size: 28px;
+    }
+
+    .stk-cos-orders-title p {
+        font-size: 20px;
+    }
+
+    .stk-cos-orders-header-actions {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+
+        gap: 8px;
+    }
+
+    .stk-cos-orders-header-actions
+    .stk-cos-orders-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* STATS */
+
+    .stk-cos-orders-stats {
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+    }
+
+
+    /* FILTER */
+
+    .stk-cos-orders-filter-card {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 14px;
+    }
+
+    .stk-cos-orders-search {
+        grid-column: auto;
+    }
+
+    .stk-cos-orders-clear {
+        width: 100%;
+    }
+
+
+    /* HIDE DESKTOP TABLE */
+
+    .stk-cos-orders-table-wrapper {
+        display: none;
+    }
+
+
+    /* MOBILE CARDS */
+
+    .stk-cos-mobile-orders {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 11px;
+
+        padding: 15px;
+    }
+
+    .stk-cos-mobile-order-card {
+        padding: 15px;
+
+        border: 1px solid #eee;
+
+        border-radius: 11px;
+
+        background: #fffafa;
+    }
+
+    .stk-cos-mobile-order-top {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+
+        margin-bottom: 12px;
+    }
+
+    .stk-cos-mobile-order-id {
+        color: #d85a82;
+
+        font-size: 19px;
+
+        font-weight: 800;
+    }
+
+    .stk-cos-mobile-order-customer {
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-bottom: 12px;
+    }
+
+    .stk-cos-mobile-order-customer img {
+        width: 48px;
+        height: 48px;
+
+        object-fit: cover;
+
+        border-radius: 8px;
+    }
+
+    .stk-cos-mobile-order-customer strong {
+        display: block;
+
+        margin-bottom: 3px;
+
+        font-size: 19px;
+    }
+
+    .stk-cos-mobile-order-customer span {
+        color: #999;
+
+        font-size: 16px;
+    }
+
+    .stk-cos-mobile-order-info {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+
+        gap: 9px;
+
+        margin-bottom: 13px;
+    }
+
+    .stk-cos-mobile-order-info div {
+        padding: 10px;
+
+        border-radius: 8px;
+
+        background: #fff;
+
+        border: 1px solid #eee;
+    }
+
+    .stk-cos-mobile-order-info span {
+        display: block;
+
+        margin-bottom: 3px;
+
+        color: #999;
+
+        font-size: 16px;
+    }
+
+    .stk-cos-mobile-order-info strong {
+        display: block;
+
+        color: #333;
+
+        font-size: 18px;
+    }
+
+    .stk-cos-mobile-order-bottom {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+
+    /* TABLE HEADER */
+
+    .stk-cos-orders-table-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 17px;
+    }
+
+
+    /* PAGINATION */
+
+    .stk-cos-orders-pagination {
+        padding: 15px 10px;
+    }
+
+
+    /* MODAL */
+
+    .stk-cos-order-modal {
+        padding: 12px;
+    }
+
+    .stk-cos-order-modal-box {
+        padding: 22px 17px;
+    }
+
+    .stk-cos-order-modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stk-cos-order-modal-actions {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+    }
+
+    .stk-cos-order-modal-actions
+    .stk-cos-orders-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .stk-cos-orders-page {
+        padding: 10px;
+    }
+
+    .stk-cos-orders-header-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .stk-cos-mobile-order-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        const searchInput =
+            document.getElementById("stkCosOrderSearch");
+    
+        const statusFilter =
+            document.getElementById("stkCosOrderStatus");
+    
+        const paymentFilter =
+            document.getElementById("stkCosOrderPayment");
+    
+        const dateFilter =
+            document.getElementById("stkCosOrderDate");
+    
+        const clearFilters =
+            document.getElementById("stkCosClearFilters");
+    
+        const tableBody =
+            document.getElementById("stkCosOrdersBody");
+    
+        const orderCount =
+            document.getElementById("stkCosOrderCount");
+    
+        const mobileOrders =
+            document.getElementById("stkCosMobileOrders");
+    
+    
+        /* =====================================================
+           FILTER ORDERS
+        ====================================================== */
+    
+        function filterOrders() {
+    
+            const searchValue =
+                searchInput.value.toLowerCase().trim();
+    
+            const statusValue =
+                statusFilter.value;
+    
+            const paymentValue =
+                paymentFilter.value;
+    
+            const rows =
+                tableBody.querySelectorAll("tr");
+    
+            let visibleCount = 0;
+    
+    
+            rows.forEach(function (row) {
+    
+                const rowText =
+                    row.textContent.toLowerCase();
+    
+                const rowStatus =
+                    row.getAttribute("data-status");
+    
+                const rowPayment =
+                    row.getAttribute("data-payment");
+    
+    
+                const matchesSearch =
+                    rowText.includes(searchValue);
+    
+                const matchesStatus =
+                    statusValue === "all" ||
+                    rowStatus === statusValue;
+    
+                const matchesPayment =
+                    paymentValue === "all" ||
+                    rowPayment === paymentValue;
+    
+    
+                if (
+                    matchesSearch &&
+                    matchesStatus &&
+                    matchesPayment
+                ) {
+    
+                    row.style.display = "";
+    
+                    visibleCount++;
+    
+                } else {
+    
+                    row.style.display = "none";
+    
+                }
+    
+            });
+    
+    
+            orderCount.textContent =
+                "Showing " +
+                visibleCount +
+                " orders";
+    
+    
+            createMobileOrders();
+    
+        }
+    
+    
+        /* =====================================================
+           MOBILE ORDER CARDS
+        ====================================================== */
+    
+        function createMobileOrders() {
+    
+            mobileOrders.innerHTML = "";
+    
+    
+            const rows =
+                tableBody.querySelectorAll("tr");
+    
+    
+            rows.forEach(function (row) {
+    
+                if (
+                    row.style.display === "none"
+                ) {
+    
+                    return;
+    
+                }
+    
+    
+                const cells =
+                    row.querySelectorAll("td");
+    
+    
+                if (cells.length < 8) {
+    
+                    return;
+    
+                }
+    
+    
+                const orderId =
+                    cells[0].innerText.trim();
+    
+                const customerName =
+                    cells[1]
+                        .querySelector("strong")
+                        ?.innerText || "";
+    
+                const customerEmail =
+                    cells[1]
+                        .querySelector("span")
+                        ?.innerText || "";
+    
+                const productName =
+                    cells[2]
+                        .querySelector("strong")
+                        ?.innerText || "";
+    
+                const productImage =
+                    cells[2]
+                        .querySelector("img")
+                        ?.src || "";
+    
+                const date =
+                    cells[3].innerText.trim();
+    
+                const amount =
+                    cells[4].innerText.trim();
+    
+                const payment =
+                    cells[5].innerText.trim();
+    
+                const status =
+                    cells[6].innerText.trim();
+    
+    
+                const card =
+                    document.createElement("div");
+    
+                card.className =
+                    "stk-cos-mobile-order-card";
+    
+    
+                card.innerHTML = `
+    
+                    <div class="stk-cos-mobile-order-top">
+    
+                        <span class="stk-cos-mobile-order-id">
+                            ${orderId}
+                        </span>
+    
+                        <span class="stk-cos-order-status
+                            ${row.getAttribute("data-status")}">
+                            ${status}
+                        </span>
+    
+                    </div>
+    
+    
+                    <div class="stk-cos-mobile-order-customer">
+    
+                        <img
+                            src="${productImage}"
+                            alt="${productName}"
+                        >
+    
+                        <div>
+    
+                            <strong>
+                                ${customerName}
+                            </strong>
+    
+                            <span>
+                                ${customerEmail}
+                            </span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="stk-cos-mobile-order-info">
+    
+                        <div>
+    
+                            <span>
+                                Product
+                            </span>
+    
+                            <strong>
+                                ${productName}
+                            </strong>
+    
+                        </div>
+    
+    
+                        <div>
+    
+                            <span>
+                                Amount
+                            </span>
+    
+                            <strong>
+                                ${amount}
+                            </strong>
+    
+                        </div>
+    
+    
+                        <div>
+    
+                            <span>
+                                Date
+                            </span>
+    
+                            <strong>
+                                ${date}
+                            </strong>
+    
+                        </div>
+    
+    
+                        <div>
+    
+                            <span>
+                                Payment
+                            </span>
+    
+                            <strong>
+                                ${payment}
+                            </strong>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="stk-cos-mobile-order-bottom">
+    
+                        <span class="stk-cos-payment
+                            ${row.getAttribute("data-payment")}">
+                            ${payment}
+                        </span>
+    
+    
+                        <button
+                            type="button"
+                            class="stk-cos-orders-action"
+                            onclick="stkCosViewOrder('${orderId.replace("#", "")}')"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+    
+                    </div>
+    
+                `;
+    
+    
+                mobileOrders.appendChild(card);
+    
+            });
+    
+        }
+    
+    
+        /* =====================================================
+           SEARCH
+        ====================================================== */
+    
+        if (searchInput) {
+    
+            searchInput.addEventListener(
+                "input",
+                filterOrders
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           STATUS FILTER
+        ====================================================== */
+    
+        if (statusFilter) {
+    
+            statusFilter.addEventListener(
+                "change",
+                filterOrders
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           PAYMENT FILTER
+        ====================================================== */
+    
+        if (paymentFilter) {
+    
+            paymentFilter.addEventListener(
+                "change",
+                filterOrders
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           DATE FILTER
+        ====================================================== */
+    
+        if (dateFilter) {
+    
+            dateFilter.addEventListener(
+                "change",
+                filterOrders
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           RESET
+        ====================================================== */
+    
+        if (clearFilters) {
+    
+            clearFilters.addEventListener(
+                "click",
+                function () {
+    
+                    searchInput.value = "";
+    
+                    statusFilter.value = "all";
+    
+                    paymentFilter.value = "all";
+    
+                    dateFilter.value = "all";
+    
+                    filterOrders();
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           INITIAL MOBILE ORDERS
+        ====================================================== */
+    
+        createMobileOrders();
+    
+    });
+    
+    
+    /* =========================================================
+       VIEW ORDER
+    ========================================================= */
+    
+    function stkCosViewOrder(orderId) {
+    
+        const modal =
+            document.getElementById("stkCosOrderModal");
+    
+        const modalOrderId =
+            document.getElementById("stkCosModalOrderId");
+    
+    
+        if (modalOrderId) {
+    
+            modalOrderId.textContent =
+                "#" + orderId;
+    
+        }
+    
+    
+        if (modal) {
+    
+            modal.classList.add("active");
+    
+            document.body.style.overflow =
+                "hidden";
+    
+        }
+    
+    }
+    
+    
+    /* =========================================================
+       CLOSE ORDER
+    ========================================================= */
+    
+    function stkCosCloseOrder() {
+    
+        const modal =
+            document.getElementById("stkCosOrderModal");
+    
+    
+        if (modal) {
+    
+            modal.classList.remove("active");
+    
+            document.body.style.overflow =
+                "";
+    
+        }
+    
+    }
+    
+    
+    /* =========================================================
+       CLOSE MODAL WHEN CLICKING OUTSIDE
+    ========================================================= */
+    
+    document.addEventListener("click", function (event) {
+    
+        const modal =
+            document.getElementById("stkCosOrderModal");
+    
+    
+        if (
+            modal &&
+            event.target === modal
+        ) {
+    
+            stkCosCloseOrder();
+    
+        }
+    
+    });
+    </script>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================
+     LOGOUT POPUP
+========================================= -->
+
+<div
+    class="stkcos-popup-overlay"
+    id="stkcosPopupOverlay"
+>
+
+
+    <div class="stkcos-logout-popup">
+
+
+        <div class="stkcos-popup-icon">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+        </div>
+
+
+        <h3>
+
+            Ready to Leave?
+
+        </h3>
+
+
+        <p>
+
+            Are you sure you want to logout
+            from your account?
+
+        </p>
+
+
+        <div class="stkcos-popup-buttons">
+
+
+            <button
+                type="button"
+                class="stkcos-cancel-btn"
+                id="stkcosCancelLogout"
+            >
+
+                Cancel
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="stkcos-confirm-btn"
+                id="stkcosConfirmLogout"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Yes, Logout
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+<style>
+    /* =========================================================
+   STACKLY COSMETIC DASHBOARD
+   UPDATED FONT SIZE: 22PX
+   UNIQUE PREFIX: stkcos-
+========================================================= */
+
+:root {
+    --stkcos-primary: #c77b73;
+    --stkcos-primary-dark: #9d5c55;
+    --stkcos-primary-light: #f7e5e1;
+
+    --stkcos-dark: #3d2926;
+    --stkcos-text: #765f5b;
+
+    --stkcos-white: #ffffff;
+    --stkcos-bg: #fff8f6;
+
+    --stkcos-border: #ead5d0;
+
+    /* MAIN FONT SIZE */
+    --stkcos-font-size: 18px;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.stkcos-dashboard *,
+.stkcos-popup-overlay * {
+    box-sizing: border-box;
+}
+
+.stkcos-dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--stkcos-bg);
+    font-size: 20px;
+}
+
+.stkcos-dashboard button,
+.stkcos-dashboard a,
+.stkcos-dashboard input,
+.stkcos-dashboard select,
+.stkcos-dashboard textarea {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.stkcos-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100vh;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+        180deg,
+        #3d2926,
+        #5a3732
+    );
+
+    z-index: 1000;
+
+    overflow-y: auto;
+
+    transition: transform 0.35s ease;
+
+    box-shadow:
+        5px 0 25px
+        rgba(61, 41, 38, 0.12);
+}
+
+
+/* =========================================================
+   SIDEBAR LOGO
+========================================================= */
+
+.stkcos-sidebar-logo {
+    width: 100%;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+.stkcos-sidebar-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stkcos-sidebar-logo img {
+    width: 180px;
+    max-width: 100%;
+    height: 65px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SIDEBAR MENU
+========================================================= */
+
+.stkcos-sidebar-menu {
+    width: 100%;
+
+    padding: 25px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.stkcos-menu-link {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 12px 18px;
+
+    border-radius: 14px;
+
+    color:
+        rgba(255, 255, 255, 0.75);
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        all 0.3s ease;
+}
+
+.stkcos-menu-link:hover {
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    transform:
+        translateX(5px);
+}
+
+.stkcos-menu-link.stkcos-active {
+    background:
+        linear-gradient(
+            135deg,
+            var(--stkcos-primary),
+            var(--stkcos-primary-dark)
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 20px
+        rgba(199, 123, 115, 0.22);
+}
+
+
+/* =========================================================
+   MENU ICON
+========================================================= */
+
+.stkcos-menu-icon {
+    width: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR BOTTOM
+========================================================= */
+
+.stkcos-sidebar-bottom {
+    margin-top: auto;
+
+    padding: 22px 18px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.stkcos-logout-btn {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 12px 18px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-logout-btn:hover {
+    background: #d95c5c;
+    border-color: #d95c5c;
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.stkcos-main-area {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-left: 300px;
+
+    transition:
+        padding 0.35s ease;
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.stkcos-topbar {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 18px 35px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border-bottom:
+        1px solid
+        var(--stkcos-border);
+
+    backdrop-filter:
+        blur(15px);
+
+    z-index: 500;
+}
+
+
+/* =========================================================
+   TOPBAR LEFT
+========================================================= */
+
+.stkcos-topbar-left {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.stkcos-hamburger {
+    width: 55px;
+    height: 55px;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border:
+        1px solid
+        var(--stkcos-border);
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+.stkcos-hamburger span {
+    width: 25px;
+    height: 3px;
+
+    display: block;
+
+    border-radius: 10px;
+
+    background:
+        var(--stkcos-dark);
+
+    transition:
+        0.3s ease;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.stkcos-page-title h2 {
+    margin: 0;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+.stkcos-page-title p {
+    margin: 5px 0 0;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   USER AREA
+========================================================= */
+
+.stkcos-user-area {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   USER AVATAR
+========================================================= */
+
+.stkcos-user-avatar {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--stkcos-primary-light),
+            #ffffff
+        );
+
+    color:
+        var(--stkcos-primary-dark);
+
+    border:
+        1px solid
+        var(--stkcos-border);
+
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   USER DETAILS
+========================================================= */
+
+.stkcos-user-details {
+    min-width: 0;
+}
+
+.stkcos-user-details h4 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.stkcos-user-role {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 4px 12px;
+
+    border-radius: 20px;
+
+    background:
+        var(--stkcos-primary-light);
+
+    color:
+        var(--stkcos-primary-dark);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-transform: capitalize;
+}
+
+.stkcos-user-details p {
+    max-width: 300px;
+
+    margin: 5px 0 0;
+
+    overflow: hidden;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.stkcos-page-content {
+    width: 100%;
+
+    padding: 40px;
+}
+
+
+/* =========================================================
+   WELCOME CARD
+========================================================= */
+
+.stkcos-welcome-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 45px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            var(--stkcos-primary-light)
+        );
+
+    border:
+        1px solid
+        var(--stkcos-border);
+}
+
+.stkcos-welcome-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stkcos-welcome-tag {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    color:
+        var(--stkcos-primary-dark);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.stkcos-welcome-card h1 {
+    margin:
+        0 0 15px;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size:
+        clamp(
+            32px,
+            4vw,
+            48px
+        );
+
+    line-height: 1.3;
+}
+
+.stkcos-welcome-card h1 span {
+    color:
+        var(--stkcos-primary);
+}
+
+.stkcos-welcome-card p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+.stkcos-welcome-icon {
+    width: 170px;
+    height: 170px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(199, 123, 115, 0.13);
+
+    color:
+        var(--stkcos-primary);
+
+    font-size: 75px;
+}
+
+
+/* =========================================================
+   MOBILE SIDEBAR OVERLAY
+========================================================= */
+
+.stkcos-sidebar-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 900;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    background:
+        rgba(0, 0, 0, 0.45);
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-sidebar-overlay.stkcos-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LOGOUT POPUP OVERLAY
+========================================================= */
+
+.stkcos-popup-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    background:
+        rgba(35, 22, 20, 0.62);
+
+    backdrop-filter:
+        blur(5px);
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-popup-overlay.stkcos-popup-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LOGOUT POPUP
+========================================================= */
+
+.stkcos-logout-popup {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 45px 35px 35px;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    transform:
+        translateY(30px)
+        scale(0.95);
+
+    transition:
+        0.3s ease;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+}
+
+.stkcos-popup-show
+.stkcos-logout-popup {
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   POPUP ICON
+========================================================= */
+
+.stkcos-popup-icon {
+    width: 90px;
+    height: 90px;
+
+    margin:
+        0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #fff0f0;
+
+    color:
+        #d95c5c;
+
+    font-size: 35px;
+}
+
+.stkcos-logout-popup h3 {
+    margin:
+        0 0 12px;
+
+    color:
+        var(--stkcos-dark);
+
+    font-size: 30px;
+}
+
+.stkcos-logout-popup p {
+    margin:
+        0 0 30px;
+
+    color:
+        var(--stkcos-text);
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   POPUP BUTTONS
+========================================================= */
+
+.stkcos-popup-buttons {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.stkcos-cancel-btn,
+.stkcos-confirm-btn {
+    min-height: 60px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+}
+
+.stkcos-cancel-btn {
+    background:
+        #f4ecea;
+
+    color:
+        var(--stkcos-dark);
+}
+
+.stkcos-confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background:
+        #d95c5c;
+
+    color:
+        #ffffff;
+}
+
+.stkcos-cancel-btn:hover,
+.stkcos-confirm-btn:hover {
+    transform:
+        translateY(-2px);
+}
+
+.stkcos-confirm-btn:hover {
+    background:
+        #bd4141;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .stkcos-sidebar {
+        width: 270px;
+    }
+
+    .stkcos-main-area {
+        padding-left: 270px;
+    }
+
+    .stkcos-topbar {
+        padding:
+            18px 25px;
+    }
+
+    .stkcos-page-content {
+        padding: 30px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .stkcos-sidebar {
+        width: 300px;
+
+        transform:
+            translateX(-100%);
+    }
+
+    .stkcos-sidebar.stkcos-sidebar-open {
+        transform:
+            translateX(0);
+    }
+
+    .stkcos-main-area {
+        padding-left: 0;
+    }
+
+    .stkcos-hamburger {
+        display: flex;
+    }
+
+    .stkcos-topbar {
+        padding:
+            15px 20px;
+    }
+
+    .stkcos-page-content {
+        padding: 25px 20px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn,
+    .stkcos-page-title p,
+    .stkcos-user-details h4,
+    .stkcos-welcome-tag,
+    .stkcos-welcome-card p,
+    .stkcos-logout-popup p,
+    .stkcos-cancel-btn,
+    .stkcos-confirm-btn {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   FONT SIZE REMAINS 22PX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stkcos-topbar {
+        min-height: auto;
+
+        gap: 12px;
+
+        padding:
+            12px 14px;
+    }
+
+    .stkcos-topbar-left {
+        gap: 10px;
+    }
+
+    .stkcos-hamburger {
+        width: 52px;
+        height: 52px;
+
+        flex-shrink: 0;
+    }
+
+    .stkcos-page-title p {
+        display: none;
+    }
+
+    .stkcos-page-title h2 {
+        font-size: 20px;
+    }
+
+    .stkcos-user-area {
+        gap: 8px;
+
+        max-width: 65%;
+    }
+
+    .stkcos-user-avatar {
+        width: 52px;
+        height: 52px;
+
+        font-size: 20px;
+    }
+
+    .stkcos-user-details h4 {
+        font-size: 20px;
+    }
+
+    .stkcos-user-details p {
+        max-width: 180px;
+
+        font-size: 16px;
+    }
+
+    .stkcos-user-role {
+        font-size: 16px;
+    }
+
+    .stkcos-page-content {
+        padding:
+            20px 14px;
+    }
+
+    .stkcos-welcome-card {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px 22px;
+    }
+
+    .stkcos-welcome-card h1 {
+        font-size: 32px;
+    }
+
+    .stkcos-welcome-card p,
+    .stkcos-welcome-tag {
+        font-size: 20px;
+    }
+
+    .stkcos-welcome-icon {
+        width: 110px;
+        height: 110px;
+
+        align-self: center;
+
+        font-size: 50px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn {
+        font-size: 20px;
+
+        min-height: 65px;
+    }
+
+    .stkcos-logout-popup {
+        padding:
+            35px 22px 25px;
+    }
+
+    .stkcos-logout-popup h3 {
+        font-size: 28px;
+    }
+
+    .stkcos-logout-popup p,
+    .stkcos-cancel-btn,
+    .stkcos-confirm-btn {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .stkcos-page-title {
+        display: none;
+    }
+
+    .stkcos-topbar {
+        justify-content:
+            space-between;
+    }
+
+    .stkcos-user-area {
+        max-width: 75%;
+    }
+
+    .stkcos-user-details h4 {
+        max-width: 180px;
+
+        font-size: 20px;
+    }
+
+    .stkcos-user-details p {
+        max-width: 170px;
+
+        font-size: 14px;
+    }
+
+    .stkcos-user-role {
+        font-size: 15px;
+    }
+
+    .stkcos-popup-buttons {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stkcos-sidebar {
+        width: 290px;
+    }
+
+    .stkcos-menu-link,
+    .stkcos-logout-btn {
+        font-size: 20px;
+    }
+}
+</style>
+
+<script>
+    document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =============================================
+           GET LOCAL STORAGE DATA
+        ============================================= */
+
+        const userName =
+            localStorage.getItem(
+                "userName"
+            );
+
+
+        const userEmail =
+            localStorage.getItem(
+                "userEmail"
+            );
+
+
+        const userRole =
+            localStorage.getItem(
+                "userRole"
+            );
+
+
+        const isLoggedIn =
+            localStorage.getItem(
+                "isLoggedIn"
+            );
+
+
+        /* =============================================
+           OPTIONAL LOGIN CHECK
+        ============================================= */
+
+        if (
+            !isLoggedIn
+        ) {
+
+            window.location.href =
+                "login.html";
+
+            return;
+
+        }
+
+
+        /* =============================================
+           DISPLAY USER DETAILS
+        ============================================= */
+
+        const nameElement =
+            document.getElementById(
+                "stkcosUserName"
+            );
+
+
+        const emailElement =
+            document.getElementById(
+                "stkcosUserEmail"
+            );
+
+
+        const roleElement =
+            document.getElementById(
+                "stkcosUserRole"
+            );
+
+
+        const welcomeNameElement =
+            document.getElementById(
+                "stkcosWelcomeName"
+            );
+
+
+        if (
+            userName &&
+            nameElement
+        ) {
+
+            nameElement.textContent =
+                userName;
+
+        }
+
+
+        if (
+            userName &&
+            welcomeNameElement
+        ) {
+
+            welcomeNameElement.textContent =
+                userName;
+
+        }
+
+
+        if (
+            userEmail &&
+            emailElement
+        ) {
+
+            emailElement.textContent =
+                userEmail;
+
+        }
+
+
+        if (
+            userRole &&
+            roleElement
+        ) {
+
+            roleElement.textContent =
+                userRole;
+
+        }
+
+
+        /* =============================================
+           SIDEBAR ELEMENTS
+        ============================================= */
+
+        const sidebar =
+            document.getElementById(
+                "stkcosSidebar"
+            );
+
+
+        const hamburger =
+            document.getElementById(
+                "stkcosHamburger"
+            );
+
+
+        const sidebarOverlay =
+            document.getElementById(
+                "stkcosSidebarOverlay"
+            );
+
+
+        /* =============================================
+           OPEN SIDEBAR
+        ============================================= */
+
+        function openSidebar() {
+
+            sidebar.classList.add(
+                "stkcos-sidebar-open"
+            );
+
+
+            sidebarOverlay.classList.add(
+                "stkcos-show"
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE SIDEBAR
+        ============================================= */
+
+        function closeSidebar() {
+
+            sidebar.classList.remove(
+                "stkcos-sidebar-open"
+            );
+
+
+            sidebarOverlay.classList.remove(
+                "stkcos-show"
+            );
+
+        }
+
+
+        /* =============================================
+           HAMBURGER CLICK
+        ============================================= */
+
+        if (
+            hamburger
+        ) {
+
+            hamburger.addEventListener(
+                "click",
+                function () {
+
+
+                    if (
+                        sidebar.classList.contains(
+                            "stkcos-sidebar-open"
+                        )
+                    ) {
+
+                        closeSidebar();
+
+                    }
+
+                    else {
+
+                        openSidebar();
+
+                    }
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           OVERLAY CLICK
+        ============================================= */
+
+        if (
+            sidebarOverlay
+        ) {
+
+            sidebarOverlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE MENU ON MOBILE
+        ============================================= */
+
+        const menuLinks =
+            document.querySelectorAll(
+                ".stkcos-menu-link"
+            );
+
+
+        menuLinks.forEach(
+            function (link) {
+
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+
+                        if (
+                            window.innerWidth <=
+                            900
+                        ) {
+
+                            closeSidebar();
+
+                        }
+
+
+                    }
+                );
+
+
+            }
+        );
+
+
+        /* =============================================
+           LOGOUT POPUP
+        ============================================= */
+
+        const logoutButton =
+            document.getElementById(
+                "stkcosLogoutBtn"
+            );
+
+
+        const popupOverlay =
+            document.getElementById(
+                "stkcosPopupOverlay"
+            );
+
+
+        const cancelLogout =
+            document.getElementById(
+                "stkcosCancelLogout"
+            );
+
+
+        const confirmLogout =
+            document.getElementById(
+                "stkcosConfirmLogout"
+            );
+
+
+        /* =============================================
+           OPEN LOGOUT POPUP
+        ============================================= */
+
+        function openLogoutPopup() {
+
+            popupOverlay.classList.add(
+                "stkcos-popup-show"
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE LOGOUT POPUP
+        ============================================= */
+
+        function closeLogoutPopup() {
+
+            popupOverlay.classList.remove(
+                "stkcos-popup-show"
+            );
+
+        }
+
+
+        /* =============================================
+           LOGOUT BUTTON
+        ============================================= */
+
+        if (
+            logoutButton
+        ) {
+
+            logoutButton.addEventListener(
+                "click",
+                openLogoutPopup
+            );
+
+        }
+
+
+        /* =============================================
+           CANCEL LOGOUT
+        ============================================= */
+
+        if (
+            cancelLogout
+        ) {
+
+            cancelLogout.addEventListener(
+                "click",
+                closeLogoutPopup
+            );
+
+        }
+
+
+        /* =============================================
+           CLICK OUTSIDE POPUP
+        ============================================= */
+
+        if (
+            popupOverlay
+        ) {
+
+            popupOverlay.addEventListener(
+                "click",
+                function (event) {
+
+
+                    if (
+                        event.target ===
+                        popupOverlay
+                    ) {
+
+                        closeLogoutPopup();
+
+                    }
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           CONFIRM LOGOUT
+        ============================================= */
+
+        if (
+            confirmLogout
+        ) {
+
+            confirmLogout.addEventListener(
+                "click",
+                function () {
+
+
+                    /* Remove login session */
+
+                    localStorage.removeItem(
+                        "userName"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userEmail"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userRole"
+                    );
+
+
+                    localStorage.removeItem(
+                        "isLoggedIn"
+                    );
+
+
+                    /* Redirect to Login */
+
+                    confirmLogout.innerHTML =
+
+                        `
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                        Logging out...
+                        `;
+
+
+                    setTimeout(
+                        function () {
+
+
+                            window.location.href =
+                                "login.html";
+
+
+                        },
+                        700
+                    );
+
+
+                }
+            );
+
+        }
+
+
+        /* =============================================
+           ESC KEY
+        ============================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    closeSidebar();
+
+                    closeLogoutPopup();
+
+                }
+
+
+            }
+        );
+
+
+    }
+);
+</script>
