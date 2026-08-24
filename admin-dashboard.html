@@ -1,3 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Beauty Care | Admin Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
 <!-- =========================================
      STACKLY DASHBOARD WRAPPER
 ========================================= -->
@@ -24,6 +68,19 @@
         class="stkcos-sidebar"
         id="stkcosSidebar"
     >
+
+        <!-- CLOSE (MOBILE) -->
+
+        <button
+            type="button"
+            class="stkcos-sidebar-close"
+            id="stkcosSidebarClose"
+            aria-label="Close Menu"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
 
 
         <!-- LOGO -->
@@ -2881,6 +2938,51 @@
 
 
 /* =========================================================
+   SIDEBAR CLOSE (MOBILE)
+========================================================= */
+
+.stkcos-sidebar-close {
+    display: none;
+
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: background 0.25s ease;
+}
+
+.stkcos-sidebar-close:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 900px) {
+
+    .stkcos-sidebar-close {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================================
    SIDEBAR MENU
 ========================================================= */
 
@@ -3992,6 +4094,12 @@
             );
 
 
+        const sidebarCloseBtn =
+            document.getElementById(
+                "stkcosSidebarClose"
+            );
+
+
         /* =============================================
            OPEN SIDEBAR
         ============================================= */
@@ -4073,6 +4181,22 @@
         ) {
 
             sidebarOverlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE (X) BUTTON CLICK
+        ============================================= */
+
+        if (
+            sidebarCloseBtn
+        ) {
+
+            sidebarCloseBtn.addEventListener(
                 "click",
                 closeSidebar
             );
@@ -4326,35 +4450,35 @@
 </script>
 
 <style>
-    /* =========================================================
-GLOBAL MOBILE FONT SIZE - ENTIRE THEME
+        /* =========================================================
+   GLOBAL MOBILE FONT SIZE - ENTIRE THEME
 ========================================================= */
 
 @media (max-width: 600px) {
 
 html,
 body {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 body * {
-font-size: 18px;
+    font-size: 18px;
 }
 
 }
 
 /* =========================================================
-GLOBAL MOBILE FONT SIZE - ENTIRE THEME
+   GLOBAL MOBILE FONT SIZE - ENTIRE THEME
 ========================================================= */
 
 @media (max-width: 600px) {
 
 html {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 body {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 /* General content */
@@ -4370,31 +4494,31 @@ input,
 textarea,
 select,
 button {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 
 /* Headings */
 
 h1 {
-font-size: 30px !important;
+    font-size: 30px !important;
 }
 
 h2 {
-font-size: 26px !important;
+    font-size: 26px !important;
 }
 
 h3 {
-font-size: 22px !important;
+    font-size: 22px !important;
 }
 
 h4 {
-font-size: 20px !important;
+    font-size: 20px !important;
 }
 
 h5,
 h6 {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 }
@@ -4403,24 +4527,28 @@ font-size: 18px !important;
 
 html,
 body {
-font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 body * {
-font-size: 18px;
+    font-size: 18px;
 }
 
 h1 {
-font-size: 27px !important;
+    font-size: 27px !important;
 }
 
 h2 {
-font-size: 24px !important;
+    font-size: 24px !important;
 }
 
 h3 {
-font-size: 21px !important;
+    font-size: 21px !important;
 }
 
 }
-</style>
+    </style>
+
+</body>
+
+</html>

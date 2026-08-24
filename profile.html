@@ -1,3 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Beauty Care | My Profile</title>
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
 <!-- =========================================
      STACKLY DASHBOARD WRAPPER
 ========================================= -->
@@ -24,6 +68,19 @@
         class="stkcos-sidebar"
         id="stkcosSidebar"
     >
+
+        <!-- CLOSE (MOBILE) -->
+
+        <button
+            type="button"
+            class="stkcos-sidebar-close"
+            id="stkcosSidebarClose"
+            aria-label="Close Menu"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
 
 
         <!-- LOGO -->
@@ -3193,6 +3250,51 @@
 
 
 /* =========================================================
+   SIDEBAR CLOSE (MOBILE)
+========================================================= */
+
+.stkcos-sidebar-close {
+    display: none;
+
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: background 0.25s ease;
+}
+
+.stkcos-sidebar-close:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 900px) {
+
+    .stkcos-sidebar-close {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================================
    SIDEBAR MENU
 ========================================================= */
 
@@ -4304,6 +4406,12 @@
             );
 
 
+        const sidebarCloseBtn =
+            document.getElementById(
+                "stkcosSidebarClose"
+            );
+
+
         /* =============================================
            OPEN SIDEBAR
         ============================================= */
@@ -4385,6 +4493,22 @@
         ) {
 
             sidebarOverlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+        /* =============================================
+           CLOSE (X) BUTTON CLICK
+        ============================================= */
+
+        if (
+            sidebarCloseBtn
+        ) {
+
+            sidebarCloseBtn.addEventListener(
                 "click",
                 closeSidebar
             );
@@ -4736,3 +4860,7 @@ font-size: 21px !important;
 
 }
 </style>
+
+</body>
+
+</html>
