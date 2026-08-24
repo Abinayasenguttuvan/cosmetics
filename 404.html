@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>404 | Page Not Found</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- 404 CSS -->
+    <link
+        rel="stylesheet"
+        href="404.css"
+    >
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     404 PAGE
+========================================================= -->
+
+<section class="stk-404-page">
+
+
+    <!-- Background Overlay -->
+
+    <div class="stk-404-overlay"></div>
+
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+    <div class="stk-404-content">
+
+
+        <!-- Small Icon -->
+
+        <div class="stk-404-icon">
+
+            <i class="fa-solid fa-face-frown"></i>
+
+        </div>
+
+
+        <!-- 404 -->
+
+        <div class="stk-404-number">
+
+            4<span>0</span>4
+
+        </div>
+
+
+        <!-- Heading -->
+
+        <h1>
+            Oops! Page Not Found
+        </h1>
+
+
+        <!-- Description -->
+
+        <p>
+            The page you are looking for may have been
+            moved, deleted, or temporarily unavailable.
+        </p>
+
+
+        <p class="stk-404-subtext">
+            Don't worry, let's get you back to where
+            you belong.
+        </p>
+
+
+        <!-- =================================================
+             BUTTONS
+        ================================================== -->
+
+        <div class="stk-404-buttons">
+
+
+            <!-- Back Home -->
+
+            <a
+                href="index.html"
+                class="stk-404-home-btn"
+            >
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Back to Home
+                </span>
+
+            </a>
+
+
+            <!-- Previous Page -->
+
+            <button
+                type="button"
+                class="stk-404-back-btn"
+                id="stk404BackButton"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                <span>
+                    Back to Previous Page
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<style>
+    /* =========================================================
+   STACKLY 404 PAGE
+   UNIQUE PREFIX: stk-404-
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+.stk-404-page *,
+.stk-404-page *::before,
+.stk-404-page *::after {
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+/* =========================================================
+   MAIN 404 PAGE
+========================================================= */
+
+.stk-404-page {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    min-height: 100svh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        40px 20px;
+
+    overflow: hidden;
+
+    background-image:
+        url("./abi1.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.stk-404-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 17, 16, 0.82),
+            rgba(91, 49, 42, 0.68),
+            rgba(20, 15, 14, 0.82)
+        );
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.stk-404-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 760px;
+
+    padding:
+        30px 20px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    animation:
+        stk404ContentShow
+        0.9s
+        ease
+        forwards;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.stk-404-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin:
+        0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.4);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    backdrop-filter:
+        blur(8px);
+
+    animation:
+        stk404IconFloat
+        2.5s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   404 NUMBER
+========================================================= */
+
+.stk-404-number {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(120px, 20vw, 245px);
+
+    font-weight: 900;
+
+    line-height: 0.85;
+
+    letter-spacing:
+        -10px;
+
+    text-shadow:
+        0 15px 45px
+        rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* =========================================================
+   ZERO
+========================================================= */
+
+.stk-404-number span {
+
+    color: #d47b68;
+
+    text-shadow:
+        0 0 30px
+        rgba(212, 123, 104, 0.45);
+
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.stk-404-content h1 {
+
+    margin:
+        25px 0 10px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(28px, 4vw, 48px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.stk-404-content > p {
+
+    max-width: 620px;
+
+    margin:
+        0 auto;
+
+    color:
+        rgba(255, 255, 255, 0.88);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SUBTEXT
+========================================================= */
+
+.stk-404-subtext {
+
+    margin-top:
+        5px !important;
+
+    color:
+        rgba(255, 255, 255, 0.70) !important;
+
+    font-size: 13px !important;
+
+}
+
+
+/* =========================================================
+   BUTTON CONTAINER
+========================================================= */
+
+.stk-404-buttons {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.stk-404-home-btn,
+.stk-404-back-btn {
+
+    min-width: 185px;
+
+    min-height: 50px;
+
+    padding:
+        0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.stk-404-home-btn {
+
+    border:
+        1px solid #d47b68;
+
+    background: #d47b68;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px
+        rgba(212, 123, 104, 0.25);
+
+}
+
+
+.stk-404-home-btn:hover {
+
+    transform:
+        translateY(-4px);
+
+    background: #bd6654;
+
+    border-color: #bd6654;
+
+    box-shadow:
+        0 15px 30px
+        rgba(212, 123, 104, 0.35);
+
+}
+
+
+/* =========================================================
+   PREVIOUS BUTTON
+========================================================= */
+
+.stk-404-back-btn {
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.55);
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    backdrop-filter:
+        blur(8px);
+
+}
+
+
+.stk-404-back-btn:hover {
+
+    transform:
+        translateY(-4px);
+
+    background:
+        rgba(255, 255, 255, 0.20);
+
+    border-color:
+        rgba(255, 255, 255, 0.85);
+
+}
+
+
+/* =========================================================
+   BUTTON ICON
+========================================================= */
+
+.stk-404-home-btn i,
+.stk-404-back-btn i {
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes stk404ContentShow {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(45px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes stk404IconFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px);
+
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .stk-404-page {
+
+        padding:
+            35px 20px;
+
+    }
+
+
+    .stk-404-number {
+
+        font-size:
+            clamp(110px, 19vw, 210px);
+
+    }
+
+
+    .stk-404-content h1 {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stk-404-page {
+
+        min-height: 100svh;
+
+        padding:
+            30px 20px;
+
+    }
+
+
+    .stk-404-content {
+
+        padding:
+            20px 10px;
+
+    }
+
+
+    .stk-404-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        margin-bottom: 15px;
+
+        font-size: 22px;
+
+    }
+
+
+    .stk-404-number {
+
+        font-size:
+            clamp(100px, 24vw, 175px);
+
+        letter-spacing:
+            -7px;
+
+    }
+
+
+    .stk-404-content h1 {
+
+        margin-top: 22px;
+
+        font-size: 34px;
+
+    }
+
+
+    .stk-404-content > p {
+
+        font-size: 14px;
+
+    }
+
+
+    .stk-404-buttons {
+
+        margin-top: 26px;
+
+    }
+
+
+    .stk-404-home-btn,
+    .stk-404-back-btn {
+
+        min-width: 175px;
+
+        min-height: 48px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stk-404-page {
+
+        padding:
+            25px 15px;
+
+        background-position:
+            center center;
+
+    }
+
+
+    .stk-404-content {
+
+        padding:
+            15px 5px;
+
+    }
+
+
+    .stk-404-icon {
+
+        width: 54px;
+
+        height: 54px;
+
+        margin-bottom: 14px;
+
+        font-size: 20px;
+
+    }
+
+
+    .stk-404-number {
+
+        font-size:
+            clamp(85px, 31vw, 145px);
+
+        letter-spacing:
+            -5px;
+
+    }
+
+
+    .stk-404-content h1 {
+
+        margin:
+            20px 0 10px;
+
+        font-size: 28px;
+
+    }
+
+
+    .stk-404-content > p {
+
+        max-width: 420px;
+
+        font-size: 13px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .stk-404-subtext {
+
+        font-size: 12px !important;
+
+    }
+
+
+    .stk-404-buttons {
+
+        width: 100%;
+
+        margin-top: 24px;
+
+        flex-direction: column;
+
+        gap: 11px;
+
+    }
+
+
+    .stk-404-home-btn,
+    .stk-404-back-btn {
+
+        width: 100%;
+
+        max-width: 330px;
+
+        min-height: 48px;
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .stk-404-page {
+
+        padding:
+            20px 12px;
+
+    }
+
+
+    .stk-404-icon {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 18px;
+
+    }
+
+
+    .stk-404-number {
+
+        font-size: 85px;
+
+        letter-spacing:
+            -4px;
+
+    }
+
+
+    .stk-404-content h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .stk-404-content > p {
+
+        font-size: 12px;
+
+    }
+
+
+    .stk-404-home-btn,
+    .stk-404-back-btn {
+
+        max-width: 300px;
+
+        min-height: 46px;
+
+        padding:
+            0 15px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stk-404-content,
+    .stk-404-icon {
+
+        animation: none;
+
+    }
+
+}
+</style>
+
+<script>
+    /* =========================================================
+   STACKLY 404 JAVASCRIPT
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        const backButton =
+            document.getElementById(
+                "stk404BackButton"
+            );
+
+
+        if (!backButton) {
+            return;
+        }
+
+
+        /* =================================================
+           BACK TO PREVIOUS PAGE
+        ================================================= */
+
+        backButton.addEventListener(
+            "click",
+            function () {
+
+
+                /*
+                 * If there is browser history,
+                 * go back to the previous page.
+                 */
+
+                if (window.history.length > 1) {
+
+                    window.history.back();
+
+                } else {
+
+                    /*
+                     * If there is no previous page,
+                     * go to Home.
+                     */
+
+                    window.location.href =
+                        "index.html";
+
+                }
+
+            }
+        );
+
+
+    }
+);
+</script>
+
+
+</body>
+
+</html>
