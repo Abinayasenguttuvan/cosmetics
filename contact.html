@@ -1,0 +1,6853 @@
+<!-- =========================================================
+     BEAUTY PROMO / ANNOUNCEMENT BAR
+========================================================= -->
+
+<section class="beauty-promo-bar">
+
+    <div class="beauty-promo-track">
+
+        <!-- FIRST SET -->
+
+        <div class="beauty-promo-item">
+
+            <span class="beauty-promo-highlight">
+                BLACK FRIDAY SALE
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                10% OFF
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                FREE SHIPPING ON ORDERS ABOVE ₹300
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                USE CODE
+            </span>
+
+            <strong>
+                2026CODE
+            </strong>
+
+        </div>
+
+
+        <!-- SECOND SET
+             Duplicate required for seamless scrolling -->
+
+        <div class="beauty-promo-item">
+
+            <span class="beauty-promo-highlight">
+                BLACK FRIDAY SALE
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                10% OFF
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                FREE SHIPPING ON ORDERS ABOVE ₹300
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                USE CODE
+            </span>
+
+            <strong>
+                2026CODE
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    
+    /* =========================================================
+   BEAUTY PROMO BAR
+   NON-CONFLICTING PREFIX:
+   beauty-promo-
+========================================================= */
+
+.beauty-promo-bar {
+
+position: relative;
+
+width: 100%;
+
+height: 46px;
+
+overflow: hidden;
+
+display: flex;
+
+align-items: center;
+
+background: #17120f;
+
+color: #ffffff;
+
+border-bottom: 1px solid #2c2521;
+
+z-index: 10001;
+}
+
+
+/* =========================================================
+MOVING TRACK
+========================================================= */
+
+.beauty-promo-track {
+
+display: flex;
+
+align-items: center;
+
+width: max-content;
+
+min-width: 100%;
+
+animation:
+    beautyPromoScroll
+    22s
+    linear
+    infinite;
+}
+
+
+/* =========================================================
+EACH TEXT GROUP
+========================================================= */
+
+.beauty-promo-item {
+
+flex-shrink: 0;
+
+display: flex;
+
+align-items: center;
+
+gap: 22px;
+
+padding-right: 70px;
+
+white-space: nowrap;
+
+font-size: 22px;
+
+font-weight: 500;
+
+line-height: 1;
+
+letter-spacing: .3px;
+}
+
+
+/* =========================================================
+BLACK FRIDAY
+========================================================= */
+
+.beauty-promo-highlight {
+
+color: #f2a66f;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+}
+
+
+/* =========================================================
+CODE
+========================================================= */
+
+.beauty-promo-item strong {
+
+padding: 5px 10px;
+
+color: #17120f;
+
+background: #ffffff;
+
+font-size: 22px;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+
+border-radius: 3px;
+}
+
+
+/* =========================================================
+SEPARATOR
+========================================================= */
+
+.beauty-promo-separator {
+
+color: #d18b64;
+
+font-size: 22px;
+
+font-weight: 700;
+}
+
+
+/* =========================================================
+SCROLL ANIMATION
+========================================================= */
+
+@keyframes beautyPromoScroll {
+
+0% {
+
+    transform: translateX(0);
+
+}
+
+100% {
+
+    transform: translateX(-50%);
+
+}
+
+}
+
+
+/* =========================================================
+PAUSE WHEN HOVERED
+========================================================= */
+
+.beauty-promo-bar:hover
+.beauty-promo-track {
+
+animation-play-state: paused;
+}
+
+
+/* =========================================================
+LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+.beauty-promo-bar {
+
+    height: 44px;
+}
+
+.beauty-promo-item {
+
+    gap: 18px;
+
+    padding-right: 55px;
+
+    font-size: 22px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 22px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+.beauty-promo-bar {
+
+    height: 42px;
+}
+
+.beauty-promo-item {
+
+    gap: 16px;
+
+    padding-right: 50px;
+
+    font-size: 22px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 22px;
+
+    padding: 4px 9px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+.beauty-promo-bar {
+
+    height: 40px;
+}
+
+.beauty-promo-item {
+
+    gap: 14px;
+
+    padding-right: 45px;
+
+    font-size: 19px;
+
+    letter-spacing: .1px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 19px;
+
+    padding: 4px 8px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+.beauty-promo-bar {
+
+    height: 38px;
+}
+
+.beauty-promo-item {
+
+    gap: 12px;
+
+    padding-right: 40px;
+
+    font-size: 19px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 19px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+.beauty-promo-track {
+
+    animation: none;
+}
+
+}
+</style>
+<!-- =========================================================
+     BEAUTY WEBSITE HEADER
+========================================================= -->
+
+<header class="beauty-header">
+
+    <div class="beauty-header-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+                class="logo">
+
+                <img src="./white.webp"
+                    alt="Logo" style="height:60px; filter:brightness(0);">
+
+            </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="beauty-header-nav"
+            aria-label="Main Navigation">
+
+            <a
+                href="index.html"
+                class="beauty-header-link beauty-header-active">
+                Home
+            </a>
+
+            <a
+                href="about.html"
+                class="beauty-header-link">
+                About
+            </a>
+
+            <a
+                href="services.html"
+                class="beauty-header-link">
+                Services
+            </a>
+
+            
+            <a
+                href="contact.html"
+                class="beauty-header-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="beauty-header-actions">
+
+            <a
+                href="login.html"
+                class="beauty-header-login">
+
+                Login
+
+            </a>
+
+            <a
+                href="register.html"
+                class="beauty-header-register">
+
+                Register
+
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            type="button"
+            class="beauty-header-menu"
+            aria-label="Open menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="beauty-header-mobile">
+
+        <div class="beauty-header-mobile-inner">
+
+            <button
+                type="button"
+                class="beauty-header-close"
+                aria-label="Close menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <nav
+                class="beauty-header-mobile-nav"
+                aria-label="Mobile Navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="beauty-header-mobile-actions">
+
+                <a
+                    href="login.html"
+                    class="beauty-header-mobile-login">
+
+                    Login
+
+                </a>
+
+                <a
+                    href="register.html"
+                    class="beauty-header-mobile-register">
+
+                    Register
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<style>
+    /* =========================================================
+   BEAUTY HEADER
+   RESPONSIVE
+   DESKTOP / LAPTOP / TABLET = 22PX
+   MOBILE = 19PX
+
+   NON-CONFLICTING PREFIX
+   beauty-header-
+========================================================= */
+
+
+/* =========================================================
+   HEADER RESET
+========================================================= */
+
+.beauty-header,
+.beauty-header *,
+.beauty-header *::before,
+.beauty-header *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+
+.beauty-header {
+    position: relative;
+
+    width: 100%;
+
+    background: #fcf8ef;
+
+    border-bottom: 1px solid #e8ded4;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.beauty-header-container {
+    width: min(1400px, calc(100% - 60px));
+
+    min-height: 90px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.beauty-header .logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    flex-shrink: 0;
+
+    width: 180px;
+
+    text-decoration: none;
+
+    line-height: 0;
+}
+
+
+/* LOGO IMAGE */
+
+.beauty-header .logo img {
+    display: block;
+
+    width: auto;
+
+    max-width: 170px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* LOGO HOVER */
+
+.beauty-header .logo:hover img {
+    transform: scale(1.04);
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.beauty-header-nav {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 38px;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.beauty-header-link {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px 0;
+
+    color: #211a17;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+/* UNDERLINE */
+
+.beauty-header-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 3px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #b87353;
+
+    transition:
+        width 0.3s ease;
+}
+
+
+/* HOVER */
+
+.beauty-header-link:hover {
+    color: #b87353;
+}
+
+
+/* HOVER UNDERLINE */
+
+.beauty-header-link:hover::after {
+    width: 100%;
+}
+
+
+/* ACTIVE LINK */
+
+.beauty-header-link.beauty-header-active {
+    color: #b87353;
+}
+
+
+.beauty-header-link.beauty-header-active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   RIGHT SIDE ACTIONS
+========================================================= */
+
+.beauty-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    width: 220px;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.beauty-header-login {
+    min-height: 48px;
+
+    padding: 10px 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2b211d;
+
+    background: transparent;
+
+    border: 1px solid #d2c1b7;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-login:hover {
+    color: #ffffff;
+
+    background: #2b211d;
+
+    border-color: #2b211d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.beauty-header-register {
+    min-height: 48px;
+
+    padding: 10px 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-register:hover {
+    background: #925a40;
+
+    border-color: #925a40;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.beauty-header-menu {
+    display: none;
+
+    width: 48px;
+
+    height: 48px;
+
+    padding: 8px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    background: transparent;
+
+    border: 1px solid #cdbbb0;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.beauty-header-menu:hover {
+    background: #f1e7dd;
+
+    border-color: #b87353;
+}
+
+
+/* HAMBURGER LINES */
+
+.beauty-header-menu span {
+    display: block;
+
+    width: 27px;
+
+    height: 2px;
+
+    background: #2a201c;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION OVERLAY
+========================================================= */
+
+.beauty-header-mobile {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100vh;
+
+    height: 100dvh;
+
+    background: rgba(25, 18, 14, 0.55);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+
+    z-index: 10000;
+}
+
+
+/* =========================================================
+   MOBILE MENU INNER PANEL
+========================================================= */
+
+.beauty-header-mobile-inner {
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: min(420px, 88%);
+
+    height: 100%;
+
+    padding: 28px;
+
+    overflow-y: auto;
+
+    background: #fcf8ef;
+
+    box-shadow:
+        -15px 0 45px rgba(0, 0, 0, 0.15);
+
+    transform: translateX(100%);
+
+    transition:
+        transform 0.45s cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+}
+
+
+/* =========================================================
+   OPEN MOBILE MENU
+========================================================= */
+
+.beauty-header-mobile.beauty-header-mobile-open {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+.beauty-header-mobile.beauty-header-mobile-open
+.beauty-header-mobile-inner {
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.beauty-header-close {
+    width: 48px;
+
+    height: 48px;
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-close:hover {
+    background: #925a40;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+.beauty-header-mobile-nav {
+    margin-top: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   MOBILE NAV LINKS
+========================================================= */
+
+.beauty-header-mobile-nav a {
+    position: relative;
+
+    display: block;
+
+    padding: 18px 5px;
+
+    color: #211a17;
+
+    border-bottom: 1px solid #e4d9d0;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.beauty-header-mobile-nav a:hover {
+    color: #b87353;
+
+    padding-left: 12px;
+
+    background: rgba(
+        184,
+        115,
+        83,
+        0.04
+    );
+}
+
+
+/* =========================================================
+   MOBILE LOGIN / REGISTER
+========================================================= */
+
+.beauty-header-mobile-actions {
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   MOBILE LOGIN
+========================================================= */
+
+.beauty-header-mobile-login {
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2b211d;
+
+    background: transparent;
+
+    border: 1px solid #cdbbb0;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.beauty-header-mobile-login:hover {
+    color: #ffffff;
+
+    background: #2b211d;
+}
+
+
+/* =========================================================
+   MOBILE REGISTER
+========================================================= */
+
+.beauty-header-mobile-register {
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-mobile-register:hover {
+    background: #925a40;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LAPTOP
+   1200PX - 992PX
+   FONT = 22PX
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-header-container {
+        width: calc(100% - 50px);
+
+        gap: 22px;
+    }
+
+
+    .beauty-header-nav {
+        gap: 24px;
+    }
+
+
+    .beauty-header-link {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-actions {
+        width: 205px;
+
+        gap: 8px;
+    }
+
+
+    .beauty-header-login,
+    .beauty-header-register {
+        padding-left: 14px;
+
+        padding-right: 14px;
+
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   991PX - 768PX
+   DESKTOP NAVIGATION HIDDEN
+   MOBILE MENU ENABLED
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-header-container {
+        width: calc(100% - 40px);
+
+        min-height: 80px;
+    }
+
+
+    /* HIDE DESKTOP NAV */
+
+    .beauty-header-nav,
+    .beauty-header-actions {
+        display: none;
+    }
+
+
+    /* SHOW HAMBURGER */
+
+    .beauty-header-menu {
+        display: flex;
+    }
+
+
+    /* LOGO */
+
+    .beauty-header .logo {
+        width: auto;
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 160px;
+
+        height: 58px;
+    }
+
+
+    /* MOBILE MENU */
+
+    .beauty-header-mobile-nav a {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-close {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   BELOW 768PX
+   ALL TEXT = 19PX
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-header-container {
+        width: calc(100% - 30px);
+
+        min-height: 72px;
+
+        gap: 15px;
+    }
+
+
+    /* LOGO */
+
+    .beauty-header .logo img {
+        max-width: 145px;
+
+        height: 52px;
+    }
+
+
+    /* MENU BUTTON */
+
+    .beauty-header-menu {
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .beauty-header-menu span {
+        width: 24px;
+    }
+
+
+    /* MOBILE PANEL */
+
+    .beauty-header-mobile-inner {
+        width: min(390px, 90%);
+
+        padding: 22px;
+    }
+
+
+    /* CLOSE */
+
+    .beauty-header-close {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 19px;
+    }
+
+
+    /* NAV */
+
+    .beauty-header-mobile-nav {
+        margin-top: 38px;
+    }
+
+
+    .beauty-header-mobile-nav a {
+        padding: 16px 4px;
+
+        font-size: 19px;
+    }
+
+
+    /* ACTIONS */
+
+    .beauty-header-mobile-actions {
+        margin-top: 30px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        min-height: 50px;
+
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 480PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-header-container {
+        width: calc(100% - 22px);
+
+        min-height: 68px;
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 125px;
+
+        height: 48px;
+    }
+
+
+    .beauty-header-menu {
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    .beauty-header-mobile-inner {
+        width: 94%;
+
+        padding: 18px;
+    }
+
+
+    .beauty-header-mobile-nav {
+        margin-top: 32px;
+    }
+
+
+    .beauty-header-mobile-nav a {
+        font-size: 19px;
+
+        padding: 15px 3px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-header-container {
+        width: calc(100% - 18px);
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 110px;
+
+        height: 44px;
+    }
+
+
+    .beauty-header-menu {
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .beauty-header-mobile-inner {
+        width: 96%;
+
+        padding: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .beauty-header *,
+    .beauty-header *::before,
+    .beauty-header *::after {
+        transition: none !important;
+    }
+
+}
+    </style>
+
+<script>
+    (function () {
+    
+        "use strict";
+    
+    
+        /* =====================================================
+           BEAUTY HEADER ELEMENTS
+        ===================================================== */
+    
+        const beautyHeader =
+            document.querySelector(
+                ".beauty-header"
+            );
+    
+        if (!beautyHeader) {
+            return;
+        }
+    
+    
+        const beautyMenuButton =
+            beautyHeader.querySelector(
+                ".beauty-header-menu"
+            );
+    
+        const beautyMobileMenu =
+            beautyHeader.querySelector(
+                ".beauty-header-mobile"
+            );
+    
+        const beautyMobileInner =
+            beautyHeader.querySelector(
+                ".beauty-header-mobile-inner"
+            );
+    
+        const beautyCloseButton =
+            beautyHeader.querySelector(
+                ".beauty-header-close"
+            );
+    
+        const beautyMobileLinks =
+            beautyHeader.querySelectorAll(
+                ".beauty-header-mobile-nav a"
+            );
+    
+    
+        /* =====================================================
+           OPEN MOBILE MENU
+        ===================================================== */
+    
+        function beautyOpenMenu() {
+    
+            if (!beautyMobileMenu) {
+                return;
+            }
+    
+    
+            beautyMobileMenu.classList.add(
+                "beauty-header-mobile-open"
+            );
+    
+    
+            if (beautyMenuButton) {
+    
+                beautyMenuButton.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+    
+                beautyMenuButton.setAttribute(
+                    "aria-label",
+                    "Close menu"
+                );
+    
+            }
+    
+    
+            /* Prevent background scrolling */
+    
+            document.body.style.overflow = "hidden";
+    
+        }
+    
+    
+        /* =====================================================
+           CLOSE MOBILE MENU
+        ===================================================== */
+    
+        function beautyCloseMenu() {
+    
+            if (!beautyMobileMenu) {
+                return;
+            }
+    
+    
+            beautyMobileMenu.classList.remove(
+                "beauty-header-mobile-open"
+            );
+    
+    
+            if (beautyMenuButton) {
+    
+                beautyMenuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+    
+                beautyMenuButton.setAttribute(
+                    "aria-label",
+                    "Open menu"
+                );
+    
+            }
+    
+    
+            /* Restore scrolling */
+    
+            document.body.style.overflow = "";
+    
+        }
+    
+    
+        /* =====================================================
+           HAMBURGER CLICK
+        ===================================================== */
+    
+        if (beautyMenuButton) {
+    
+            beautyMenuButton.addEventListener(
+                "click",
+                function () {
+    
+                    const isOpen =
+                        beautyMobileMenu.classList.contains(
+                            "beauty-header-mobile-open"
+                        );
+    
+    
+                    if (isOpen) {
+    
+                        beautyCloseMenu();
+    
+                    } else {
+    
+                        beautyOpenMenu();
+    
+                    }
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           CLOSE BUTTON
+        ===================================================== */
+    
+        if (beautyCloseButton) {
+    
+            beautyCloseButton.addEventListener(
+                "click",
+                function () {
+    
+                    beautyCloseMenu();
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           CLICK OUTSIDE MENU
+        ===================================================== */
+    
+        if (beautyMobileMenu) {
+    
+            beautyMobileMenu.addEventListener(
+                "click",
+                function (event) {
+    
+                    if (
+                        event.target ===
+                        beautyMobileMenu
+                    ) {
+    
+                        beautyCloseMenu();
+    
+                    }
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           MOBILE LINKS
+        ===================================================== */
+    
+        beautyMobileLinks.forEach(
+            function (link) {
+    
+                link.addEventListener(
+                    "click",
+                    function () {
+    
+                        beautyCloseMenu();
+    
+                    }
+                );
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           ESCAPE KEY
+        ===================================================== */
+    
+        document.addEventListener(
+            "keydown",
+            function (event) {
+    
+                if (
+                    event.key === "Escape" &&
+                    beautyMobileMenu.classList.contains(
+                        "beauty-header-mobile-open"
+                    )
+                ) {
+    
+                    beautyCloseMenu();
+    
+                }
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           SCREEN RESIZE
+           CLOSE MOBILE MENU WHEN DESKTOP VIEW OPENS
+        ===================================================== */
+    
+        window.addEventListener(
+            "resize",
+            function () {
+    
+                if (
+                    window.innerWidth > 991
+                ) {
+    
+                    beautyCloseMenu();
+    
+                }
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           LOGO CLICK
+           HTML ALREADY USES index.html
+        ===================================================== */
+    
+        const beautyLogo =
+            beautyHeader.querySelector(
+                ".logo"
+            );
+    
+        if (beautyLogo) {
+    
+            beautyLogo.addEventListener(
+                "click",
+                function () {
+    
+                    window.location.href =
+                        "index.html";
+    
+                }
+            );
+    
+        }
+    
+    })();
+    </script>
+
+<section class="beauty-about-hero" id="beautyAboutHero">
+
+    <!-- BACKGROUND IMAGE -->
+
+    <div class="beauty-about-hero-bg">
+
+        <img
+            src="./cost 8.webp"
+            alt="About our beauty collection">
+
+    </div>
+
+
+    <!-- OVERLAY -->
+
+    <div class="beauty-about-hero-overlay"></div>
+
+
+    <!-- CENTER CONTENT -->
+
+    <div class="beauty-about-hero-container">
+
+        <div class="beauty-about-hero-content">
+
+            <!-- BREADCRUMB -->
+
+            <div class="beauty-about-breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span class="beauty-about-divider">
+                    /
+                </span>
+
+                <span class="beauty-about-current">
+               Contact
+                </span>
+
+            </div>
+
+
+            <!-- HEADING -->
+
+            <h1 class="beauty-about-title">
+               Contact
+            </h1>
+
+
+            <!-- DESCRIPTION -->
+
+            <p class="beauty-about-description">
+                Discover thoughtful beauty essentials created
+                to make your everyday skincare and self-care
+                routine feel simple, pure and beautiful.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    /* =========================================================
+   BEAUTY ABOUT HERO
+   CENTERED CONTENT
+========================================================= */
+
+.beauty-about-hero {
+    width: 100%;
+    min-height: 500px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2b211e;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.beauty-about-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+.beauty-about-hero-bg img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.08);
+
+    transition:
+        transform 1.5s ease;
+}
+
+
+/* IMAGE ZOOM */
+
+.beauty-about-hero.beauty-about-loaded
+.beauty-about-hero-bg img {
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.beauty-about-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 18, 15, 0.72),
+            rgba(25, 18, 15, 0.48)
+        );
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.beauty-about-hero-container {
+    width: min(
+        1200px,
+        calc(100% - 60px)
+    );
+
+    min-height: 500px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.beauty-about-hero-content {
+    width: 100%;
+
+    max-width: 850px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   HOME / ABOUT
+========================================================= */
+
+.beauty-about-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* BREADCRUMB SHOW */
+
+.beauty-about-breadcrumb.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* HOME */
+
+.beauty-about-breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.beauty-about-breadcrumb a:hover {
+    color: #f3c7b8;
+}
+
+
+/* SLASH */
+
+.beauty-about-divider {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* ABOUT */
+
+.beauty-about-current {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.beauty-about-title {
+    margin: 0 0 16px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    /* DESKTOP */
+    font-size: 24px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.85s ease,
+        transform 0.85s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* HEADING SHOW */
+
+.beauty-about-title.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.beauty-about-description {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.93);
+
+    font-family: "Poppins", sans-serif;
+
+    /* DESKTOP */
+    font-size: 20px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* DESCRIPTION SHOW */
+
+.beauty-about-description.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1499px) {
+
+    .beauty-about-hero {
+        min-height: 470px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 470px;
+
+        width: min(
+            1150px,
+            calc(100% - 70px)
+        );
+    }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-about-hero {
+        min-height: 440px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 440px;
+
+        width: calc(100% - 60px);
+    }
+
+    .beauty-about-title {
+        font-size: 24px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        max-width: 720px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-about-hero {
+        min-height: 410px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 410px;
+
+        width: calc(100% - 50px);
+    }
+
+    .beauty-about-hero-content {
+        max-width: 700px;
+    }
+
+    .beauty-about-title {
+        font-size: 23px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.55;
+
+        max-width: 680px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-about-hero {
+        min-height: 390px;
+    }
+
+    .beauty-about-hero-container {
+        width: calc(100% - 30px);
+
+        min-height: 390px;
+
+        justify-content: center;
+    }
+
+    .beauty-about-hero-content {
+        max-width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* BREADCRUMB */
+
+    .beauty-about-breadcrumb {
+        gap: 8px;
+
+        margin-bottom: 14px;
+    }
+
+    .beauty-about-breadcrumb a,
+    .beauty-about-divider,
+    .beauty-about-current {
+        font-size: 12px;
+    }
+
+
+    /* HEADING */
+
+    .beauty-about-title {
+        /* MOBILE */
+        font-size: 20px;
+
+        line-height: 1.35;
+
+        margin-bottom: 13px;
+    }
+
+
+    /* CONTENT */
+
+    .beauty-about-description {
+        /* MOBILE */
+        font-size: 20px;
+
+        line-height: 1.5;
+
+        max-width: 100%;
+    }
+
+
+    /* MOBILE OVERLAY */
+
+    .beauty-about-hero-overlay {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(25, 18, 15, 0.78),
+                rgba(25, 18, 15, 0.58)
+            );
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-about-hero {
+        min-height: 360px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 360px;
+
+        width: calc(100% - 24px);
+    }
+
+    .beauty-about-title {
+        font-size: 20px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.45;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-about-hero {
+        min-height: 340px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 340px;
+
+        width: calc(100% - 20px);
+    }
+
+    .beauty-about-title {
+        font-size: 20px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .beauty-about-hero-bg img,
+    .beauty-about-breadcrumb,
+    .beauty-about-title,
+    .beauty-about-description {
+        transition: none;
+    }
+
+}
+</style>
+
+<script>
+    /* =========================================================
+       BEAUTY ABOUT HERO
+       ONE-BY-ONE ANIMATION
+    ========================================================= */
+    
+    (function () {
+    
+        "use strict";
+    
+    
+        const beautyAboutHero =
+            document.querySelector(
+                "#beautyAboutHero"
+            );
+    
+    
+        if (!beautyAboutHero) {
+            return;
+        }
+    
+    
+        const breadcrumb =
+            beautyAboutHero.querySelector(
+                ".beauty-about-breadcrumb"
+            );
+    
+    
+        const title =
+            beautyAboutHero.querySelector(
+                ".beauty-about-title"
+            );
+    
+    
+        const description =
+            beautyAboutHero.querySelector(
+                ".beauty-about-description"
+            );
+    
+    
+        const heroImage =
+            beautyAboutHero.querySelector(
+                ".beauty-about-hero-bg img"
+            );
+    
+    
+        /* =====================================================
+           START ANIMATION
+        ===================================================== */
+    
+        function startBeautyAboutAnimation() {
+    
+            /* Image zoom */
+    
+            beautyAboutHero.classList.add(
+                "beauty-about-loaded"
+            );
+    
+    
+            /* 01 - Home / About */
+    
+            setTimeout(function () {
+    
+                if (breadcrumb) {
+    
+                    breadcrumb.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 200);
+    
+    
+            /* 02 - About Us */
+    
+            setTimeout(function () {
+    
+                if (title) {
+    
+                    title.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 500);
+    
+    
+            /* 03 - Description */
+    
+            setTimeout(function () {
+    
+                if (description) {
+    
+                    description.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 800);
+    
+        }
+    
+    
+        /* =====================================================
+           IMAGE LOAD CHECK
+        ===================================================== */
+    
+        if (heroImage) {
+    
+            if (heroImage.complete) {
+    
+                startBeautyAboutAnimation();
+    
+            } else {
+    
+                heroImage.addEventListener(
+                    "load",
+                    startBeautyAboutAnimation,
+                    {
+                        once: true
+                    }
+                );
+    
+            }
+    
+        } else {
+    
+            startBeautyAboutAnimation();
+    
+        }
+    
+    
+    })();
+    </script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | Beauty & Cosmetics</title>
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Contact CSS -->
+    <link
+        rel="stylesheet"
+        href="contact.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     CONTACT SECTION
+========================================================= -->
+
+<section
+    class="stk-contact-section"
+    id="stkContact"
+>
+
+
+    <div class="stk-contact-container">
+
+
+        <!-- =================================================
+             CONTACT HEADING
+        ================================================== -->
+
+        <div class="stk-contact-heading">
+
+            <span class="stk-contact-subtitle">
+                CONTACT US
+            </span>
+
+            <h1>
+                We'd Love To Hear From You
+            </h1>
+
+            <p>
+                Have a question about our beauty products,
+                services or appointments? Send us a message
+                and our team will be happy to help you.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONTACT MAIN AREA
+        ================================================== -->
+
+        <div class="stk-contact-main">
+
+
+            <!-- =================================================
+                 LEFT SIDE - FORM
+            ================================================== -->
+
+            <div class="stk-contact-form-card">
+
+
+                <div class="stk-contact-form-heading">
+
+                    <span>
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Ask Us Anything
+                    </h2>
+
+                    <p>
+                        Fill in the details below and
+                        we'll get back to you soon.
+                    </p>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <form
+                    id="stkContactForm"
+                    novalidate
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="stk-contact-field">
+
+                        <label for="stkContactName">
+                            Your Name
+                        </label>
+
+                        <div
+                            class="stk-contact-input-wrap"
+                        >
+
+                            <i
+                                class="fas fa-user"
+                            ></i>
+
+                            <input
+                                type="text"
+                                id="stkContactName"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                            >
+
+                        </div>
+
+                        <small
+                            class="stk-contact-error"
+                            id="stkNameError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="stk-contact-field">
+
+                        <label for="stkContactEmail">
+                            Your Email
+                        </label>
+
+                        <div
+                            class="stk-contact-input-wrap"
+                        >
+
+                            <i
+                                class="fas fa-envelope"
+                            ></i>
+
+                            <input
+                                type="email"
+                                id="stkContactEmail"
+                                name="email"
+                                placeholder="Your email here"
+                                autocomplete="email"
+                            >
+
+                        </div>
+
+                        <small
+                            class="stk-contact-error"
+                            id="stkEmailError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="stk-contact-field">
+
+                        <label for="stkContactMessage">
+                            Your Message
+                        </label>
+
+                        <div
+                            class="stk-contact-input-wrap stk-contact-textarea-wrap"
+                        >
+
+                            <i
+                                class="fas fa-comment-dots"
+                            ></i>
+
+                            <textarea
+                                id="stkContactMessage"
+                                name="message"
+                                rows="6"
+                                placeholder="Write a message..."
+                            ></textarea>
+
+                        </div>
+
+                        <small
+                            class="stk-contact-error"
+                            id="stkMessageError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="stk-contact-submit"
+                    >
+
+                        <span>
+                            Send Message
+                        </span>
+
+                        <i
+                            class="fas fa-paper-plane"
+                        ></i>
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RIGHT SIDE - CONTACT INFORMATION
+            ================================================== -->
+
+            <div class="stk-contact-info">
+
+
+                <!-- ADDRESS -->
+
+                <div class="stk-contact-info-card">
+
+                    <div class="stk-contact-info-icon">
+
+                        <i
+                            class="fas fa-location-dot"
+                        ></i>
+
+                    </div>
+
+                    <div class="stk-contact-info-content">
+
+                        <span>
+                            VISIT US
+                        </span>
+
+                        <h3>
+                            Our Address
+                        </h3>
+
+                        <p>
+                            24 Beauty Avenue,<br>
+                            Salem, Tamil Nadu,<br>
+                            India - 636001
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="stk-contact-info-card">
+
+                    <div class="stk-contact-info-icon">
+
+                        <i
+                            class="fas fa-phone"
+                        ></i>
+
+                    </div>
+
+                    <div class="stk-contact-info-content">
+
+                        <span>
+                            CALL US
+                        </span>
+
+                        <h3>
+                            Mobile
+                        </h3>
+
+                        <p>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="stk-contact-info-card">
+
+                    <div class="stk-contact-info-icon">
+
+                        <i
+                            class="fas fa-envelope"
+                        ></i>
+
+                    </div>
+
+                    <div class="stk-contact-info-content">
+
+                        <span>
+                            MAIL US
+                        </span>
+
+                        <h3>
+                            Email Address
+                        </h3>
+
+                        <p>
+                            hello@beautycare.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAP SECTION
+        ================================================== -->
+
+        <div class="stk-contact-map-section">
+
+
+            <div class="stk-contact-map-heading">
+
+                <span>
+                    FIND US
+                </span>
+
+                <h2>
+                    Visit Our Location
+                </h2>
+
+                <p>
+                    Come visit us and discover a better
+                    beauty experience.
+                </p>
+
+            </div>
+
+
+            <div class="stk-contact-map-wrapper">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Salem,Tamil%20Nadu,India&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                    title="Our Location"
+                ></iframe>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SUCCESS POPUP
+========================================================= -->
+
+<div
+    class="stk-contact-popup-overlay"
+    id="stkContactPopup"
+>
+
+
+    <div class="stk-contact-popup">
+
+
+        <button
+            type="button"
+            class="stk-contact-popup-close"
+            id="stkContactPopupClose"
+            aria-label="Close"
+        >
+
+            <i
+                class="fas fa-xmark"
+            ></i>
+
+        </button>
+
+
+        <div class="stk-contact-popup-icon">
+
+            <i
+                class="fas fa-check"
+            ></i>
+
+        </div>
+
+
+        <h2>
+            Message Sent!
+        </h2>
+
+
+        <p>
+            Thank you for contacting us.
+            Your message has been sent successfully.
+        </p>
+
+
+        <div class="stk-contact-popup-loader">
+
+            Redirecting...
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<style>
+    /* =========================================================
+   STACKLY CONTACT PAGE
+   UNIQUE PREFIX: stk-contact-
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+.stk-contact-section *,
+.stk-contact-section *::before,
+.stk-contact-section *::after,
+.stk-contact-popup-overlay *,
+.stk-contact-popup-overlay *::before,
+.stk-contact-popup-overlay *::after {
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.stk-contact-section {
+
+    width: 100%;
+
+    padding: 100px 6%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf8 0%,
+            #ffffff 50%,
+            #fff3ef 100%
+        );
+
+    overflow: visible;
+
+}
+
+
+.stk-contact-container {
+
+    width: 100%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.stk-contact-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    animation:
+        stkContactFadeUp 0.8s ease forwards;
+
+}
+
+
+.stk-contact-subtitle {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #d47b68;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.stk-contact-heading h1 {
+
+    margin: 0 0 18px;
+
+    color: #292321;
+
+    font-size: 46px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+
+.stk-contact-heading p {
+
+    margin: 0;
+
+    color: #756b68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   MAIN CONTACT GRID
+========================================================= */
+
+.stk-contact-main {
+
+    position: relative;
+
+    z-index: 10;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 35px;
+
+    align-items: stretch;
+
+}
+
+
+/* =========================================================
+   LEFT FORM CARD
+========================================================= */
+
+.stk-contact-form-card {
+
+    width: 100%;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    animation:
+        stkContactCardUp 0.8s ease
+        0.2s forwards;
+
+}
+
+
+.stk-contact-form-heading {
+
+    margin-bottom: 28px;
+
+}
+
+
+.stk-contact-form-heading span {
+
+    color: #d47b68;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.stk-contact-form-heading h2 {
+
+    margin: 7px 0 9px;
+
+    color: #292321;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+
+}
+
+
+.stk-contact-form-heading p {
+
+    margin: 0;
+
+    color: #756b68;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   FORM FIELD
+========================================================= */
+
+.stk-contact-field {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+
+
+.stk-contact-field label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #292321;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   INPUT WRAPPER
+========================================================= */
+
+.stk-contact-input-wrap {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.stk-contact-input-wrap > i {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 17px;
+
+    z-index: 2;
+
+    transform: translateY(-50%);
+
+    color: #d47b68;
+
+    font-size: 15px;
+
+    pointer-events: none;
+
+}
+
+
+.stk-contact-input-wrap input,
+.stk-contact-input-wrap textarea {
+
+    width: 100%;
+
+    border: 1px solid #eadbd6;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #fffaf8;
+
+    color: #292321;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.stk-contact-input-wrap input {
+
+    height: 52px;
+
+    padding:
+        0 16px
+        0 48px;
+
+}
+
+
+.stk-contact-input-wrap textarea {
+
+    min-height: 150px;
+
+    padding:
+        16px
+        16px
+        16px
+        48px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+
+}
+
+
+.stk-contact-input-wrap textarea + i {
+
+    top: 25px;
+
+    transform: none;
+
+}
+
+
+.stk-contact-input-wrap input:focus,
+.stk-contact-input-wrap textarea:focus {
+
+    border-color: #d47b68;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 123, 104, 0.12);
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.stk-contact-error {
+
+    display: block;
+
+    min-height: 18px;
+
+    margin-top: 5px;
+
+    color: #d64545;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+
+/* Error input */
+
+.stk-contact-input-error {
+
+    border-color: #d64545 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(214, 69, 69, 0.08) !important;
+
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.stk-contact-submit {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #d47b68;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.stk-contact-submit:hover {
+
+    background: #b96352;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(212, 123, 104, 0.25);
+
+}
+
+
+.stk-contact-submit i {
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   RIGHT CONTACT INFORMATION
+========================================================= */
+
+.stk-contact-info {
+
+    display: grid;
+
+    grid-template-rows:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   CONTACT INFO CARD
+========================================================= */
+
+.stk-contact-info-card {
+
+    width: 100%;
+
+    min-height: 170px;
+
+    padding: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.07);
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    animation:
+        stkContactCardUp 0.8s ease
+        forwards;
+
+}
+
+
+/* One-by-one */
+
+.stk-contact-info-card:nth-child(1) {
+
+    animation-delay: 0.35s;
+
+}
+
+
+.stk-contact-info-card:nth-child(2) {
+
+    animation-delay: 0.50s;
+
+}
+
+
+.stk-contact-info-card:nth-child(3) {
+
+    animation-delay: 0.65s;
+
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.stk-contact-info-icon {
+
+    width: 68px;
+
+    height: 68px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0eb,
+            #ffe2da
+        );
+
+    color: #d47b68;
+
+    font-size: 24px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+
+}
+
+
+.stk-contact-info-card:hover
+.stk-contact-info-icon {
+
+    transform:
+        rotate(8deg)
+        scale(1.08);
+
+    background:
+        linear-gradient(
+            135deg,
+            #d47b68,
+            #c46755
+        );
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================================
+   CONTACT CONTENT
+========================================================= */
+
+.stk-contact-info-content {
+
+    min-width: 0;
+
+}
+
+
+.stk-contact-info-content span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d47b68;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.stk-contact-info-content h3 {
+
+    margin: 0 0 8px;
+
+    color: #292321;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+}
+
+
+.stk-contact-info-content p {
+
+    margin: 0;
+
+    color: #756b68;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =========================================================
+   MAP SECTION
+========================================================= */
+
+.stk-contact-map-section {
+
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: 75px;
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    animation:
+        stkContactCardUp 0.9s ease
+        0.85s forwards;
+
+}
+
+
+.stk-contact-map-heading {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+}
+
+
+.stk-contact-map-heading span {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d47b68;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.stk-contact-map-heading h2 {
+
+    margin: 0 0 8px;
+
+    color: #292321;
+
+    font-size: 32px;
+
+}
+
+
+.stk-contact-map-heading p {
+
+    margin: 0;
+
+    color: #756b68;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.stk-contact-map-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #eeeeee;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.stk-contact-map-wrapper iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+
+}
+
+
+/* =========================================================
+   POPUP OVERLAY
+========================================================= */
+
+.stk-contact-popup-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 999999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(25, 20, 18, 0.65);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+
+}
+
+
+.stk-contact-popup-overlay.stk-contact-popup-show {
+
+    visibility: visible;
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}
+
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.stk-contact-popup {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 440px;
+
+    padding: 42px 32px;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25);
+
+    transform:
+        translateY(30px)
+        scale(0.95);
+
+    transition:
+        transform 0.4s ease;
+
+}
+
+
+.stk-contact-popup-overlay.stk-contact-popup-show
+.stk-contact-popup {
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =========================================================
+   CLOSE
+========================================================= */
+
+.stk-contact-popup-close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: #fff1ed;
+
+    color: #d47b68;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+========================================================= */
+
+.stk-contact-popup-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d47b68;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    animation:
+        stkContactSuccess 0.6s ease;
+
+}
+
+
+/* =========================================================
+   POPUP TEXT
+========================================================= */
+
+.stk-contact-popup h2 {
+
+    margin: 0 0 10px;
+
+    color: #292321;
+
+    font-size: 27px;
+
+}
+
+
+.stk-contact-popup p {
+
+    margin: 0 auto 18px;
+
+    max-width: 340px;
+
+    color: #756b68;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.stk-contact-popup-loader {
+
+    color: #d47b68;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes stkContactFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(50px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes stkContactCardUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(70px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes stkContactSuccess {
+
+    0% {
+
+        transform:
+            scale(0.4);
+
+        opacity: 0;
+
+    }
+
+    70% {
+
+        transform:
+            scale(1.1);
+
+    }
+
+    100% {
+
+        transform:
+            scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .stk-contact-section {
+
+        padding:
+            85px 5%;
+
+    }
+
+
+    .stk-contact-heading h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .stk-contact-form-card {
+
+        padding: 32px;
+
+    }
+
+
+    .stk-contact-info-card {
+
+        padding: 23px;
+
+    }
+
+
+    .stk-contact-info-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 21px;
+
+    }
+
+
+    .stk-contact-map-wrapper {
+
+        height: 420px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .stk-contact-section {
+
+        padding:
+            75px 5%;
+
+    }
+
+
+    .stk-contact-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .stk-contact-heading h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .stk-contact-heading p {
+
+        font-size: 16px;
+
+    }
+
+
+    .stk-contact-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .stk-contact-form-card {
+
+        padding: 32px;
+
+    }
+
+
+    .stk-contact-info {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        grid-template-rows: none;
+
+        gap: 18px;
+
+    }
+
+
+    .stk-contact-info-card {
+
+        min-height: 190px;
+
+        padding: 22px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 14px;
+
+    }
+
+
+    .stk-contact-info-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 20px;
+
+    }
+
+
+    .stk-contact-info-content h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .stk-contact-info-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .stk-contact-map-section {
+
+        margin-top: 55px;
+
+    }
+
+
+    .stk-contact-map-wrapper {
+
+        height: 400px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stk-contact-section {
+
+        padding:
+            60px 18px;
+
+    }
+
+
+    .stk-contact-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .stk-contact-subtitle {
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .stk-contact-heading h1 {
+
+        font-size: 29px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .stk-contact-heading p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* FORM */
+
+    .stk-contact-form-card {
+
+        padding: 25px 18px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .stk-contact-form-heading h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .stk-contact-form-heading p {
+
+        font-size: 13px;
+
+    }
+
+
+    /* INFO */
+
+    .stk-contact-info {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .stk-contact-info-card {
+
+        width: 100%;
+
+        min-height: 145px;
+
+        padding: 22px;
+
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        border-radius: 17px;
+
+    }
+
+
+    .stk-contact-info-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 20px;
+
+    }
+
+
+    .stk-contact-info-content h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .stk-contact-info-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    /* MAP */
+
+    .stk-contact-map-section {
+
+        margin-top: 50px;
+
+    }
+
+
+    .stk-contact-map-heading h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .stk-contact-map-heading p {
+
+        font-size: 13px;
+
+    }
+
+
+    .stk-contact-map-wrapper {
+
+        height: 330px;
+
+        border-radius: 17px;
+
+    }
+
+
+    /* POPUP */
+
+    .stk-contact-popup {
+
+        padding:
+            38px 22px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .stk-contact-popup-icon {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 27px;
+
+    }
+
+
+    .stk-contact-popup h2 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .stk-contact-section {
+
+        padding:
+            50px 14px;
+
+    }
+
+
+    .stk-contact-heading h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .stk-contact-form-card {
+
+        padding:
+            22px 15px;
+
+    }
+
+
+    .stk-contact-info-card {
+
+        min-height: 135px;
+
+        padding: 18px;
+
+    }
+
+
+    .stk-contact-info-icon {
+
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 18px;
+
+    }
+
+
+    .stk-contact-info-content h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .stk-contact-info-content p {
+
+        font-size: 12px;
+
+    }
+
+
+    .stk-contact-map-wrapper {
+
+        height: 280px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stk-contact-heading,
+    .stk-contact-form-card,
+    .stk-contact-info-card,
+    .stk-contact-map-section {
+
+        opacity: 1;
+
+        transform: none;
+
+        animation: none;
+
+    }
+
+}
+    </style>
+
+    <script>
+        /* =========================================================
+   STACKLY CONTACT PAGE
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =================================================
+           ELEMENTS
+        ================================================= */
+
+        const form =
+            document.getElementById(
+                "stkContactForm"
+            );
+
+
+        const nameInput =
+            document.getElementById(
+                "stkContactName"
+            );
+
+
+        const emailInput =
+            document.getElementById(
+                "stkContactEmail"
+            );
+
+
+        const messageInput =
+            document.getElementById(
+                "stkContactMessage"
+            );
+
+
+        const nameError =
+            document.getElementById(
+                "stkNameError"
+            );
+
+
+        const emailError =
+            document.getElementById(
+                "stkEmailError"
+            );
+
+
+        const messageError =
+            document.getElementById(
+                "stkMessageError"
+            );
+
+
+        const popup =
+            document.getElementById(
+                "stkContactPopup"
+            );
+
+
+        const popupClose =
+            document.getElementById(
+                "stkContactPopupClose"
+            );
+
+
+        /* =================================================
+           CHECK FORM
+        ================================================= */
+
+        if (!form) {
+
+            return;
+
+        }
+
+
+        /* =================================================
+           EMAIL VALIDATION
+        ================================================= */
+
+        function isValidEmail(email) {
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            return emailPattern.test(
+                email
+            );
+
+        }
+
+
+        /* =================================================
+           CLEAR ERRORS
+        ================================================= */
+
+        function clearErrors() {
+
+            nameError.textContent = "";
+
+            emailError.textContent = "";
+
+            messageError.textContent = "";
+
+
+            nameInput.classList.remove(
+                "stk-contact-input-error"
+            );
+
+
+            emailInput.classList.remove(
+                "stk-contact-input-error"
+            );
+
+
+            messageInput.classList.remove(
+                "stk-contact-input-error"
+            );
+
+        }
+
+
+        /* =================================================
+           FORM SUBMIT
+        ================================================= */
+
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                clearErrors();
+
+
+                let isValid = true;
+
+
+                /* -----------------------------------------
+                   NAME
+                ----------------------------------------- */
+
+                const name =
+                    nameInput.value.trim();
+
+
+                if (name === "") {
+
+                    nameError.textContent =
+                        "Please enter your name.";
+
+                    nameInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                } else if (
+                    name.length < 2
+                ) {
+
+                    nameError.textContent =
+                        "Name must contain at least 2 characters.";
+
+                    nameInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                }
+
+
+                /* -----------------------------------------
+                   EMAIL
+                ----------------------------------------- */
+
+                const email =
+                    emailInput.value.trim();
+
+
+                if (email === "") {
+
+                    emailError.textContent =
+                        "Please enter your email address.";
+
+                    emailInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                } else if (
+                    !isValidEmail(email)
+                ) {
+
+                    emailError.textContent =
+                        "Please enter a valid email address.";
+
+                    emailInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                }
+
+
+                /* -----------------------------------------
+                   MESSAGE
+                ----------------------------------------- */
+
+                const message =
+                    messageInput.value.trim();
+
+
+                if (message === "") {
+
+                    messageError.textContent =
+                        "Please write your message.";
+
+                    messageInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                } else if (
+                    message.length < 10
+                ) {
+
+                    messageError.textContent =
+                        "Message must contain at least 10 characters.";
+
+                    messageInput.classList.add(
+                        "stk-contact-input-error"
+                    );
+
+                    isValid = false;
+
+                }
+
+
+                /* -----------------------------------------
+                   INVALID
+                ----------------------------------------- */
+
+                if (!isValid) {
+
+                    return;
+
+                }
+
+
+                /* -----------------------------------------
+                   VALID
+                ----------------------------------------- */
+
+                showSuccessPopup();
+
+
+            }
+        );
+
+
+        /* =================================================
+           SHOW SUCCESS POPUP
+        ================================================= */
+
+        function showSuccessPopup() {
+
+            popup.classList.add(
+                "stk-contact-popup-show"
+            );
+
+
+            document.body.style.overflow =
+                "hidden";
+
+
+            /*
+             * Redirect automatically after
+             * 2.5 seconds.
+             */
+
+            setTimeout(
+                function () {
+
+                    window.location.href =
+                        "404.html";
+
+                },
+                2500
+            );
+
+        }
+
+
+        /* =================================================
+           CLOSE POPUP
+        ================================================= */
+
+        if (popupClose) {
+
+            popupClose.addEventListener(
+                "click",
+                function () {
+
+                    popup.classList.remove(
+                        "stk-contact-popup-show"
+                    );
+
+
+                    document.body.style.overflow =
+                        "";
+
+                }
+            );
+
+        }
+
+
+        /* =================================================
+           REAL-TIME ERROR CLEARING
+        ================================================= */
+
+        nameInput.addEventListener(
+            "input",
+            function () {
+
+                if (
+                    nameInput.value.trim() !== ""
+                ) {
+
+                    nameError.textContent = "";
+
+                    nameInput.classList.remove(
+                        "stk-contact-input-error"
+                    );
+
+                }
+
+            }
+        );
+
+
+        emailInput.addEventListener(
+            "input",
+            function () {
+
+                if (
+                    isValidEmail(
+                        emailInput.value.trim()
+                    )
+                ) {
+
+                    emailError.textContent = "";
+
+                    emailInput.classList.remove(
+                        "stk-contact-input-error"
+                    );
+
+                }
+
+            }
+        );
+
+
+        messageInput.addEventListener(
+            "input",
+            function () {
+
+                if (
+                    messageInput.value.trim().length >= 10
+                ) {
+
+                    messageError.textContent = "";
+
+                    messageInput.classList.remove(
+                        "stk-contact-input-error"
+                    );
+
+                }
+
+            }
+        );
+
+
+    }
+);
+    </script>
+
+
+
+    <!-- =========================================================
+     BEAUTY WEBSITE FOOTER
+========================================================= -->
+
+<footer class="beauty-footer">
+
+    <!-- =====================================================
+         OPTIONAL BEAUTY IMAGE STRIP
+         Similar to the image strip in your screenshot
+    ====================================================== -->
+
+    <div class="beauty-footer-gallery">
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cos1.webp"
+                alt="Beauty products">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 5.webp"
+                alt="Beauty skincare">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 6.webp"
+                alt="Skincare products">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 7.webp"
+                alt="Beauty care">
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN FOOTER
+    ====================================================== -->
+
+    <div class="beauty-footer-main">
+
+        <div class="beauty-footer-container">
+
+
+            <!-- =================================================
+                 COLUMN 1 - STACKLY
+            ================================================== -->
+
+            <div class="beauty-footer-column beauty-footer-brand">
+
+                <a href="index.html"
+                class="logo">
+
+                <img src="./white.webp"
+                    alt="Logo" style="height:60px; filter:brightness(0);">
+
+            </a>
+
+                <p class="beauty-footer-description">
+
+                    Discover thoughtfully selected beauty
+                    essentials designed to bring simple,
+                    effective care into your everyday routine.
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 2 - ABOUT
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                   Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                           Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 3 - HELP
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Shipping 
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Track Order
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Product Returns
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Checkout
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 4 - INFORMATION
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Store Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            About Store
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Latest Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            New Discounts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Sale Products
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 5 - NEWSLETTER
+            ================================================== -->
+
+            <div class="beauty-footer-column beauty-footer-newsletter">
+
+                <h3>
+                    Newsletter
+                </h3>
+
+                <p>
+                    Sign up for our newsletter to stay up to
+                    date on beauty offers, new arrivals and
+                    exclusive events.
+                </p>
+
+
+                <!-- SUBSCRIBE FORM -->
+
+                <form
+                    class="beauty-footer-form"
+                    id="beautyFooterForm"
+                    novalidate>
+
+                    <input
+                        type="email"
+                        id="beautyFooterEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        aria-label="Email Address">
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- ERROR -->
+
+                <div
+                    class="beauty-footer-message beauty-footer-error"
+                    id="beautyFooterError">
+
+                    Please fill correct mail id
+
+                </div>
+
+
+                <!-- SUCCESS -->
+
+                <div
+                    class="beauty-footer-message beauty-footer-success"
+                    id="beautyFooterSuccess">
+
+                    Mail ID subscribed successfully
+
+                </div>
+
+
+                <!-- SOCIAL ICONS -->
+
+                <div class="beauty-footer-social">
+
+                    <a
+                        href="404.html"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="Pinterest">
+
+                        <i class="fa-brands fa-pinterest-p"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM FOOTER
+        ================================================== -->
+
+        <div class="beauty-footer-bottom">
+
+            <div class="beauty-footer-bottom-container">
+
+
+                <!-- PAYMENT ICONS -->
+
+                <div class="beauty-footer-payments">
+                    <a href="./404.html">
+
+                    <i
+                        class="fa-brands fa-apple-pay"
+                        aria-label="Apple Pay">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-mastercard"
+                        aria-label="Mastercard">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-paypal"
+                        aria-label="PayPal">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-visa"
+                        aria-label="Visa">
+                    </i>
+                </a>
+                </div>
+
+
+                <!-- COPYRIGHT -->
+
+                <div class="beauty-footer-copyright">
+
+                    © 2026 Stackly. All Rights Reserved.
+
+                </div>
+
+
+                <!-- LEGAL -->
+
+                <div class="beauty-footer-legal">
+
+                    <a href="404.html">
+                        Privacy Policy
+                    </a>
+
+                    <span>
+                        |
+                    </span>
+
+                    <a href="404.html">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        type="button"
+        class="beauty-footer-top"
+        id="beautyFooterTop"
+        aria-label="Back to top">
+
+        <i class="fa-solid fa-chevron-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         SUBSCRIBE POPUP
+    ====================================================== -->
+
+    <div
+        class="beauty-footer-popup"
+        id="beautyFooterPopup">
+
+        <div class="beauty-footer-popup-box">
+
+            <div class="beauty-footer-popup-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <h3>
+                Subscribed!
+            </h3>
+
+            <p>
+                Mail ID subscribed successfully.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<style>
+    /* =========================================================
+   BEAUTY FOOTER
+   NON-CONFLICTING PREFIX:
+   beauty-footer-
+========================================================= */
+
+.beauty-footer {
+
+position: relative;
+
+width: 100%;
+
+overflow: hidden;
+
+background: #fcf8ef;
+
+color: #171412;
+}
+
+
+.beauty-footer *,
+.beauty-footer *::before,
+.beauty-footer *::after {
+
+box-sizing: border-box;
+}
+
+
+/* =========================================================
+IMAGE STRIP
+========================================================= */
+
+.beauty-footer-gallery {
+
+width: 100%;
+
+height: 240px;
+
+display: grid;
+
+grid-template-columns:
+    repeat(4, 1fr);
+
+overflow: hidden;
+}
+
+
+.beauty-footer-gallery-item {
+
+height: 100%;
+
+overflow: hidden;
+
+opacity: 0;
+
+transform: translateY(70px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-gallery-item img {
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+object-fit: cover;
+
+transition:
+    transform .6s ease;
+}
+
+
+.beauty-footer-gallery-item:hover img {
+
+transform: scale(1.06);
+}
+
+
+/* =========================================================
+GALLERY LOAD ONE BY ONE
+========================================================= */
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(1) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .1s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(2) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .25s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(3) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .4s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(4) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .55s;
+}
+
+
+/* =========================================================
+MAIN FOOTER
+========================================================= */
+
+.beauty-footer-main {
+
+width: 100%;
+
+background: #fcf8ef;
+
+padding-top: 75px;
+}
+
+
+.beauty-footer-container {
+
+width: min(
+    1380px,
+    calc(100% - 60px)
+);
+
+margin: 0 auto;
+
+display: grid;
+
+grid-template-columns:
+    minmax(250px, 1.6fr)
+    minmax(140px, .8fr)
+    minmax(150px, .8fr)
+    minmax(160px, .9fr)
+    minmax(270px, 1.25fr);
+
+gap: 55px;
+}
+
+
+/* =========================================================
+FOOTER COLUMNS
+========================================================= */
+
+.beauty-footer-column {
+
+min-width: 0;
+
+opacity: 0;
+
+transform: translateY(70px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+/* =========================================================
+LOAD ONE BY ONE
+========================================================= */
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(1) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .1s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(2) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .25s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(3) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .4s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(4) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .55s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(5) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .7s;
+}
+
+
+/* =========================================================
+STACKLY LOGO
+========================================================= */
+
+.beauty-footer-logo {
+
+display: inline-block;
+
+margin-bottom: 28px;
+
+color: #15110f;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 42px;
+
+font-weight: 400;
+
+letter-spacing: 3px;
+
+line-height: 1;
+
+text-decoration: none;
+
+transition:
+    opacity .3s ease;
+}
+
+
+.beauty-footer-logo:hover {
+
+opacity: .65;
+}
+
+
+/* =========================================================
+DESCRIPTION
+========================================================= */
+
+.beauty-footer-description {
+
+max-width: 390px;
+
+margin: 0;
+
+color: #302925;
+
+font-size: 22px;
+
+line-height: 1.7;
+}
+
+
+/* =========================================================
+COLUMN HEADINGS
+========================================================= */
+
+.beauty-footer-column h3 {
+
+margin: 0 0 28px;
+
+color: #171412;
+
+font-size: 22px;
+
+font-weight: 700;
+
+line-height: 1.3;
+}
+
+
+/* =========================================================
+LIST
+========================================================= */
+
+.beauty-footer-column ul {
+
+margin: 0;
+
+padding: 0;
+
+list-style: none;
+}
+
+
+.beauty-footer-column li {
+
+margin-bottom: 15px;
+}
+
+
+.beauty-footer-column li a {
+
+color: #302925;
+
+font-size: 22px;
+
+line-height: 1.4;
+
+text-decoration: none;
+
+transition:
+    color .3s ease,
+    padding-left .3s ease;
+}
+
+
+.beauty-footer-column li a:hover {
+
+color: #b87553;
+
+padding-left: 5px;
+}
+
+
+/* =========================================================
+NEWSLETTER
+========================================================= */
+
+.beauty-footer-newsletter {
+
+text-align: center;
+}
+
+
+.beauty-footer-newsletter h3 {
+
+font-size: 27px;
+}
+
+
+.beauty-footer-newsletter p {
+
+max-width: 340px;
+
+margin: 0 auto 25px;
+
+color: #514943;
+
+font-size: 22px;
+
+line-height: 1.6;
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.beauty-footer-form {
+
+width: 100%;
+
+min-height: 55px;
+
+display: flex;
+
+align-items: stretch;
+
+border: 1px solid #bdb4aa;
+
+background: #ffffff;
+
+overflow: hidden;
+}
+
+
+.beauty-footer-form input {
+
+width: 100%;
+
+min-width: 0;
+
+padding: 12px 18px;
+
+color: #211c19;
+
+background: transparent;
+
+border: 0;
+
+outline: none;
+
+font-family: inherit;
+
+font-size: 22px;
+}
+
+
+.beauty-footer-form input::placeholder {
+
+color: #89817b;
+
+opacity: 1;
+}
+
+
+.beauty-footer-form button {
+
+width: 65px;
+
+min-width: 65px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+color: #000000;
+
+background: #ead9b8;
+
+border: 0;
+
+cursor: pointer;
+
+font-size: 22px;
+
+transition:
+    background .3s ease;
+}
+
+
+.beauty-footer-form button:hover {
+
+background: #d9c49d;
+}
+
+
+/* =========================================================
+VALIDATION MESSAGES
+========================================================= */
+
+.beauty-footer-message {
+
+display: none;
+
+margin-top: 12px;
+
+font-size: 22px;
+
+font-weight: 600;
+
+line-height: 1.4;
+}
+
+
+.beauty-footer-error {
+
+color: #c44848;
+}
+
+
+.beauty-footer-success {
+
+color: #43854c;
+}
+
+
+/* =========================================================
+SOCIAL ICONS
+========================================================= */
+
+.beauty-footer-social {
+
+margin-top: 25px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-end;
+
+gap: 28px;
+}
+
+
+.beauty-footer-social a {
+
+color: #0f0e0d;
+
+font-size: 22px;
+
+text-decoration: none;
+
+transition:
+    transform .3s ease,
+    color .3s ease;
+}
+
+
+.beauty-footer-social a:hover {
+
+color: #b87553;
+
+transform: translateY(-4px);
+}
+
+
+/* =========================================================
+BOTTOM FOOTER
+========================================================= */
+
+.beauty-footer-bottom {
+
+width: 100%;
+
+margin-top: 70px;
+}
+
+
+.beauty-footer-bottom-container {
+
+width: min(
+    1380px,
+    calc(100% - 60px)
+);
+
+min-height: 75px;
+
+margin: 0 auto;
+
+padding: 20px 0;
+
+border-top: 1px solid #cfc6bb;
+
+display: grid;
+
+grid-template-columns:
+    1fr 1fr 1fr;
+
+align-items: center;
+
+gap: 30px;
+
+opacity: 0;
+
+transform: translateY(60px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-visible
+.beauty-footer-bottom-container {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .85s;
+}
+
+
+/* =========================================================
+PAYMENT ICONS
+========================================================= */
+
+.beauty-footer-payments {
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-start;
+
+gap: 18px;
+}
+
+
+.beauty-footer-payments i {
+
+color: #111111;
+
+font-size: 25px;
+}
+
+
+/* =========================================================
+COPYRIGHT
+========================================================= */
+
+.beauty-footer-copyright {
+
+color: #302925;
+
+font-size: 22px;
+
+text-align: center;
+
+white-space: nowrap;
+}
+
+
+/* =========================================================
+LEGAL LINKS
+========================================================= */
+
+.beauty-footer-legal {
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-end;
+
+gap: 18px;
+}
+
+
+.beauty-footer-legal a {
+
+color: #302925;
+
+font-size: 22px;
+
+text-decoration: none;
+
+transition:
+    color .3s ease;
+}
+
+
+.beauty-footer-legal a:hover {
+
+color: #b87553;
+}
+
+
+.beauty-footer-legal span {
+
+color: #817870;
+
+font-size: 22px;
+}
+
+
+/* =========================================================
+BACK TO TOP
+========================================================= */
+
+.beauty-footer-top {
+
+position: fixed;
+
+right: 20px;
+
+bottom: 20px;
+
+width: 48px;
+
+height: 48px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+color: #201914;
+
+background: #ead9b8;
+
+border: 0;
+
+cursor: pointer;
+
+font-size: 22px;
+
+opacity: 0;
+
+visibility: hidden;
+
+transform: translateY(15px);
+
+transition:
+    opacity .3s ease,
+    visibility .3s ease,
+    transform .3s ease;
+
+z-index: 999;
+}
+
+
+.beauty-footer-top.beauty-footer-top-show {
+
+opacity: 1;
+
+visibility: visible;
+
+transform: translateY(0);
+}
+
+
+.beauty-footer-top:hover {
+
+background: #d9c49d;
+}
+
+
+/* =========================================================
+SUCCESS POPUP
+========================================================= */
+
+.beauty-footer-popup {
+
+position: fixed;
+
+inset: 0;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px;
+
+background: rgba(20, 15, 12, .55);
+
+opacity: 0;
+
+visibility: hidden;
+
+pointer-events: none;
+
+transition:
+    opacity .3s ease,
+    visibility .3s ease;
+
+z-index: 99999;
+}
+
+
+.beauty-footer-popup.beauty-footer-popup-show {
+
+opacity: 1;
+
+visibility: visible;
+
+pointer-events: auto;
+}
+
+
+.beauty-footer-popup-box {
+
+width: min(
+    450px,
+    100%
+);
+
+padding: 40px 30px;
+
+text-align: center;
+
+background: #fffaf5;
+
+border: 1px solid #ead9cc;
+
+box-shadow:
+    0 20px 60px
+    rgba(0,0,0,.2);
+
+transform: scale(.85);
+
+transition:
+    transform .35s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-popup-show
+.beauty-footer-popup-box {
+
+transform: scale(1);
+}
+
+
+.beauty-footer-popup-icon {
+
+width: 65px;
+
+height: 65px;
+
+margin: 0 auto 20px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+color: #ffffff;
+
+background: #55945b;
+
+font-size: 25px;
+}
+
+
+.beauty-footer-popup-box h3 {
+
+margin: 0 0 10px;
+
+color: #211914;
+
+font-size: 27px;
+}
+
+
+.beauty-footer-popup-box p {
+
+margin: 0;
+
+color: #625852;
+
+font-size: 22px;
+
+line-height: 1.5;
+}
+
+
+/* =========================================================
+LAPTOP
+DESKTOP/LAPTOP TEXT = 22PX
+========================================================= */
+
+@media (max-width: 1199px) {
+
+.beauty-footer-container {
+
+    width: calc(100% - 50px);
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 35px;
+}
+
+.beauty-footer-brand {
+
+    grid-column: span 1;
+}
+
+.beauty-footer-newsletter {
+
+    grid-column: 1 / -1;
+
+    max-width: 600px;
+
+    justify-self: center;
+
+    width: 100%;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 50px);
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-copyright,
+.beauty-footer-legal a {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+TABLET
+22PX
+========================================================= */
+
+@media (max-width: 991px) {
+
+.beauty-footer-gallery {
+
+    height: 180px;
+}
+
+.beauty-footer-main {
+
+    padding-top: 55px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 40px);
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 45px 30px;
+}
+
+.beauty-footer-brand {
+
+    grid-column: 1 / -1;
+}
+
+.beauty-footer-newsletter {
+
+    grid-column: 1 / -1;
+
+    max-width: 650px;
+}
+
+.beauty-footer-bottom {
+
+    margin-top: 55px;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 40px);
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+.beauty-footer-copyright {
+
+    order: 3;
+
+    grid-column: 1 / -1;
+}
+
+.beauty-footer-legal {
+
+    justify-content: flex-end;
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+ALL FOOTER TEXT = 19PX
+========================================================= */
+
+@media (max-width: 767px) {
+
+.beauty-footer-gallery {
+
+    height: 150px;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+.beauty-footer-gallery-item:nth-child(3),
+.beauty-footer-gallery-item:nth-child(4) {
+
+    display: none;
+}
+
+.beauty-footer-main {
+
+    padding-top: 45px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 30px);
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+}
+
+.beauty-footer-brand,
+.beauty-footer-newsletter {
+
+    grid-column: auto;
+}
+
+.beauty-footer-logo {
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-social a {
+
+    font-size: 19px;
+}
+
+.beauty-footer-column h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+.beauty-footer-newsletter h3 {
+
+    font-size: 24px;
+}
+
+.beauty-footer-form {
+
+    min-height: 52px;
+}
+
+.beauty-footer-form button {
+
+    width: 58px;
+
+    min-width: 58px;
+
+    font-size: 19px;
+}
+
+.beauty-footer-social {
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.beauty-footer-bottom {
+
+    margin-top: 45px;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 30px);
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+
+    text-align: center;
+}
+
+.beauty-footer-payments {
+
+    justify-content: center;
+}
+
+.beauty-footer-payments i {
+
+    font-size: 22px;
+}
+
+.beauty-footer-copyright {
+
+    order: 2;
+
+    grid-column: auto;
+
+    font-size: 19px;
+
+    white-space: normal;
+}
+
+.beauty-footer-legal {
+
+    order: 3;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.beauty-footer-legal a,
+.beauty-footer-legal span {
+
+    font-size: 19px;
+}
+
+.beauty-footer-top {
+
+    right: 12px;
+
+    bottom: 12px;
+
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 19px;
+}
+
+.beauty-footer-popup-box h3 {
+
+    font-size: 24px;
+}
+
+.beauty-footer-popup-box p {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+19PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+.beauty-footer-gallery {
+
+    height: 120px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 24px);
+}
+
+.beauty-footer-logo {
+
+    font-size: 32px;
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-copyright,
+.beauty-footer-legal a,
+.beauty-footer-legal span {
+
+    font-size: 19px;
+}
+
+.beauty-footer-newsletter h3 {
+
+    font-size: 22px;
+}
+
+.beauty-footer-form input {
+
+    padding: 10px 12px;
+}
+
+}
+
+
+/* =========================================================
+REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+.beauty-footer-column,
+.beauty-footer-gallery-item,
+.beauty-footer-bottom-container,
+.beauty-footer-popup-box {
+
+    transition: none !important;
+
+    transform: none !important;
+}
+
+}
+    </style>
+    <script>
+        (function () {
+        
+            "use strict";
+        
+        
+            /* =====================================================
+               FOOTER ELEMENTS
+            ===================================================== */
+        
+            const beautyFooter =
+                document.querySelector(
+                    ".beauty-footer"
+                );
+        
+            if (!beautyFooter) {
+                return;
+            }
+        
+        
+            const beautyFooterForm =
+                document.getElementById(
+                    "beautyFooterForm"
+                );
+        
+            const beautyFooterEmail =
+                document.getElementById(
+                    "beautyFooterEmail"
+                );
+        
+            const beautyFooterError =
+                document.getElementById(
+                    "beautyFooterError"
+                );
+        
+            const beautyFooterSuccess =
+                document.getElementById(
+                    "beautyFooterSuccess"
+                );
+        
+            const beautyFooterPopup =
+                document.getElementById(
+                    "beautyFooterPopup"
+                );
+        
+            const beautyFooterTop =
+                document.getElementById(
+                    "beautyFooterTop"
+                );
+        
+        
+            /* =====================================================
+               SCROLL REVEAL
+            ===================================================== */
+        
+            const beautyFooterObserver =
+                new IntersectionObserver(
+        
+                    function (entries, observer) {
+        
+                        entries.forEach(
+                            function (entry) {
+        
+                                if (
+                                    entry.isIntersecting
+                                ) {
+        
+                                    entry.target.classList.add(
+                                        "beauty-footer-visible"
+                                    );
+        
+                                    observer.unobserve(
+                                        entry.target
+                                    );
+        
+                                }
+        
+                            }
+                        );
+        
+                    },
+                    {
+                        threshold: 0.12
+                    }
+        
+                );
+        
+        
+            beautyFooterObserver.observe(
+                beautyFooter
+            );
+        
+        
+            /* =====================================================
+               EMAIL VALIDATION
+            ===================================================== */
+        
+            function beautyValidateEmail(email) {
+        
+                const beautyEmailPattern =
+                    /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        
+                return beautyEmailPattern.test(
+                    email
+                );
+        
+            }
+        
+        
+            /* =====================================================
+               SHOW ERROR
+            ===================================================== */
+        
+            function beautyShowFooterError() {
+        
+                beautyFooterSuccess.style.display =
+                    "none";
+        
+                beautyFooterError.style.display =
+                    "block";
+        
+                beautyFooterEmail.focus();
+        
+            }
+        
+        
+            /* =====================================================
+               SHOW SUCCESS POPUP
+            ===================================================== */
+        
+            function beautyShowFooterSuccess() {
+        
+                beautyFooterError.style.display =
+                    "none";
+        
+                beautyFooterSuccess.style.display =
+                    "block";
+        
+                beautyFooterPopup.classList.add(
+                    "beauty-footer-popup-show"
+                );
+        
+        
+                /*
+                 * After showing the success popup,
+                 * move to 404 page.
+                 */
+        
+                setTimeout(
+                    function () {
+        
+                        window.location.href =
+                            "404.html";
+        
+                    },
+                    1800
+                );
+        
+            }
+        
+        
+            /* =====================================================
+               FORM SUBMIT
+            ===================================================== */
+        
+            beautyFooterForm.addEventListener(
+                "submit",
+                function (event) {
+        
+                    event.preventDefault();
+        
+        
+                    const beautyEmail =
+                        beautyFooterEmail.value.trim();
+        
+        
+                    /* EMPTY OR INVALID EMAIL */
+        
+                    if (
+                        !beautyEmail ||
+                        !beautyValidateEmail(
+                            beautyEmail
+                        )
+                    ) {
+        
+                        beautyShowFooterError();
+        
+                        return;
+        
+                    }
+        
+        
+                    /* VALID EMAIL */
+        
+                    beautyShowFooterSuccess();
+        
+                }
+            );
+        
+        
+            /* =====================================================
+               REMOVE ERROR WHILE TYPING
+            ===================================================== */
+        
+            beautyFooterEmail.addEventListener(
+                "input",
+                function () {
+        
+                    beautyFooterError.style.display =
+                        "none";
+        
+                }
+            );
+        
+        
+            /* =====================================================
+               BACK TO TOP
+            ===================================================== */
+        
+            window.addEventListener(
+                "scroll",
+                function () {
+        
+                    if (
+                        window.scrollY > 500
+                    ) {
+        
+                        beautyFooterTop.classList.add(
+                            "beauty-footer-top-show"
+                        );
+        
+                    } else {
+        
+                        beautyFooterTop.classList.remove(
+                            "beauty-footer-top-show"
+                        );
+        
+                    }
+        
+                }
+            );
+        
+        
+            beautyFooterTop.addEventListener(
+                "click",
+                function () {
+        
+                    window.scrollTo({
+        
+                        top: 0,
+        
+                        behavior: "smooth"
+        
+                    });
+        
+                }
+            );
+        
+        
+        })();
+        </script>
+    

@@ -1,0 +1,9806 @@
+<!-- =========================================================
+     BEAUTY PROMO / ANNOUNCEMENT BAR
+========================================================= -->
+
+<section class="beauty-promo-bar">
+
+    <div class="beauty-promo-track">
+
+        <!-- FIRST SET -->
+
+        <div class="beauty-promo-item">
+
+            <span class="beauty-promo-highlight">
+                BLACK FRIDAY SALE
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                10% OFF
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                FREE SHIPPING ON ORDERS ABOVE ₹300
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                USE CODE
+            </span>
+
+            <strong>
+                2026CODE
+            </strong>
+
+        </div>
+
+
+        <!-- SECOND SET
+             Duplicate required for seamless scrolling -->
+
+        <div class="beauty-promo-item">
+
+            <span class="beauty-promo-highlight">
+                BLACK FRIDAY SALE
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                10% OFF
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                FREE SHIPPING ON ORDERS ABOVE ₹300
+            </span>
+
+            <span class="beauty-promo-separator">
+                •
+            </span>
+
+            <span>
+                USE CODE
+            </span>
+
+            <strong>
+                2026CODE
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    
+    /* =========================================================
+   BEAUTY PROMO BAR
+   NON-CONFLICTING PREFIX:
+   beauty-promo-
+========================================================= */
+
+.beauty-promo-bar {
+
+position: relative;
+
+width: 100%;
+
+height: 46px;
+
+overflow: hidden;
+
+display: flex;
+
+align-items: center;
+
+background: #17120f;
+
+color: #ffffff;
+
+border-bottom: 1px solid #2c2521;
+
+z-index: 10001;
+}
+
+
+/* =========================================================
+MOVING TRACK
+========================================================= */
+
+.beauty-promo-track {
+
+display: flex;
+
+align-items: center;
+
+width: max-content;
+
+min-width: 100%;
+
+animation:
+    beautyPromoScroll
+    22s
+    linear
+    infinite;
+}
+
+
+/* =========================================================
+EACH TEXT GROUP
+========================================================= */
+
+.beauty-promo-item {
+
+flex-shrink: 0;
+
+display: flex;
+
+align-items: center;
+
+gap: 22px;
+
+padding-right: 70px;
+
+white-space: nowrap;
+
+font-size: 22px;
+
+font-weight: 500;
+
+line-height: 1;
+
+letter-spacing: .3px;
+}
+
+
+/* =========================================================
+BLACK FRIDAY
+========================================================= */
+
+.beauty-promo-highlight {
+
+color: #f2a66f;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+}
+
+
+/* =========================================================
+CODE
+========================================================= */
+
+.beauty-promo-item strong {
+
+padding: 5px 10px;
+
+color: #17120f;
+
+background: #ffffff;
+
+font-size: 22px;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+
+border-radius: 3px;
+}
+
+
+/* =========================================================
+SEPARATOR
+========================================================= */
+
+.beauty-promo-separator {
+
+color: #d18b64;
+
+font-size: 22px;
+
+font-weight: 700;
+}
+
+
+/* =========================================================
+SCROLL ANIMATION
+========================================================= */
+
+@keyframes beautyPromoScroll {
+
+0% {
+
+    transform: translateX(0);
+
+}
+
+100% {
+
+    transform: translateX(-50%);
+
+}
+
+}
+
+
+/* =========================================================
+PAUSE WHEN HOVERED
+========================================================= */
+
+.beauty-promo-bar:hover
+.beauty-promo-track {
+
+animation-play-state: paused;
+}
+
+
+/* =========================================================
+LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+.beauty-promo-bar {
+
+    height: 44px;
+}
+
+.beauty-promo-item {
+
+    gap: 18px;
+
+    padding-right: 55px;
+
+    font-size: 22px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 22px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+.beauty-promo-bar {
+
+    height: 42px;
+}
+
+.beauty-promo-item {
+
+    gap: 16px;
+
+    padding-right: 50px;
+
+    font-size: 22px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 22px;
+
+    padding: 4px 9px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+.beauty-promo-bar {
+
+    height: 40px;
+}
+
+.beauty-promo-item {
+
+    gap: 14px;
+
+    padding-right: 45px;
+
+    font-size: 19px;
+
+    letter-spacing: .1px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 19px;
+
+    padding: 4px 8px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+.beauty-promo-bar {
+
+    height: 38px;
+}
+
+.beauty-promo-item {
+
+    gap: 12px;
+
+    padding-right: 40px;
+
+    font-size: 19px;
+}
+
+.beauty-promo-item strong {
+
+    font-size: 19px;
+}
+
+.beauty-promo-separator {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+.beauty-promo-track {
+
+    animation: none;
+}
+
+}
+</style>
+<!-- =========================================================
+     BEAUTY WEBSITE HEADER
+========================================================= -->
+
+<header class="beauty-header">
+
+    <div class="beauty-header-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+                class="logo">
+
+                <img src="./white.webp"
+                    alt="Logo" style="height:60px; filter:brightness(0);">
+
+            </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="beauty-header-nav"
+            aria-label="Main Navigation">
+
+            <a
+                href="index.html"
+                class="beauty-header-link beauty-header-active">
+                Home
+            </a>
+
+            <a
+                href="about.html"
+                class="beauty-header-link">
+                About
+            </a>
+
+            <a
+                href="services.html"
+                class="beauty-header-link">
+                Services
+            </a>
+
+            
+            <a
+                href="contact.html"
+                class="beauty-header-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="beauty-header-actions">
+
+            <a
+                href="login.html"
+                class="beauty-header-login">
+
+                Login
+
+            </a>
+
+            <a
+                href="register.html"
+                class="beauty-header-register">
+
+                Register
+
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            type="button"
+            class="beauty-header-menu"
+            aria-label="Open menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="beauty-header-mobile">
+
+        <div class="beauty-header-mobile-inner">
+
+            <button
+                type="button"
+                class="beauty-header-close"
+                aria-label="Close menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <nav
+                class="beauty-header-mobile-nav"
+                aria-label="Mobile Navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="beauty-header-mobile-actions">
+
+                <a
+                    href="login.html"
+                    class="beauty-header-mobile-login">
+
+                    Login
+
+                </a>
+
+                <a
+                    href="register.html"
+                    class="beauty-header-mobile-register">
+
+                    Register
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<style>
+    /* =========================================================
+   BEAUTY HEADER
+   RESPONSIVE
+   DESKTOP / LAPTOP / TABLET = 22PX
+   MOBILE = 19PX
+
+   NON-CONFLICTING PREFIX
+   beauty-header-
+========================================================= */
+
+
+/* =========================================================
+   HEADER RESET
+========================================================= */
+
+.beauty-header,
+.beauty-header *,
+.beauty-header *::before,
+.beauty-header *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+
+.beauty-header {
+    position: relative;
+
+    width: 100%;
+
+    background: #fcf8ef;
+
+    border-bottom: 1px solid #e8ded4;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.beauty-header-container {
+    width: min(1400px, calc(100% - 60px));
+
+    min-height: 90px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.beauty-header .logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    flex-shrink: 0;
+
+    width: 180px;
+
+    text-decoration: none;
+
+    line-height: 0;
+}
+
+
+/* LOGO IMAGE */
+
+.beauty-header .logo img {
+    display: block;
+
+    width: auto;
+
+    max-width: 170px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* LOGO HOVER */
+
+.beauty-header .logo:hover img {
+    transform: scale(1.04);
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.beauty-header-nav {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 38px;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.beauty-header-link {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px 0;
+
+    color: #211a17;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+/* UNDERLINE */
+
+.beauty-header-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 3px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #b87353;
+
+    transition:
+        width 0.3s ease;
+}
+
+
+/* HOVER */
+
+.beauty-header-link:hover {
+    color: #b87353;
+}
+
+
+/* HOVER UNDERLINE */
+
+.beauty-header-link:hover::after {
+    width: 100%;
+}
+
+
+/* ACTIVE LINK */
+
+.beauty-header-link.beauty-header-active {
+    color: #b87353;
+}
+
+
+.beauty-header-link.beauty-header-active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   RIGHT SIDE ACTIONS
+========================================================= */
+
+.beauty-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    width: 220px;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.beauty-header-login {
+    min-height: 48px;
+
+    padding: 10px 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2b211d;
+
+    background: transparent;
+
+    border: 1px solid #d2c1b7;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-login:hover {
+    color: #ffffff;
+
+    background: #2b211d;
+
+    border-color: #2b211d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.beauty-header-register {
+    min-height: 48px;
+
+    padding: 10px 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-register:hover {
+    background: #925a40;
+
+    border-color: #925a40;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.beauty-header-menu {
+    display: none;
+
+    width: 48px;
+
+    height: 48px;
+
+    padding: 8px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    background: transparent;
+
+    border: 1px solid #cdbbb0;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.beauty-header-menu:hover {
+    background: #f1e7dd;
+
+    border-color: #b87353;
+}
+
+
+/* HAMBURGER LINES */
+
+.beauty-header-menu span {
+    display: block;
+
+    width: 27px;
+
+    height: 2px;
+
+    background: #2a201c;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION OVERLAY
+========================================================= */
+
+.beauty-header-mobile {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100vh;
+
+    height: 100dvh;
+
+    background: rgba(25, 18, 14, 0.55);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+
+    z-index: 10000;
+}
+
+
+/* =========================================================
+   MOBILE MENU INNER PANEL
+========================================================= */
+
+.beauty-header-mobile-inner {
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: min(420px, 88%);
+
+    height: 100%;
+
+    padding: 28px;
+
+    overflow-y: auto;
+
+    background: #fcf8ef;
+
+    box-shadow:
+        -15px 0 45px rgba(0, 0, 0, 0.15);
+
+    transform: translateX(100%);
+
+    transition:
+        transform 0.45s cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+}
+
+
+/* =========================================================
+   OPEN MOBILE MENU
+========================================================= */
+
+.beauty-header-mobile.beauty-header-mobile-open {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+.beauty-header-mobile.beauty-header-mobile-open
+.beauty-header-mobile-inner {
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.beauty-header-close {
+    width: 48px;
+
+    height: 48px;
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-close:hover {
+    background: #925a40;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+.beauty-header-mobile-nav {
+    margin-top: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   MOBILE NAV LINKS
+========================================================= */
+
+.beauty-header-mobile-nav a {
+    position: relative;
+
+    display: block;
+
+    padding: 18px 5px;
+
+    color: #211a17;
+
+    border-bottom: 1px solid #e4d9d0;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.beauty-header-mobile-nav a:hover {
+    color: #b87353;
+
+    padding-left: 12px;
+
+    background: rgba(
+        184,
+        115,
+        83,
+        0.04
+    );
+}
+
+
+/* =========================================================
+   MOBILE LOGIN / REGISTER
+========================================================= */
+
+.beauty-header-mobile-actions {
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   MOBILE LOGIN
+========================================================= */
+
+.beauty-header-mobile-login {
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2b211d;
+
+    background: transparent;
+
+    border: 1px solid #cdbbb0;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.beauty-header-mobile-login:hover {
+    color: #ffffff;
+
+    background: #2b211d;
+}
+
+
+/* =========================================================
+   MOBILE REGISTER
+========================================================= */
+
+.beauty-header-mobile-register {
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border: 1px solid #b87353;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.beauty-header-mobile-register:hover {
+    background: #925a40;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LAPTOP
+   1200PX - 992PX
+   FONT = 22PX
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-header-container {
+        width: calc(100% - 50px);
+
+        gap: 22px;
+    }
+
+
+    .beauty-header-nav {
+        gap: 24px;
+    }
+
+
+    .beauty-header-link {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-actions {
+        width: 205px;
+
+        gap: 8px;
+    }
+
+
+    .beauty-header-login,
+    .beauty-header-register {
+        padding-left: 14px;
+
+        padding-right: 14px;
+
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   991PX - 768PX
+   DESKTOP NAVIGATION HIDDEN
+   MOBILE MENU ENABLED
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-header-container {
+        width: calc(100% - 40px);
+
+        min-height: 80px;
+    }
+
+
+    /* HIDE DESKTOP NAV */
+
+    .beauty-header-nav,
+    .beauty-header-actions {
+        display: none;
+    }
+
+
+    /* SHOW HAMBURGER */
+
+    .beauty-header-menu {
+        display: flex;
+    }
+
+
+    /* LOGO */
+
+    .beauty-header .logo {
+        width: auto;
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 160px;
+
+        height: 58px;
+    }
+
+
+    /* MOBILE MENU */
+
+    .beauty-header-mobile-nav a {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        font-size: 22px;
+    }
+
+
+    .beauty-header-close {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   BELOW 768PX
+   ALL TEXT = 19PX
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-header-container {
+        width: calc(100% - 30px);
+
+        min-height: 72px;
+
+        gap: 15px;
+    }
+
+
+    /* LOGO */
+
+    .beauty-header .logo img {
+        max-width: 145px;
+
+        height: 52px;
+    }
+
+
+    /* MENU BUTTON */
+
+    .beauty-header-menu {
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .beauty-header-menu span {
+        width: 24px;
+    }
+
+
+    /* MOBILE PANEL */
+
+    .beauty-header-mobile-inner {
+        width: min(390px, 90%);
+
+        padding: 22px;
+    }
+
+
+    /* CLOSE */
+
+    .beauty-header-close {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 19px;
+    }
+
+
+    /* NAV */
+
+    .beauty-header-mobile-nav {
+        margin-top: 38px;
+    }
+
+
+    .beauty-header-mobile-nav a {
+        padding: 16px 4px;
+
+        font-size: 19px;
+    }
+
+
+    /* ACTIONS */
+
+    .beauty-header-mobile-actions {
+        margin-top: 30px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        min-height: 50px;
+
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 480PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-header-container {
+        width: calc(100% - 22px);
+
+        min-height: 68px;
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 125px;
+
+        height: 48px;
+    }
+
+
+    .beauty-header-menu {
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    .beauty-header-mobile-inner {
+        width: 94%;
+
+        padding: 18px;
+    }
+
+
+    .beauty-header-mobile-nav {
+        margin-top: 32px;
+    }
+
+
+    .beauty-header-mobile-nav a {
+        font-size: 19px;
+
+        padding: 15px 3px;
+    }
+
+
+    .beauty-header-mobile-login,
+    .beauty-header-mobile-register {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-header-container {
+        width: calc(100% - 18px);
+    }
+
+
+    .beauty-header .logo img {
+        max-width: 110px;
+
+        height: 44px;
+    }
+
+
+    .beauty-header-menu {
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .beauty-header-mobile-inner {
+        width: 96%;
+
+        padding: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .beauty-header *,
+    .beauty-header *::before,
+    .beauty-header *::after {
+        transition: none !important;
+    }
+
+}
+    </style>
+
+<script>
+    (function () {
+    
+        "use strict";
+    
+    
+        /* =====================================================
+           BEAUTY HEADER ELEMENTS
+        ===================================================== */
+    
+        const beautyHeader =
+            document.querySelector(
+                ".beauty-header"
+            );
+    
+        if (!beautyHeader) {
+            return;
+        }
+    
+    
+        const beautyMenuButton =
+            beautyHeader.querySelector(
+                ".beauty-header-menu"
+            );
+    
+        const beautyMobileMenu =
+            beautyHeader.querySelector(
+                ".beauty-header-mobile"
+            );
+    
+        const beautyMobileInner =
+            beautyHeader.querySelector(
+                ".beauty-header-mobile-inner"
+            );
+    
+        const beautyCloseButton =
+            beautyHeader.querySelector(
+                ".beauty-header-close"
+            );
+    
+        const beautyMobileLinks =
+            beautyHeader.querySelectorAll(
+                ".beauty-header-mobile-nav a"
+            );
+    
+    
+        /* =====================================================
+           OPEN MOBILE MENU
+        ===================================================== */
+    
+        function beautyOpenMenu() {
+    
+            if (!beautyMobileMenu) {
+                return;
+            }
+    
+    
+            beautyMobileMenu.classList.add(
+                "beauty-header-mobile-open"
+            );
+    
+    
+            if (beautyMenuButton) {
+    
+                beautyMenuButton.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+    
+                beautyMenuButton.setAttribute(
+                    "aria-label",
+                    "Close menu"
+                );
+    
+            }
+    
+    
+            /* Prevent background scrolling */
+    
+            document.body.style.overflow = "hidden";
+    
+        }
+    
+    
+        /* =====================================================
+           CLOSE MOBILE MENU
+        ===================================================== */
+    
+        function beautyCloseMenu() {
+    
+            if (!beautyMobileMenu) {
+                return;
+            }
+    
+    
+            beautyMobileMenu.classList.remove(
+                "beauty-header-mobile-open"
+            );
+    
+    
+            if (beautyMenuButton) {
+    
+                beautyMenuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+    
+                beautyMenuButton.setAttribute(
+                    "aria-label",
+                    "Open menu"
+                );
+    
+            }
+    
+    
+            /* Restore scrolling */
+    
+            document.body.style.overflow = "";
+    
+        }
+    
+    
+        /* =====================================================
+           HAMBURGER CLICK
+        ===================================================== */
+    
+        if (beautyMenuButton) {
+    
+            beautyMenuButton.addEventListener(
+                "click",
+                function () {
+    
+                    const isOpen =
+                        beautyMobileMenu.classList.contains(
+                            "beauty-header-mobile-open"
+                        );
+    
+    
+                    if (isOpen) {
+    
+                        beautyCloseMenu();
+    
+                    } else {
+    
+                        beautyOpenMenu();
+    
+                    }
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           CLOSE BUTTON
+        ===================================================== */
+    
+        if (beautyCloseButton) {
+    
+            beautyCloseButton.addEventListener(
+                "click",
+                function () {
+    
+                    beautyCloseMenu();
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           CLICK OUTSIDE MENU
+        ===================================================== */
+    
+        if (beautyMobileMenu) {
+    
+            beautyMobileMenu.addEventListener(
+                "click",
+                function (event) {
+    
+                    if (
+                        event.target ===
+                        beautyMobileMenu
+                    ) {
+    
+                        beautyCloseMenu();
+    
+                    }
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           MOBILE LINKS
+        ===================================================== */
+    
+        beautyMobileLinks.forEach(
+            function (link) {
+    
+                link.addEventListener(
+                    "click",
+                    function () {
+    
+                        beautyCloseMenu();
+    
+                    }
+                );
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           ESCAPE KEY
+        ===================================================== */
+    
+        document.addEventListener(
+            "keydown",
+            function (event) {
+    
+                if (
+                    event.key === "Escape" &&
+                    beautyMobileMenu.classList.contains(
+                        "beauty-header-mobile-open"
+                    )
+                ) {
+    
+                    beautyCloseMenu();
+    
+                }
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           SCREEN RESIZE
+           CLOSE MOBILE MENU WHEN DESKTOP VIEW OPENS
+        ===================================================== */
+    
+        window.addEventListener(
+            "resize",
+            function () {
+    
+                if (
+                    window.innerWidth > 991
+                ) {
+    
+                    beautyCloseMenu();
+    
+                }
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           LOGO CLICK
+           HTML ALREADY USES index.html
+        ===================================================== */
+    
+        const beautyLogo =
+            beautyHeader.querySelector(
+                ".logo"
+            );
+    
+        if (beautyLogo) {
+    
+            beautyLogo.addEventListener(
+                "click",
+                function () {
+    
+                    window.location.href =
+                        "index.html";
+    
+                }
+            );
+    
+        }
+    
+    })();
+    </script>
+
+<section class="beauty-about-hero" id="beautyAboutHero">
+
+    <!-- BACKGROUND IMAGE -->
+
+    <div class="beauty-about-hero-bg">
+
+        <img
+            src="./cost 7.webp"
+            alt="About our beauty collection">
+
+    </div>
+
+
+    <!-- OVERLAY -->
+
+    <div class="beauty-about-hero-overlay"></div>
+
+
+    <!-- CENTER CONTENT -->
+
+    <div class="beauty-about-hero-container">
+
+        <div class="beauty-about-hero-content">
+
+            <!-- BREADCRUMB -->
+
+            <div class="beauty-about-breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span class="beauty-about-divider">
+                    /
+                </span>
+
+                <span class="beauty-about-current">
+                    Services
+                </span>
+
+            </div>
+
+
+            <!-- HEADING -->
+
+            <h1 class="beauty-about-title">
+                Services
+            </h1>
+
+
+            <!-- DESCRIPTION -->
+
+            <p class="beauty-about-description">
+                Discover thoughtful beauty essentials created
+                to make your everyday skincare and self-care
+                routine feel simple, pure and beautiful.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    /* =========================================================
+   BEAUTY ABOUT HERO
+   CENTERED CONTENT
+========================================================= */
+
+.beauty-about-hero {
+    width: 100%;
+    min-height: 500px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2b211e;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.beauty-about-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+.beauty-about-hero-bg img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.08);
+
+    transition:
+        transform 1.5s ease;
+}
+
+
+/* IMAGE ZOOM */
+
+.beauty-about-hero.beauty-about-loaded
+.beauty-about-hero-bg img {
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.beauty-about-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 18, 15, 0.72),
+            rgba(25, 18, 15, 0.48)
+        );
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.beauty-about-hero-container {
+    width: min(
+        1200px,
+        calc(100% - 60px)
+    );
+
+    min-height: 500px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.beauty-about-hero-content {
+    width: 100%;
+
+    max-width: 850px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   HOME / ABOUT
+========================================================= */
+
+.beauty-about-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+
+    white-space: nowrap;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* BREADCRUMB SHOW */
+
+.beauty-about-breadcrumb.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* HOME */
+
+.beauty-about-breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.beauty-about-breadcrumb a:hover {
+    color: #f3c7b8;
+}
+
+
+/* SLASH */
+
+.beauty-about-divider {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* ABOUT */
+
+.beauty-about-current {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.beauty-about-title {
+    margin: 0 0 16px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    /* DESKTOP */
+    font-size: 24px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.85s ease,
+        transform 0.85s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* HEADING SHOW */
+
+.beauty-about-title.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.beauty-about-description {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.93);
+
+    font-family: "Poppins", sans-serif;
+
+    /* DESKTOP */
+    font-size: 20px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s
+        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* DESCRIPTION SHOW */
+
+.beauty-about-description.beauty-about-show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1499px) {
+
+    .beauty-about-hero {
+        min-height: 470px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 470px;
+
+        width: min(
+            1150px,
+            calc(100% - 70px)
+        );
+    }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-about-hero {
+        min-height: 440px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 440px;
+
+        width: calc(100% - 60px);
+    }
+
+    .beauty-about-title {
+        font-size: 24px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        max-width: 720px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-about-hero {
+        min-height: 410px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 410px;
+
+        width: calc(100% - 50px);
+    }
+
+    .beauty-about-hero-content {
+        max-width: 700px;
+    }
+
+    .beauty-about-title {
+        font-size: 23px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.55;
+
+        max-width: 680px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-about-hero {
+        min-height: 390px;
+    }
+
+    .beauty-about-hero-container {
+        width: calc(100% - 30px);
+
+        min-height: 390px;
+
+        justify-content: center;
+    }
+
+    .beauty-about-hero-content {
+        max-width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* BREADCRUMB */
+
+    .beauty-about-breadcrumb {
+        gap: 8px;
+
+        margin-bottom: 14px;
+    }
+
+    .beauty-about-breadcrumb a,
+    .beauty-about-divider,
+    .beauty-about-current {
+        font-size: 12px;
+    }
+
+
+    /* HEADING */
+
+    .beauty-about-title {
+        /* MOBILE */
+        font-size: 20px;
+
+        line-height: 1.35;
+
+        margin-bottom: 13px;
+    }
+
+
+    /* CONTENT */
+
+    .beauty-about-description {
+        /* MOBILE */
+        font-size: 20px;
+
+        line-height: 1.5;
+
+        max-width: 100%;
+    }
+
+
+    /* MOBILE OVERLAY */
+
+    .beauty-about-hero-overlay {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(25, 18, 15, 0.78),
+                rgba(25, 18, 15, 0.58)
+            );
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-about-hero {
+        min-height: 360px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 360px;
+
+        width: calc(100% - 24px);
+    }
+
+    .beauty-about-title {
+        font-size: 20px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.45;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-about-hero {
+        min-height: 340px;
+    }
+
+    .beauty-about-hero-container {
+        min-height: 340px;
+
+        width: calc(100% - 20px);
+    }
+
+    .beauty-about-title {
+        font-size: 20px;
+    }
+
+    .beauty-about-description {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .beauty-about-hero-bg img,
+    .beauty-about-breadcrumb,
+    .beauty-about-title,
+    .beauty-about-description {
+        transition: none;
+    }
+
+}
+</style>
+
+<script>
+    /* =========================================================
+       BEAUTY ABOUT HERO
+       ONE-BY-ONE ANIMATION
+    ========================================================= */
+    
+    (function () {
+    
+        "use strict";
+    
+    
+        const beautyAboutHero =
+            document.querySelector(
+                "#beautyAboutHero"
+            );
+    
+    
+        if (!beautyAboutHero) {
+            return;
+        }
+    
+    
+        const breadcrumb =
+            beautyAboutHero.querySelector(
+                ".beauty-about-breadcrumb"
+            );
+    
+    
+        const title =
+            beautyAboutHero.querySelector(
+                ".beauty-about-title"
+            );
+    
+    
+        const description =
+            beautyAboutHero.querySelector(
+                ".beauty-about-description"
+            );
+    
+    
+        const heroImage =
+            beautyAboutHero.querySelector(
+                ".beauty-about-hero-bg img"
+            );
+    
+    
+        /* =====================================================
+           START ANIMATION
+        ===================================================== */
+    
+        function startBeautyAboutAnimation() {
+    
+            /* Image zoom */
+    
+            beautyAboutHero.classList.add(
+                "beauty-about-loaded"
+            );
+    
+    
+            /* 01 - Home / About */
+    
+            setTimeout(function () {
+    
+                if (breadcrumb) {
+    
+                    breadcrumb.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 200);
+    
+    
+            /* 02 - About Us */
+    
+            setTimeout(function () {
+    
+                if (title) {
+    
+                    title.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 500);
+    
+    
+            /* 03 - Description */
+    
+            setTimeout(function () {
+    
+                if (description) {
+    
+                    description.classList.add(
+                        "beauty-about-show"
+                    );
+    
+                }
+    
+            }, 800);
+    
+        }
+    
+    
+        /* =====================================================
+           IMAGE LOAD CHECK
+        ===================================================== */
+    
+        if (heroImage) {
+    
+            if (heroImage.complete) {
+    
+                startBeautyAboutAnimation();
+    
+            } else {
+    
+                heroImage.addEventListener(
+                    "load",
+                    startBeautyAboutAnimation,
+                    {
+                        once: true
+                    }
+                );
+    
+            }
+    
+        } else {
+    
+            startBeautyAboutAnimation();
+    
+        }
+    
+    
+    })();
+    </script>
+
+    <!-- =========================================================
+     STACKLY SHOP SECTION
+========================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop | Beauty & Cosmetics</title>
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Shop CSS -->
+    <link
+        rel="stylesheet"
+        href="shop.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SHOP SECTION
+========================================================= -->
+
+<section
+    class="stk-shop-section"
+    id="shop"
+>
+
+    <div class="stk-shop-container">
+
+
+        <!-- =================================================
+             SHOP HEADING
+        ================================================== -->
+
+        <div class="stk-shop-heading">
+
+            <span class="stk-shop-subtitle">
+                OUR SHOP
+            </span>
+
+            <h1>
+                Beauty & Cosmetic Collection
+            </h1>
+
+            <p>
+                Discover carefully selected skincare, makeup,
+                haircare and body care essentials designed to
+                make your everyday beauty routine simple,
+                refreshing and enjoyable.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FILTER AREA
+        ================================================== -->
+
+        <div class="stk-shop-filter-area">
+
+
+            <!-- ===============================
+                 CUSTOM CATEGORY DROPDOWN
+            ================================ -->
+
+            <div class="stk-shop-filter-box">
+
+                <label>
+                    Shop By Category
+                </label>
+
+
+                <div
+                    class="stk-custom-dropdown"
+                    id="stkCustomDropdown"
+                >
+
+
+                    <!-- Dropdown Button -->
+
+                    <button
+                        type="button"
+                        class="stk-custom-dropdown-button"
+                        id="stkDropdownButton"
+                        aria-expanded="false"
+                    >
+
+                        <span id="stkSelectedCategory">
+                            All Products
+                        </span>
+
+                        <i
+                            class="fas fa-chevron-down"
+                        ></i>
+
+                    </button>
+
+
+
+                    <!-- Dropdown Menu -->
+
+                    <div
+                        class="stk-custom-dropdown-menu"
+                        id="stkDropdownMenu"
+                    >
+
+
+                        <!-- ALL -->
+
+                        <button
+                            type="button"
+                            class="stk-dropdown-option active"
+                            data-category="all"
+                        >
+
+                            <i
+                                class="fas fa-border-all"
+                            ></i>
+
+                            <span>
+                                All Products
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- SKINCARE -->
+
+                        <button
+                            type="button"
+                            class="stk-dropdown-option"
+                            data-category="skincare"
+                        >
+
+                            <i
+                                class="fas fa-droplet"
+                            ></i>
+
+                            <span>
+                                Skincare
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- MAKEUP -->
+
+                        <button
+                            type="button"
+                            class="stk-dropdown-option"
+                            data-category="makeup"
+                        >
+
+                            <i
+                                class="fas fa-paintbrush"
+                            ></i>
+
+                            <span>
+                                Makeup
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- HAIRCARE -->
+
+                        <button
+                            type="button"
+                            class="stk-dropdown-option"
+                            data-category="haircare"
+                        >
+
+                            <i
+                                class="fas fa-scissors"
+                            ></i>
+
+                            <span>
+                                Haircare
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- BODY CARE -->
+
+                        <button
+                            type="button"
+                            class="stk-dropdown-option"
+                            data-category="bodycare"
+                        >
+
+                            <i
+                                class="fas fa-spa"
+                            ></i>
+
+                            <span>
+                                Body Care
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===============================
+                 SEARCH
+            ================================ -->
+
+            <div class="stk-shop-search-box">
+
+                <label for="stkShopSearch">
+                    Search Products
+                </label>
+
+
+                <div
+                    class="stk-shop-search-wrapper"
+                >
+
+                    <input
+                        type="text"
+                        id="stkShopSearch"
+                        placeholder="Search beauty products..."
+                        autocomplete="off"
+                    >
+
+
+                    <i
+                        class="fas fa-search"
+                    ></i>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <div
+            class="stk-shop-products"
+            id="stkShopProducts"
+        >
+
+
+            <!-- =================================================
+                 PRODUCT 1
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="skincare"
+                data-name="Radiance Face Serum"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./abi1.webp"
+                        alt="Radiance Face Serum"
+                    >
+
+                    <span class="stk-shop-badge">
+                        Popular
+                    </span>
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Skincare
+                    </span>
+
+                    <h3>
+                        Radiance Face Serum
+                    </h3>
+
+                    <p>
+                        Lightweight serum designed to give
+                        your skin a fresh and radiant appearance.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹899
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 2
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="skincare"
+                data-name="Hydrating Face Cream"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./britenning cream.webp"
+                        alt="Hydrating Face Cream"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Skincare
+                    </span>
+
+                    <h3>
+                        Hydrating Face Cream
+                    </h3>
+
+                    <p>
+                        A gentle daily moisturizer for soft,
+                        smooth and hydrated-looking skin.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹749
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 3
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="makeup"
+                data-name="Natural Glow Foundation"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./abi.webp"
+                        alt="Natural Glow Foundation"
+                    >
+
+                    <span class="stk-shop-badge">
+                        New
+                    </span>
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Makeup
+                    </span>
+
+                    <h3>
+                        Natural Glow Foundation
+                    </h3>
+
+                    <p>
+                        Lightweight foundation that creates
+                        a smooth and natural-looking finish.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹1,099
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 4
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="makeup"
+                data-name="Soft Matte Lip Color"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./abi3.webp"
+                        alt="Soft Matte Lip Color"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Makeup
+                    </span>
+
+                    <h3>
+                        Soft Matte Lip Color
+                    </h3>
+
+                    <p>
+                        Comfortable matte lip color with a
+                        beautiful long-lasting finish.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹599
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 5
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="haircare"
+                data-name="Nourishing Hair Oil"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./moisturizer.webp"
+                        alt="Nourishing Hair Oil"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Haircare
+                    </span>
+
+                    <h3>
+                        Nourishing Hair Oil
+                    </h3>
+
+                    <p>
+                        A nourishing hair oil created to support
+                        a healthy and beautiful hair routine.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹649
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 6
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="haircare"
+                data-name="Silky Hair Mask"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./natural essentials.webp"
+                        alt="Silky Hair Mask"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Haircare
+                    </span>
+
+                    <h3>
+                        Silky Hair Mask
+                    </h3>
+
+                    <p>
+                        Rich hair mask for a soft, smooth and
+                        refreshed-looking finish.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 7
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="bodycare"
+                data-name="Rose Body Lotion"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./abi2.webp"
+                        alt="Rose Body Lotion"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Body Care
+                    </span>
+
+                    <h3>
+                        Rose Body Lotion
+                    </h3>
+
+                    <p>
+                        Lightweight body lotion with a soft
+                        floral-inspired fragrance.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹549
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT 8
+            ================================================== -->
+
+            <div
+                class="stk-shop-product"
+                data-category="bodycare"
+                data-name="Gentle Body Scrub"
+            >
+
+                <div class="stk-shop-image">
+
+                    <img
+                        src="./bathing salt.webp"
+                        alt="Gentle Body Scrub"
+                    >
+
+                </div>
+
+
+                <div class="stk-shop-product-content">
+
+                    <span class="stk-shop-category">
+                        Body Care
+                    </span>
+
+                    <h3>
+                        Gentle Body Scrub
+                    </h3>
+
+                    <p>
+                        A refreshing body scrub for a smoother,
+                        softer-looking skin feel.
+                    </p>
+
+
+                    <div class="stk-shop-bottom">
+
+                        <strong>
+                            ₹699
+                        </strong>
+
+
+                        <button
+                            type="button"
+                            class="stk-shop-cart"
+                        >
+
+                            <i
+                                class="fas fa-shopping-bag"
+                            ></i>
+
+                            Add to Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             NO RESULT
+        ================================================== -->
+
+        <div
+            class="stk-shop-no-result"
+            id="stkShopNoResult"
+        >
+
+            <i
+                class="fas fa-search"
+            ></i>
+
+            <h3>
+                No Products Found
+            </h3>
+
+            <p>
+                Try another category or search term.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<style>
+    /* =========================================================
+   STACKLY SHOP PAGE
+   UNIQUE PREFIX: stk-shop-
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+.stk-shop-section *,
+.stk-shop-section *::before,
+.stk-shop-section *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.stk-shop-section {
+
+    width: 100%;
+
+    padding: 100px 6%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf8 0%,
+            #ffffff 50%,
+            #fff5f1 100%
+        );
+
+    overflow: visible;
+}
+
+
+.stk-shop-container {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.stk-shop-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+
+.stk-shop-subtitle {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #d47b68;
+
+}
+
+
+.stk-shop-heading h1 {
+
+    margin: 0 0 18px;
+
+    font-size: 46px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #292321;
+
+}
+
+
+.stk-shop-heading p {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #756b68;
+
+}
+
+
+/* =========================================================
+   FILTER AREA
+========================================================= */
+
+.stk-shop-filter-area {
+
+    position: relative;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.stk-shop-filter-box,
+.stk-shop-search-box {
+
+    position: relative;
+
+    width: 50%;
+
+}
+
+
+.stk-shop-filter-area label {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #292321;
+
+}
+
+
+/* =========================================================
+   CUSTOM DROPDOWN
+========================================================= */
+
+.stk-custom-dropdown {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   DROPDOWN BUTTON
+========================================================= */
+
+.stk-custom-dropdown-button {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    border: 1px solid #eadbd6;
+
+    border-radius: 10px;
+
+    background: #fffaf8;
+
+    color: #292321;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    outline: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.stk-custom-dropdown-button:hover {
+
+    border-color: #d47b68;
+
+}
+
+
+.stk-custom-dropdown-button:focus {
+
+    border-color: #d47b68;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 123, 104, 0.12);
+
+}
+
+
+.stk-custom-dropdown-button i {
+
+    flex-shrink: 0;
+
+    color: #d47b68;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-custom-dropdown-button i {
+
+    transform: rotate(180deg);
+
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.stk-custom-dropdown-menu {
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    left: 0;
+
+    width: 100%;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    z-index: 99999;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #eadbd6;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.15);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform: translateY(-12px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-custom-dropdown-menu {
+
+    visibility: visible;
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   DROPDOWN OPTIONS
+========================================================= */
+
+.stk-dropdown-option {
+
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 0 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #4b403d;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transform: translateY(-12px);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        opacity 0.35s ease,
+        transform 0.35s ease;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-dropdown-option:nth-child(1) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.05s;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-dropdown-option:nth-child(2) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.10s;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-dropdown-option:nth-child(3) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.15s;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-dropdown-option:nth-child(4) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.20s;
+
+}
+
+
+.stk-custom-dropdown.open
+.stk-dropdown-option:nth-child(5) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.25s;
+
+}
+
+
+.stk-dropdown-option i {
+
+    width: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #d47b68;
+
+    font-size: 15px;
+
+}
+
+
+.stk-dropdown-option span {
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+
+.stk-dropdown-option:hover {
+
+    background: #fff1ed;
+
+    color: #d47b68;
+
+}
+
+
+.stk-dropdown-option.active {
+
+    background: #fff1ed;
+
+    color: #d47b68;
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.stk-shop-search-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.stk-shop-search-wrapper input {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 50px 0 16px;
+
+    border: 1px solid #eadbd6;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #fffaf8;
+
+    color: #292321;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+}
+
+
+.stk-shop-search-wrapper input:focus {
+
+    border-color: #d47b68;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 123, 104, 0.12);
+
+}
+
+
+.stk-shop-search-wrapper i {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 18px;
+
+    transform: translateY(-50%);
+
+    color: #d47b68;
+
+    font-size: 17px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.stk-shop-products {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: start;
+
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.stk-shop-product {
+
+    width: 100%;
+
+    min-width: 0;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.07);
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.stk-shop-product.stk-shop-visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+.stk-shop-product:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.stk-shop-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #f5eeee;
+
+}
+
+
+.stk-shop-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+.stk-shop-product:hover
+.stk-shop-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.stk-shop-badge {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    background: #d47b68;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
+
+.stk-shop-product-content {
+
+    padding: 23px;
+
+}
+
+
+.stk-shop-category {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #d47b68;
+
+}
+
+
+.stk-shop-product-content h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    color: #292321;
+
+}
+
+
+.stk-shop-product-content p {
+
+    min-height: 75px;
+
+    margin: 0 0 20px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #756b68;
+
+}
+
+
+/* =========================================================
+   PRICE + BUTTON
+========================================================= */
+
+.stk-shop-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+
+.stk-shop-bottom strong {
+
+    font-size: 20px;
+
+    color: #292321;
+
+    white-space: nowrap;
+
+}
+
+
+.stk-shop-cart {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 42px;
+
+    padding: 0 15px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    background: #d47b68;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.stk-shop-cart:hover {
+
+    background: #b96352;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   NO RESULT
+========================================================= */
+
+.stk-shop-no-result {
+
+    display: none;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+.stk-shop-no-result i {
+
+    margin-bottom: 15px;
+
+    font-size: 35px;
+
+    color: #d47b68;
+
+}
+
+
+.stk-shop-no-result h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 23px;
+
+    color: #292321;
+
+}
+
+
+.stk-shop-no-result p {
+
+    margin: 0;
+
+    color: #756b68;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .stk-shop-section {
+
+        padding: 85px 5%;
+
+    }
+
+
+    .stk-shop-heading h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .stk-shop-products {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 22px;
+
+    }
+
+
+    .stk-shop-image {
+
+        height: 280px;
+
+    }
+
+
+    .stk-shop-product-content {
+
+        padding: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .stk-shop-section {
+
+        padding: 75px 5%;
+
+    }
+
+
+    .stk-shop-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .stk-shop-heading h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .stk-shop-heading p {
+
+        font-size: 16px;
+
+    }
+
+
+    .stk-shop-filter-area {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 20px;
+
+    }
+
+
+    .stk-shop-filter-box,
+    .stk-shop-search-box {
+
+        width: 100%;
+
+    }
+
+
+    .stk-shop-products {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+
+    }
+
+
+    .stk-shop-image {
+
+        height: 320px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .stk-shop-section {
+
+        padding: 60px 18px;
+
+        overflow: visible;
+
+    }
+
+
+    .stk-shop-heading {
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .stk-shop-subtitle {
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .stk-shop-heading h1 {
+
+        font-size: 29px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .stk-shop-heading p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* FILTER */
+
+    .stk-shop-filter-area {
+
+        position: relative;
+
+        z-index: 1000;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+
+        padding: 18px;
+
+        gap: 18px;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .stk-shop-filter-box,
+    .stk-shop-search-box {
+
+        width: 100%;
+
+    }
+
+
+    /* DROPDOWN */
+
+    .stk-custom-dropdown {
+
+        width: 100%;
+
+    }
+
+
+    .stk-custom-dropdown-button {
+
+        height: 50px;
+
+        padding: 0 15px;
+
+        font-size: 14px;
+
+    }
+
+
+    .stk-custom-dropdown-menu {
+
+        position: absolute;
+
+        top: calc(100% + 7px);
+
+        left: 0;
+
+        width: 100%;
+
+        max-height: 300px;
+
+        overflow-y: auto;
+
+        z-index: 999999;
+
+        padding: 7px;
+
+    }
+
+
+    .stk-dropdown-option {
+
+        min-height: 50px;
+
+        padding: 0 12px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* SEARCH */
+
+    .stk-shop-search-wrapper input {
+
+        height: 50px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* PRODUCTS */
+
+    .stk-shop-products {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        width: 100%;
+
+        max-width: 430px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .stk-shop-image {
+
+        height: 360px;
+
+    }
+
+
+    .stk-shop-product-content {
+
+        padding: 22px 18px;
+
+    }
+
+
+    .stk-shop-product-content h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .stk-shop-product-content p {
+
+        min-height: auto;
+
+        font-size: 14px;
+
+    }
+
+
+    .stk-shop-bottom {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .stk-shop-cart {
+
+        min-height: 42px;
+
+        padding: 0 13px;
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .stk-shop-section {
+
+        padding: 50px 14px;
+
+    }
+
+
+    .stk-shop-heading h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .stk-shop-filter-area {
+
+        padding: 16px;
+
+    }
+
+
+    .stk-custom-dropdown-button {
+
+        height: 48px;
+
+        font-size: 13px;
+
+    }
+
+
+    .stk-dropdown-option {
+
+        min-height: 47px;
+
+        font-size: 13px;
+
+    }
+
+
+    .stk-shop-image {
+
+        height: 320px;
+
+    }
+
+
+    .stk-shop-product-content {
+
+        padding: 18px 15px;
+
+    }
+
+
+    .stk-shop-bottom strong {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stk-shop-product {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+
+    .stk-shop-image img,
+    .stk-shop-cart,
+    .stk-dropdown-option,
+    .stk-custom-dropdown-menu {
+
+        transition: none;
+
+    }
+
+}
+</style>
+
+<script>
+    /* =========================================================
+   STACKLY SHOP PAGE
+   CUSTOM DROPDOWN + SEARCH + PRODUCT ANIMATION
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =================================================
+           ELEMENTS
+        ================================================= */
+
+        const customDropdown =
+            document.getElementById(
+                "stkCustomDropdown"
+            );
+
+
+        const dropdownButton =
+            document.getElementById(
+                "stkDropdownButton"
+            );
+
+
+        const selectedCategory =
+            document.getElementById(
+                "stkSelectedCategory"
+            );
+
+
+        const dropdownOptions =
+            document.querySelectorAll(
+                ".stk-dropdown-option"
+            );
+
+
+        const searchInput =
+            document.getElementById(
+                "stkShopSearch"
+            );
+
+
+        const shopProducts =
+            document.querySelectorAll(
+                ".stk-shop-product"
+            );
+
+
+        const noResult =
+            document.getElementById(
+                "stkShopNoResult"
+            );
+
+
+        /* =================================================
+           CHECK
+        ================================================= */
+
+        if (
+            !customDropdown ||
+            !dropdownButton ||
+            !selectedCategory ||
+            !shopProducts.length
+        ) {
+
+            return;
+
+        }
+
+
+        /* =================================================
+           CURRENT CATEGORY
+        ================================================= */
+
+        let currentCategory = "all";
+
+
+        /* =================================================
+           OPEN DROPDOWN
+        ================================================= */
+
+        function openDropdown() {
+
+            customDropdown.classList.add(
+                "open"
+            );
+
+
+            dropdownButton.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+
+        /* =================================================
+           CLOSE DROPDOWN
+        ================================================= */
+
+        function closeDropdown() {
+
+            customDropdown.classList.remove(
+                "open"
+            );
+
+
+            dropdownButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        /* =================================================
+           DROPDOWN BUTTON
+        ================================================= */
+
+        dropdownButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                if (
+                    customDropdown.classList.contains(
+                        "open"
+                    )
+                ) {
+
+                    closeDropdown();
+
+                } else {
+
+                    openDropdown();
+
+                }
+
+            }
+        );
+
+
+        /* =================================================
+           CATEGORY OPTIONS
+        ================================================= */
+
+        dropdownOptions.forEach(
+            function (option) {
+
+
+                option.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+
+                        event.stopPropagation();
+
+
+                        /* Get category */
+
+                        currentCategory =
+                            option.getAttribute(
+                                "data-category"
+                            );
+
+
+                        /* Get text */
+
+                        const text =
+                            option
+                                .querySelector("span")
+                                .textContent
+                                .trim();
+
+
+                        /* Update button */
+
+                        selectedCategory.textContent =
+                            text;
+
+
+                        /* Active state */
+
+                        dropdownOptions.forEach(
+                            function (item) {
+
+                                item.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        option.classList.add(
+                            "active"
+                        );
+
+
+                        /* Close */
+
+                        closeDropdown();
+
+
+                        /* Filter */
+
+                        filterProducts();
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =================================================
+           CLICK OUTSIDE
+        ================================================= */
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    !customDropdown.contains(
+                        event.target
+                    )
+                ) {
+
+                    closeDropdown();
+
+                }
+
+            }
+        );
+
+
+        /* =================================================
+           ESC KEY
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    closeDropdown();
+
+                }
+
+            }
+        );
+
+
+        /* =================================================
+           FILTER PRODUCTS
+        ================================================= */
+
+        function filterProducts() {
+
+
+            const searchValue =
+                searchInput
+                    ? searchInput.value
+                        .trim()
+                        .toLowerCase()
+                    : "";
+
+
+            const matchedProducts = [];
+
+
+            /* ---------------------------------------------
+               FIND MATCHING PRODUCTS
+            --------------------------------------------- */
+
+            shopProducts.forEach(
+                function (product) {
+
+
+                    const category =
+                        product
+                            .getAttribute(
+                                "data-category"
+                            )
+                            .toLowerCase();
+
+
+                    const name =
+                        product
+                            .getAttribute(
+                                "data-name"
+                            )
+                            .toLowerCase();
+
+
+                    const categoryMatch =
+                        currentCategory === "all" ||
+                        category === currentCategory;
+
+
+                    const searchMatch =
+                        name.includes(
+                            searchValue
+                        );
+
+
+                    if (
+                        categoryMatch &&
+                        searchMatch
+                    ) {
+
+                        matchedProducts.push(
+                            product
+                        );
+
+                    } else {
+
+                        product.classList.remove(
+                            "stk-shop-visible"
+                        );
+
+                        product.style.display =
+                            "none";
+
+                    }
+
+                }
+            );
+
+
+            /* ---------------------------------------------
+               SHOW PRODUCTS ONE BY ONE
+            --------------------------------------------- */
+
+            matchedProducts.forEach(
+                function (product, index) {
+
+
+                    product.style.display =
+                        "block";
+
+
+                    product.classList.remove(
+                        "stk-shop-visible"
+                    );
+
+
+                    setTimeout(
+                        function () {
+
+                            product.classList.add(
+                                "stk-shop-visible"
+                            );
+
+                        },
+                        index * 150
+                    );
+
+                }
+            );
+
+
+            /* ---------------------------------------------
+               NO RESULT
+            --------------------------------------------- */
+
+            if (noResult) {
+
+                if (
+                    matchedProducts.length === 0
+                ) {
+
+                    noResult.style.display =
+                        "block";
+
+                } else {
+
+                    noResult.style.display =
+                        "none";
+
+                }
+
+            }
+
+        }
+
+
+        /* =================================================
+           SEARCH
+        ================================================= */
+
+        if (searchInput) {
+
+            searchInput.addEventListener(
+                "input",
+                function () {
+
+                    filterProducts();
+
+                }
+            );
+
+        }
+
+
+        /* =================================================
+           ADD TO CART → 404
+        ================================================= */
+
+        const cartButtons =
+            document.querySelectorAll(
+                ".stk-shop-cart"
+            );
+
+
+        cartButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+
+
+                        window.location.href =
+                            "404.html";
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =================================================
+           INITIAL PRODUCT STATE
+        ================================================= */
+
+        shopProducts.forEach(
+            function (product) {
+
+                product.style.display =
+                    "block";
+
+                product.classList.remove(
+                    "stk-shop-visible"
+                );
+
+            }
+        );
+
+
+        /* =================================================
+           INITIAL ONE-BY-ONE LOAD
+        ================================================= */
+
+        shopProducts.forEach(
+            function (product, index) {
+
+                setTimeout(
+                    function () {
+
+                        product.classList.add(
+                            "stk-shop-visible"
+                        );
+
+                    },
+                    200 + (index * 150)
+                );
+
+            }
+        );
+
+
+    }
+);
+</script>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<section class="beauty-category-section">
+
+    <div class="beauty-category-grid">
+
+        <div class="beauty-category-card">
+
+            <img
+                src="./cost 5.webp"
+                alt=""
+            >
+
+            <div class="beauty-category-overlay">
+
+                <i class="fas fa-brush"></i>
+
+                <h3>Professional Makeup</h3>
+
+                <p>
+                    Discover premium makeup collections.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="beauty-category-card">
+
+            <img
+                src="./cost1.webp"
+                alt=""
+            >
+
+            <div class="beauty-category-overlay">
+
+                <i class="fas fa-spa"></i>
+
+                <h3>Luxury Makeup</h3>
+
+                <p>
+                    Enhance your beauty naturally.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="beauty-category-card">
+
+            <img
+                src="./cost 6.webp"
+                alt=""
+            >
+
+            <div class="beauty-category-overlay">
+
+                <i class="fas fa-heart"></i>
+
+                <h3>Eyebrows</h3>
+
+                <p>
+                    Express your eyebrows beautifully.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="beauty-category-card">
+
+            <img
+                src="./cost 7.webp"
+                alt=""
+            >
+
+            <div class="beauty-category-overlay">
+
+                <i class="fas fa-palette"></i>
+
+                <h3>Eye Makeup</h3>
+
+                <p>
+                    Express your style beautifully.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="beauty-category-card">
+
+            <img
+                src="./cost 8.webp"
+                alt=""
+            >
+
+            <div class="beauty-category-overlay">
+
+                <i class="fas fa-heart"></i>
+
+                <h3>Body Care</h3>
+
+                <p>
+                    Nourish and protect your skin.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    /* =========================================================
+   BEAUTY CATEGORY SECTION
+   NON-CONFLICTING CSS
+   PREFIX: beauty-category-
+   
+   DESKTOP / LAPTOP / TABLET = 22PX
+   MOBILE = 19PX
+========================================================= */
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.beauty-category-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 5%;
+    overflow: hidden;
+    background: #fcf8ef;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.beauty-category-grid {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.beauty-category-card {
+    position: relative;
+
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+
+    background: #e9ded4;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transform: translateY(90px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================================================
+   CARD REVEAL
+========================================================= */
+
+.beauty-category-card.beauty-category-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.beauty-category-card img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.9s
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================================================
+   IMAGE HOVER ZOOM
+========================================================= */
+
+.beauty-category-card:hover img {
+    transform: scale(1.12);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.beauty-category-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(20, 13, 10, 0.88) 0%,
+            rgba(20, 13, 10, 0.55) 38%,
+            rgba(20, 13, 10, 0.12) 75%,
+            rgba(20, 13, 10, 0) 100%
+        );
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+}
+
+
+/* =========================================================
+   SHOW OVERLAY ON HOVER
+========================================================= */
+
+.beauty-category-card:hover
+.beauty-category-overlay {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.beauty-category-overlay i {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 16px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #b87353;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    opacity: 0;
+
+    transform: translateY(35px) scale(0.7);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.5s
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================================================
+   ICON HOVER REVEAL
+========================================================= */
+
+.beauty-category-card:hover
+.beauty-category-overlay i {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    transition-delay: 0.05s;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.beauty-category-overlay h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: 0.3px;
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================================================
+   HEADING HOVER REVEAL
+========================================================= */
+
+.beauty-category-card:hover
+.beauty-category-overlay h3 {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.12s;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.beauty-category-overlay p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.92
+    );
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================================================
+   DESCRIPTION HOVER REVEAL
+========================================================= */
+
+.beauty-category-card:hover
+.beauty-category-overlay p {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.20s;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.beauty-category-card:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(44, 30, 23, 0.20);
+}
+
+
+/* =========================================================
+   LAPTOP
+   1200PX - 992PX
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-category-section {
+        padding: 70px 4%;
+    }
+
+    .beauty-category-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .beauty-category-card {
+        height: 410px;
+    }
+
+    .beauty-category-overlay h3,
+    .beauty-category-overlay p {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   991PX - 768PX
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-category-section {
+        padding: 65px 4%;
+    }
+
+    .beauty-category-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .beauty-category-card {
+        height: 400px;
+    }
+
+    .beauty-category-overlay {
+        padding: 30px 18px;
+    }
+
+    .beauty-category-overlay h3,
+    .beauty-category-overlay p {
+        font-size: 22px;
+    }
+
+    .beauty-category-overlay i {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   BELOW 768PX
+   FONT = 19PX
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-category-section {
+        padding: 55px 20px;
+    }
+
+    .beauty-category-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        max-width: 500px;
+    }
+
+    .beauty-category-card {
+        height: 390px;
+    }
+
+    .beauty-category-overlay {
+        padding: 28px 20px;
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+        background:
+            linear-gradient(
+                to top,
+                rgba(20, 13, 10, 0.82) 0%,
+                rgba(20, 13, 10, 0.30) 45%,
+                rgba(20, 13, 10, 0) 100%
+            );
+    }
+
+    .beauty-category-overlay i {
+        width: 52px;
+        height: 52px;
+
+        margin-bottom: 12px;
+
+        font-size: 19px;
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+    .beauty-category-overlay h3 {
+        margin-bottom: 8px;
+
+        font-size: 19px;
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+    .beauty-category-overlay p {
+        font-size: 19px;
+
+        line-height: 1.45;
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+    .beauty-category-card:hover img {
+        transform: scale(1.06);
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-category-section {
+        padding: 45px 15px;
+    }
+
+    .beauty-category-grid {
+        gap: 15px;
+    }
+
+    .beauty-category-card {
+        height: 360px;
+    }
+
+    .beauty-category-overlay {
+        padding: 25px 16px;
+    }
+
+    .beauty-category-overlay i {
+        width: 48px;
+        height: 48px;
+
+        font-size: 19px;
+    }
+
+    .beauty-category-overlay h3,
+    .beauty-category-overlay p {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-category-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .beauty-category-card {
+        height: 340px;
+    }
+
+    .beauty-category-overlay {
+        padding: 20px 14px;
+    }
+
+    .beauty-category-overlay h3,
+    .beauty-category-overlay p {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .beauty-category-card,
+    .beauty-category-card img,
+    .beauty-category-overlay,
+    .beauty-category-overlay i,
+    .beauty-category-overlay h3,
+    .beauty-category-overlay p {
+        transition: none !important;
+    }
+}
+    </style>
+
+<script>
+    (function () {
+    
+        "use strict";
+    
+    
+        /* =====================================================
+           BEAUTY CATEGORY REVEAL
+        ===================================================== */
+    
+        const beautyCategorySection =
+            document.querySelector(
+                ".beauty-category-section"
+            );
+    
+    
+        if (!beautyCategorySection) {
+            return;
+        }
+    
+    
+        const beautyCategoryCards =
+            beautyCategorySection.querySelectorAll(
+                ".beauty-category-card"
+            );
+    
+    
+        if (!beautyCategoryCards.length) {
+            return;
+        }
+    
+    
+        /* =====================================================
+           REVEAL CARDS ONE BY ONE
+        ===================================================== */
+    
+        function beautyCategoryReveal() {
+    
+            beautyCategoryCards.forEach(
+                function (
+                    beautyCard,
+                    beautyIndex
+                ) {
+    
+                    setTimeout(
+                        function () {
+    
+                            beautyCard.classList.add(
+                                "beauty-category-visible"
+                            );
+    
+                        },
+                        beautyIndex * 180
+                    );
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           INTERSECTION OBSERVER
+        ===================================================== */
+    
+        const beautyCategoryObserver =
+            new IntersectionObserver(
+                function (
+                    beautyEntries,
+                    beautyObserver
+                ) {
+    
+                    beautyEntries.forEach(
+                        function (beautyEntry) {
+    
+                            if (
+                                beautyEntry.isIntersecting
+                            ) {
+    
+                                beautyCategoryReveal();
+    
+                                beautyObserver.unobserve(
+                                    beautyEntry.target
+                                );
+    
+                            }
+    
+                        }
+                    );
+    
+                },
+                {
+                    threshold: 0.15,
+    
+                    rootMargin:
+                        "0px 0px -80px 0px"
+                }
+            );
+    
+    
+        /* =====================================================
+           START OBSERVING
+        ===================================================== */
+    
+        beautyCategoryObserver.observe(
+            beautyCategorySection
+        );
+    
+    
+    })();
+    </script>
+
+<!-- =========================================================
+     BEAUTY SHOP BEST SELLERS SECTION
+========================================================= -->
+
+<section class="beauty-best-sellers" id="beautyBestSellers">
+
+    <div class="beauty-best-sellers-container">
+
+        <!-- Section Header -->
+        <div class="beauty-best-header">
+
+            <div class="beauty-best-heading-area">
+                <span class="beauty-best-small-title">
+                    OUR COLLECTION
+                </span>
+
+                <h2 class="beauty-best-title">
+                    Shop Best Sellers
+                </h2>
+
+                <p class="beauty-best-description">
+                    Discover our most-loved beauty essentials, carefully selected
+                    to bring effortless elegance to your everyday routine.
+                </p>
+            </div>
+
+            <!-- Slider Arrows -->
+            <div class="beauty-best-controls">
+                <button
+                    type="button"
+                    class="beauty-best-arrow beauty-best-prev"
+                    aria-label="Previous products">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <button
+                    type="button"
+                    class="beauty-best-arrow beauty-best-next"
+                    aria-label="Next products">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- Product Slider -->
+        <div class="beauty-best-slider-wrapper">
+
+            <div class="beauty-best-slider">
+
+                <!-- Product 1 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            BEST SELLER
+                        </span>
+
+                        <img
+                            src="./abi.webp"
+                            alt="Luxury beauty makeup collection">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Radiant Glow Makeup Set')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            MAKEUP
+                        </span>
+
+                        <h3>
+                            Radiant Glow Makeup Set
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $48.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(124)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            POPULAR
+                        </span>
+
+                        <img
+                            src="./abi1.webp"
+                            alt="Premium skincare collection">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Pure Skin Essentials')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            SKINCARE
+                        </span>
+
+                        <h3>
+                            Pure Skin Essentials
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $36.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(98)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            NEW
+                        </span>
+
+                        <img
+                            src="./abi2.webp"
+                            alt="Hydrating facial serum">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Hydra Glow Serum')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            SERUM
+                        </span>
+
+                        <h3>
+                            Hydra Glow Serum
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $42.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(86)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            FAVORITE
+                        </span>
+
+                        <img
+                            src="./abi3.webp"
+                            alt="Elegant nude lipstick">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Velvet Nude Lipstick')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            LIP CARE
+                        </span>
+
+                        <h3>
+                            Velvet Nude Lipstick
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $24.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(157)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            BEST SELLER
+                        </span>
+
+                        <img
+                            src="./moisturizer.webp"
+                            alt="Luxury moisturizer">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Silk Touch Moisturizer')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            MOISTURIZER
+                        </span>
+
+                        <h3>
+                            Silk Touch Moisturizer
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $32.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(112)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            TRENDING
+                        </span>
+
+                        <img
+                            src="./beauty product.webp"
+                            alt="Professional makeup brush set">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Pro Beauty Brush Set')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            TOOLS
+                        </span>
+
+                        <h3>
+                            Pro Beauty Brush Set
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $39.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(74)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 7 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            GLOW PICK
+                        </span>
+
+                        <img
+                            src="./britenning cream.webp"
+                            alt="Brightening facial cream">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Brightening Glow Cream')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            FACE CARE
+                        </span>
+
+                        <h3>
+                            Brightening Glow Cream
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $34.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(91)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 8 -->
+                <article class="beauty-product-card">
+
+                    <div class="beauty-product-image-box">
+
+                        <span class="beauty-product-badge">
+                            LOVED
+                        </span>
+
+                        <img
+                            src="./natural essentials.webp"
+                            alt="Natural beauty essentials">
+
+                        <div class="beauty-product-hover">
+
+                            <button
+                                type="button"
+                                class="beauty-add-cart"
+                                onclick="beautyAddToCart('Natural Beauty Essentials')">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="beauty-product-info">
+
+                        <span class="beauty-product-category">
+                            ESSENTIALS
+                        </span>
+
+                        <h3>
+                            Natural Beauty Essentials
+                        </h3>
+
+                        <div class="beauty-product-bottom">
+
+                            <span class="beauty-product-price">
+                                $45.00
+                            </span>
+
+                            <div class="beauty-product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(103)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slider Dots -->
+        <div class="beauty-best-dots"></div>
+
+
+        <!-- View All Button -->
+        <div class="beauty-best-view-all">
+            <a href="404.html" class="beauty-view-all-btn">
+                View All Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =========================================================
+   BEAUTY BEST SELLERS
+   RESPONSIVE + NON-CONFLICTING
+   ========================================================= */
+
+.beauty-best-sellers {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0 80px;
+    background: #fffaf8;
+}
+
+.beauty-best-sellers-container {
+    width: min(1400px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.beauty-best-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.beauty-best-heading-area {
+    max-width: 720px;
+}
+
+.beauty-best-small-title {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #c58a76;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.beauty-best-title {
+    margin: 0 0 15px;
+    color: #24201f;
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.beauty-best-description {
+    max-width: 650px;
+    margin: 0;
+    color: #77706d;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SLIDER CONTROLS
+   ========================================================= */
+
+.beauty-best-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.beauty-best-arrow {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ded4d0;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #292322;
+    font-size: 17px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.beauty-best-arrow:hover {
+    background: #24201f;
+    border-color: #24201f;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.beauty-best-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================================
+   SLIDER WRAPPER
+   ========================================================= */
+
+.beauty-best-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.beauty-best-slider {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.beauty-product-card {
+    flex: 0 0 calc((100% - 72px) / 4);
+    min-width: 0;
+    opacity: 0;
+    transform: translateY(70px);
+    visibility: hidden;
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0.7s ease;
+}
+
+.beauty-product-card.beauty-card-visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.beauty-product-image-box {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    background: #f2ece9;
+}
+
+.beauty-product-image-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition:
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.5s ease;
+}
+
+.beauty-product-card:hover .beauty-product-image-box img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   PRODUCT BADGE
+   ========================================================= */
+
+.beauty-product-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+    padding: 7px 12px;
+    background: #24201f;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HOVER OVERLAY
+   ========================================================= */
+
+.beauty-product-hover {
+    position: absolute;
+    inset: auto 0 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 25px;
+    background: linear-gradient(
+        to top,
+        rgba(24, 20, 19, 0.78),
+        rgba(24, 20, 19, 0)
+    );
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+.beauty-product-card:hover .beauty-product-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ADD TO CART
+   ========================================================= */
+
+.beauty-add-cart {
+    width: 100%;
+    min-height: 48px;
+    border: none;
+    background: #ffffff;
+    color: #24201f;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.beauty-add-cart:hover {
+    background: #c58a76;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION
+   ========================================================= */
+
+.beauty-product-info {
+    padding: 20px 3px 0;
+}
+
+.beauty-product-category {
+    display: block;
+    margin-bottom: 8px;
+    color: #a38e87;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+}
+
+.beauty-product-info h3 {
+    min-height: 52px;
+    margin: 0 0 15px;
+    color: #292322;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRICE + RATING
+   ========================================================= */
+
+.beauty-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.beauty-product-price {
+    color: #24201f;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.beauty-product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+    color: #c58a76;
+    font-size: 11px;
+}
+
+.beauty-product-rating span {
+    margin-left: 4px;
+    color: #8b8380;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SLIDER DOTS
+   ========================================================= */
+
+.beauty-best-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 38px;
+}
+
+.beauty-best-dot {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #d8cfcc;
+    cursor: pointer;
+    transition:
+        width 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.beauty-best-dot:hover {
+    transform: scale(1.2);
+}
+
+.beauty-best-dot.active {
+    width: 25px;
+    border-radius: 20px;
+    background: #c58a76;
+}
+
+
+/* =========================================================
+   VIEW ALL
+   ========================================================= */
+
+.beauty-best-view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.beauty-view-all-btn {
+    min-width: 210px;
+    min-height: 52px;
+    padding: 14px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid #292322;
+    background: transparent;
+    color: #292322;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.beauty-view-all-btn:hover {
+    background: #292322;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   DESKTOP
+   1200px - 1499px
+   ========================================================= */
+
+@media (max-width: 1499px) {
+
+    .beauty-best-sellers {
+        padding: 80px 0 70px;
+    }
+
+    .beauty-best-sellers-container {
+        width: min(1280px, calc(100% - 70px));
+    }
+
+    .beauty-best-title {
+        font-size: 38px;
+    }
+
+    .beauty-product-image-box {
+        height: 350px;
+    }
+
+    .beauty-product-info h3 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .beauty-best-sellers {
+        padding: 70px 0 65px;
+    }
+
+    .beauty-best-sellers-container {
+        width: calc(100% - 50px);
+    }
+
+    .beauty-best-header {
+        margin-bottom: 35px;
+    }
+
+    .beauty-best-title {
+        font-size: 34px;
+    }
+
+    .beauty-best-description {
+        font-size: 15px;
+    }
+
+    .beauty-product-card {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .beauty-product-image-box {
+        height: 330px;
+    }
+
+    .beauty-product-info h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .beauty-best-sellers {
+        padding: 65px 0 60px;
+    }
+
+    .beauty-best-sellers-container {
+        width: calc(100% - 40px);
+    }
+
+    .beauty-best-header {
+        align-items: flex-end;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .beauty-best-title {
+        font-size: 30px;
+    }
+
+    .beauty-best-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .beauty-best-controls {
+        gap: 9px;
+    }
+
+    .beauty-best-arrow {
+        width: 46px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .beauty-product-card {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .beauty-product-image-box {
+        height: 350px;
+    }
+
+    .beauty-product-info {
+        padding-top: 17px;
+    }
+
+    .beauty-product-info h3 {
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    .beauty-product-price {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   767px AND BELOW
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .beauty-best-sellers {
+        padding: 55px 0 50px;
+    }
+
+    .beauty-best-sellers-container {
+        width: calc(100% - 30px);
+    }
+
+    .beauty-best-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        margin-bottom: 28px;
+    }
+
+    .beauty-best-heading-area {
+        width: 100%;
+    }
+
+    .beauty-best-small-title {
+        margin-bottom: 9px;
+        font-size: 11px;
+        letter-spacing: 2.3px;
+    }
+
+    .beauty-best-title {
+        margin-bottom: 11px;
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .beauty-best-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .beauty-best-controls {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .beauty-best-arrow {
+        width: 43px;
+        height: 43px;
+        font-size: 14px;
+    }
+
+    .beauty-best-slider {
+        gap: 15px;
+    }
+
+    .beauty-product-card {
+        flex: 0 0 100%;
+    }
+
+    .beauty-product-image-box {
+        height: 390px;
+    }
+
+    .beauty-product-info {
+        padding: 17px 2px 0;
+    }
+
+    .beauty-product-category {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .beauty-product-info h3 {
+        min-height: auto;
+        margin-bottom: 13px;
+        font-size: 17px;
+    }
+
+    .beauty-product-bottom {
+        align-items: center;
+    }
+
+    .beauty-product-price {
+        font-size: 16px;
+    }
+
+    .beauty-product-rating {
+        font-size: 10px;
+    }
+
+    .beauty-product-rating span {
+        font-size: 10px;
+    }
+
+    /*
+       On mobile keep the Add to Cart button visible
+       enough to make the section easy to use.
+    */
+    .beauty-product-hover {
+        padding: 18px;
+        opacity: 1;
+        transform: translateY(0);
+        background: linear-gradient(
+            to top,
+            rgba(24, 20, 19, 0.72),
+            rgba(24, 20, 19, 0)
+        );
+    }
+
+    .beauty-add-cart {
+        min-height: 45px;
+        font-size: 12px;
+    }
+
+    .beauty-best-dots {
+        margin-top: 30px;
+    }
+
+    .beauty-best-view-all {
+        margin-top: 32px;
+    }
+
+    .beauty-view-all-btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 49px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px AND BELOW
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .beauty-best-sellers {
+        padding: 48px 0 45px;
+    }
+
+    .beauty-best-sellers-container {
+        width: calc(100% - 24px);
+    }
+
+    .beauty-best-title {
+        font-size: 24px;
+    }
+
+    .beauty-best-description {
+        font-size: 13px;
+    }
+
+    .beauty-product-image-box {
+        height: 350px;
+    }
+
+    .beauty-product-badge {
+        top: 12px;
+        left: 12px;
+        padding: 6px 9px;
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   360px AND BELOW
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .beauty-best-title {
+        font-size: 22px;
+    }
+
+    .beauty-best-description {
+        font-size: 12px;
+    }
+
+    .beauty-product-image-box {
+        height: 320px;
+    }
+
+    .beauty-product-info h3 {
+        font-size: 16px;
+    }
+
+    .beauty-product-price {
+        font-size: 15px;
+    }
+
+}
+        </style>
+<script>
+    /* =========================================================
+       BEAUTY BEST SELLERS SLIDER
+       RESPONSIVE + NON-CONFLICTING
+       ========================================================= */
+    
+    (function () {
+    
+        "use strict";
+    
+        const beautyBestSection =
+            document.querySelector("#beautyBestSellers");
+    
+        if (!beautyBestSection) {
+            return;
+        }
+    
+        const beautyBestSlider =
+            beautyBestSection.querySelector(".beauty-best-slider");
+    
+        const beautyBestCards =
+            Array.from(
+                beautyBestSection.querySelectorAll(".beauty-product-card")
+            );
+    
+        const beautyBestPrev =
+            beautyBestSection.querySelector(".beauty-best-prev");
+    
+        const beautyBestNext =
+            beautyBestSection.querySelector(".beauty-best-next");
+    
+        const beautyBestDots =
+            beautyBestSection.querySelector(".beauty-best-dots");
+    
+    
+        if (
+            !beautyBestSlider ||
+            !beautyBestCards.length ||
+            !beautyBestPrev ||
+            !beautyBestNext ||
+            !beautyBestDots
+        ) {
+            return;
+        }
+    
+    
+        /* =====================================================
+           VARIABLES
+           ===================================================== */
+    
+        let beautyBestCurrentIndex = 0;
+        let beautyBestVisibleCount = 4;
+        let beautyBestMaxIndex = 0;
+        let beautyBestAutoPlay = null;
+        let beautyBestResizeTimer = null;
+    
+    
+        /* =====================================================
+           GET RESPONSIVE CARD COUNT
+           ===================================================== */
+    
+        function beautyGetVisibleCount() {
+    
+            const width = window.innerWidth;
+    
+            if (width <= 767) {
+                return 1;
+            }
+    
+            if (width <= 991) {
+                return 2;
+            }
+    
+            if (width <= 1199) {
+                return 3;
+            }
+    
+            return 4;
+        }
+    
+    
+        /* =====================================================
+           CALCULATE SLIDER
+           ===================================================== */
+    
+        function beautyUpdateSlider() {
+    
+            beautyBestVisibleCount =
+                beautyGetVisibleCount();
+    
+            beautyBestMaxIndex =
+                Math.max(
+                    0,
+                    beautyBestCards.length -
+                    beautyBestVisibleCount
+                );
+    
+    
+            if (
+                beautyBestCurrentIndex >
+                beautyBestMaxIndex
+            ) {
+                beautyBestCurrentIndex =
+                    beautyBestMaxIndex;
+            }
+    
+    
+            const firstCard =
+                beautyBestCards[0];
+    
+            if (!firstCard) {
+                return;
+            }
+    
+    
+            const cardWidth =
+                firstCard.getBoundingClientRect().width;
+    
+    
+            const sliderStyles =
+                window.getComputedStyle(
+                    beautyBestSlider
+                );
+    
+            const gap =
+                parseFloat(
+                    sliderStyles.columnGap ||
+                    sliderStyles.gap ||
+                    0
+                );
+    
+    
+            const moveAmount =
+                (cardWidth + gap) *
+                beautyBestCurrentIndex;
+    
+    
+            beautyBestSlider.style.transform =
+                "translate3d(-" +
+                moveAmount +
+                "px, 0, 0)";
+    
+    
+            beautyUpdateDots();
+    
+            beautyUpdateButtons();
+        }
+    
+    
+        /* =====================================================
+           CREATE DOTS
+           ===================================================== */
+    
+        function beautyCreateDots() {
+    
+            beautyBestDots.innerHTML = "";
+    
+            const totalDots =
+                beautyBestMaxIndex + 1;
+    
+    
+            for (
+                let i = 0;
+                i < totalDots;
+                i++
+            ) {
+    
+                const dot =
+                    document.createElement("button");
+    
+                dot.type = "button";
+    
+                dot.className =
+                    "beauty-best-dot";
+    
+                dot.setAttribute(
+                    "aria-label",
+                    "Go to product slide " +
+                    (i + 1)
+                );
+    
+    
+                dot.addEventListener(
+                    "click",
+                    function () {
+    
+                        beautyBestCurrentIndex = i;
+    
+                        beautyUpdateSlider();
+    
+                        beautyRestartAutoPlay();
+    
+                    }
+                );
+    
+    
+                beautyBestDots.appendChild(dot);
+            }
+        }
+    
+    
+        /* =====================================================
+           UPDATE DOTS
+           ===================================================== */
+    
+        function beautyUpdateDots() {
+    
+            const dots =
+                beautyBestDots.querySelectorAll(
+                    ".beauty-best-dot"
+                );
+    
+    
+            dots.forEach(function (dot, index) {
+    
+                dot.classList.toggle(
+                    "active",
+                    index === beautyBestCurrentIndex
+                );
+    
+            });
+        }
+    
+    
+        /* =====================================================
+           UPDATE ARROWS
+           ===================================================== */
+    
+        function beautyUpdateButtons() {
+    
+            /*
+             * Looping is enabled, so arrows remain active.
+             */
+    
+            beautyBestPrev.disabled = false;
+            beautyBestNext.disabled = false;
+    
+        }
+    
+    
+        /* =====================================================
+           NEXT SLIDE
+           ===================================================== */
+    
+        function beautyGoNext() {
+    
+            if (
+                beautyBestCurrentIndex <
+                beautyBestMaxIndex
+            ) {
+    
+                beautyBestCurrentIndex++;
+    
+            } else {
+    
+                /*
+                 * Return to the first product group.
+                 */
+    
+                beautyBestCurrentIndex = 0;
+    
+            }
+    
+    
+            beautyUpdateSlider();
+    
+        }
+    
+    
+        /* =====================================================
+           PREVIOUS SLIDE
+           ===================================================== */
+    
+        function beautyGoPrevious() {
+    
+            if (
+                beautyBestCurrentIndex > 0
+            ) {
+    
+                beautyBestCurrentIndex--;
+    
+            } else {
+    
+                /*
+                 * Go to the final product group.
+                 */
+    
+                beautyBestCurrentIndex =
+                    beautyBestMaxIndex;
+    
+            }
+    
+    
+            beautyUpdateSlider();
+    
+        }
+    
+    
+        /* =====================================================
+           BUTTON EVENTS
+           ===================================================== */
+    
+        beautyBestNext.addEventListener(
+            "click",
+            function () {
+    
+                beautyGoNext();
+    
+                beautyRestartAutoPlay();
+    
+            }
+        );
+    
+    
+        beautyBestPrev.addEventListener(
+            "click",
+            function () {
+    
+                beautyGoPrevious();
+    
+                beautyRestartAutoPlay();
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           AUTO SLIDER
+           ===================================================== */
+    
+        function beautyStartAutoPlay() {
+    
+            beautyStopAutoPlay();
+    
+    
+            beautyBestAutoPlay =
+                setInterval(
+                    function () {
+    
+                        beautyGoNext();
+    
+                    },
+                    5000
+                );
+    
+        }
+    
+    
+        function beautyStopAutoPlay() {
+    
+            if (beautyBestAutoPlay) {
+    
+                clearInterval(
+                    beautyBestAutoPlay
+                );
+    
+                beautyBestAutoPlay = null;
+    
+            }
+    
+        }
+    
+    
+        function beautyRestartAutoPlay() {
+    
+            beautyStartAutoPlay();
+    
+        }
+    
+    
+        /* =====================================================
+           PAUSE ON HOVER
+           ===================================================== */
+    
+        beautyBestSection.addEventListener(
+            "mouseenter",
+            function () {
+    
+                beautyStopAutoPlay();
+    
+            }
+        );
+    
+    
+        beautyBestSection.addEventListener(
+            "mouseleave",
+            function () {
+    
+                beautyStartAutoPlay();
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           TOUCH / SWIPE SUPPORT
+           ===================================================== */
+    
+        let beautyTouchStartX = 0;
+        let beautyTouchEndX = 0;
+    
+    
+        beautyBestSlider.addEventListener(
+            "touchstart",
+            function (event) {
+    
+                beautyTouchStartX =
+                    event.changedTouches[0].screenX;
+    
+            },
+            {
+                passive: true
+            }
+        );
+    
+    
+        beautyBestSlider.addEventListener(
+            "touchend",
+            function (event) {
+    
+                beautyTouchEndX =
+                    event.changedTouches[0].screenX;
+    
+                beautyHandleSwipe();
+    
+            },
+            {
+                passive: true
+            }
+        );
+    
+    
+        function beautyHandleSwipe() {
+    
+            const swipeDistance =
+                beautyTouchEndX -
+                beautyTouchStartX;
+    
+    
+            if (
+                Math.abs(swipeDistance) < 50
+            ) {
+                return;
+            }
+    
+    
+            if (swipeDistance < 0) {
+    
+                beautyGoNext();
+    
+            } else {
+    
+                beautyGoPrevious();
+    
+            }
+    
+    
+            beautyRestartAutoPlay();
+    
+        }
+    
+    
+        /* =====================================================
+           ONE-BY-ONE REVEAL ANIMATION
+           ===================================================== */
+    
+        function beautyRevealCards() {
+    
+            beautyBestCards.forEach(
+                function (card, index) {
+    
+                    card.style.transitionDelay =
+                        (index * 0.12) + "s";
+    
+                    card.classList.add(
+                        "beauty-card-visible"
+                    );
+    
+                }
+            );
+    
+        }
+    
+    
+        /* =====================================================
+           INTERSECTION OBSERVER
+           LOAD WHEN SECTION ENTERS VIEW
+           ===================================================== */
+    
+        const beautyRevealObserver =
+            new IntersectionObserver(
+                function (entries, observer) {
+    
+                    entries.forEach(
+                        function (entry) {
+    
+                            if (entry.isIntersecting) {
+    
+                                beautyRevealCards();
+    
+                                observer.unobserve(
+                                    entry.target
+                                );
+    
+                            }
+    
+                        }
+                    );
+    
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+    
+    
+        beautyRevealObserver.observe(
+            beautyBestSection
+        );
+    
+    
+        /* =====================================================
+           RESPONSIVE RESIZE
+           ===================================================== */
+    
+        window.addEventListener(
+            "resize",
+            function () {
+    
+                clearTimeout(
+                    beautyBestResizeTimer
+                );
+    
+    
+                beautyBestResizeTimer =
+                    setTimeout(
+                        function () {
+    
+                            beautyCreateDots();
+    
+                            beautyUpdateSlider();
+    
+                        },
+                        150
+                    );
+    
+            }
+        );
+    
+    
+        /* =====================================================
+           INITIALIZE
+           ===================================================== */
+    
+        beautyBestVisibleCount =
+            beautyGetVisibleCount();
+    
+    
+        beautyBestMaxIndex =
+            Math.max(
+                0,
+                beautyBestCards.length -
+                beautyBestVisibleCount
+            );
+    
+    
+        beautyCreateDots();
+    
+        beautyUpdateSlider();
+    
+        beautyStartAutoPlay();
+    
+    
+        /* =====================================================
+           KEYBOARD SUPPORT
+           ===================================================== */
+    
+        beautyBestSection.addEventListener(
+            "keydown",
+            function (event) {
+    
+                if (event.key === "ArrowRight") {
+    
+                    beautyGoNext();
+    
+                    beautyRestartAutoPlay();
+    
+                }
+    
+    
+                if (event.key === "ArrowLeft") {
+    
+                    beautyGoPrevious();
+    
+                    beautyRestartAutoPlay();
+    
+                }
+    
+            }
+        );
+    
+    
+    })();
+    </script>
+
+<!-- =========================================================
+     BEAUTY WEBSITE FOOTER
+========================================================= -->
+
+<footer class="beauty-footer">
+
+    <!-- =====================================================
+         OPTIONAL BEAUTY IMAGE STRIP
+         Similar to the image strip in your screenshot
+    ====================================================== -->
+
+    <div class="beauty-footer-gallery">
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cos1.webp"
+                alt="Beauty products">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 5.webp"
+                alt="Beauty skincare">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 6.webp"
+                alt="Skincare products">
+        </div>
+
+        <div class="beauty-footer-gallery-item">
+            <img
+                src="./cost 7.webp"
+                alt="Beauty care">
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN FOOTER
+    ====================================================== -->
+
+    <div class="beauty-footer-main">
+
+        <div class="beauty-footer-container">
+
+
+            <!-- =================================================
+                 COLUMN 1 - STACKLY
+            ================================================== -->
+
+            <div class="beauty-footer-column beauty-footer-brand">
+
+                <a href="index.html"
+                class="logo">
+
+                <img src="./white.webp"
+                    alt="Logo" style="height:60px; filter:brightness(0);">
+
+            </a>
+
+                <p class="beauty-footer-description">
+
+                    Discover thoughtfully selected beauty
+                    essentials designed to bring simple,
+                    effective care into your everyday routine.
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 2 - ABOUT
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                   Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                           Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 3 - HELP
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Shipping 
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Track Order
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Product Returns
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Checkout
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 4 - INFORMATION
+            ================================================== -->
+
+            <div class="beauty-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="404.html">
+                            Store Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            About Store
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Latest Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            New Discounts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="404.html">
+                            Sale Products
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLUMN 5 - NEWSLETTER
+            ================================================== -->
+
+            <div class="beauty-footer-column beauty-footer-newsletter">
+
+                <h3>
+                    Newsletter
+                </h3>
+
+                <p>
+                    Sign up for our newsletter to stay up to
+                    date on beauty offers, new arrivals and
+                    exclusive events.
+                </p>
+
+
+                <!-- SUBSCRIBE FORM -->
+
+                <form
+                    class="beauty-footer-form"
+                    id="beautyFooterForm"
+                    novalidate>
+
+                    <input
+                        type="email"
+                        id="beautyFooterEmail"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        aria-label="Email Address">
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- ERROR -->
+
+                <div
+                    class="beauty-footer-message beauty-footer-error"
+                    id="beautyFooterError">
+
+                    Please fill correct mail id
+
+                </div>
+
+
+                <!-- SUCCESS -->
+
+                <div
+                    class="beauty-footer-message beauty-footer-success"
+                    id="beautyFooterSuccess">
+
+                    Mail ID subscribed successfully
+
+                </div>
+
+
+                <!-- SOCIAL ICONS -->
+
+                <div class="beauty-footer-social">
+
+                    <a
+                        href="404.html"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="Pinterest">
+
+                        <i class="fa-brands fa-pinterest-p"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="404.html"
+                        aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM FOOTER
+        ================================================== -->
+
+        <div class="beauty-footer-bottom">
+
+            <div class="beauty-footer-bottom-container">
+
+
+                <!-- PAYMENT ICONS -->
+
+                <div class="beauty-footer-payments">
+                    <a href="./404.html">
+
+                    <i
+                        class="fa-brands fa-apple-pay"
+                        aria-label="Apple Pay">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-mastercard"
+                        aria-label="Mastercard">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-paypal"
+                        aria-label="PayPal">
+                    </i>
+
+                    <i
+                        class="fa-brands fa-cc-visa"
+                        aria-label="Visa">
+                    </i>
+                </a>
+                </div>
+
+
+                <!-- COPYRIGHT -->
+
+                <div class="beauty-footer-copyright">
+
+                    © 2026 Stackly. All Rights Reserved.
+
+                </div>
+
+
+                <!-- LEGAL -->
+
+                <div class="beauty-footer-legal">
+
+                    <a href="404.html">
+                        Privacy Policy
+                    </a>
+
+                    <span>
+                        |
+                    </span>
+
+                    <a href="404.html">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        type="button"
+        class="beauty-footer-top"
+        id="beautyFooterTop"
+        aria-label="Back to top">
+
+        <i class="fa-solid fa-chevron-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         SUBSCRIBE POPUP
+    ====================================================== -->
+
+    <div
+        class="beauty-footer-popup"
+        id="beautyFooterPopup">
+
+        <div class="beauty-footer-popup-box">
+
+            <div class="beauty-footer-popup-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <h3>
+                Subscribed!
+            </h3>
+
+            <p>
+                Mail ID subscribed successfully.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<style>
+    /* =========================================================
+   BEAUTY FOOTER
+   NON-CONFLICTING PREFIX:
+   beauty-footer-
+========================================================= */
+
+.beauty-footer {
+
+position: relative;
+
+width: 100%;
+
+overflow: hidden;
+
+background: #fcf8ef;
+
+color: #171412;
+}
+
+
+.beauty-footer *,
+.beauty-footer *::before,
+.beauty-footer *::after {
+
+box-sizing: border-box;
+}
+
+
+/* =========================================================
+IMAGE STRIP
+========================================================= */
+
+.beauty-footer-gallery {
+
+width: 100%;
+
+height: 240px;
+
+display: grid;
+
+grid-template-columns:
+    repeat(4, 1fr);
+
+overflow: hidden;
+}
+
+
+.beauty-footer-gallery-item {
+
+height: 100%;
+
+overflow: hidden;
+
+opacity: 0;
+
+transform: translateY(70px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-gallery-item img {
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+object-fit: cover;
+
+transition:
+    transform .6s ease;
+}
+
+
+.beauty-footer-gallery-item:hover img {
+
+transform: scale(1.06);
+}
+
+
+/* =========================================================
+GALLERY LOAD ONE BY ONE
+========================================================= */
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(1) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .1s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(2) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .25s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(3) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .4s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-gallery-item:nth-child(4) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .55s;
+}
+
+
+/* =========================================================
+MAIN FOOTER
+========================================================= */
+
+.beauty-footer-main {
+
+width: 100%;
+
+background: #fcf8ef;
+
+padding-top: 75px;
+}
+
+
+.beauty-footer-container {
+
+width: min(
+    1380px,
+    calc(100% - 60px)
+);
+
+margin: 0 auto;
+
+display: grid;
+
+grid-template-columns:
+    minmax(250px, 1.6fr)
+    minmax(140px, .8fr)
+    minmax(150px, .8fr)
+    minmax(160px, .9fr)
+    minmax(270px, 1.25fr);
+
+gap: 55px;
+}
+
+
+/* =========================================================
+FOOTER COLUMNS
+========================================================= */
+
+.beauty-footer-column {
+
+min-width: 0;
+
+opacity: 0;
+
+transform: translateY(70px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+/* =========================================================
+LOAD ONE BY ONE
+========================================================= */
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(1) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .1s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(2) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .25s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(3) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .4s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(4) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .55s;
+}
+
+
+.beauty-footer-visible
+.beauty-footer-column:nth-child(5) {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .7s;
+}
+
+
+/* =========================================================
+STACKLY LOGO
+========================================================= */
+
+.beauty-footer-logo {
+
+display: inline-block;
+
+margin-bottom: 28px;
+
+color: #15110f;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 42px;
+
+font-weight: 400;
+
+letter-spacing: 3px;
+
+line-height: 1;
+
+text-decoration: none;
+
+transition:
+    opacity .3s ease;
+}
+
+
+.beauty-footer-logo:hover {
+
+opacity: .65;
+}
+
+
+/* =========================================================
+DESCRIPTION
+========================================================= */
+
+.beauty-footer-description {
+
+max-width: 390px;
+
+margin: 0;
+
+color: #302925;
+
+font-size: 22px;
+
+line-height: 1.7;
+}
+
+
+/* =========================================================
+COLUMN HEADINGS
+========================================================= */
+
+.beauty-footer-column h3 {
+
+margin: 0 0 28px;
+
+color: #171412;
+
+font-size: 22px;
+
+font-weight: 700;
+
+line-height: 1.3;
+}
+
+
+/* =========================================================
+LIST
+========================================================= */
+
+.beauty-footer-column ul {
+
+margin: 0;
+
+padding: 0;
+
+list-style: none;
+}
+
+
+.beauty-footer-column li {
+
+margin-bottom: 15px;
+}
+
+
+.beauty-footer-column li a {
+
+color: #302925;
+
+font-size: 22px;
+
+line-height: 1.4;
+
+text-decoration: none;
+
+transition:
+    color .3s ease,
+    padding-left .3s ease;
+}
+
+
+.beauty-footer-column li a:hover {
+
+color: #b87553;
+
+padding-left: 5px;
+}
+
+
+/* =========================================================
+NEWSLETTER
+========================================================= */
+
+.beauty-footer-newsletter {
+
+text-align: center;
+}
+
+
+.beauty-footer-newsletter h3 {
+
+font-size: 27px;
+}
+
+
+.beauty-footer-newsletter p {
+
+max-width: 340px;
+
+margin: 0 auto 25px;
+
+color: #514943;
+
+font-size: 22px;
+
+line-height: 1.6;
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.beauty-footer-form {
+
+width: 100%;
+
+min-height: 55px;
+
+display: flex;
+
+align-items: stretch;
+
+border: 1px solid #bdb4aa;
+
+background: #ffffff;
+
+overflow: hidden;
+}
+
+
+.beauty-footer-form input {
+
+width: 100%;
+
+min-width: 0;
+
+padding: 12px 18px;
+
+color: #211c19;
+
+background: transparent;
+
+border: 0;
+
+outline: none;
+
+font-family: inherit;
+
+font-size: 22px;
+}
+
+
+.beauty-footer-form input::placeholder {
+
+color: #89817b;
+
+opacity: 1;
+}
+
+
+.beauty-footer-form button {
+
+width: 65px;
+
+min-width: 65px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+color: #000000;
+
+background: #ead9b8;
+
+border: 0;
+
+cursor: pointer;
+
+font-size: 22px;
+
+transition:
+    background .3s ease;
+}
+
+
+.beauty-footer-form button:hover {
+
+background: #d9c49d;
+}
+
+
+/* =========================================================
+VALIDATION MESSAGES
+========================================================= */
+
+.beauty-footer-message {
+
+display: none;
+
+margin-top: 12px;
+
+font-size: 22px;
+
+font-weight: 600;
+
+line-height: 1.4;
+}
+
+
+.beauty-footer-error {
+
+color: #c44848;
+}
+
+
+.beauty-footer-success {
+
+color: #43854c;
+}
+
+
+/* =========================================================
+SOCIAL ICONS
+========================================================= */
+
+.beauty-footer-social {
+
+margin-top: 25px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-end;
+
+gap: 28px;
+}
+
+
+.beauty-footer-social a {
+
+color: #0f0e0d;
+
+font-size: 22px;
+
+text-decoration: none;
+
+transition:
+    transform .3s ease,
+    color .3s ease;
+}
+
+
+.beauty-footer-social a:hover {
+
+color: #b87553;
+
+transform: translateY(-4px);
+}
+
+
+/* =========================================================
+BOTTOM FOOTER
+========================================================= */
+
+.beauty-footer-bottom {
+
+width: 100%;
+
+margin-top: 70px;
+}
+
+
+.beauty-footer-bottom-container {
+
+width: min(
+    1380px,
+    calc(100% - 60px)
+);
+
+min-height: 75px;
+
+margin: 0 auto;
+
+padding: 20px 0;
+
+border-top: 1px solid #cfc6bb;
+
+display: grid;
+
+grid-template-columns:
+    1fr 1fr 1fr;
+
+align-items: center;
+
+gap: 30px;
+
+opacity: 0;
+
+transform: translateY(60px);
+
+transition:
+    opacity .8s ease,
+    transform .8s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-visible
+.beauty-footer-bottom-container {
+
+opacity: 1;
+
+transform: translateY(0);
+
+transition-delay: .85s;
+}
+
+
+/* =========================================================
+PAYMENT ICONS
+========================================================= */
+
+.beauty-footer-payments {
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-start;
+
+gap: 18px;
+}
+
+
+.beauty-footer-payments i {
+
+color: #111111;
+
+font-size: 25px;
+}
+
+
+/* =========================================================
+COPYRIGHT
+========================================================= */
+
+.beauty-footer-copyright {
+
+color: #302925;
+
+font-size: 22px;
+
+text-align: center;
+
+white-space: nowrap;
+}
+
+
+/* =========================================================
+LEGAL LINKS
+========================================================= */
+
+.beauty-footer-legal {
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-end;
+
+gap: 18px;
+}
+
+
+.beauty-footer-legal a {
+
+color: #302925;
+
+font-size: 22px;
+
+text-decoration: none;
+
+transition:
+    color .3s ease;
+}
+
+
+.beauty-footer-legal a:hover {
+
+color: #b87553;
+}
+
+
+.beauty-footer-legal span {
+
+color: #817870;
+
+font-size: 22px;
+}
+
+
+/* =========================================================
+BACK TO TOP
+========================================================= */
+
+.beauty-footer-top {
+
+position: fixed;
+
+right: 20px;
+
+bottom: 20px;
+
+width: 48px;
+
+height: 48px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+color: #201914;
+
+background: #ead9b8;
+
+border: 0;
+
+cursor: pointer;
+
+font-size: 22px;
+
+opacity: 0;
+
+visibility: hidden;
+
+transform: translateY(15px);
+
+transition:
+    opacity .3s ease,
+    visibility .3s ease,
+    transform .3s ease;
+
+z-index: 999;
+}
+
+
+.beauty-footer-top.beauty-footer-top-show {
+
+opacity: 1;
+
+visibility: visible;
+
+transform: translateY(0);
+}
+
+
+.beauty-footer-top:hover {
+
+background: #d9c49d;
+}
+
+
+/* =========================================================
+SUCCESS POPUP
+========================================================= */
+
+.beauty-footer-popup {
+
+position: fixed;
+
+inset: 0;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px;
+
+background: rgba(20, 15, 12, .55);
+
+opacity: 0;
+
+visibility: hidden;
+
+pointer-events: none;
+
+transition:
+    opacity .3s ease,
+    visibility .3s ease;
+
+z-index: 99999;
+}
+
+
+.beauty-footer-popup.beauty-footer-popup-show {
+
+opacity: 1;
+
+visibility: visible;
+
+pointer-events: auto;
+}
+
+
+.beauty-footer-popup-box {
+
+width: min(
+    450px,
+    100%
+);
+
+padding: 40px 30px;
+
+text-align: center;
+
+background: #fffaf5;
+
+border: 1px solid #ead9cc;
+
+box-shadow:
+    0 20px 60px
+    rgba(0,0,0,.2);
+
+transform: scale(.85);
+
+transition:
+    transform .35s
+    cubic-bezier(.22,1,.36,1);
+}
+
+
+.beauty-footer-popup-show
+.beauty-footer-popup-box {
+
+transform: scale(1);
+}
+
+
+.beauty-footer-popup-icon {
+
+width: 65px;
+
+height: 65px;
+
+margin: 0 auto 20px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+color: #ffffff;
+
+background: #55945b;
+
+font-size: 25px;
+}
+
+
+.beauty-footer-popup-box h3 {
+
+margin: 0 0 10px;
+
+color: #211914;
+
+font-size: 27px;
+}
+
+
+.beauty-footer-popup-box p {
+
+margin: 0;
+
+color: #625852;
+
+font-size: 22px;
+
+line-height: 1.5;
+}
+
+
+/* =========================================================
+LAPTOP
+DESKTOP/LAPTOP TEXT = 22PX
+========================================================= */
+
+@media (max-width: 1199px) {
+
+.beauty-footer-container {
+
+    width: calc(100% - 50px);
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 35px;
+}
+
+.beauty-footer-brand {
+
+    grid-column: span 1;
+}
+
+.beauty-footer-newsletter {
+
+    grid-column: 1 / -1;
+
+    max-width: 600px;
+
+    justify-self: center;
+
+    width: 100%;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 50px);
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-copyright,
+.beauty-footer-legal a {
+
+    font-size: 22px;
+}
+
+}
+
+
+/* =========================================================
+TABLET
+22PX
+========================================================= */
+
+@media (max-width: 991px) {
+
+.beauty-footer-gallery {
+
+    height: 180px;
+}
+
+.beauty-footer-main {
+
+    padding-top: 55px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 40px);
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 45px 30px;
+}
+
+.beauty-footer-brand {
+
+    grid-column: 1 / -1;
+}
+
+.beauty-footer-newsletter {
+
+    grid-column: 1 / -1;
+
+    max-width: 650px;
+}
+
+.beauty-footer-bottom {
+
+    margin-top: 55px;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 40px);
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+.beauty-footer-copyright {
+
+    order: 3;
+
+    grid-column: 1 / -1;
+}
+
+.beauty-footer-legal {
+
+    justify-content: flex-end;
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+ALL FOOTER TEXT = 19PX
+========================================================= */
+
+@media (max-width: 767px) {
+
+.beauty-footer-gallery {
+
+    height: 150px;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+.beauty-footer-gallery-item:nth-child(3),
+.beauty-footer-gallery-item:nth-child(4) {
+
+    display: none;
+}
+
+.beauty-footer-main {
+
+    padding-top: 45px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 30px);
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+}
+
+.beauty-footer-brand,
+.beauty-footer-newsletter {
+
+    grid-column: auto;
+}
+
+.beauty-footer-logo {
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-social a {
+
+    font-size: 19px;
+}
+
+.beauty-footer-column h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+.beauty-footer-newsletter h3 {
+
+    font-size: 24px;
+}
+
+.beauty-footer-form {
+
+    min-height: 52px;
+}
+
+.beauty-footer-form button {
+
+    width: 58px;
+
+    min-width: 58px;
+
+    font-size: 19px;
+}
+
+.beauty-footer-social {
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.beauty-footer-bottom {
+
+    margin-top: 45px;
+}
+
+.beauty-footer-bottom-container {
+
+    width: calc(100% - 30px);
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+
+    text-align: center;
+}
+
+.beauty-footer-payments {
+
+    justify-content: center;
+}
+
+.beauty-footer-payments i {
+
+    font-size: 22px;
+}
+
+.beauty-footer-copyright {
+
+    order: 2;
+
+    grid-column: auto;
+
+    font-size: 19px;
+
+    white-space: normal;
+}
+
+.beauty-footer-legal {
+
+    order: 3;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.beauty-footer-legal a,
+.beauty-footer-legal span {
+
+    font-size: 19px;
+}
+
+.beauty-footer-top {
+
+    right: 12px;
+
+    bottom: 12px;
+
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 19px;
+}
+
+.beauty-footer-popup-box h3 {
+
+    font-size: 24px;
+}
+
+.beauty-footer-popup-box p {
+
+    font-size: 19px;
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+19PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+.beauty-footer-gallery {
+
+    height: 120px;
+}
+
+.beauty-footer-container {
+
+    width: calc(100% - 24px);
+}
+
+.beauty-footer-logo {
+
+    font-size: 32px;
+}
+
+.beauty-footer-description,
+.beauty-footer-column li a,
+.beauty-footer-newsletter p,
+.beauty-footer-form input,
+.beauty-footer-message,
+.beauty-footer-copyright,
+.beauty-footer-legal a,
+.beauty-footer-legal span {
+
+    font-size: 19px;
+}
+
+.beauty-footer-newsletter h3 {
+
+    font-size: 22px;
+}
+
+.beauty-footer-form input {
+
+    padding: 10px 12px;
+}
+
+}
+
+
+/* =========================================================
+REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+.beauty-footer-column,
+.beauty-footer-gallery-item,
+.beauty-footer-bottom-container,
+.beauty-footer-popup-box {
+
+    transition: none !important;
+
+    transform: none !important;
+}
+
+}
+    </style>
+    <script>
+        (function () {
+        
+            "use strict";
+        
+        
+            /* =====================================================
+               FOOTER ELEMENTS
+            ===================================================== */
+        
+            const beautyFooter =
+                document.querySelector(
+                    ".beauty-footer"
+                );
+        
+            if (!beautyFooter) {
+                return;
+            }
+        
+        
+            const beautyFooterForm =
+                document.getElementById(
+                    "beautyFooterForm"
+                );
+        
+            const beautyFooterEmail =
+                document.getElementById(
+                    "beautyFooterEmail"
+                );
+        
+            const beautyFooterError =
+                document.getElementById(
+                    "beautyFooterError"
+                );
+        
+            const beautyFooterSuccess =
+                document.getElementById(
+                    "beautyFooterSuccess"
+                );
+        
+            const beautyFooterPopup =
+                document.getElementById(
+                    "beautyFooterPopup"
+                );
+        
+            const beautyFooterTop =
+                document.getElementById(
+                    "beautyFooterTop"
+                );
+        
+        
+            /* =====================================================
+               SCROLL REVEAL
+            ===================================================== */
+        
+            const beautyFooterObserver =
+                new IntersectionObserver(
+        
+                    function (entries, observer) {
+        
+                        entries.forEach(
+                            function (entry) {
+        
+                                if (
+                                    entry.isIntersecting
+                                ) {
+        
+                                    entry.target.classList.add(
+                                        "beauty-footer-visible"
+                                    );
+        
+                                    observer.unobserve(
+                                        entry.target
+                                    );
+        
+                                }
+        
+                            }
+                        );
+        
+                    },
+                    {
+                        threshold: 0.12
+                    }
+        
+                );
+        
+        
+            beautyFooterObserver.observe(
+                beautyFooter
+            );
+        
+        
+            /* =====================================================
+               EMAIL VALIDATION
+            ===================================================== */
+        
+            function beautyValidateEmail(email) {
+        
+                const beautyEmailPattern =
+                    /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        
+                return beautyEmailPattern.test(
+                    email
+                );
+        
+            }
+        
+        
+            /* =====================================================
+               SHOW ERROR
+            ===================================================== */
+        
+            function beautyShowFooterError() {
+        
+                beautyFooterSuccess.style.display =
+                    "none";
+        
+                beautyFooterError.style.display =
+                    "block";
+        
+                beautyFooterEmail.focus();
+        
+            }
+        
+        
+            /* =====================================================
+               SHOW SUCCESS POPUP
+            ===================================================== */
+        
+            function beautyShowFooterSuccess() {
+        
+                beautyFooterError.style.display =
+                    "none";
+        
+                beautyFooterSuccess.style.display =
+                    "block";
+        
+                beautyFooterPopup.classList.add(
+                    "beauty-footer-popup-show"
+                );
+        
+        
+                /*
+                 * After showing the success popup,
+                 * move to 404 page.
+                 */
+        
+                setTimeout(
+                    function () {
+        
+                        window.location.href =
+                            "404.html";
+        
+                    },
+                    1800
+                );
+        
+            }
+        
+        
+            /* =====================================================
+               FORM SUBMIT
+            ===================================================== */
+        
+            beautyFooterForm.addEventListener(
+                "submit",
+                function (event) {
+        
+                    event.preventDefault();
+        
+        
+                    const beautyEmail =
+                        beautyFooterEmail.value.trim();
+        
+        
+                    /* EMPTY OR INVALID EMAIL */
+        
+                    if (
+                        !beautyEmail ||
+                        !beautyValidateEmail(
+                            beautyEmail
+                        )
+                    ) {
+        
+                        beautyShowFooterError();
+        
+                        return;
+        
+                    }
+        
+        
+                    /* VALID EMAIL */
+        
+                    beautyShowFooterSuccess();
+        
+                }
+            );
+        
+        
+            /* =====================================================
+               REMOVE ERROR WHILE TYPING
+            ===================================================== */
+        
+            beautyFooterEmail.addEventListener(
+                "input",
+                function () {
+        
+                    beautyFooterError.style.display =
+                        "none";
+        
+                }
+            );
+        
+        
+            /* =====================================================
+               BACK TO TOP
+            ===================================================== */
+        
+            window.addEventListener(
+                "scroll",
+                function () {
+        
+                    if (
+                        window.scrollY > 500
+                    ) {
+        
+                        beautyFooterTop.classList.add(
+                            "beauty-footer-top-show"
+                        );
+        
+                    } else {
+        
+                        beautyFooterTop.classList.remove(
+                            "beauty-footer-top-show"
+                        );
+        
+                    }
+        
+                }
+            );
+        
+        
+            beautyFooterTop.addEventListener(
+                "click",
+                function () {
+        
+                    window.scrollTo({
+        
+                        top: 0,
+        
+                        behavior: "smooth"
+        
+                    });
+        
+                }
+            );
+        
+        
+        })();
+        </script>
+    
+
+
+</body>
+
+</html>
