@@ -439,53 +439,7 @@
 
     <!-- SEARCH + FILTER -->
 
-    <div class="stk-customer-orders-toolbar">
-
-        <div class="stk-customer-orders-search">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <input
-                type="text"
-                id="stkCustomerOrderSearch"
-                placeholder="Search by order ID or product..."
-            >
-
-        </div>
-
-
-        <select
-            id="stkCustomerOrderFilter"
-            class="stk-customer-orders-select"
-        >
-
-            <option value="all">
-                All Orders
-            </option>
-
-            <option value="pending">
-                Pending
-            </option>
-
-            <option value="processing">
-                Processing
-            </option>
-
-            <option value="shipped">
-                Shipped
-            </option>
-
-            <option value="delivered">
-                Delivered
-            </option>
-
-            <option value="cancelled">
-                Cancelled
-            </option>
-
-        </select>
-
-    </div>
+    
 
 
     <!-- ORDERS -->
@@ -3636,3 +3590,103 @@ if (filterSelect) {
     }
 );
 </script>
+
+<style>
+    /* =========================================================
+GLOBAL MOBILE FONT SIZE - ENTIRE THEME
+========================================================= */
+
+@media (max-width: 600px) {
+
+html,
+body {
+font-size: 18px !important;
+}
+
+body * {
+font-size: 18px;
+}
+
+}
+
+/* =========================================================
+GLOBAL MOBILE FONT SIZE - ENTIRE THEME
+========================================================= */
+
+@media (max-width: 600px) {
+
+html {
+font-size: 18px !important;
+}
+
+body {
+font-size: 18px !important;
+}
+
+/* General content */
+
+p,
+span,
+label,
+li,
+td,
+th,
+a,
+input,
+textarea,
+select,
+button {
+font-size: 18px !important;
+}
+
+
+/* Headings */
+
+h1 {
+font-size: 30px !important;
+}
+
+h2 {
+font-size: 26px !important;
+}
+
+h3 {
+font-size: 22px !important;
+}
+
+h4 {
+font-size: 20px !important;
+}
+
+h5,
+h6 {
+font-size: 18px !important;
+}
+
+}
+
+@media (max-width: 380px) {
+
+html,
+body {
+font-size: 18px !important;
+}
+
+body * {
+font-size: 18px;
+}
+
+h1 {
+font-size: 27px !important;
+}
+
+h2 {
+font-size: 24px !important;
+}
+
+h3 {
+font-size: 21px !important;
+}
+
+}
+</style>
