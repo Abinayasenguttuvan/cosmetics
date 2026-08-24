@@ -14,11 +14,293 @@
         id="stkcosSidebarOverlay"
     ></div>
 
+<style>
+    /* =====================================================
+   STACKLY MOBILE SIDEBAR - ISOLATED SYSTEM
+   This intentionally uses unique IDs to avoid conflicts
+===================================================== */
 
+#stkcosMobileMenuBtn {
+    display: none;
+}
+
+#stkcosMobileOverlay {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ---------- HAMBURGER ---------- */
+
+    #stkcosMobileMenuBtn {
+        display: flex !important;
+
+        position: fixed !important;
+        top: 15px !important;
+        left: 15px !important;
+
+        width: 48px !important;
+        height: 48px !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        background: #111111 !important;
+        border: 2px solid #ff7a00 !important;
+        border-radius: 8px !important;
+
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 5px !important;
+
+        z-index: 2147483647 !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        cursor: pointer !important;
+
+        box-sizing: border-box !important;
+    }
+
+    #stkcosMobileMenuBtn span {
+        display: block !important;
+
+        width: 27px !important;
+        height: 3px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #ffffff !important;
+
+        border-radius: 10px !important;
+
+        transition: 0.3s ease !important;
+    }
+
+
+    /* ---------- SIDEBAR ---------- */
+
+    #stkcosMobileSidebar {
+        display: block !important;
+
+        position: fixed !important;
+
+        top: 0 !important;
+        left: -300px !important;
+
+        width: 280px !important;
+        height: 100vh !important;
+
+        background: #111111 !important;
+
+        overflow-y: auto !important;
+
+        z-index: 2147483646 !important;
+
+        transition: left 0.3s ease !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+
+    /* ---------- SIDEBAR OPEN ---------- */
+
+    #stkcosMobileSidebar.stkcos-sidebar-open {
+        left: 0 !important;
+    }
+
+
+    /* ---------- OVERLAY ---------- */
+
+    #stkcosMobileOverlay.stkcos-overlay-active {
+        display: block !important;
+
+        position: fixed !important;
+
+        inset: 0 !important;
+
+        background: rgba(0, 0, 0, 0.55) !important;
+
+        z-index: 2147483645 !important;
+    }
+
+
+    /* ---------- X ICON ---------- */
+
+    #stkcosMobileMenuBtn.stkcos-button-active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg) !important;
+    }
+
+    #stkcosMobileMenuBtn.stkcos-button-active span:nth-child(2) {
+        opacity: 0 !important;
+    }
+
+    #stkcosMobileMenuBtn.stkcos-button-active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg) !important;
+    }
+}
+
+
+/* ---------- DESKTOP ---------- */
+
+@media screen and (min-width: 769px) {
+
+    #stkcosMobileMenuBtn,
+    #stkcosMobileOverlay {
+        display: none !important;
+    }
+
+}
+</style>
+
+<script>
+    (function () {
+    
+        function setupStacklyMobileMenu() {
+    
+            const button =
+                document.getElementById("stkcosMobileMenuBtn");
+    
+            const sidebar =
+                document.getElementById("stkcosMobileSidebar");
+    
+            const overlay =
+                document.getElementById("stkcosMobileOverlay");
+    
+    
+            if (!button) {
+                console.error("STACKLY: hamburger button not found");
+                return;
+            }
+    
+            if (!sidebar) {
+                console.error("STACKLY: mobile sidebar not found");
+                return;
+            }
+    
+            if (!overlay) {
+                console.error("STACKLY: overlay not found");
+                return;
+            }
+    
+    
+            function openMenu() {
+    
+                sidebar.classList.add("stkcos-sidebar-open");
+    
+                button.classList.add("stkcos-button-active");
+    
+                overlay.classList.add("stkcos-overlay-active");
+    
+                button.setAttribute(
+                    "aria-label",
+                    "Close sidebar"
+                );
+    
+                button.setAttribute(
+                    "aria-expanded",
+                    "true"
+                );
+            }
+    
+    
+            function closeMenu() {
+    
+                sidebar.classList.remove("stkcos-sidebar-open");
+    
+                button.classList.remove("stkcos-button-active");
+    
+                overlay.classList.remove("stkcos-overlay-active");
+    
+                button.setAttribute(
+                    "aria-label",
+                    "Open sidebar"
+                );
+    
+                button.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+            }
+    
+    
+            button.addEventListener("click", function (event) {
+    
+                event.preventDefault();
+                event.stopPropagation();
+    
+                if (
+                    sidebar.classList.contains(
+                        "stkcos-sidebar-open"
+                    )
+                ) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+    
+            });
+    
+    
+            overlay.addEventListener("click", function () {
+                closeMenu();
+            });
+    
+    
+            sidebar.addEventListener("click", function (event) {
+    
+                const link = event.target.closest("a");
+    
+                if (link && window.innerWidth <= 768) {
+                    closeMenu();
+                }
+    
+            });
+    
+    
+            window.addEventListener("resize", function () {
+    
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+    
+            });
+    
+        }
+    
+    
+        if (document.readyState === "loading") {
+    
+            document.addEventListener(
+                "DOMContentLoaded",
+                setupStacklyMobileMenu
+            );
+    
+        } else {
+    
+            setupStacklyMobileMenu();
+    
+        }
+    
+    })();
+    </script>
 
     <!-- =====================================
          SIDEBAR
     ====================================== -->
+
+    <button type="button" id="stkcosMobileMenuBtn" aria-label="Open sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <div id="stkcosMobileOverlay"></div>
 
     <aside
         class="stkcos-sidebar"
@@ -40,6 +322,8 @@
             </a>
 
         </div>
+
+
 
 
 
