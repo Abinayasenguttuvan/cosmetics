@@ -3093,6 +3093,10 @@ wishlistButtons.forEach(function (button) {
    PAGE TITLE
 ========================================================= */
 
+.stkcos-page-title {
+    flex-shrink: 0;
+}
+
 .stkcos-page-title h2 {
     margin: 0;
 
@@ -3102,6 +3106,8 @@ wishlistButtons.forEach(function (button) {
     font-size: 26px;
 
     font-weight: 700;
+
+    white-space: nowrap;
 }
 
 .stkcos-page-title p {
@@ -3121,6 +3127,9 @@ wishlistButtons.forEach(function (button) {
 .stkcos-user-area {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+
+    flex: 1;
 
     gap: 15px;
 
@@ -3679,8 +3688,6 @@ wishlistButtons.forEach(function (button) {
 
     .stkcos-user-area {
         gap: 8px;
-
-        max-width: 65%;
     }
 
     .stkcos-user-avatar {
@@ -3768,7 +3775,11 @@ wishlistButtons.forEach(function (button) {
 @media (max-width: 400px) {
 
     .stkcos-page-title {
-        display: none;
+        display: block;
+    }
+
+    .stkcos-page-title h2 {
+        font-size: 18px;
     }
 
     .stkcos-topbar {
@@ -3776,8 +3787,8 @@ wishlistButtons.forEach(function (button) {
             space-between;
     }
 
-    .stkcos-user-area {
-        max-width: 75%;
+    .stkcos-topbar {
+        gap: 10px;
     }
 
     .stkcos-user-details h4 {
